@@ -1,4 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Academy development sample — Coach Carter</title><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/academy-store.css"></head><body class="academy-product-page"><header><div class="wrap"><a href="store.html"><img src="assets/brand/wordmark_gold.svg" alt="The Real Coach Carter"></a><a class="link-u" href="store.html#academy-store-title">← Academy collection</a></div></header><main><section class="section"><div class="wrap grid-2" style="align-items:start"><div class="product-visual"><img id="product-image" src="assets/img/academy/academy-court-tee.png" alt=""></div><div class="product-info"><span class="academy-eyebrow">Coach Carter Academy · development sample</span><h1 id="product-name" class="h-l mt-s">Court Tee</h1><p id="product-kind" class="lede"></p><span id="product-price" class="proposed"></span><p class="academy-note mt-m">Development concept · proposed price. Generated product imagery illustrates the design direction; exact vector artwork is supplied in the library.</p><h2 class="h-m mt-l">Review points</h2><ul id="product-specs"></ul><div class="academy-actions"><a class="btn btn-dark" href="academy-studio/index.html">Open design library <span class="arr">→</span></a><a class="btn btn-ghost" href="store.html#academy-store-title">See both test pieces</a></div></div></div></section></main><script>
-const products={"court-short":{name:"Court Short",price:"$78 proposed",kind:"Development sample · court short",image:"assets/img/academy/academy-court-short.png",alt:"Coach Carter Academy court short development look",specs:["Target: 7-inch inseam, lined basketball mesh and side pockets","Maroon body, bone basketball seam panels, gold piping and tipped drawcord","Coach Carter Academy leg lettering; exact application artwork developed separately","Next sample review: movement, waistband recovery, colorfastness and wash stability"]},"court-tee":{name:"Court Tee",price:"$68 proposed",kind:"Development sample · tee",image:"assets/img/academy/academy-court-tee.png",alt:"Coach Carter Academy court tee development look",specs:["Target: 220–260 GSM cotton, relaxed straight block and structured rib collar","Carbon body with gold Coach Carter wordmark and Academy descriptor","Basketball back-print artwork included in the library; rear physical sample pending","Next sample review: shrinkage, neck recovery, print hand-feel and size grading"]}};
-const key=new URLSearchParams(location.search).get("product")||"court-tee",p=products[key]||products["court-tee"];document.title=p.name+" — Coach Carter Academy";document.querySelector("#product-image").src=p.image;document.querySelector("#product-image").alt=p.alt;document.querySelector("#product-name").textContent=p.name;document.querySelector("#product-kind").textContent=p.kind;document.querySelector("#product-price").textContent=p.price;document.querySelector("#product-specs").innerHTML=p.specs.map(s=>`<li>${s}</li>`).join("");
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Court Collection — Coach Carter Academy</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/academy-store.css">
+  <script defer src="assets/js/academy-product.js"></script>
+</head>
+<body class="academy-product-page">
+  <header>
+    <div class="store-shell">
+      <a href="store.html"><img src="academy-studio/artwork/academy_wordmark_descriptor.svg" alt="Coach Carter Academy"></a>
+      <a href="store.html#academy-store-title">← Court Collection</a>
+    </div>
+  </header>
+  <main class="store-shell">
+    <p id="product-error" role="status">Loading the collection. <a href="store.html#academy-store-title">Back to the collection</a></p>
+    <article class="academy-product-layout" hidden>
+      <div>
+      <figure class="product-visual">
+        <img id="product-image" width="900" height="1350" alt="">
+        <figcaption>Front view · AI garment rendering</figcaption>
+      </figure>
+      <figure class="product-visual product-flat">
+        <img id="product-flat" width="700" height="520" alt="Front and back garment design board" loading="lazy">
+        <figcaption><a class="store-text-link" id="product-flat-download" download>Download the design board ↓</a></figcaption>
+      </figure>
+      </div>
+      <div class="product-info">
+        <p class="store-label">Coach Carter Academy · Collection 01</p>
+        <h1 id="product-name"></h1>
+        <p id="product-kind"></p>
+        <p id="product-price" class="proposed"></p>
+        <p class="product-note">Collection preview. Final fit and materials will be confirmed after sampling.</p>
+        <h2>Design details</h2>
+        <ul id="product-specs"></ul>
+        <figure class="product-artwork">
+          <img id="product-artwork" alt="" width="500" height="160" loading="lazy">
+          <figcaption id="product-artwork-label"></figcaption>
+        </figure>
+        <a class="store-text-link" id="product-companion">Complete the look</a>
+        <a class="store-text-link" href="academy-studio/index.html">Explore the Academy design library ↗</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
