@@ -1,141 +1,135 @@
-/* Investor page: hero counters from data, three SVG charts (hover tooltip + table view), testimonials. */
+/* Investor memo charts. Every chart: hover tooltip + table view. Data: assets/data/memo.json + investor.json */
 (() => {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const base = document.querySelector('script[src*="investor.js"]').src.replace(/assets\/js\/investor\.js.*$/, "");
   const NS = "http://www.w3.org/2000/svg";
-  const GOLD = "#B8822E", CONTEXT = "#3A3E47", GRID = "rgba(245,240,232,.08)", INK2 = "rgba(245,240,232,.62)", INK1 = "#F5F0E8";
-  const fmtM = (n) => `$${n >= 100 ? Math.round(n) : n.toFixed(1)}M`;
-  const fmtK = (n) => (n >= 1000 ? `$${(n / 1000).toFixed(n % 1000 ? 1 : 0)}M` : `$${n % 1 ? n.toFixed(1) : n}K`);
+  const GOLD = "#B8822E", CONTEXT = "#3A3E47", GRID = "rgba(245,240,232,.08)";
   const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
-  const rounded = (x, y, w, h, r, dir) => { // round only the data end
-    r = Math.min(r, w / 2, h / 2);
-    if (dir === "right") return `M${x},${y}h${w - r}a${r},${r} 0 0 1 ${r},${r}v${h - 2 * r}a${r},${r} 0 0 1 -${r},${r}h-${w - r}z`;
-    return `M${x},${y + h}v-${h - r}a${r},${r} 0 0 1 ${r},-${r}h${w - 2 * r}a${r},${r} 0 0 1 ${r},${r}v${h - r}z`; // up
-  };
+  const txt = (parent, x, y, s, cls, anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, parent); t.textContent = s; return t; };
+  const barR = (x, y, w, h, r) => { r = Math.min(r, w / 2, h / 2); return `M${x},${y}h${w - r}a${r},${r} 0 0 1 ${r},${r}v${h - 2 * r}a${r},${r} 0 0 1 -${r},${r}h-${w - r}z`; };
+  const colR = (x, y, w, h, r) => { r = Math.min(r, w / 2, h / 2); return `M${x},${y + h}v-${h - r}a${r},${r} 0 0 1 ${r},-${r}h${w - 2 * r}a${r},${r} 0 0 1 ${r},${r}v${h - r}z`; };
+  const M = (v) => (v >= 1000 ? `$${(v / 1000).toFixed(v % 1000 ? 2 : 0).replace(/\.?0+$/, "")}B` : v >= 1 ? `$${v % 1 ? v.toFixed(1) : v}M` : `$${Math.round(v * 1000)}K`);
+  const K = (v) => `$${v}K`;
 
-  /* tooltip */
   const tip = document.createElement("div"); tip.className = "ctip"; tip.setAttribute("role", "status"); document.body.appendChild(tip);
-  const showTip = (e, html) => { tip.innerHTML = html; tip.classList.add("on"); const x = Math.min(innerWidth - tip.offsetWidth - 12, e.clientX + 14); tip.style.transform = `translate(${x}px,${e.clientY - tip.offsetHeight - 14}px)`; };
-  const hideTip = () => tip.classList.remove("on");
-
-  const tableToggle = (wrap, rows, head) => {
-    const btn = $(".ctoggle", wrap); const tbl = $(".ctable", wrap);
-    tbl.innerHTML = `<table><thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
-    btn && btn.addEventListener("click", () => { const on = wrap.classList.toggle("show-table"); btn.textContent = on ? "Show chart" : "Show table"; btn.setAttribute("aria-pressed", String(on)); });
+  const show = (e, html) => { tip.innerHTML = html; tip.classList.add("on"); const x = Math.min(innerWidth - tip.offsetWidth - 12, e.clientX + 14); tip.style.transform = `translate(${x}px,${Math.max(8, e.clientY - tip.offsetHeight - 14)}px)`; };
+  const hide = () => tip.classList.remove("on");
+  const hover = (node, html, mark) => { node.addEventListener("pointermove", (e) => { mark && mark.setAttribute("opacity", ".8"); show(e, html); }); node.addEventListener("pointerleave", () => { mark && mark.removeAttribute("opacity"); hide(); }); };
+  const table = (wrap, head, rows) => {
+    const btn = $(".ctoggle", wrap); const t = $(".ctable", wrap); if (!t) return;
+    t.innerHTML = `<table><thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    if (btn && !btn.dataset.bound) { btn.dataset.bound = 1; btn.addEventListener("click", () => { const on = wrap.classList.toggle("show-table"); btn.textContent = on ? "Show chart" : "Show table"; btn.setAttribute("aria-pressed", String(on)); }); }
   };
+  const mount = (wrap, H) => { const box = $(".cbody", wrap); const W = Math.max(320, box.clientWidth || 700); const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, role: "img", "aria-label": wrap.dataset.title || "" }); box.innerHTML = ""; box.appendChild(svg); return { svg, W }; };
+  const redraw = (fn) => { fn(); let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(fn, 150); }); };
 
-  /* ---- chart A: horizontal bars, one highlighted ---- */
-  function hbar(wrap, data, highlight) {
-    const svgBox = $(".cbody", wrap); const W = svgBox.clientWidth || 700; const rowH = 34, padL = Math.min(230, W * 0.38), padR = 64, top = 6;
-    const H = top + data.length * rowH + 24; const step = 25; const max = Math.ceil(Math.max(...data.map((d) => d.v)) / step) * step;
-    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, role: "img", "aria-label": wrap.dataset.title || "" }, null);
-    const x = (v) => padL + (v / max) * (W - padL - padR);
-    for (let v = 0; v <= max; v += step) { const gx = x(v); el("line", { x1: gx, x2: gx, y1: top, y2: H - 22, stroke: GRID }, svg); const tx = el("text", { x: gx, y: H - 6, "text-anchor": "middle", class: "ctick" }, svg); tx.textContent = v ? "$" + v + "M" : "$0"; }
-    data.forEach((d, i) => {
-      const y = top + i * rowH + 7; const isH = d.label === highlight; const bw = Math.max(2, x(d.v) - padL);
-      const lbl = el("text", { x: padL - 12, y: y + 14, "text-anchor": "end", class: isH ? "clabel strong" : "clabel" }, svg); lbl.textContent = d.label.length > 30 ? d.label.slice(0, 29) + "…" : d.label;
-      const p = el("path", { d: rounded(padL, y, bw, 20, 4, "right"), fill: isH ? GOLD : CONTEXT, class: "cmark" }, svg);
-      const val = el("text", { x: padL + bw + 8, y: y + 14, class: isH ? "cvalue strong" : "cvalue" }, svg); val.textContent = fmtM(d.v);
-      const hit = el("rect", { x: 0, y: y - 6, width: W, height: rowH, fill: "transparent" }, svg);
-      hit.addEventListener("pointermove", (e) => { p.setAttribute("opacity", ".85"); showTip(e, `<b>${d.label}</b>${d.year ? ` (${d.year})` : ""}<br>Domestic gross ${fmtM(d.v)}${d.rank ? `<br>Rank #${d.rank}` : ""}`); });
-      hit.addEventListener("pointerleave", () => { p.removeAttribute("opacity"); hideTip(); });
-    });
-    svgBox.innerHTML = ""; svgBox.appendChild(svg);
-  }
+  /* narrow screens: labels sit above the marks, alternate tick labels hidden */
+  const narrow = (wrap) => ($(".cbody", wrap).clientWidth || 700) < 560;
+  const tickLbl = (nar, i) => !nar || i % 2 === 0;
 
-  /* ---- chart B: columns per year with breakdown ---- */
-  function columns(wrap, rows, keys, notes) {
-    const svgBox = $(".cbody", wrap); const W = svgBox.clientWidth || 700; const H = 300, padL = 34, padB = 28, top = 24;
-    const max = Math.ceil(Math.max(...rows.map((r) => r.total)) / 5) * 5;
-    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, role: "img", "aria-label": wrap.dataset.title || "" });
-    const band = (W - padL) / rows.length; const bw = Math.min(16, band - 4);
-    const y = (v) => top + (1 - v / max) * (H - top - padB);
-    for (let t = 0; t <= max; t += max / 4) { el("line", { x1: padL, x2: W, y1: y(t), y2: y(t), stroke: GRID }, svg); const tx = el("text", { x: padL - 8, y: y(t) + 4, "text-anchor": "end", class: "ctick" }, svg); tx.textContent = Math.round(t); }
+  /* horizontal bars with highlight */
+  function hbars(wrap, rows, { fmt = M, highlight, step }) {
+    const nar = narrow(wrap); const lab = nar ? 16 : 0; const rowH = 32 + lab, top = 6, padR = 70; const H = top + rows.length * rowH + 26;
+    const { svg, W } = mount(wrap, H); const padL = nar ? 2 : Math.min(230, W * 0.36);
+    const max = Math.ceil(Math.max(...rows.map((r) => r.v)) / step) * step; const x = (v) => padL + (v / max) * (W - padL - padR);
+    for (let v = 0, i = 0; v <= max; v += step, i++) { el("line", { x1: x(v), x2: x(v), y1: top, y2: H - 22, stroke: GRID }, svg); tickLbl(nar, i) && txt(svg, x(v), H - 6, v ? fmt(v) : "$0", "ctick", "middle"); }
     rows.forEach((r, i) => {
-      const cx = padL + band * i + band / 2; const h = Math.max(0, H - padB - y(r.total));
-      const isPeak = notes[r.year];
-      const p = h > 0 ? el("path", { d: rounded(cx - bw / 2, y(r.total), bw, h, 4, "up"), fill: isPeak ? GOLD : "#8A6A3A", class: "cmark" }, svg) : null;
-      if (r.year % 3 === 0 || isPeak) { const tx = el("text", { x: cx, y: H - 8, "text-anchor": "middle", class: "ctick" }, svg); tx.textContent = `'${String(r.year).slice(2)}`; }
-      if (isPeak) { const t = el("text", { x: cx, y: y(r.total) - 8, "text-anchor": "middle", class: "cvalue strong" }, svg); t.textContent = notes[r.year]; }
-      const hit = el("rect", { x: cx - band / 2, y: top, width: band, height: H - top - padB, fill: "transparent" }, svg);
-      hit.addEventListener("pointermove", (e) => { p && p.setAttribute("opacity", ".8"); showTip(e, `<b>${r.year}</b> · ${r.total} documented<br>${keys.map((k) => `${k}: ${r[k]}`).join("<br>")}`); });
-      hit.addEventListener("pointerleave", () => { p && p.removeAttribute("opacity"); hideTip(); });
+      const y = top + i * rowH + 6 + lab; const hl = r.label === highlight || r.hl; const w = Math.max(2, x(r.v) - padL);
+      if (nar) txt(svg, padL, y - 5, r.label, hl ? "clabel strong" : "clabel");
+      else txt(svg, padL - 12, y + 14, r.label.length > 30 ? r.label.slice(0, 29) + "…" : r.label, hl ? "clabel strong" : "clabel", "end");
+      const p = el("path", { d: barR(padL, y, w, 20, 4), fill: hl ? GOLD : CONTEXT, class: "cmark" }, svg);
+      txt(svg, padL + w + 8, y + 14, fmt(r.v), hl ? "cvalue strong" : "cvalue");
+      hover(el("rect", { x: 0, y: y - 6 - lab, width: W, height: rowH, fill: "transparent" }, svg), r.tip || `<b>${r.label}</b><br>${fmt(r.v)}`, p);
     });
-    svgBox.innerHTML = ""; svgBox.appendChild(svg);
   }
 
-  /* ---- chart C: range bars (low–high) ---- */
-  function ranges(wrap, data) {
-    const svgBox = $(".cbody", wrap); const W = svgBox.clientWidth || 700; const rowH = 40, padL = Math.min(250, W * 0.42), padR = 80, top = 6;
-    const H = top + data.length * rowH + 24; const max = 500;
-    const x = (v) => padL + (Math.min(v, max) / max) * (W - padL - padR);
-    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, role: "img", "aria-label": wrap.dataset.title || "" });
-    [0, 100, 200, 300, 400, 500].forEach((t) => { el("line", { x1: x(t), x2: x(t), y1: top, y2: H - 22, stroke: GRID }, svg); const tx = el("text", { x: x(t), y: H - 6, "text-anchor": "middle", class: "ctick" }, svg); tx.textContent = t ? `$${t}K` : "$0"; });
-    data.forEach((d, i) => {
-      const yy = top + i * rowH + 10; const x0 = x(d.lo), x1 = x(d.hi);
-      const lbl = el("text", { x: padL - 12, y: yy + 5, "text-anchor": "end", class: "clabel" }, svg); lbl.textContent = d.label;
-      const sub = el("text", { x: padL - 12, y: yy + 19, "text-anchor": "end", class: "ctick" }, svg); sub.textContent = d.unit;
-      el("line", { x1: x0, x2: x1, y1: yy + 2, y2: yy + 2, stroke: GOLD, "stroke-width": 6, "stroke-linecap": "round", class: "cmark" }, svg);
-      el("circle", { cx: x0, cy: yy + 2, r: 5, fill: GOLD, stroke: "#101216", "stroke-width": 2 }, svg);
-      el("circle", { cx: x1, cy: yy + 2, r: 5, fill: GOLD, stroke: "#101216", "stroke-width": 2 }, svg);
-      const v = el("text", { x: x1 + 12, y: yy + 6, class: "cvalue" }, svg); v.textContent = `${fmtK(d.lo)}–${fmtK(d.hi)}${d.open ? "+" : ""}`;
-      const hit = el("rect", { x: 0, y: yy - 12, width: W, height: rowH, fill: "transparent" }, svg);
-      hit.addEventListener("pointermove", (e) => showTip(e, `<b>${d.label}</b><br>${fmtK(d.lo)} – ${fmtK(d.hi)}${d.open ? "+" : ""} ${d.unit}<br><span style="opacity:.7">Estimate · subject to Coach's approval</span>`));
-      hit.addEventListener("pointerleave", hideTip);
+  /* range bars (lo–hi), optional log scale */
+  function ranges(wrap, rows, { fmt = M, max, min = 0, log = false, ticks, highlight }) {
+    const nar = narrow(wrap); const hasSub = rows.some((r) => r.sub);
+    const lab = nar ? (hasSub ? 32 : 18) : 0; const rowH = (hasSub && !nar ? 44 : 36) + lab, top = 8, padR = nar ? 92 : 96; const H = top + rows.length * rowH + 26;
+    const { svg, W } = mount(wrap, H); const padL = nar ? 8 : Math.min(260, W * 0.4);
+    const x = log ? (v) => padL + (Math.log10(Math.max(v, min)) - Math.log10(min)) / (Math.log10(max) - Math.log10(min)) * (W - padL - padR)
+                  : (v) => padL + (Math.min(v, max) / max) * (W - padL - padR);
+    ticks.forEach((t, i) => { el("line", { x1: x(t), x2: x(t), y1: top, y2: H - 22, stroke: GRID }, svg); tickLbl(nar, i) && txt(svg, x(t), H - 6, t ? fmt(t) : "$0", "ctick", "middle"); });
+    rows.forEach((r, i) => {
+      const y = top + i * rowH + 12 + lab; const hl = r.hl || r.label === highlight; const c = hl ? GOLD : "#8A6A3A";
+      if (nar) { txt(svg, 0, y - lab + 2, r.label, hl ? "clabel strong" : "clabel"); r.sub && txt(svg, 0, y - lab + 17, r.sub, "ctick"); }
+      else { txt(svg, padL - 12, y + 4, r.label, hl ? "clabel strong" : "clabel", "end"); r.sub && txt(svg, padL - 12, y + 19, r.sub, "ctick", "end"); }
+      const x0 = x(r.lo), x1 = x(r.hi);
+      if (x1 - x0 > 1) el("line", { x1: x0, x2: x1, y1: y, y2: y, stroke: c, "stroke-width": 6, "stroke-linecap": "round" }, svg);
+      el("circle", { cx: x0, cy: y, r: 5, fill: c, stroke: "#14161b", "stroke-width": 2 }, svg); if (x1 - x0 > 1) el("circle", { cx: x1, cy: y, r: 5, fill: c, stroke: "#14161b", "stroke-width": 2 }, svg);
+      txt(svg, x1 + 12, y + 4, r.lo === r.hi ? fmt(r.lo) : `${fmt(r.lo)}–${fmt(r.hi)}`, hl ? "cvalue strong" : "cvalue");
+      hover(el("rect", { x: 0, y: y - rowH / 2, width: W, height: rowH, fill: "transparent" }, svg), r.tip || `<b>${r.label}</b><br>${r.lo === r.hi ? fmt(r.lo) : fmt(r.lo) + " – " + fmt(r.hi)}`);
     });
-    svgBox.innerHTML = ""; svgBox.appendChild(svg);
   }
 
-  const REV = [
-    { label: "Mainstage keynote", unit: "per event + travel", lo: 15, hi: 30 },
-    { label: "Half-day leadership session", unit: "per event", lo: 25, hi: 40 },
-    { label: "Virtual keynote", unit: "per event", lo: 7.5, hi: 12 },
-    { label: "School visit", unit: "per visit, sponsor-funded", lo: 5, hi: 10 },
-    { label: "The Contract program", unit: "per organization", lo: 40, hi: 75 },
-    { label: "The Contract, multi-site", unit: "per year", lo: 150, hi: 300 },
-    { label: "District curriculum license", unit: "per district per year", lo: 15, hi: 60 },
-    { label: "Brand ambassador", unit: "per category per year", lo: 100, hi: 500 },
-  ];
+  /* paired then/now bars */
+  function pairs(wrap, rows) {
+    const nar = narrow(wrap); const lab = nar ? 18 : 0; const rowH = 54 + lab, top = 6, padR = nar ? 110 : 70; const H = top + rows.length * rowH + 26;
+    const { svg, W } = mount(wrap, H); const padL = nar ? 2 : Math.min(210, W * 0.34); const max = Math.ceil(Math.max(...rows.map((r) => r.today)) / 25) * 25;
+    const x = (v) => padL + (v / max) * (W - padL - padR);
+    for (let v = 0, i = 0; v <= max; v += 25, i++) { el("line", { x1: x(v), x2: x(v), y1: top, y2: H - 22, stroke: GRID }, svg); tickLbl(nar, i) && txt(svg, x(v), H - 6, v ? M(v) : "$0", "ctick", "middle"); }
+    rows.forEach((r, i) => {
+      const y = top + i * rowH + 4 + lab; nar ? txt(svg, padL, y - 4, r.label, "clabel strong") : txt(svg, padL - 12, y + 24, r.label, "clabel", "end");
+      const a = el("path", { d: barR(padL, y + 2, x(r.nominal) - padL, 16, 4), fill: CONTEXT }, svg); txt(svg, x(r.nominal) + 8, y + 15, `${M(r.nominal)} in 2005`, "cvalue");
+      const b = el("path", { d: barR(padL, y + 22, x(r.today) - padL, 16, 4), fill: GOLD }, svg); txt(svg, x(r.today) + 8, y + 35, `${M(r.today)} today`, "cvalue strong");
+      hover(el("rect", { x: 0, y, width: W, height: rowH - 6, fill: "transparent" }, svg), `<b>${r.label}</b><br>2005: ${M(r.nominal)}<br>Today's dollars: ${M(r.today)}`);
+    });
+  }
 
-  fetch(base + "assets/data/investor.json").then((r) => r.json()).then((d) => {
-    const R = d.reach;
-    $$("[data-metric]").forEach((n) => { const v = R[n.dataset.metric]; if (v == null) return; n.dataset.count = n.dataset.metric === "video_views" ? (v / 1e6).toFixed(1) : v; });
-    // retrigger counters (site.js observes data-count on load; set text for no-JS)
-    $$("[data-metric]").forEach((n) => { if (!n.textContent.trim() || n.textContent === "0") n.textContent = n.dataset.count; });
+  /* dot plot: years since original */
+  function gaps(wrap, rows) {
+    const nar = narrow(wrap); const lab = nar ? 16 : 0; const rowH = 30 + lab, top = 8, padR = 40; const H = top + rows.length * rowH + 28;
+    const { svg, W } = mount(wrap, H); const padL = nar ? 6 : Math.min(220, W * 0.38); const min = 15, max = 40;
+    const x = (v) => padL + (v - min) / (max - min) * (W - padL - padR);
+    el("rect", { x: x(29), y: top - 4, width: x(39) - x(29), height: H - top - 26, fill: "rgba(184,130,46,.08)" }, svg);
+    for (let v = 15, i = 0; v <= 40; v += 5, i++) { el("line", { x1: x(v), x2: x(v), y1: top, y2: H - 22, stroke: GRID }, svg); tickLbl(nar, i) && txt(svg, x(v), H - 6, `${v} yrs`, "ctick", "middle"); }
+    rows.forEach((r, i) => {
+      const y = top + i * rowH + 12 + lab; nar ? txt(svg, 0, y - 10, r.label, r.hl ? "clabel strong" : "clabel") : txt(svg, padL - 12, y + 4, r.label, r.hl ? "clabel strong" : "clabel", "end");
+      el("line", { x1: padL, x2: x(r.gap), y1: y, y2: y, stroke: r.hl ? GOLD : CONTEXT, "stroke-width": 2 }, svg);
+      el("circle", { cx: x(r.gap), cy: y, r: 6, fill: r.hl ? GOLD : "#8A8E97", stroke: "#14161b", "stroke-width": 2 }, svg);
+      txt(svg, x(r.gap) + 12, y + 4, `${r.gap}`, r.hl ? "cvalue strong" : "cvalue");
+      hover(el("rect", { x: 0, y: y - rowH / 2, width: W, height: rowH, fill: "transparent" }, svg), `<b>${r.label}</b><br>${r.gap} years after the original`);
+    });
+  }
 
-    /* film chart */
-    const fw = $("#chart-film");
-    const list = (d.film && d.film.basketball_domestic) || [];
-    if (fw && list.length) {
-      const rows = list.map((x) => ({ label: x.title, v: x.domestic_m, year: x.year, rank: x.rank })).sort((a, b) => b.v - a.v).slice(0, 12);
-      const draw = () => hbar(fw, rows, "Coach Carter"); draw(); addEventListener("resize", draw);
-      tableToggle(fw, rows.map((r, i) => [i + 1, r.label, r.year || "", fmtM(r.v)]), ["#", "Film", "Year", "Domestic gross"]);
-      const src = d.film.basketball_source; if (src) $(".csrc", fw).innerHTML = `Source: <a class="link-u" href="${src}" target="_blank" rel="noopener">${new URL(src).hostname}</a>`;
-    } else if (fw) { fw.closest("section") && fw.closest(".chart-card").classList.add("internal"); }
+  /* columns per year */
+  function columns(wrap, rows, keys, notes) {
+    const H = 300, padL = 34, padB = 28, top = 24; const { svg, W } = mount(wrap, H);
+    const max = Math.ceil(Math.max(...rows.map((r) => r.total)) / 5) * 5; const band = (W - padL) / rows.length; const bw = Math.min(16, band - 4);
+    const y = (v) => top + (1 - v / max) * (H - top - padB);
+    for (let t = 0; t <= max; t += max / 4) { el("line", { x1: padL, x2: W, y1: y(t), y2: y(t), stroke: GRID }, svg); txt(svg, padL - 8, y(t) + 4, Math.round(t), "ctick", "end"); }
+    rows.forEach((r, i) => {
+      const cx = padL + band * i + band / 2; const h = Math.max(0, H - padB - y(r.total)); const peak = notes[r.year];
+      const p = h ? el("path", { d: colR(cx - bw / 2, y(r.total), bw, h, 4), fill: peak ? GOLD : "#8A6A3A" }, svg) : null;
+      if (r.year % 3 === 0 || peak) txt(svg, cx, H - 8, `'${String(r.year).slice(2)}`, "ctick", "middle");
+      if (peak) txt(svg, cx, y(r.total) - 8, peak, "cvalue strong", "middle");
+      hover(el("rect", { x: cx - band / 2, y: top, width: band, height: H - top - padB, fill: "transparent" }, svg), `<b>${r.year}</b> · ${r.total} documented<br>${keys.map((k) => `${k}: ${r[k]}`).join("<br>")}`, p);
+    });
+  }
 
-    /* film facts */
-    const ff = d.film && d.film.facts;
-    if (ff) $$("[data-film]").forEach((n) => { if (ff[n.dataset.film] != null) n.textContent = ff[n.dataset.film]; });
-
-    /* appearances by year */
-    const aw = $("#chart-years");
-    if (aw) {
-      const keys = ["TV & radio", "Press features", "Keynotes & talks", "Podcasts"];
-      const notes = { 1999: "The lockout", 2005: "The film", 2023: "SlamBall return" };
-      const draw = () => columns(aw, d.by_year, keys, notes); draw(); addEventListener("resize", draw);
-      tableToggle(aw, d.by_year.map((r) => [r.year, r.total, ...keys.map((k) => r[k])]), ["Year", "Total", ...keys]);
+  Promise.all([fetch(base + "assets/data/memo.json").then((r) => r.json()), fetch(base + "assets/data/investor.json").then((r) => r.json())]).then(([m, d]) => {
+    let w;
+    if ((w = $("#chart-money"))) { redraw(() => pairs(w, m.film_money)); table(w, ["Measure", "2005", "Today's dollars"], m.film_money.map((r) => [r.label, M(r.nominal), M(r.today)])); }
+    if ((w = $("#chart-film"))) {
+      let mode = "today";
+      const draw = () => { const rows = m.basketball.map((b) => ({ label: b.title, v: b[mode], tip: `<b>${b.title}</b> (${b.year})<br>${M(b.nominal)} at release · ${M(b.today)} in today's dollars` })).sort((a, b) => b.v - a.v).slice(0, 12); hbars(w, rows, { highlight: "Coach Carter", step: mode === "today" ? 50 : 25 }); const rank = rows.findIndex((r) => r.label === "Coach Carter") + 1; $("[data-film-rank]").textContent = `#${rank}`; $("[data-film-mode]").textContent = mode === "today" ? "in today's dollars" : "at release (not adjusted)"; };
+      $$(".seg button", w).forEach((b) => b.addEventListener("click", () => { mode = b.dataset.mode; $$(".seg button", w).forEach((x) => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", String(x === b)); }); draw(); }));
+      redraw(draw);
+      table(w, ["Film", "Year", "At release", "Today's dollars"], [...m.basketball].sort((a, b) => b.today - a.today).slice(0, 12).map((b) => [b.title, b.year, M(b.nominal), M(b.today)]));
     }
-
-    /* revenue */
-    const rw = $("#chart-rev");
-    if (rw) { const draw = () => ranges(rw, REV); draw(); addEventListener("resize", draw); tableToggle(rw, REV.map((r) => [r.label, r.unit, `${fmtK(r.lo)}–${fmtK(r.hi)}`]), ["Offer", "Unit", "Estimated range"]); }
-
-    /* testimonials */
+    if ((w = $("#chart-fees"))) { const rows = m.fee_comps.map((r) => ({ ...r, sub: r.film, tip: `<b>${r.label}</b> · ${r.film}<br>Keynote fee ${K(r.lo)}–${K(r.hi)}` })); redraw(() => ranges(w, rows, { fmt: K, max: 220, ticks: [0, 50, 100, 150, 200] })); table(w, ["Speaker", "Story", "Keynote fee"], m.fee_comps.map((r) => [r.label, r.film, `${K(r.lo)}–${K(r.hi)}`])); }
+    if ((w = $("#chart-rev"))) { redraw(() => ranges(w, m.revenue_lines, { fmt: M, max: 5.5, ticks: [0, 1, 2, 3, 4, 5] })); table(w, ["Revenue line", "Year-3 range (est.)"], m.revenue_lines.map((r) => [r.label, `${M(r.lo)}–${M(r.hi)}`])); }
+    if ((w = $("#chart-ladder"))) { const rows = m.ladder.map((r, i) => ({ ...r, sub: `Revenue ${r.rev} · odds ${r.odds}`, hl: i === 0 || i === 2, tip: `<b>${r.label}</b><br>${r.what}<br>Revenue ${r.rev}/yr · value ${r.lo === r.hi ? M(r.lo) : M(r.lo) + "–" + M(r.hi)}<br>Odds: ${r.odds}` })); redraw(() => ranges(w, rows, { fmt: M, log: true, min: 0.8, max: 1400, ticks: [1, 10, 100, 1000] })); table(w, ["Scenario", "What has to be true", "Revenue/yr", "Company value", "Odds"], m.ladder.map((r) => [r.label, r.what, r.rev, r.lo === r.hi ? M(r.lo) : `${M(r.lo)}–${M(r.hi)}`, r.odds])); }
+    if ((w = $("#chart-stack"))) { const rows = [...m.stack.map((r) => ({ ...r, sub: r.basis.split(" (")[0], tip: `<b>${r.label}</b><br>${M(r.lo)}–${M(r.hi)}<br>${r.basis}` })), { label: "Total, year 7–10", lo: 605, hi: 1450, hl: true, sub: "If the full stack is built and funded" }]; redraw(() => ranges(w, rows, { fmt: M, max: 1500, ticks: [0, 250, 500, 750, 1000, 1250, 1500] })); table(w, ["Asset", "Value range (est.)", "Basis"], m.stack.map((r) => [r.label, `${M(r.lo)}–${M(r.hi)}`, r.basis]).concat([["Total", "$605M–$1.45B", "Sum of ranges"]])); }
+    if ((w = $("#chart-revival"))) { const rows = [...m.revivals].sort((a, b) => b.gap - a.gap); redraw(() => gaps(w, rows)); table(w, ["Title", "Years after original"], rows.map((r) => [r.label, r.gap])); }
+    if ((w = $("#chart-cost"))) { const rows = m.cost_per_hour.map((r, i) => ({ label: r.label, v: r.v, hl: i === 1, tip: `<b>${r.label}</b><br>~$${r.range || r.v}K per finished hour` })); redraw(() => hbars(w, rows, { fmt: K, step: 50 })); table(w, ["Production mode", "Cost per finished hour"], m.cost_per_hour.map((r) => [r.label, `$${r.range || r.v}K`])); }
+    if ((w = $("#chart-years"))) { const keys = ["TV & radio", "Press features", "Keynotes & talks", "Podcasts"]; redraw(() => columns(w, d.by_year, keys, { 1999: "The lockout", 2005: "The film", 2023: "SlamBall return" })); table(w, ["Year", "Total", ...keys], d.by_year.map((r) => [r.year, r.total, ...keys.map((k) => r[k])])); }
+    const cw = $("#comps");
+    if (cw && m.comps) cw.innerHTML = m.comps.map((c) => `<a class="comp" href="${c.url}" target="_blank" rel="noopener"><b>${c.name}</b><span>${c.value}</span></a>`).join("");
     const tw = $("#testimonials");
-    if (tw && d.testimonials.length) {
-      tw.innerHTML = d.testimonials.map((t) => `<figure class="tq"><blockquote>“${t.quote}”</blockquote><figcaption><b>${t.person || t.org}</b>${t.person ? `<span>${[t.title, t.org].filter(Boolean).join(", ")}</span>` : ""}</figcaption></figure>`).join("");
-    }
+    if (tw && d.testimonials.length) tw.innerHTML = d.testimonials.map((t) => `<figure class="tq"><blockquote>“${t.quote}”</blockquote><figcaption><b>${t.person || t.org}</b>${t.person ? `<span>${[t.title, t.org].filter(Boolean).join(", ")}</span>` : ""}</figcaption></figure>`).join("");
   });
 })();
