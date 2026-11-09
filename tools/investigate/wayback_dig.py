@@ -17,6 +17,13 @@ Usage:
 """
 import argparse, hashlib, html, json, os, re, sys, time, urllib.parse, urllib.request
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
+
+WORKERS = 2
+import threading
+_RATE_LOCK = threading.Lock()
+_LAST = [0.0]
+MIN_GAP = 1.5  # seconds between requests to web.archive.org (IA blocks IPs that go faster)
 
 ROOT = "/Users/ralphd/Desktop/COACH_CARTER_PLATFORM/tracking/investigation"
 CDX_DIR = os.path.join(ROOT, "wayback_cdx")
@@ -52,6 +59,11 @@ KEYWORDS = ["Best Damn Sports Show", "Oprah", "Prince", "Today Show", "Good Morn
 def fetch(url, tries=4, timeout=90, binary=True):
     last = None
     for i in range(tries):
+        with _RATE_LOCK:
+            wait = _LAST[0] + MIN_GAP - time.time()
+            if wait > 0:
+                time.sleep(wait)
+            _LAST[0] = time.time()
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -62,9 +74,9 @@ def fetch(url, tries=4, timeout=90, binary=True):
             if e.code in (403, 404, 410):
                 break
             time.sleep(3 * (i + 1))
-        except Exception as e:  # timeouts, IA "temporarily offline" etc.
+        except Exception as e:  # timeouts, refused (IA rate-limit block), "temporarily offline"
             last = e
-            time.sleep(4 * (i + 1))
+            time.sleep(30 * (i + 1) if "refused" in str(e).lower() else 4 * (i + 1))
     raise RuntimeError(f"fetch failed {url}: {last}")
 
 
@@ -167,41 +179,45 @@ def stage_assets(domains, cap=400, min_bytes=8000):
         ddir = os.path.join(ASSET_DIR, d)
         os.makedirs(ddir, exist_ok=True)
         print(f"[assets] {d}: {len(cand)} candidates")
-        for k, ln, c in cand:
-            if total >= cap:
-                break
+        def one(item):
+            k, ln, c = item
             if k == "video" and ln > 150_000_000:
-                manifest.append({"domain": d, "kind": k, "skipped": "too large", **c})
-                continue
-            fn = safe_name(c)
-            fp = os.path.join(ddir, fn)
+                return {"domain": d, "kind": k, "skipped": "too large", **c}
+            fp = os.path.join(ddir, safe_name(c))
             rec = {"domain": d, "kind": k, "file": os.path.relpath(fp, ROOT), **c,
                    "wayback": f"https://web.archive.org/web/{c['timestamp']}/{c['original']}"}
             if os.path.exists(fp) and os.path.getsize(fp) >= (min_bytes if k == "image" else 1):
-                rec["bytes"] = os.path.getsize(fp)
-                manifest.append(rec); total += 1
-                continue
-            url = f"https://web.archive.org/web/{c['timestamp']}id_/{c['original']}"
+                rec["bytes"] = os.path.getsize(fp); return rec
             try:
-                data, ctype = fetch(url, tries=3)
+                data, _ = fetch(f"https://web.archive.org/web/{c['timestamp']}id_/{c['original']}", tries=3)
             except Exception as e:
-                rec["error"] = str(e)[:200]
-                manifest.append(rec)
-                continue
+                rec["error"] = str(e)[:200]; return rec
             if data[:15].lower().startswith((b"<!doctype", b"<html")):
-                rec["error"] = "html instead of asset"
-                manifest.append(rec); continue
+                rec["error"] = "html instead of asset"; return rec
             if k == "image" and len(data) < min_bytes:
-                rec["skipped"] = f"tiny {len(data)}B"
-                manifest.append(rec); continue
+                rec["skipped"] = f"tiny {len(data)}B"; return rec
             open(fp, "wb").write(data)
-            rec["bytes"] = len(data)
-            manifest.append(rec)
-            total += 1
-            time.sleep(0.4)
+            rec["bytes"] = len(data); return rec
+        with ThreadPoolExecutor(WORKERS) as ex:
+            for rec in ex.map(one, cand[: max(0, cap - total) * 2 + 20]):
+                if rec.get("bytes"):
+                    if total >= cap:
+                        continue
+                    total += 1
+                    if total % 25 == 0:
+                        print(f"   .. {total}")
+                manifest.append(rec)
         print(f"[assets] running total {total}")
-    json.dump(manifest, open(os.path.join(ROOT, "wayback_assets_manifest.json"), "w"), indent=1)
+    merge_manifest("wayback_assets_manifest.json", manifest, domains)
     return manifest
+
+
+def merge_manifest(name, new, domains):
+    """Keep other domains' entries from earlier runs; replace entries for the domains just processed."""
+    fp = os.path.join(ROOT, name)
+    old = json.load(open(fp)) if os.path.exists(fp) else []
+    keep = [r for r in old if r.get("domain") not in set(domains)]
+    json.dump(keep + new, open(fp, "w"), indent=1)
 
 
 def html_to_text(h):
@@ -220,7 +236,7 @@ def html_to_text(h):
     return t
 
 
-def stage_pages(domains, per_domain=60):
+def stage_pages(domains, per_domain=400):
     os.makedirs(PAGE_DIR, exist_ok=True)
     saved = []
     for d in domains:
@@ -229,11 +245,17 @@ def stage_pages(domains, per_domain=60):
         def is_key(c):
             p = urllib.parse.urlparse(c["original"]).path
             return p in ("", "/", "/index.html", "/index.htm", "/index.php") or KEY_PAGE.search(p)
-        keys = [c for c in caps if is_key(c)]
+        junk = re.compile(r"(wp-login|wp-admin|/wp-content/|/feed|xmlrpc|cdn-cgi|et_core_page_resource|utm_|"
+                          r"PHPSESSID|replytocom|robots\.txt|article2pdf|\?m=\d|_login=|blank\.html|"
+                          r"\.(css|js|xml|txt|json|swf)(\?|$))", re.I)
+        caps = [c for c in caps if not junk.search(c["original"])]
+        # small personal sites: every page is Coach's own -> keep all, key pages first
+        keys = sorted(caps, key=lambda c: (0 if is_key(c) else 1, c["timestamp"]))
         # de-dupe by normalized path
         seen = set(); picked = []
         for c in keys:
-            p = urllib.parse.urlparse(c["original"]).path.lower().rstrip("/") or "/"
+            u = urllib.parse.urlparse(c["original"])
+            p = (u.path.lower().rstrip("/") or "/") + ("?" + u.query if u.query else "")
             if p in seen:
                 continue
             seen.add(p); picked.append(c)
@@ -250,8 +272,12 @@ def stage_pages(domains, per_domain=60):
             print(f"[pages] root versions {d}: {e}")
         todo = [("era", c) for c in roots] + [("key", c) for c in picked]
         print(f"[pages] {d}: {len(roots)} homepage eras + {len(picked)} key pages")
-        for kind, c in todo:
+        def one(item):
+            kind, c = item
             p = urllib.parse.urlparse(c["original"]).path.strip("/").replace("/", "__") or "home"
+            q = urllib.parse.urlparse(c["original"]).query
+            if q:
+                p += "_" + q
             fn = f"{d}__{c['timestamp'][:8]}__{re.sub(r'[^A-Za-z0-9._-]+', '_', p)[:70]}.txt"
             fp = os.path.join(PAGE_DIR, fn)
             src = f"https://web.archive.org/web/{c['timestamp']}/{c['original']}"
@@ -260,15 +286,19 @@ def stage_pages(domains, per_domain=60):
                     body, _ = fetch(f"https://web.archive.org/web/{c['timestamp']}id_/{c['original']}", binary=False, tries=3)
                 except Exception as e:
                     print(f"   x {c['original']}: {str(e)[:80]}")
-                    continue
+                    return None
                 txt = html_to_text(body)
                 if len(txt) < 40:
-                    continue
+                    return None
                 open(fp, "w").write(f"SOURCE: {src}\nTIMESTAMP: {c['timestamp']}\n\n{txt}\n")
-                time.sleep(0.4)
-            saved.append({"domain": d, "kind": kind, "file": os.path.relpath(fp, ROOT), "wayback": src,
-                          "timestamp": c["timestamp"], "original": c["original"]})
-    json.dump(saved, open(os.path.join(ROOT, "wayback_pages_manifest.json"), "w"), indent=1)
+            return {"domain": d, "kind": kind, "file": os.path.relpath(fp, ROOT), "wayback": src,
+                    "timestamp": c["timestamp"], "original": c["original"]}
+        with ThreadPoolExecutor(WORKERS) as ex:
+            for r in ex.map(one, todo):
+                if r:
+                    saved.append(r)
+        print(f"[pages] {d}: saved {sum(1 for r in saved if r['domain'] == d)}")
+    merge_manifest("wayback_pages_manifest.json", saved, domains)
     return saved
 
 

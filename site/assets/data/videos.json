@@ -1,179 +1,994 @@
 {
 "videos": [
 {
-"id": "VkpVPjp-_F8",
-"title": "Coach Ken Carter \u2014 Speaker",
-"dur": "6:30",
-"cat": "stage",
-"cat_label": "On stage"
-},
-{
 "id": "1GCIavx0HMM",
 "title": "They Call Me Coach",
 "dur": "6:30",
 "cat": "story",
-"cat_label": "His story"
-},
-{
-"id": "28kzO577IVw",
-"title": "Coach Ken Carter on Dr. Phil",
-"dur": "3:39",
-"cat": "tv",
-"cat_label": "On TV"
-},
-{
-"id": "l-JuG82IsIQ",
-"title": "Rickey Smiley and Coach Carter",
-"dur": "1:20",
-"cat": "tv",
-"cat_label": "On TV"
-},
-{
-"id": "TReXvx2yseU",
-"title": "Coach Carter Olympic Torch Relay",
-"dur": "3:58",
-"cat": "torch",
-"cat_label": "Olympic torch 2002"
-},
-{
-"id": "PVuW6aQl8YQ",
-"title": "Coach Carter Olympic Torch, 2002",
-"dur": "0:48",
-"cat": "torch",
-"cat_label": "Olympic torch 2002"
-},
-{
-"id": "0328uq7KafA",
-"title": "Full keynote \u00b7 Mississippi Economic Council PowerPlay 2015",
-"dur": "",
-"cat": "stage",
-"cat_label": "On stage"
-},
-{
-"id": "akqKkkhiBes",
-"title": "Coach Carter Inspires College Students in Georgia",
-"dur": "2:45",
-"cat": "stage",
-"cat_label": "On stage"
-},
-{
-"id": "cV0tGvjjTUc",
-"title": "Coach Carter Goes to ATL",
-"dur": "2:49",
-"cat": "stage",
-"cat_label": "On stage"
-},
-{
-"id": "ikKUrVzJ4KM",
-"title": "Awesome Speech, Coach",
-"dur": "1:24",
-"cat": "stage",
-"cat_label": "On stage"
-},
-{
-"id": "7r8WktxWV5M",
-"title": "Coach Carter Talks Hard Work",
-"dur": "1:09",
-"cat": "stage",
-"cat_label": "On stage"
+"cat_label": "His story",
+"owner": "own"
 },
 {
 "id": "3-57R3Oanfw",
 "title": "Coach Ken Carter Trailer",
 "dur": "3:39",
 "cat": "story",
-"cat_label": "His story"
+"cat_label": "His story",
+"owner": "own"
+},
+{
+"id": "VkpVPjp-_F8",
+"title": "Coach Ken Carter \u2014 Speaker",
+"dur": "6:30",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "0328uq7KafA",
+"title": "Full keynote \u00b7 Mississippi Economic Council PowerPlay 2015",
+"dur": "",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "akqKkkhiBes",
+"title": "Coach Carter Inspires College Students in Georgia",
+"dur": "2:45",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "cV0tGvjjTUc",
+"title": "Coach Carter Goes to ATL",
+"dur": "2:49",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "ikKUrVzJ4KM",
+"title": "Awesome Speech, Coach",
+"dur": "1:24",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "7r8WktxWV5M",
+"title": "Coach Carter Talks Hard Work",
+"dur": "1:09",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "own"
+},
+{
+"id": "3iRDc3WcPOc",
+"title": "Coach Carter on Creating Your Own Success | 2015 Ideas Series",
+"dur": "19:11",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Life is Beautiful Festival",
+"year": "2016"
+},
+{
+"id": "CNo95QjAbmE",
+"title": "Coach Ken Carter: Motivational Speaker",
+"dur": "8:25",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "Eagles Talent Speakers Bureau",
+"year": "2011"
+},
+{
+"id": "tlP6T9ZOP-8",
+"title": "Coach Ken Carter",
+"dur": "7:54",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "TAGspeakers",
+"year": "2011"
+},
+{
+"id": "pqMlrzAIWO0",
+"title": "Coach Carter",
+"dur": "35:56",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "MSEconomicCouncil",
+"year": "2015"
+},
+{
+"id": "IYOts4RDNwI",
+"title": "3000 EBR Teachers Hear Coach Carter",
+"dur": "56:30",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "news",
+"channel": "Louisiana Hometown",
+"year": "2017"
+},
+{
+"id": "BB2XDkU4rgw",
+"title": "2022 Be Great Gala with Keynote Speaker Coach Ken Carter",
+"dur": "115:58",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Boys & Girls Clubs of Lanier",
+"year": "2023"
+},
+{
+"id": "lfKdKwfvfRk",
+"title": "Coach Carter Inspires HCS High School Students",
+"dur": "3:27",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "university",
+"channel": "Horry County Schools",
+"year": "2026"
+},
+{
+"id": "HB--hJZeuw4",
+"title": "Coach Carter Quotes",
+"dur": "14:34",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "TAGspeakers",
+"year": "2011"
+},
+{
+"id": "vNtLdIkR4dY",
+"title": "The Coach Carter Experience",
+"dur": "8:46",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "university",
+"channel": "Ariel Lane",
+"year": "2012"
+},
+{
+"id": "wMnq-OfTM5g",
+"title": "Coach Ken Carter",
+"dur": "24:56",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "SampsonCunningham BDYM MediaTeamPage",
+"year": "2016"
+},
+{
+"id": "Bl2tvGFQYoM",
+"title": "Coach Ken Carter Speaker | PDA Speakers",
+"dur": "24:41",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "PDA Group",
+"year": "2017"
+},
+{
+"id": "RP6XynvF1uM",
+"title": "Coach Ken Carter Inspirational Basketball Story",
+"dur": "2:33",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "Eagles Talent Speakers Bureau",
+"year": "2018"
+},
+{
+"id": "i0uHztxfq7o",
+"title": "Coach Ken Carter in 30 Seconds!",
+"dur": "1:15",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "Eagles Talent Speakers Bureau",
+"year": "2018"
+},
+{
+"id": "7bMleQNcOXA",
+"title": "Keynote speaker, Coach Ken Carter, offers strategies for building successful teams",
+"dur": "1:08",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Petfood Forum Events",
+"year": "2022"
+},
+{
+"id": "sfXi-gXxP9k",
+"title": "COACH CARTER BILOXI PRESENTATION",
+"dur": "57:42",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Take Two Video Pro John Lestrade",
+"year": "2022"
+},
+{
+"id": "jXNRdRaSJio",
+"title": "The Real Coach Carter Visits Summerlin Library",
+"dur": "1:03",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Las Vegas-Clark County Library District",
+"year": "2026"
+},
+{
+"id": "V0ghNyXrEqE",
+"title": "COACH CARTER With JIM Greenleaf at AVBOT '11",
+"dur": "3:23",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Jim Greenleaf",
+"year": "2011"
+},
+{
+"id": "-eUlPQ88xxU",
+"title": "Coach Carter, Motivational Speaker",
+"dur": "6:29",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "bureau",
+"channel": "BrooksInternational",
+"year": "2012"
+},
+{
+"id": "j-0ndf17rQQ",
+"title": "Coach Carter SLP Interview",
+"dur": "0:57",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "HELPAWOL",
+"year": "2013"
+},
+{
+"id": "uIUXlwa5PB4",
+"title": "*Coach Ken Carter Visits Lee County School District",
+"dur": "6:14",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "university",
+"channel": "Lee County School District - Bishopville, SC",
+"year": "2017"
+},
+{
+"id": "D9XQxQtqT0M",
+"title": "Coach Carter shares inspiration in the SUB Ballroom",
+"dur": "1:34",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "university",
+"channel": "dailylobo",
+"year": "2017"
+},
+{
+"id": "_-sEGiYJ4pE",
+"title": "Coach Ken Carter inspires pet food professionals at Petfood Forum 2022",
+"dur": "1:37",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Petfood Forum Events",
+"year": "2022"
+},
+{
+"id": "LkA55JZbvaA",
+"title": "Join keynote speaker Coach Ken Carter at the 2023 Pot of Gold Luncheon!",
+"dur": "0:52",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "Brighter Days TX",
+"year": "2023"
+},
+{
+"id": "vhOg6ts2m8U",
+"title": "Coach Ken Carter at the Find Your Why Main Event",
+"dur": "1:29",
+"cat": "stage",
+"cat_label": "On stage",
+"owner": "nonprofit",
+"channel": "decisiontime",
+"year": "2007"
+},
+{
+"id": "28kzO577IVw",
+"title": "Coach Ken Carter on Dr. Phil",
+"dur": "3:39",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "own"
+},
+{
+"id": "l-JuG82IsIQ",
+"title": "Rickey Smiley and Coach Carter",
+"dur": "1:20",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "own"
+},
+{
+"id": "6elk4m5Hsmc",
+"title": "Ken Carter \"Coach Carter\" 2005 - Bobbie Wygant Archive",
+"dur": "22:32",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "The Bobbie Wygant Archive",
+"year": "2023"
+},
+{
+"id": "kpJ4V6VISuI",
+"title": "Coach Carter's pep talk",
+"dur": "2:18",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "Journal Star",
+"year": "2008"
+},
+{
+"id": "T5HMJVO36B4",
+"title": "Coach Ken Carter",
+"dur": "4:57",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "KMTV 3 News Now",
+"year": "2016"
+},
+{
+"id": "IeZhxa0GdTc",
+"title": "Coach Carter speaks to Southwest Florida basketball players",
+"dur": "1:02",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "Gulf Coast News",
+"year": "2019"
+},
+{
+"id": "B6tDSDCcjL4",
+"title": "Famed basketball coach Ken Carter speaks to Youngstown parents about student success",
+"dur": "2:05",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "WKBN27",
+"year": "2021"
+},
+{
+"id": "U03FYmRnw-4",
+"title": "Famed Coach Ken Carter makes stop in Ottumwa to talk to student athletes",
+"dur": "0:58",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "KTVOtv",
+"year": "2022"
+},
+{
+"id": "CQUnLvYzTEs",
+"title": "Coach Ken Carter, portrayed by Samuel L. Jackson in Coach Carter movie, joined GDA",
+"dur": "3:26",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "WBRC 6 News",
+"year": "2023"
+},
+{
+"id": "RxOKHlwuKlI",
+"title": "Coach Ken Carter Paid a Visit to Woodrow Wilson Highschool",
+"dur": "2:05",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "WOAY TV",
+"year": "2023"
+},
+{
+"id": "gbW-Xt2tCuo",
+"title": "Coach Carter Inspiring Students at Strough Junior High",
+"dur": "2:24",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "WKTV NEWSChannel2",
+"year": "2024"
+},
+{
+"id": "OTgiBz4Vpas",
+"title": "Coach Ken Carter talks with the Herald/Review following Best of Preps event June 7",
+"dur": "3:15",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "HeraldReviewMedia",
+"year": "2025"
+},
+{
+"id": "Ve2_mbXGf4g",
+"title": "Gender Identity Issues plus Coach Carter",
+"dur": "14:20",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "redctv",
+"year": "2012"
+},
+{
+"id": "CD-7SgLEqlc",
+"title": "Omaha Home for Boys",
+"dur": "4:25",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "KMTV 3 News Now",
+"year": "2016"
+},
+{
+"id": "BZxVjjvtHYI",
+"title": "Coach Carter brings game plan of success to IDOT conference",
+"dur": "0:44",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "Heart of Illinois ABC",
+"year": "2020"
+},
+{
+"id": "NN1Zn62SbBw",
+"title": "Coach Carter to Visit RFA",
+"dur": "2:47",
+"cat": "tv",
+"cat_label": "On TV & in the news",
+"owner": "news",
+"channel": "Eyewitness News Utica -- WUTR-WFXV",
+"year": "2024"
+},
+{
+"id": "TReXvx2yseU",
+"title": "Coach Carter Olympic Torch Relay",
+"dur": "3:58",
+"cat": "torch",
+"cat_label": "Olympic torch 2002",
+"owner": "own"
+},
+{
+"id": "PVuW6aQl8YQ",
+"title": "Coach Carter Olympic Torch, 2002",
+"dur": "0:48",
+"cat": "torch",
+"cat_label": "Olympic torch 2002",
+"owner": "own"
+},
+{
+"id": "5vZxM5whfn8",
+"title": "Inside OSU - Coach Ken Carter",
+"dur": "7:47",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "university",
+"channel": "Oklahoma State University",
+"year": "2009"
+},
+{
+"id": "1eOZwnP6aHc",
+"title": "Coach Carter Interview",
+"dur": "22:20",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "university",
+"channel": "Rome City School District",
+"year": "2024"
+},
+{
+"id": "u9RIVMpRkcw",
+"title": "The Real Coach Carter Talks About The Movie Based On His Life | Coach Carter Podcast: High",
+"dur": "2:48",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "TDF Network",
+"year": "2022"
+},
+{
+"id": "IYipVclAezA",
+"title": "Coach Carter on The Josh Tolley Show",
+"dur": "28:00",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "JoshTolley",
+"year": "2012"
+},
+{
+"id": "zG3KQX9KQM8",
+"title": "Vatisha King interviews Coach Ken Carter about his new book.",
+"dur": "3:10",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "Admin Main",
+"year": "2013"
+},
+{
+"id": "3nxUCQrD4RQ",
+"title": "The KC Show with Kim Chexnayder - Coach Carter Interview",
+"dur": "28:26",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "university",
+"channel": "KCPS-TV",
+"year": "2014"
+},
+{
+"id": "x5j6e23uZSY",
+"title": "One-on-One with Coach Carter! | NBL Canada",
+"dur": "5:03",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "league",
+"channel": "NBL Canada",
+"year": "2017"
+},
+{
+"id": "877pLgZq3-c",
+"title": "Build Your Billion Dollar Brand - Coach Carter | Beyond Big Influence",
+"dur": "62:55",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "Beyond Big Influence",
+"year": "2022"
+},
+{
+"id": "Jr1Ii6WwmqU",
+"title": "Coach Carter Podcast | Catching Up with K-State's Assistant Coach Rodney Perry",
+"dur": "37:07",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "TDF Network",
+"year": ""
+},
+{
+"id": "VcFdVtiw7Mk",
+"title": "Coach Carter's One on One | Coach Rodney Perry Talks K-State Basketball",
+"dur": "8:11",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "TDF Network",
+"year": ""
+},
+{
+"id": "tfQyn3LGflQ",
+"title": "Rodney Perry Talks K-State Basketball Year One Goals | Coach Carter's One on One: Highligh",
+"dur": "2:43",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "TDF Network",
+"year": ""
+},
+{
+"id": "DocdwmizViM",
+"title": "Teachers Need To Be Paid More! | Coach Carter Podcast: Highlight",
+"dur": "3:42",
+"cat": "interviews",
+"cat_label": "Interviews & podcasts",
+"owner": "podcast",
+"channel": "TDF Network",
+"year": "2022"
+},
+{
+"id": "g5hHp3r1bLQ",
+"title": "Amplifying Opportunities Recap | STEAM the Streets Community Event in Richmond, CA",
+"dur": "1:56",
+"cat": "richmond",
+"cat_label": "Richmond",
+"owner": "nonprofit",
+"channel": "STEAM the Streets",
+"year": "2025"
+},
+{
+"id": "_yHFz2y_Smw",
+"title": "Cactus Shadows HC Chris Dixon on being part of Coach Carter Richmond Basketball team",
+"dur": "1:51",
+"cat": "richmond",
+"cat_label": "Richmond",
+"owner": "news",
+"channel": "Sports360AZ",
+"year": "2026"
+},
+{
+"id": "a0gpD03Q0dU",
+"title": "SlamBall Series 1 Championship - Diablos vs Rumble",
+"dur": "19:28",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "i95eMrnm5rM",
+"title": "\ud83d\udea8 EPIC ENDING! \ud83d\udea8 SlamBall's Rumble win FIRST game of season over Ozone | Full Game Highlig",
+"dur": "8:08",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "ESPN",
+"year": "2023"
+},
+{
+"id": "LZDInYPw-Yo",
+"title": "The FIRST SlamBall game in a DECADE",
+"dur": "5:45",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": "2024"
+},
+{
+"id": "kWDLwQ9cjGw",
+"title": "SLAMBALL SEASON 1: STEAL VS RUMBLE",
+"dur": "18:45",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": "2024"
+},
+{
+"id": "K5_2rf83RUI",
+"title": "Slam Ball LEGENDS! Rumble Throughout the YEARS!",
+"dur": "2:59",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "JjkKInUhopM",
+"title": "SlamBall FULL GAME: Rumble vs. Mob (July 21st, 2023)",
+"dur": "32:39",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "tv2SFncMLlc",
+"title": "SlamBall Series 1 Playoffs - Rumble v Steal [FULL GAME]",
+"dur": "15:48",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "SJv56MnJkmI",
+"title": "SlamBall Series 1 - Rumble vs Mob [FULL GAME]",
+"dur": "17:49",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "XT6GfjmzRy8",
+"title": "SlamBall Series 1 - Bouncers vs Rumble [FULL GAME]",
+"dur": "18:50",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "2YA2rIuJ6CI",
+"title": "SlamBall Series 1 - Steal vs Rumble [FULL GAME]",
+"dur": "16:18",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "xKVF240gAN4",
+"title": "SlamBall Series 2: Rumble vs. Diablos (Full Game)",
+"dur": "38:49",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "2SFferzp-9w",
+"title": "SlamBall Classic | Rumble vs. Mob  Series 2 Full Game Action \u2604\ufe0f",
+"dur": "44:05",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "rMhc1Fp1k_Q",
+"title": "THE RUMBLE Through the Years \ud83e\uddac - SlamBall History",
+"dur": "",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "PxXdpLazyws",
+"title": "GAME OF THE YEAR? The Entire 4th Quarter of the Rumble's Walk-Off Winner",
+"dur": "8:16",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "league",
+"channel": "SlamBall",
+"year": ""
+},
+{
+"id": "CnJO9aOKgwY",
+"title": "Rumble 2023 SlamBall Preview - Bounce Off: A SlamBall Podcast",
+"dur": "54:40",
+"cat": "slamball",
+"cat_label": "SlamBall",
+"owner": "podcast",
+"channel": "Bounce Off: A SlamBall Podcast",
+"year": "2023"
 },
 {
 "id": "FhocgdnkLcA",
 "title": "Get Coached by The Real Coach Carter",
 "dur": "2:17",
-"cat": "programs",
-"cat_label": "Programs"
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "HmsVCsh0grk",
 "title": "Coach Carter Mentorship Program",
 "dur": "0:42",
-"cat": "programs",
-"cat_label": "Programs"
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "A9hq6KkabAk",
 "title": "Mastermind Group with Coach Carter",
 "dur": "1:02",
-"cat": "programs",
-"cat_label": "Programs"
-},
-{
-"id": "bfFMoVGNdgc",
-"title": "Yes Ma'am, No Sir",
-"dur": "2:59",
-"cat": "book",
-"cat_label": "The book"
-},
-{
-"id": "LUv5egNVc90",
-"title": "Yes Ma'am, No Sir \u2014 the book",
-"dur": "0:54",
-"cat": "book",
-"cat_label": "The book"
-},
-{
-"id": "iUWk4NWkcww",
-"title": "Coach Carter in Guatemala",
-"dur": "3:01",
-"cat": "world",
-"cat_label": "Around the world"
-},
-{
-"id": "pGShjPueprM",
-"title": "Coach Ken Carter in Guatemala",
-"dur": "3:02",
-"cat": "world",
-"cat_label": "Around the world"
-},
-{
-"id": "rOZ74clpAEA",
-"title": "Coach Carter's Turn-Up for Super Bowl 52",
-"dur": "2:30",
-"cat": "moments",
-"cat_label": "Moments"
-},
-{
-"id": "isjo1tHO2x8",
-"title": "Coach Carter Shooting Hoops at Baylor",
-"dur": "1:16",
-"cat": "moments",
-"cat_label": "Moments"
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "linNoPt8YjE",
 "title": "Coach Carter in the Impact Academy Garden",
 "dur": "5:33",
 "cat": "academy",
-"cat_label": "Impact Academy"
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "gMRD2rtJdu0",
 "title": "Coach Carter Impact Academy Garden",
 "dur": "4:33",
 "cat": "academy",
-"cat_label": "Impact Academy"
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "-TOsfWoBzKI",
 "title": "Coach Carter Impact Academy Garden 2",
 "dur": "4:48",
 "cat": "academy",
-"cat_label": "Impact Academy"
+"cat_label": "Impact Academy & programs",
+"owner": "own"
 },
 {
 "id": "6wMbLOxoY6E",
 "title": "Packaging okra from the Impact Academy garden",
 "dur": "1:21",
 "cat": "academy",
-"cat_label": "Impact Academy"
+"cat_label": "Impact Academy & programs",
+"owner": "own"
+},
+{
+"id": "P7Fx-EaKC-Y",
+"title": "Free Coach Carter DVD",
+"dur": "10:04",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own_legacy",
+"channel": "thecoachkencarter",
+"year": "2009"
+},
+{
+"id": "sJiOkw5JZsY",
+"title": "Book Coach Carter",
+"dur": "3:38",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own_legacy",
+"channel": "Real Champions League",
+"year": "2018"
+},
+{
+"id": "9SmAlqdEbto",
+"title": "Coach Carter harvesting okra at the Coach Carter Impact Academy Garden",
+"dur": "0:39",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2015"
+},
+{
+"id": "ozxgLbwXu-g",
+"title": "Coach Carter's Success Uncomplicated",
+"dur": "1:35",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own_legacy",
+"channel": "Real Champions League",
+"year": "2017"
+},
+{
+"id": "zgN4Q23BnG8",
+"title": "Coach Carter Champions League Live promo",
+"dur": "0:55",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own_legacy",
+"channel": "Real Champions League",
+"year": "2017"
+},
+{
+"id": "2WjAgv_wFWo",
+"title": "Coach Carter's Impact Academy Garden",
+"dur": "0:25",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2015"
+},
+{
+"id": "at_nCD7fGGc",
+"title": "VID00743",
+"dur": "1:10",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2015"
+},
+{
+"id": "fM2GtuZYp64",
+"title": "James Brady the Eco Bro ReT2Grow",
+"dur": "3:40",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2015"
+},
+{
+"id": "cN0cXkyAp1E",
+"title": "Coach Carter's Garden (super sized zucchini)",
+"dur": "0:49",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2016"
+},
+{
+"id": "-CxCiYZhzeY",
+"title": "Coach Carter picking greens",
+"dur": "1:43",
+"cat": "academy",
+"cat_label": "Impact Academy & programs",
+"owner": "own",
+"channel": "Ken Carter (TheRealCoachCarter)",
+"year": "2016"
+},
+{
+"id": "bfFMoVGNdgc",
+"title": "Yes Ma'am, No Sir",
+"dur": "2:59",
+"cat": "book",
+"cat_label": "The book",
+"owner": "own"
+},
+{
+"id": "LUv5egNVc90",
+"title": "Yes Ma'am, No Sir \u2014 the book",
+"dur": "0:54",
+"cat": "book",
+"cat_label": "The book",
+"owner": "own"
+},
+{
+"id": "57vBgem-SFU",
+"title": "Yes Ma'am, No Sir: The 12 Essential Steps for\u2026 by Coach Carter \u00b7 Audiobook preview",
+"dur": "12:04",
+"cat": "book",
+"cat_label": "The book",
+"owner": "publisher",
+"channel": "Google Play Books",
+"year": "2024"
+},
+{
+"id": "G4RzgxeJi9o",
+"title": "Audiobook: \"Yes Ma'am No Sir\" by Coach Carter",
+"dur": "10:35",
+"cat": "book",
+"cat_label": "The book",
+"owner": "publisher",
+"channel": "Vince The Voice",
+"year": "2012"
+},
+{
+"id": "iUWk4NWkcww",
+"title": "Coach Carter in Guatemala",
+"dur": "3:01",
+"cat": "world",
+"cat_label": "Around the world",
+"owner": "own"
+},
+{
+"id": "pGShjPueprM",
+"title": "Coach Ken Carter in Guatemala",
+"dur": "3:02",
+"cat": "world",
+"cat_label": "Around the world",
+"owner": "own"
+},
+{
+"id": "rOZ74clpAEA",
+"title": "Coach Carter's Turn-Up for Super Bowl 52",
+"dur": "2:30",
+"cat": "moments",
+"cat_label": "Moments",
+"owner": "own"
+},
+{
+"id": "isjo1tHO2x8",
+"title": "Coach Carter Shooting Hoops at Baylor",
+"dur": "1:16",
+"cat": "moments",
+"cat_label": "Moments",
+"owner": "own"
 }
 ]
 }

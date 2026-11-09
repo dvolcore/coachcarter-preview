@@ -84,7 +84,7 @@
       videos.filter((v) => v.cat_label === cl).forEach((v) => {
         tr.insertAdjacentHTML("beforeend", `<button class="vcard" data-yt="${v.id}" data-cursor="Play" aria-label="Play: ${v.title.replace(/"/g, "&quot;")}">
           <span class="vthumb"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy"><i class="vplay"></i>${v.dur ? `<em>${v.dur}</em>` : ""}</span>
-          <b>${v.title}</b><span>Coach Ken Carter · YouTube</span></button>`);
+          <b>${v.title}</b><span>${v.owner === "own" ? "Coach Ken Carter" : (v.channel || "YouTube")}${v.year ? " · " + v.year : ""}</span></button>`);
       });
       vv.appendChild(row);
     });
