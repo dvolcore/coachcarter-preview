@@ -490,6 +490,13 @@
     }).catch(() => {});
   }
 
+  /* ---------------- YouTube click-to-load ---------------- */
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest(".cinema [data-yt]"); if (!b) return;
+    const box = b.closest(".cinema");
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1&rel=0" title="Coach Ken Carter video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>`;
+  });
+
   /* ---------------- countdowns ---------------- */
   $$("[data-countdown]").forEach((el) => {
     const t = new Date(el.dataset.countdown).getTime();

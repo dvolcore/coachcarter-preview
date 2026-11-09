@@ -15,12 +15,12 @@ OUT = ROOT / "site"
 NAV = [
     ("story", "story.html", "The Story"),
     ("record", "record.html", "The Record"),
+    ("archive", "archive.html", "Archive"),
     ("keynotes", "keynotes.html", "Keynotes"),
     ("partners", "partners.html", "Partners"),
     ("store", "store.html", "Store"),
     ("playbook", "playbook.html", "Playbook"),
     ("series", "series.html", "Series"),
-    ("impact", "impact.html", "Impact"),
 ]
 
 ICON = {
