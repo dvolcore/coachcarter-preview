@@ -38,6 +38,14 @@ async function showProduct() {
       return item;
     }));
 
+    const campaign = document.querySelector("#product-campaign");
+    if (product.campaign) {
+      campaign.href = product.campaign;
+      campaign.hidden = false;
+    } else {
+      campaign.remove();
+    }
+
     const link = document.querySelector("#product-companion");
     const artwork = document.querySelector("#product-artwork");
     if (product.artwork) {
