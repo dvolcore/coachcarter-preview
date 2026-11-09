@@ -19,13 +19,16 @@ def academy_cards():
     catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
     cards = []
     for product in catalog["products"]:
-        item = {key: escape(product[key]) for key in ("id", "image", "alt", "name", "kind", "price")}
+        item = {key: escape(product[key]) for key in ("id", "image", "alt", "name", "kind")}
+        item["availability"] = escape(product.get("status") or product["price"])
+        item["width"] = product.get("image_width", 900)
+        item["height"] = product.get("image_height", 1350)
         cards.append('''<article class="academy-product-card">
         <a class="academy-product-link" href="academy-product.html?product={id}">
-          <img src="{image}" alt="{alt}" loading="lazy" width="900" height="1350">
+          <img src="{image}" alt="{alt}" loading="lazy" width="{width}" height="{height}">
           <div class="academy-product-meta">
             <div><h3>{name}</h3><p>{kind}</p></div>
-            <div><span>{price}</span><span class="academy-product-arrow" aria-hidden="true">↗</span></div>
+            <div><span>{availability}</span><span class="academy-product-arrow" aria-hidden="true">↗</span></div>
           </div>
         </a>
       </article>'''.format(**item))

@@ -3,6 +3,27 @@
   "note": "Proposed first test pieces. No checkout, inventory, or purchase promise.",
   "products": [
     {
+      "id": "front-row-letterman",
+      "name": "Front Row Letterman",
+      "status": "Coming soon",
+      "kind": "Tailored varsity jacket · Ink Navy / Black",
+      "image": "assets/img/academy/front-row-front.webp",
+      "alt": "Front Row Letterman in ink navy with black leather sleeves, peaked lapels and gold hardware",
+      "image_width": 487,
+      "image_height": 728,
+      "image_caption": "Front view · AI garment rendering",
+      "flat": "assets/img/academy/front-row-jacket.webp",
+      "flat_alt": "Front, open, and back views of the Front Row Letterman showing the lapels, gold monogram, court lining, and Academy Contract",
+      "flat_width": 1774,
+      "flat_height": 887,
+      "flat_caption": "Jacket exterior and lining · AI concept image",
+      "specs": [
+        "Suit-coat lapels frame an ink-navy body, black leather sleeves and gold-tone hardware.",
+        "Gold K|C monogram on the chest.",
+        "Richmond-inspired lining with a center-court motif, a 13–0 record patch and a tonal Academy Contract panel."
+      ]
+    },
+    {
       "id": "court-short",
       "name": "Court Short",
       "price": "$78 proposed",
