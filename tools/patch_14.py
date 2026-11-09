@@ -32,7 +32,7 @@ pdir = R / "site/assets/film/p"; pdir.mkdir(parents=True, exist_ok=True)
 for p in (OUT / "p").glob("*.jpg"):
     shutil.copy2(p, pdir / p.name)
 
-F["media_base"] = "https://dvolcore.github.io/coachcarter-film/"
+F["media_base"] = "https://github.com/dvolcore/coachcarter-film/releases/download/scenes-v1/"
 F["rights"] = ("Coach Carter (2005) © Paramount Pictures / MTV Films. Private client-review build: scenes are self-hosted "
                "copies (official Movieclips/Fandango uploads plus fan uploads for scenes with no official upload) so they play "
                "without ads; clearance is being handled by the Coach Carter team. Getty premiere photos are official Getty embeds.")
@@ -83,7 +83,7 @@ act_label = {a["key"]: a["label"] for a in ACTS}
 clips = []
 for slug, yt, act, order, name, featured, hook in PLAN:
     c = dict(old.get(yt, {}))
-    c.update({"id": yt, "yt": yt, "slug": slug, "file": f"v/{slug}.mp4", "poster": f"assets/film/p/{slug}.jpg", "aspect": dims(slug),
+    c.update({"id": yt, "yt": yt, "slug": slug, "file": f"{slug}.mp4", "poster": f"assets/film/p/{slug}.jpg", "aspect": dims(slug),
               "act": act, "act_label": act_label[act], "order": order, "featured": featured})
     d = dur(slug); c["duration_s"] = d; c["duration"] = mmss(d)
     if name: c["scene"] = name
@@ -93,13 +93,13 @@ for slug, yt, act, order, name, featured, hook in PLAN:
 F["clips"] = clips
 
 T = F["trailer"]["primary"]
-T.update({"slug": "trailer", "yt": T["id"], "file": "v/trailer.mp4", "poster": "assets/film/p/trailer.jpg", "aspect": dims("trailer"), "scene": "Original trailer"})
+T.update({"slug": "trailer", "yt": T["id"], "file": "trailer.mp4", "poster": "assets/film/p/trailer.jpg", "aspect": dims("trailer"), "scene": "Original trailer"})
 
 F["real_carter"] = [
-    {"slug": "real-carter-1", "yt": "n8beCoP9lc8", "file": "v/real-carter-1.mp4", "poster": "assets/film/p/real-carter-1.jpg", "aspect": dims("real-carter-1"),
+    {"slug": "real-carter-1", "yt": "n8beCoP9lc8", "file": "real-carter-1.mp4", "poster": "assets/film/p/real-carter-1.jpg", "aspect": dims("real-carter-1"),
      "scene": "The Real Coach Carter · Part 1", "kicker": "DVD featurette · Part 1", "duration": mmss(dur("real-carter-1")),
      "hook": "Ken Carter, his players and his son Damien on camera: the Richmond gym with no nets, the contracts, and why he took the job."},
-    {"slug": "real-carter-2", "yt": "yzvd3xf6CTE", "file": "v/real-carter-2.mp4", "poster": "assets/film/p/real-carter-2.jpg", "aspect": dims("real-carter-2"),
+    {"slug": "real-carter-2", "yt": "yzvd3xf6CTE", "file": "real-carter-2.mp4", "poster": "assets/film/p/real-carter-2.jpg", "aspect": dims("real-carter-2"),
      "scene": "The Real Coach Carter · Part 2", "kicker": "DVD featurette · Part 2", "duration": mmss(dur("real-carter-2")),
      "hook": "The 1999 lockout as the people who lived it remember it — and what became of the team."},
 ]
@@ -133,7 +133,7 @@ for text, sp, actor, clip, t, still in NEW:
 F["bands"] = json.loads((R / "site/assets/film/stills.json").read_text())
 F["loops"] = [{"key": k, "src": f"assets/film/l/{k}.mp4", "poster": f"assets/film/l/{k}.webp"} for k in ("desks", "practice", "crowd", "carter")]
 F["notes"] = [n for n in F["notes"] if not n.startswith("Scenes asked for but NOT available")] + [
-    "2026-11-09: every scene now plays from self-hosted MP4s (github.com/dvolcore/coachcarter-film, Pages) — no YouTube ads. "
+    "2026-11-09: every scene now plays from self-hosted MP4s (github.com/dvolcore/coachcarter-film release scenes-v1) — no YouTube ads. "
     "Missing scenes (lockout, contract/parents, board hearing, Renny, Junior's mother, pool party, vision) come from fan uploads; "
     "the lockout is only available at 266p. Owner direction: build everything, clearance handled by the Coach Carter team."]
 FILM.write_text(json.dumps(F, indent=1, ensure_ascii=False))
