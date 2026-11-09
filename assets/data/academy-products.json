@@ -58,9 +58,26 @@
     }
   ],
   "roadmap": [
-    "Jersey · $98 proposed",
-    "Warm-up jacket · $148 proposed",
-    "Hoodie · $118 proposed",
-    "Basketball · $68 proposed"
-  ]
+    {
+      "name": "Reversible Practice Jersey",
+      "price": "$98 proposed",
+      "spec": "Double-layer knit, numbered edition. One side black, one side bone and maroon."
+    },
+    {
+      "name": "Warm-Up Zip Jacket",
+      "price": "$148 proposed",
+      "spec": "Lightweight satin or nylon, contrast piping, tonal back court map, two-way zip."
+    },
+    {
+      "name": "Academy Hoodie",
+      "price": "$118 proposed",
+      "spec": "380 GSM fleece, structured hood, restrained chest mark, edition number on the back."
+    },
+    {
+      "name": "Signature Court Ball",
+      "price": "$68 proposed",
+      "spec": "Regulation size, black and bone with gold panel detail, numbered hangtag and story card."
+    }
+  ],
+  "roadmap_note": "Proposed test prices from the brand playbook six-SKU roadmap. Not on sale."
 }

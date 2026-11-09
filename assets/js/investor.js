@@ -10,7 +10,7 @@
   const txt = (parent, x, y, s, cls, anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, parent); t.textContent = s; return t; };
   const barR = (x, y, w, h, r) => { r = Math.min(r, w / 2, h / 2); return `M${x},${y}h${w - r}a${r},${r} 0 0 1 ${r},${r}v${h - 2 * r}a${r},${r} 0 0 1 -${r},${r}h-${w - r}z`; };
   const colR = (x, y, w, h, r) => { r = Math.min(r, w / 2, h / 2); return `M${x},${y + h}v-${h - r}a${r},${r} 0 0 1 ${r},-${r}h${w - 2 * r}a${r},${r} 0 0 1 ${r},${r}v${h - r}z`; };
-  const M = (v) => (v >= 1000 ? `$${(v / 1000).toFixed(v % 1000 ? 2 : 0).replace(/\.?0+$/, "")}B` : v >= 1 ? `$${v % 1 ? v.toFixed(1) : v}M` : `$${Math.round(v * 1000)}K`);
+  const M = (v) => (v === 0 ? "$0" : v >= 1000 ? `$${(v / 1000).toFixed(v % 1000 ? 2 : 0).replace(/\.?0+$/, "")}B` : v >= 1 ? `$${v % 1 ? v.toFixed(1) : v}M` : `$${Math.round(v * 1000)}K`);
   const K = (v) => `$${v}K`;
 
   const tip = document.createElement("div"); tip.className = "ctip"; tip.setAttribute("role", "status"); document.body.appendChild(tip);
@@ -54,7 +54,7 @@
                   : (v) => padL + (Math.min(v, max) / max) * (W - padL - padR);
     ticks.forEach((t, i) => { el("line", { x1: x(t), x2: x(t), y1: top, y2: H - 22, stroke: GRID }, svg); tickLbl(nar, i) && txt(svg, x(t), H - 6, t ? fmt(t) : "$0", "ctick", "middle"); });
     rows.forEach((r, i) => {
-      const y = top + i * rowH + 12 + lab; const hl = r.hl || r.label === highlight; const c = hl ? GOLD : "#8A6A3A";
+      const y = top + i * rowH + 12 + lab; const hl = r.hl || r.label === highlight; const c = hl ? GOLD : r.muted ? "#5A5E66" : "#8A6A3A";
       if (nar) { txt(svg, 0, y - lab + 2, r.label, hl ? "clabel strong" : "clabel"); r.sub && txt(svg, 0, y - lab + 17, r.sub, "ctick"); }
       else { txt(svg, padL - 12, y + 4, r.label, hl ? "clabel strong" : "clabel", "end"); r.sub && txt(svg, padL - 12, y + 19, r.sub, "ctick", "end"); }
       const x0 = x(r.lo), x1 = x(r.hi);
@@ -91,7 +91,7 @@
       el("line", { x1: padL, x2: x(r.gap), y1: y, y2: y, stroke: r.hl ? GOLD : CONTEXT, "stroke-width": 2 }, svg);
       el("circle", { cx: x(r.gap), cy: y, r: 6, fill: r.hl ? GOLD : "#8A8E97", stroke: "#14161b", "stroke-width": 2 }, svg);
       txt(svg, x(r.gap) + 12, y + 4, `${r.gap}`, r.hl ? "cvalue strong" : "cvalue");
-      hover(el("rect", { x: 0, y: y - rowH / 2, width: W, height: rowH, fill: "transparent" }, svg), `<b>${r.label}</b><br>${r.gap} years after the original`);
+      hover(el("rect", { x: 0, y: y - rowH / 2, width: W, height: rowH, fill: "transparent" }, svg), `<b>${r.label}</b><br>${r.gap} years after the original${r.how ? "<br>" + r.how : ""}`);
     });
   }
 
@@ -121,10 +121,10 @@
       table(w, ["Film", "Year", "At release", "Today's dollars"], [...m.basketball].sort((a, b) => b.today - a.today).slice(0, 12).map((b) => [b.title, b.year, M(b.nominal), M(b.today)]));
     }
     if ((w = $("#chart-fees"))) { const rows = m.fee_comps.map((r) => ({ ...r, sub: r.film, tip: `<b>${r.label}</b> · ${r.film}<br>Keynote fee ${K(r.lo)}–${K(r.hi)}` })); redraw(() => ranges(w, rows, { fmt: K, max: 220, ticks: [0, 50, 100, 150, 200] })); table(w, ["Speaker", "Story", "Keynote fee"], m.fee_comps.map((r) => [r.label, r.film, `${K(r.lo)}–${K(r.hi)}`])); }
-    if ((w = $("#chart-rev"))) { redraw(() => ranges(w, m.revenue_lines, { fmt: M, max: 5.5, ticks: [0, 1, 2, 3, 4, 5] })); table(w, ["Revenue line", "Year-3 range (est.)"], m.revenue_lines.map((r) => [r.label, `${M(r.lo)}–${M(r.hi)}`])); }
-    if ((w = $("#chart-ladder"))) { const rows = m.ladder.map((r, i) => ({ ...r, sub: `Revenue ${r.rev} · odds ${r.odds}`, hl: i === 0 || i === 2, tip: `<b>${r.label}</b><br>${r.what}<br>Revenue ${r.rev}/yr · value ${r.lo === r.hi ? M(r.lo) : M(r.lo) + "–" + M(r.hi)}<br>Odds: ${r.odds}` })); redraw(() => ranges(w, rows, { fmt: M, log: true, min: 0.8, max: 1400, ticks: [1, 10, 100, 1000] })); table(w, ["Scenario", "What has to be true", "Revenue/yr", "Company value", "Odds"], m.ladder.map((r) => [r.label, r.what, r.rev, r.lo === r.hi ? M(r.lo) : `${M(r.lo)}–${M(r.hi)}`, r.odds])); }
-    if ((w = $("#chart-stack"))) { const rows = [...m.stack.map((r) => ({ ...r, sub: r.basis.split(" (")[0], tip: `<b>${r.label}</b><br>${M(r.lo)}–${M(r.hi)}<br>${r.basis}` })), { label: "Total, year 7–10", lo: 605, hi: 1450, hl: true, sub: "If the full stack is built and funded" }]; redraw(() => ranges(w, rows, { fmt: M, max: 1500, ticks: [0, 250, 500, 750, 1000, 1250, 1500] })); table(w, ["Asset", "Value range (est.)", "Basis"], m.stack.map((r) => [r.label, `${M(r.lo)}–${M(r.hi)}`, r.basis]).concat([["Total", "$605M–$1.45B", "Sum of ranges"]])); }
-    if ((w = $("#chart-revival"))) { const rows = [...m.revivals].sort((a, b) => b.gap - a.gap); redraw(() => gaps(w, rows)); table(w, ["Title", "Years after original"], rows.map((r) => [r.label, r.gap])); }
+    if ((w = $("#chart-rev"))) { const rows = m.revenue_lines.map((r) => ({ ...r, tip: `<b>${r.label}</b><br>${M(r.lo)}–${M(r.hi)} (planning assumption)${r.note ? "<br>" + r.note : ""}` })); redraw(() => ranges(w, rows, { fmt: M, max: 5.5, ticks: [0, 1, 2, 3, 4, 5] })); const t = m.revenue_total; table(w, ["Revenue line", "Year-3 range (assumption)", "Note"], m.revenue_lines.map((r) => [r.label, `${M(r.lo)}–${M(r.hi)}`, r.note || ""]).concat([["Sum of the ten rows", `${M(t.lo)}–${M(t.hi)}`, "Not an annual run rate: mixes one-time, personal-fee and recurring receipts"]])); }
+    if ((w = $("#chart-ladder"))) { const val = (r) => (r.lo === r.hi ? M(r.lo) : M(r.lo) + "–" + M(r.hi)); const rows = m.ladder.map((r, i) => ({ ...r, sub: r.odds ? `${r.basis} · review's subjective odds ${r.odds}` : r.basis, hl: i === 0 || i === 2, tip: `<b>${r.label}</b><br>${r.what}<br>Revenue ${r.rev} · value ${val(r)}${r.odds ? `<br>Independent review's subjective odds: ${r.odds} (not a forecast)` : ""}` })); redraw(() => ranges(w, rows, { fmt: M, log: true, min: 0.8, max: 1400, ticks: [1, 10, 100, 1000] })); table(w, ["Scenario", "What has to be true", "Revenue/yr", "Basis", "Company value", "Review's subjective odds"], m.ladder.map((r) => [r.label, r.what, r.rev, r.basis, val(r), r.odds || "None given"])); }
+    if ((w = $("#chart-stack"))) { const v = (r) => (r.lo === r.hi ? M(r.lo) : `${M(r.lo)}–${M(r.hi)}`); const rows = m.stack.map((r) => ({ ...r, muted: r.hi === 0, sub: r.scale, tip: `<b>${r.label}</b><br>${v(r)} · scale assumed: ${r.scale}<br>Must be shown: ${r.prove}` })); redraw(() => ranges(w, rows, { fmt: M, max: 500, ticks: [0, 100, 200, 300, 400, 500] })); table(w, ["Asset", "Value range (review's assumption)", "Scale assumed", "What must be demonstrated"], m.stack.map((r) => [r.label, v(r), r.scale, r.prove]).concat([["Stated sum", "$605M–$1.45B", "—", "Not additive: assets overlap and are alternative paths"]])); }
+    if ((w = $("#chart-revival"))) { const rows = [...m.revivals].sort((a, b) => b.gap - a.gap); redraw(() => gaps(w, rows)); table(w, ["Title", "Years after original", "How it worked"], rows.map((r) => [r.label, r.gap, r.how || ""])); const rn = $("#revival-notes"); if (rn) rn.innerHTML = rows.filter((r) => r.how).map((r) => `<li><b>${r.label}.</b> ${r.how}</li>`).join(""); }
     if ((w = $("#chart-cost"))) { const rows = m.cost_per_hour.map((r, i) => ({ label: r.label, v: r.v, hl: i === 1, tip: `<b>${r.label}</b><br>~$${r.range || r.v}K per finished hour` })); redraw(() => hbars(w, rows, { fmt: K, step: 50 })); table(w, ["Production mode", "Cost per finished hour"], m.cost_per_hour.map((r) => [r.label, `$${r.range || r.v}K`])); }
     if ((w = $("#chart-years"))) { const keys = ["TV & radio", "Press features", "Keynotes & talks", "Podcasts"]; redraw(() => columns(w, d.by_year, keys, { 1999: "The lockout", 2005: "The film", 2023: "SlamBall return" })); table(w, ["Year", "Total", ...keys], d.by_year.map((r) => [r.year, r.total, ...keys.map((k) => r[k])])); }
     const cw = $("#comps");

@@ -449,7 +449,7 @@
       $(".b-size", b).textContent = size >= 10000 ? "10,000+" : size.toLocaleString();
       let pkg, desc, items;
       if (reach.includes("license") || reach.includes("series")) {
-        pkg = "Legacy Partner"; desc = "Brand licensing and the Coach Carter II series under one agreement.";
+        pkg = "Legacy Partner"; desc = "Brand licensing and the Coach Carter Academy series under one agreement.";
         items = ["Co-branded campaign rights", "Series integration", "2 keynotes per year", "Foundation impact report"];
       } else if (size > 2500 || reach.includes("content")) {
         pkg = "Championship Series"; desc = "A keynote tour across your offices plus content your teams keep.";
