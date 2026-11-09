@@ -1,0 +1,330 @@
+{
+ "updated": "2026-11-09",
+ "reach": {
+  "appearances_total": 184,
+  "tv_radio": 43,
+  "press": 51,
+  "talks": 82,
+  "podcasts": 8,
+  "celebrity": 25,
+  "awards": 16,
+  "testimonials": 12,
+  "videos": 128,
+  "video_views": 3964624,
+  "photos": 144,
+  "states": 19
+ },
+ "by_year": [
+  {
+   "year": 1999,
+   "total": 19,
+   "TV & radio": 8,
+   "Press features": 9,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2000,
+   "total": 2,
+   "TV & radio": 0,
+   "Press features": 1,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2001,
+   "total": 15,
+   "TV & radio": 1,
+   "Press features": 3,
+   "Keynotes & talks": 11,
+   "Podcasts": 0
+  },
+  {
+   "year": 2002,
+   "total": 4,
+   "TV & radio": 1,
+   "Press features": 1,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2003,
+   "total": 3,
+   "TV & radio": 0,
+   "Press features": 2,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2004,
+   "total": 8,
+   "TV & radio": 0,
+   "Press features": 2,
+   "Keynotes & talks": 6,
+   "Podcasts": 0
+  },
+  {
+   "year": 2005,
+   "total": 20,
+   "TV & radio": 3,
+   "Press features": 14,
+   "Keynotes & talks": 3,
+   "Podcasts": 0
+  },
+  {
+   "year": 2006,
+   "total": 4,
+   "TV & radio": 1,
+   "Press features": 1,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2007,
+   "total": 1,
+   "TV & radio": 0,
+   "Press features": 0,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2008,
+   "total": 4,
+   "TV & radio": 1,
+   "Press features": 0,
+   "Keynotes & talks": 3,
+   "Podcasts": 0
+  },
+  {
+   "year": 2009,
+   "total": 3,
+   "TV & radio": 1,
+   "Press features": 0,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2010,
+   "total": 1,
+   "TV & radio": 0,
+   "Press features": 0,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2011,
+   "total": 2,
+   "TV & radio": 0,
+   "Press features": 0,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2012,
+   "total": 6,
+   "TV & radio": 2,
+   "Press features": 0,
+   "Keynotes & talks": 3,
+   "Podcasts": 1
+  },
+  {
+   "year": 2013,
+   "total": 5,
+   "TV & radio": 2,
+   "Press features": 0,
+   "Keynotes & talks": 3,
+   "Podcasts": 0
+  },
+  {
+   "year": 2014,
+   "total": 2,
+   "TV & radio": 1,
+   "Press features": 0,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2015,
+   "total": 3,
+   "TV & radio": 0,
+   "Press features": 2,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2016,
+   "total": 8,
+   "TV & radio": 1,
+   "Press features": 2,
+   "Keynotes & talks": 4,
+   "Podcasts": 1
+  },
+  {
+   "year": 2017,
+   "total": 7,
+   "TV & radio": 2,
+   "Press features": 1,
+   "Keynotes & talks": 4,
+   "Podcasts": 0
+  },
+  {
+   "year": 2018,
+   "total": 4,
+   "TV & radio": 2,
+   "Press features": 0,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2019,
+   "total": 3,
+   "TV & radio": 2,
+   "Press features": 0,
+   "Keynotes & talks": 1,
+   "Podcasts": 0
+  },
+  {
+   "year": 2020,
+   "total": 5,
+   "TV & radio": 1,
+   "Press features": 2,
+   "Keynotes & talks": 2,
+   "Podcasts": 0
+  },
+  {
+   "year": 2021,
+   "total": 4,
+   "TV & radio": 2,
+   "Press features": 0,
+   "Keynotes & talks": 0,
+   "Podcasts": 2
+  },
+  {
+   "year": 2022,
+   "total": 11,
+   "TV & radio": 1,
+   "Press features": 3,
+   "Keynotes & talks": 5,
+   "Podcasts": 2
+  },
+  {
+   "year": 2023,
+   "total": 15,
+   "TV & radio": 5,
+   "Press features": 4,
+   "Keynotes & talks": 6,
+   "Podcasts": 0
+  },
+  {
+   "year": 2024,
+   "total": 7,
+   "TV & radio": 3,
+   "Press features": 2,
+   "Keynotes & talks": 0,
+   "Podcasts": 2
+  },
+  {
+   "year": 2025,
+   "total": 6,
+   "TV & radio": 1,
+   "Press features": 0,
+   "Keynotes & talks": 5,
+   "Podcasts": 0
+  },
+  {
+   "year": 2026,
+   "total": 10,
+   "TV & radio": 2,
+   "Press features": 2,
+   "Keynotes & talks": 6,
+   "Podcasts": 0
+  }
+ ],
+ "testimonials": [
+  {
+   "quote": "Coach Carter is now in the number 1 spot of keynote speakers!!! He was just amazing \u2013 had the audience in tears and laughing. Can't wait to have him back.",
+   "person": "Heidi S.",
+   "title": "Director, Education & Training",
+   "org": "PHCC (National)",
+   "url": "https://www.bigspeak.com/speakers/coach-ken-carter/"
+  },
+  {
+   "quote": "Coach Carter is a distinguished spokesperson and educator in his own right. He has engaged himself in one of today's most important challenges - the education of our youth.",
+   "person": "Frank Colonna",
+   "title": "Vice Mayor",
+   "org": "City of Long Beach, CA",
+   "url": "https://www.espeakers.com/marketplace/profile/6590/ken-carter"
+  },
+  {
+   "quote": "Coach Carter did a great job! He connected with our audience and held their attention throughout his presentation.",
+   "person": "",
+   "title": "",
+   "org": "Mississippi School Superintendents",
+   "url": "https://capcityspeakers.com/coach-ken-carter/"
+  },
+  {
+   "quote": "Coach Carter did a wonderful job and was very personable onsite. He won the crowd over.",
+   "person": "",
+   "title": "",
+   "org": "NAAA",
+   "url": "https://executivespeakers.com/speaker/ken-carter"
+  },
+  {
+   "quote": "Your presentation was fantastic--high energy, motivating and inspiring.",
+   "person": "",
+   "title": "",
+   "org": "Carolinas Food Industry Council",
+   "url": "https://premierespeakers.com/speakers/ken-carter"
+  },
+  {
+   "quote": "Coach Ken Carter brought the house down with his inspirational speech!",
+   "person": "City of Jacksonville",
+   "title": "official community-media post",
+   "org": "City of Jacksonville \u2014 33rd MLK Breakfast (2020)",
+   "url": "https://archive.org/details/cojaxfl-33rd_Annual_MLK_Breakfast"
+  },
+  {
+   "quote": "The highlight of the conference was an inspiring talk from Coach Ken Carter.",
+   "person": "SC Innovates",
+   "title": "",
+   "org": "BMW Supplier XChange 2026",
+   "url": "https://scinnovates.org/2026/05/18/bmw-supplier-xchange-on-may-13-2026/"
+  },
+  {
+   "quote": "His multi-directional message was so inspiring.",
+   "person": "Contracting Business columnist",
+   "title": "",
+   "org": "PHCCCONNECT2023",
+   "url": "https://www.contractingbusiness.com/columns/the-first-word/article/21276600/coach-kenny-ray-carter-inspires-audience-phccconnect-2023"
+  },
+  {
+   "quote": "I love how Coach Carter told stories throughout his presentation.",
+   "person": "Wesley Fryer",
+   "title": "Educator/blogger",
+   "org": "TCEA 2006",
+   "url": "https://www.speedofcreativity.org/2006/02/08/coach-ken-carter-on-education/"
+  },
+  {
+   "quote": "He had a whole lotta energy",
+   "person": "William Halchuk",
+   "title": "",
+   "org": "Pakmark (ASI Orlando 2017 attendee)",
+   "url": "https://members.asicentral.com/news/newsletters/promogram/january-2017/carter-touts-passion-accountability-at-keynote"
+  },
+  {
+   "quote": "The DHSHS students really enjoyed hearing the 'real' Coach Carter speak.",
+   "person": "Juldene Sims",
+   "title": "Teacher",
+   "org": "Desert Hot Springs High School",
+   "url": "https://ukenreport.com/coach-carter-inspires-coachella-valley-students/"
+  },
+  {
+   "quote": "His is an inspirational story about caring, perseverance and dedication to success.",
+   "person": "Lori Bechtold",
+   "title": "Director of Development",
+   "org": "Omaha Home for Boys (pre-event)",
+   "url": "https://ohb.org/ken-coach-carter-headlines-omaha-home-for-boys-fundraising-gala/"
+  }
+ ],
+ "film": {}
+}
