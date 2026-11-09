@@ -1,0 +1,426 @@
+{
+ "cpi_note": "Today's dollars use the U.S. Bureau of Labor Statistics CPI-U (CUUR0000SA0), release-year annual average to September 2026 (336.94).",
+ "cpi_source": "https://www.bls.gov/cpi/data.htm",
+ "film_money": [
+  {
+   "label": "Opening weekend",
+   "nominal": 24.2,
+   "today": 41.7
+  },
+  {
+   "label": "MLK four-day opening",
+   "nominal": 29.2,
+   "today": 50.3
+  },
+  {
+   "label": "Domestic box office",
+   "nominal": 67.3,
+   "today": 116.0
+  },
+  {
+   "label": "Worldwide box office",
+   "nominal": 76.7,
+   "today": 132.3
+  }
+ ],
+ "basketball": [
+  {
+   "title": "Space Jam",
+   "year": 1996,
+   "nominal": 90.4,
+   "today": 194.2
+  },
+  {
+   "title": "White Men Can't Jump",
+   "year": 1992,
+   "nominal": 76.3,
+   "today": 183.1
+  },
+  {
+   "title": "Space Jam: A New Legacy",
+   "year": 2021,
+   "nominal": 70.6,
+   "today": 87.8
+  },
+  {
+   "title": "Coach Carter",
+   "year": 2005,
+   "nominal": 67.3,
+   "today": 116.0
+  },
+  {
+   "title": "Like Mike",
+   "year": 2002,
+   "nominal": 51.4,
+   "today": 96.3
+  },
+  {
+   "title": "Glory Road",
+   "year": 2006,
+   "nominal": 42.6,
+   "today": 71.3
+  },
+  {
+   "title": "Uncle Drew",
+   "year": 2018,
+   "nominal": 42.5,
+   "today": 57.0
+  },
+  {
+   "title": "Semi-Pro",
+   "year": 2008,
+   "nominal": 33.5,
+   "today": 52.4
+  },
+  {
+   "title": "Eddie",
+   "year": 1996,
+   "nominal": 31.4,
+   "today": 67.4
+  },
+  {
+   "title": "Hoosiers",
+   "year": 1986,
+   "nominal": 28.6,
+   "today": 87.9
+  },
+  {
+   "title": "Love & Basketball",
+   "year": 2000,
+   "nominal": 27.5,
+   "today": 53.7
+  },
+  {
+   "title": "Air Bud",
+   "year": 1997,
+   "nominal": 23.1,
+   "today": 48.6
+  },
+  {
+   "title": "Blue Chips",
+   "year": 1994,
+   "nominal": 23.1,
+   "today": 52.5
+  },
+  {
+   "title": "He Got Game",
+   "year": 1998,
+   "nominal": 21.6,
+   "today": 44.6
+  },
+  {
+   "title": "Just Wright",
+   "year": 2010,
+   "nominal": 21.5,
+   "today": 33.3
+  },
+  {
+   "title": "The Air Up There",
+   "year": 1994,
+   "nominal": 21.0,
+   "today": 47.8
+  },
+  {
+   "title": "Rebound",
+   "year": 2005,
+   "nominal": 16.8,
+   "today": 29.0
+  },
+  {
+   "title": "Above the Rim",
+   "year": 1994,
+   "nominal": 16.2,
+   "today": 36.8
+  },
+  {
+   "title": "O",
+   "year": 2001,
+   "nominal": 16.0,
+   "today": 30.5
+  },
+  {
+   "title": "The Sixth Man",
+   "year": 1997,
+   "nominal": 14.8,
+   "today": 31.0
+  }
+ ],
+ "basketball_source": "https://www.boxofficemojo.com/genre/sg2900291841/",
+ "mojo_ticket_adjusted": 125.5,
+ "fee_comps": [
+  {
+   "label": "Kurt Warner",
+   "film": "American Underdog",
+   "lo": 100,
+   "hi": 200
+  },
+  {
+   "label": "Tony Dungy",
+   "film": "Coach / author",
+   "lo": 100,
+   "hi": 200
+  },
+  {
+   "label": "Chris Gardner",
+   "film": "The Pursuit of Happyness",
+   "lo": 50,
+   "hi": 94
+  },
+  {
+   "label": "Lou Holtz",
+   "film": "Coach / TV",
+   "lo": 50,
+   "hi": 75
+  },
+  {
+   "label": "Michael Oher",
+   "film": "The Blind Side",
+   "lo": 30,
+   "hi": 50
+  },
+  {
+   "label": "Bethany Hamilton",
+   "film": "Soul Surfer",
+   "lo": 30,
+   "hi": 50
+  },
+  {
+   "label": "Coach Ken Carter",
+   "film": "Coach Carter",
+   "lo": 10,
+   "hi": 20,
+   "hl": true
+  },
+  {
+   "label": "Rudy Ruettiger",
+   "film": "Rudy",
+   "lo": 10,
+   "hi": 20
+  }
+ ],
+ "fee_source": "Speaker-bureau listings compiled in the Coach Carter Brand Valuation Playbook (Nov 2026): Key Speakers, AthleteSpeakers, All American Speakers, BigSpeak.",
+ "revenue_lines": [
+  {
+   "label": "Keynotes repriced to $30\u201350K",
+   "lo": 0.9,
+   "hi": 2.5
+  },
+  {
+   "label": "Video podcast",
+   "lo": 0.3,
+   "hi": 5.0
+  },
+  {
+   "label": "Brand-funded micro-drama seasons",
+   "lo": 0.3,
+   "hi": 1.8
+  },
+  {
+   "label": "Documentary (archive, EP, subject fee)",
+   "lo": 0.25,
+   "hi": 1.0
+  },
+  {
+   "label": "Coach Carter II series / sequel fees",
+   "lo": 0.5,
+   "hi": 3.0
+  },
+  {
+   "label": "The Contract school program",
+   "lo": 0.5,
+   "hi": 3.0
+  },
+  {
+   "label": "Corporate leadership course",
+   "lo": 0.25,
+   "hi": 2.0
+  },
+  {
+   "label": "Coach Carter camps",
+   "lo": 0.5,
+   "hi": 2.0
+  },
+  {
+   "label": "AI voice & likeness license",
+   "lo": 0.5,
+   "hi": 2.5
+  },
+  {
+   "label": "Merch, memberships, licensing",
+   "lo": 0.2,
+   "hi": 1.5
+  }
+ ],
+ "ladder": [
+  {
+   "label": "As-is (today)",
+   "rev": "$0.2\u20130.6M",
+   "lo": 1,
+   "hi": 3,
+   "odds": "\u2014",
+   "what": "Keynote fees only; no owned media, store or list"
+  },
+  {
+   "label": "Base build \u00b7 12\u201324 mo",
+   "rev": "$4\u20138M",
+   "lo": 5,
+   "hi": 15,
+   "odds": "High if executed",
+   "what": "New platform & socials, clip engine, podcast, 2 sponsored seasons, repriced speaking"
+  },
+  {
+   "label": "Strong build \u00b7 ~3 yrs",
+   "rev": "$15\u201325M",
+   "lo": 25,
+   "hi": 75,
+   "odds": "~20\u201330%",
+   "what": "Documentary deal, Coach Carter II ordered, school & corporate programs, AI likeness license"
+  },
+  {
+   "label": "Breakout",
+   "rev": "$50\u201380M",
+   "lo": 150,
+   "hi": 320,
+   "odds": "~5\u201310%",
+   "what": "Owned values-media studio plus program, camp or academy network"
+  },
+  {
+   "label": "$500M company",
+   "rev": "$125\u2013250M",
+   "lo": 500,
+   "hi": 500,
+   "odds": "~10% \u00b7 7\u201310 yrs",
+   "what": "Universe IP plus the club and academy network"
+  },
+  {
+   "label": "$1B franchise",
+   "rev": "$250\u2013500M",
+   "lo": 1000,
+   "hi": 1000,
+   "odds": "~5% \u00b7 7\u201310 yrs",
+   "what": "Full stack: universe IP, clubs & academies, licensing, programs, platform stakes"
+  }
+ ],
+ "stack": [
+  {
+   "label": "Story universe IP",
+   "lo": 200,
+   "hi": 450,
+   "basis": "8\u201318\u00d7 licensing & library revenue (Roald Dahl ~18\u00d7, SpringHill ~7\u00d7)"
+  },
+  {
+   "label": "Clubs & Academy network",
+   "lo": 250,
+   "hi": 450,
+   "basis": "12\u201315\u00d7 EBITDA (Unrivaled Sports >$650M; IMG Academy $1.25B)"
+  },
+  {
+   "label": "Licensing & consumer products",
+   "lo": 80,
+   "hi": 300,
+   "basis": "8\u201312\u00d7 royalties (Peanuts 23\u00d7 EBITDA)"
+  },
+  {
+   "label": "Programs: schools & companies",
+   "lo": 50,
+   "hi": 150,
+   "basis": "2\u20134\u00d7 revenue (FranklinCovey)"
+  },
+  {
+   "label": "Platform stakes (AI / micro-drama)",
+   "lo": 25,
+   "hi": 100,
+   "basis": "Option value (Lionsgate\u2013Runway, Fox\u2013Holywater)"
+  }
+ ],
+ "comps": [
+  {
+   "name": "SpringHill (LeBron James)",
+   "value": "$725M valuation, 2021",
+   "url": "https://redbirdcap.com/wp-content/uploads/2021/10/TSHC-Announcement.pdf"
+  },
+  {
+   "name": "Omaha Productions (Peyton Manning)",
+   "value": "~$800M reported",
+   "url": "https://omahaproductions.com/about/jamie-horowitz/"
+  },
+  {
+   "name": "Unrivaled (3x3 basketball)",
+   "value": "$650M in ~3 years",
+   "url": "https://www.axios.com/2026/08/26/unrivaled-womens-basketball"
+  },
+  {
+   "name": "Unrivaled Sports (youth facilities)",
+   "value": ">$650M in 14 months",
+   "url": "https://www.sportspro.com/news/unrivaled-sports-youth-harris-blitzer-investment-dicks-sporting-goods-may-2025/"
+  },
+  {
+   "name": "IMG Academy",
+   "value": "$1.25B sale",
+   "url": "https://www.businesswire.com/news/home/20230425005615/en/Endeavor-Enters-Agreement-to-Sell-IMG-Academy-to-BPEA-EQT-in-Partnership-With-Nord-Anglia-Education-for-$1.25-Billion"
+  },
+  {
+   "name": "Wrexham AFC",
+   "value": "\u00a32M \u2192 ~\u00a3350M on a docuseries",
+   "url": "https://frontofficesports.com/article/wrexham-sale-valuation-growth-475-million/"
+  },
+  {
+   "name": "Peanuts",
+   "value": "~$219M \u2192 ~C$1.54B re-rating",
+   "url": "https://s25.q4cdn.com/252078091/files/doc_news/WILDBRAIN-TO-SELL-ITS-41-STAKE-IN-PEANUTS-TO-SONY-FOR-630-MILLION-12-18-2025-2025.pdf"
+  },
+  {
+   "name": "FranklinCovey",
+   "value": "$261.5M annual revenue; 8,000+ schools",
+   "url": "https://ir.franklincovey.com/news-releases/news-release-details/franklin-covey-reports-financial-results-fourth-quarter-and-0"
+  }
+ ],
+ "revivals": [
+  {
+   "label": "Creed (Rocky)",
+   "gap": 39
+  },
+  {
+   "label": "A Different World",
+   "gap": 39
+  },
+  {
+   "label": "Top Gun: Maverick",
+   "gap": 36
+  },
+  {
+   "label": "Cobra Kai (Karate Kid)",
+   "gap": 34
+  },
+  {
+   "label": "Bel-Air",
+   "gap": 32
+  },
+  {
+   "label": "Happy Gilmore 2",
+   "gap": 29
+  },
+  {
+   "label": "Coach Carter \u00b7 today",
+   "gap": 21,
+   "hl": true
+  },
+  {
+   "label": "Coach Carter \u00b7 Jan 2030",
+   "gap": 25,
+   "hl": true
+  }
+ ],
+ "cost_per_hour": [
+  {
+   "label": "Live-action vertical series",
+   "v": 150
+  },
+  {
+   "label": "AI-assisted production",
+   "v": 25,
+   "range": "20\u201330"
+  }
+ ],
+ "cost_source": "https://www.thewrap.com/media-platforms/tv/ai-generated-microdramas-could-be-the-future-of-mobile-entertainment/"
+}
