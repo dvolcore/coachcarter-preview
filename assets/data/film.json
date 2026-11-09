@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "rights": "Paramount Pictures owns Coach Carter (2005). Video = embeds of official uploads only (Movieclips/Fandango, Rotten Tomatoes Classic Trailers/Fandango, Paramount Plus). Nothing is downloaded or re-hosted. Stills = YouTube-served thumbnails of those official uploads, and Getty Images editorial embeds (et/sig from Getty oEmbed).",
+ "rights": "Coach Carter (2005) © Paramount Pictures / MTV Films. Private client-review build: scenes are self-hosted copies (official Movieclips/Fandango uploads plus fan uploads for scenes with no official upload) so they play without ads; clearance is being handled by the Coach Carter team. Getty premiere photos are official Getty embeds.",
  "trailer": {
   "primary": {
    "id": "d_GleoanbPE",
@@ -19,7 +19,7 @@
    "description": "Original theatrical trailer (includes the 'Paramount Pictures and MTV Films present' card).",
    "url": "https://www.youtube.com/watch?v=d_GleoanbPE",
    "embed": "https://www.youtube-nocookie.com/embed/d_GleoanbPE",
-   "poster": "https://i.ytimg.com/vi/d_GleoanbPE/maxresdefault.jpg",
+   "poster": "assets/film/p/trailer.jpg",
    "poster_note": "maxresdefault 1280x720 carries 'CLASSIC TRAILER' text + Fandango badge; clean frames = thumbs.maxres1-3 (letterboxed)",
    "thumbs": {
     "maxresdefault": {
@@ -79,7 +79,12 @@
       "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
      }
     }
-   }
+   },
+   "slug": "trailer",
+   "yt": "d_GleoanbPE",
+   "file": "v/trailer.mp4",
+   "aspect": 2.344,
+   "scene": "Original trailer"
   },
   "alternate": {
    "id": "a6Zpa4rtpkA",
@@ -149,7 +154,7 @@
   {
    "id": "V1wAemvxNaM",
    "order": 1,
-   "scene": "First Practice",
+   "scene": "Day One",
    "featured": true,
    "title": "Coach Carter (1/9) Movie CLIP - First Practice (2005) HD",
    "channel": "Movieclips",
@@ -157,8 +162,8 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 162,
-   "duration": "2:42",
+   "duration_s": 289.4,
+   "duration": "4:49",
    "view_count": 7238262,
    "view_count_checked": "2026-11-09",
    "age_limit": 0,
@@ -166,10 +171,10 @@
    "source_resolution": "1280x720",
    "description": "Coach Carter (Samuel L. Jackson) presents his new team with conduct contracts at the start of practice, but Timo (Rick Gonzalez) has other plans.",
    "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
-   "hook": "Contracts, 'sir', and Carter pinning Timo to the wall: 'I'm not a teacher. I'm the new basketball coach.'",
+   "hook": "Day one at Richmond: 'sir' is a term of respect, the losing stops now, the contracts come out, and Cruz walks.",
    "url": "https://www.youtube.com/watch?v=V1wAemvxNaM",
    "embed": "https://www.youtube-nocookie.com/embed/V1wAemvxNaM",
-   "poster": "https://i.ytimg.com/vi/V1wAemvxNaM/maxresdefault.jpg",
+   "poster": "assets/film/p/first-practice.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -229,11 +234,35 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "V1wAemvxNaM",
+   "slug": "first-practice",
+   "file": "v/first-practice.mp4",
+   "aspect": 2.481,
+   "act": "contract",
+   "act_label": "Act I",
+   "web_source": "Boxoffice Movie Scenes (YouTube, 4K) — fuller cut of the official 'First Practice' scene"
+  },
+  {
+   "id": "fidQ2FQKGtQ",
+   "yt": "fidQ2FQKGtQ",
+   "slug": "parents-contract",
+   "file": "v/parents-contract.mp4",
+   "poster": "assets/film/p/parents-contract.jpg",
+   "aspect": 2.388,
+   "act": "contract",
+   "act_label": "Act I",
+   "order": 2,
+   "featured": false,
+   "duration_s": 204.7,
+   "duration": "3:25",
+   "scene": "The Parents' Meeting",
+   "hook": "Carter sells the parents on the contract ('student comes first'), then his son Damien signs up for a 3.5.",
+   "web_source": "Movies and TV shows (YouTube)"
   },
   {
    "id": "qUiptlAJcyQ",
-   "order": 2,
+   "order": 3,
    "scene": "Come-from-Behind Win",
    "featured": false,
    "title": "Coach Carter (2/9) Movie CLIP - Come-from-Behind Win (2005) HD",
@@ -242,7 +271,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 161,
+   "duration_s": 160.7,
    "duration": "2:41",
    "view_count": 4125636,
    "view_count_checked": "2026-11-09",
@@ -254,7 +283,7 @@
    "hook": null,
    "url": "https://www.youtube.com/watch?v=qUiptlAJcyQ",
    "embed": "https://www.youtube-nocookie.com/embed/qUiptlAJcyQ",
-   "poster": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxresdefault.jpg",
+   "poster": "assets/film/p/first-win.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -314,11 +343,51 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "qUiptlAJcyQ",
+   "slug": "first-win",
+   "file": "v/first-win.mp4",
+   "aspect": 2.388,
+   "act": "contract",
+   "act_label": "Act I"
+  },
+  {
+   "id": "5Th5LyAVDRM",
+   "yt": "5Th5LyAVDRM",
+   "slug": "vision",
+   "file": "v/vision.mp4",
+   "poster": "assets/film/p/vision.jpg",
+   "aspect": 2.388,
+   "act": "contract",
+   "act_label": "Act I",
+   "order": 4,
+   "featured": false,
+   "duration_s": 145.7,
+   "duration": "2:26",
+   "scene": "How Do You See Yourselves?",
+   "hook": "Four seniors who could play in college. 'Tell me how you see yourselves.' Then Junior is suspended for skipping class.",
+   "web_source": "KnowledgeWorkx Video (YouTube, 1080p)"
+  },
+  {
+   "id": "WuSCEbZF4i4",
+   "yt": "WuSCEbZF4i4",
+   "slug": "juniors-mother",
+   "file": "v/juniors-mother.mp4",
+   "poster": "assets/film/p/juniors-mother.jpg",
+   "aspect": 2.397,
+   "act": "contract",
+   "act_label": "Act I",
+   "order": 5,
+   "featured": false,
+   "duration_s": 198.4,
+   "duration": "3:18",
+   "scene": "Junior's Mother",
+   "hook": "Junior Battle's mother comes to the store. Carter takes him back — after 1,000 push-ups and 1,000 suicides.",
+   "web_source": "NOW PLAYING (YouTube, 1080p)"
   },
   {
    "id": "1g82D68N-ys",
-   "order": 3,
+   "order": 6,
    "scene": "Push-Ups and Suicides",
    "featured": true,
    "title": "Coach Carter (3/9) Movie CLIP - Push-Ups and Suicides (2005) HD",
@@ -327,7 +396,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 157,
+   "duration_s": 156.7,
    "duration": "2:37",
    "view_count": 3664008,
    "view_count_checked": "2026-11-09",
@@ -339,7 +408,7 @@
    "hook": "'One person struggles, we all struggle.'",
    "url": "https://www.youtube.com/watch?v=1g82D68N-ys",
    "embed": "https://www.youtube-nocookie.com/embed/1g82D68N-ys",
-   "poster": "https://i.ytimg.com/vi/1g82D68N-ys/maxresdefault.jpg",
+   "poster": "assets/film/p/pushups.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -399,11 +468,17 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "1g82D68N-ys",
+   "slug": "pushups",
+   "file": "v/pushups.mp4",
+   "aspect": 2.388,
+   "act": "contract",
+   "act_label": "Act I"
   },
   {
    "id": "JomrLxDiT5g",
-   "order": 4,
+   "order": 7,
    "scene": "Richmond vs. Bay Hill",
    "featured": false,
    "title": "Coach Carter (4/9) Movie CLIP - Richmond vs. Bay Hill (2005) HD",
@@ -412,7 +487,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 154,
+   "duration_s": 153.7,
    "duration": "2:34",
    "view_count": 3545902,
    "view_count_checked": "2026-11-09",
@@ -424,7 +499,7 @@
    "hook": null,
    "url": "https://www.youtube.com/watch?v=JomrLxDiT5g",
    "embed": "https://www.youtube-nocookie.com/embed/JomrLxDiT5g",
-   "poster": "https://i.ytimg.com/vi/JomrLxDiT5g/maxresdefault.jpg",
+   "poster": "assets/film/p/bay-hill.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -484,11 +559,51 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "JomrLxDiT5g",
+   "slug": "bay-hill",
+   "file": "v/bay-hill.mp4",
+   "aspect": 2.388,
+   "act": "lockout",
+   "act_label": "Act II"
+  },
+  {
+   "id": "JFvtFgFv0Qw",
+   "yt": "JFvtFgFv0Qw",
+   "slug": "pool-party",
+   "file": "v/pool-party.mp4",
+   "poster": "assets/film/p/pool-party.jpg",
+   "aspect": 2.481,
+   "act": "lockout",
+   "act_label": "Act II",
+   "order": 8,
+   "featured": false,
+   "duration_s": 237.4,
+   "duration": "3:57",
+   "scene": "The Pool Party",
+   "hook": "Undefeated and celebrating, the team sneaks off to a party in the suburbs. Carter finds them, and his own son, in the pool.",
+   "web_source": "Boxoffice Movie Scenes (YouTube, 4K)"
+  },
+  {
+   "id": "lipT9ry5h3A",
+   "yt": "lipT9ry5h3A",
+   "slug": "lockout",
+   "file": "v/lockout.mp4",
+   "poster": "assets/film/p/lockout.jpg",
+   "aspect": 2.406,
+   "act": "lockout",
+   "act_label": "Act II",
+   "order": 9,
+   "featured": true,
+   "duration_s": 152.7,
+   "duration": "2:33",
+   "scene": "The Lockout",
+   "hook": "'In this hand I hold contracts…' Six players failing. Carter padlocks the gym and sends the team to the library.",
+   "web_source": "BENZ TV full-film upload, part 9 (YouTube, 266p — the only copy found)"
   },
   {
    "id": "2FKPDOpKzDo",
-   "order": 5,
+   "order": 10,
    "scene": "A Better Life",
    "featured": true,
    "title": "Coach Carter (5/9) Movie CLIP - A Better Life (2005) HD",
@@ -497,7 +612,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 159,
+   "duration_s": 158.7,
    "duration": "2:39",
    "view_count": 4084266,
    "view_count_checked": "2026-11-09",
@@ -509,7 +624,7 @@
    "hook": "The stats speech: 'I see a system that's designed for you to fail.'",
    "url": "https://www.youtube.com/watch?v=2FKPDOpKzDo",
    "embed": "https://www.youtube-nocookie.com/embed/2FKPDOpKzDo",
-   "poster": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxresdefault.jpg",
+   "poster": "assets/film/p/better-life.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -569,11 +684,51 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "2FKPDOpKzDo",
+   "slug": "better-life",
+   "file": "v/better-life.mp4",
+   "aspect": 2.388,
+   "act": "lockout",
+   "act_label": "Act II"
+  },
+  {
+   "id": "jdrcX9zjS80",
+   "yt": "jdrcX9zjS80",
+   "slug": "renny",
+   "file": "v/renny.mp4",
+   "poster": "assets/film/p/renny.jpg",
+   "aspect": 2.388,
+   "act": "lockout",
+   "act_label": "Act II",
+   "order": 11,
+   "featured": false,
+   "duration_s": 272.5,
+   "duration": "4:32",
+   "scene": "Renny",
+   "hook": "Renny is shot. Timo Cruz runs to the one man he trusts: 'What do I got to do to play?'",
+   "web_source": "TheFallenSoul99 (YouTube, 1080p)"
+  },
+  {
+   "id": "iCc9rFHuzlI",
+   "yt": "iCc9rFHuzlI",
+   "slug": "board-hearing",
+   "file": "v/board-hearing.mp4",
+   "poster": "assets/film/p/board-hearing.jpg",
+   "aspect": 2.397,
+   "act": "lockout",
+   "act_label": "Act II",
+   "order": 12,
+   "featured": true,
+   "duration_s": 268.0,
+   "duration": "4:28",
+   "scene": "The Board Hearing",
+   "hook": "The school board votes on the lockout. Carter: 'If you vote to end the lockout, you won't have to terminate me. I'll quit.'",
+   "web_source": "NOW ACTION (YouTube, 1080p)"
   },
   {
    "id": "2_fDhqRk_Ro",
-   "order": 6,
+   "order": 13,
    "scene": "Our Deepest Fear",
    "featured": true,
    "title": "Coach Carter (6/9) Movie CLIP - Our Deepest Fear (2005) HD",
@@ -582,7 +737,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 149,
+   "duration_s": 148.7,
    "duration": "2:29",
    "view_count": 8304240,
    "view_count_checked": "2026-11-09",
@@ -594,7 +749,7 @@
    "hook": "The lockout payoff: the team keeps studying and Timo answers 'What is your deepest fear?'",
    "url": "https://www.youtube.com/watch?v=2_fDhqRk_Ro",
    "embed": "https://www.youtube-nocookie.com/embed/2_fDhqRk_Ro",
-   "poster": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxresdefault.jpg",
+   "poster": "assets/film/p/deepest-fear.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -654,11 +809,17 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "2_fDhqRk_Ro",
+   "slug": "deepest-fear",
+   "file": "v/deepest-fear.mp4",
+   "aspect": 2.388,
+   "act": "lockout",
+   "act_label": "Act II"
   },
   {
    "id": "J97F53CAA1I",
-   "order": 7,
+   "order": 14,
    "scene": "Timeout Pep Talk",
    "featured": false,
    "title": "Coach Carter (7/9) Movie CLIP - Timeout Pep Talk (2005) HD",
@@ -667,7 +828,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 146,
+   "duration_s": 145.7,
    "duration": "2:26",
    "view_count": 3202061,
    "view_count_checked": "2026-11-09",
@@ -679,7 +840,7 @@
    "hook": null,
    "url": "https://www.youtube.com/watch?v=J97F53CAA1I",
    "embed": "https://www.youtube-nocookie.com/embed/J97F53CAA1I",
-   "poster": "https://i.ytimg.com/vi/J97F53CAA1I/maxresdefault.jpg",
+   "poster": "assets/film/p/pep-talk.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -739,20 +900,26 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "J97F53CAA1I",
+   "slug": "pep-talk",
+   "file": "v/pep-talk.mp4",
+   "aspect": 2.388,
+   "act": "lastgame",
+   "act_label": "Act III"
   },
   {
    "id": "fnH1ZtugoqU",
-   "order": 8,
+   "order": 15,
    "scene": "The Final Shot",
-   "featured": true,
+   "featured": false,
    "title": "Coach Carter (8/9) Movie CLIP - The Final Shot (2005) HD",
    "channel": "Movieclips",
    "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 145,
+   "duration_s": 144.7,
    "duration": "2:25",
    "view_count": 2774101,
    "view_count_checked": "2026-11-09",
@@ -764,7 +931,7 @@
    "hook": null,
    "url": "https://www.youtube.com/watch?v=fnH1ZtugoqU",
    "embed": "https://www.youtube-nocookie.com/embed/fnH1ZtugoqU",
-   "poster": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxresdefault.jpg",
+   "poster": "assets/film/p/final-shot.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -824,11 +991,17 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "fnH1ZtugoqU",
+   "slug": "final-shot",
+   "file": "v/final-shot.mp4",
+   "aspect": 2.388,
+   "act": "lastgame",
+   "act_label": "Act III"
   },
   {
    "id": "eSBnFu1YnrU",
-   "order": 9,
+   "order": 16,
    "scene": "Not Your Storybook Ending",
    "featured": true,
    "title": "Coach Carter (9/9) Movie CLIP - Not Your Storybook Ending (2005) HD",
@@ -837,7 +1010,7 @@
    "channel_verified": true,
    "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
    "upload_date": "20120524",
-   "duration_s": 163,
+   "duration_s": 162.7,
    "duration": "2:43",
    "view_count": 3568638,
    "view_count_checked": "2026-11-09",
@@ -849,7 +1022,7 @@
    "hook": "'I came to coach basketball players, and you became students.' Then: 'Rich-what?' 'RICHMOND!'",
    "url": "https://www.youtube.com/watch?v=eSBnFu1YnrU",
    "embed": "https://www.youtube-nocookie.com/embed/eSBnFu1YnrU",
-   "poster": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxresdefault.jpg",
+   "poster": "assets/film/p/storybook-ending.jpg",
    "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
    "thumbs": {
     "maxresdefault": {
@@ -909,7 +1082,13 @@
       "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
      }
     }
-   }
+   },
+   "yt": "eSBnFu1YnrU",
+   "slug": "storybook-ending",
+   "file": "v/storybook-ending.mp4",
+   "aspect": 2.388,
+   "act": "lastgame",
+   "act_label": "Act III"
   }
  ],
  "quotes": [
@@ -917,7 +1096,7 @@
    "text": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
    "speaker": "Timo Cruz",
    "actor": "Rick Gonzalez",
-   "clip": "2_fDhqRk_Ro",
+   "clip": "deepest-fear",
    "t": "0:40",
    "t_s": 40,
    "attribution": "Adapted from Marianne Williamson, 'A Return to Love: Reflections on the Principles of A Course in Miracles' (1992). Credit her whenever the line is shown.",
@@ -937,7 +1116,7 @@
    "text": "Sir, I just wanna say thank you. You saved my life.",
    "speaker": "Timo Cruz",
    "actor": "Rick Gonzalez",
-   "clip": "2_fDhqRk_Ro",
+   "clip": "deepest-fear",
    "t": "1:23",
    "t_s": 83,
    "sources": [
@@ -950,7 +1129,7 @@
    "text": "I came to coach basketball players, and you became students. I came to teach boys, and you became men.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": "eSBnFu1YnrU",
+   "clip": "storybook-ending",
    "t": "1:04",
    "t_s": 64,
    "also_in": [
@@ -969,7 +1148,7 @@
    "text": "But you men played like champions, and never gave up. And champions hold their heads high.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": "eSBnFu1YnrU",
+   "clip": "storybook-ending",
    "t": "0:15",
    "t_s": 15,
    "sources": [
@@ -982,7 +1161,7 @@
    "text": "Rich-what? / RICHMOND!",
    "speaker": "Coach Ken Carter and the team",
    "actor": "Samuel L. Jackson and cast",
-   "clip": "eSBnFu1YnrU",
+   "clip": "storybook-ending",
    "t": "1:46",
    "t_s": 106,
    "sources": [
@@ -995,7 +1174,7 @@
    "text": "You said we're a team. One person struggles, we all struggle. One person triumphs, we all triumph.",
    "speaker": "Jason Lyle",
    "actor": "Channing Tatum",
-   "clip": "1g82D68N-ys",
+   "clip": "pushups",
    "t": "0:54",
    "t_s": 54,
    "also_in": [
@@ -1015,7 +1194,7 @@
    "text": "Sir, they can cut the chains off the door, but they can't make us play.",
    "speaker": "Jason Lyle",
    "actor": "Channing Tatum",
-   "clip": "2_fDhqRk_Ro",
+   "clip": "deepest-fear",
    "t": "0:10",
    "t_s": 10,
    "sources": [
@@ -1028,7 +1207,7 @@
    "text": "We've decided we're going to finish what you've started, sir.",
    "speaker": "Damien Carter",
    "actor": "Robert Ri'chard",
-   "clip": "2_fDhqRk_Ro",
+   "clip": "deepest-fear",
    "t": "0:17",
    "t_s": 17,
    "also_in": [
@@ -1047,9 +1226,9 @@
    "text": "I'm not a teacher. I'm the new basketball coach.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": "V1wAemvxNaM",
-   "t": "1:52",
-   "t_s": 112,
+   "clip": "first-practice",
+   "t": "3:59",
+   "t_s": 239,
    "also_in": [
     {
      "clip": "d_GleoanbPE",
@@ -1066,9 +1245,9 @@
    "text": "These boys are student athletes. \"Student\" comes first.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": "d_GleoanbPE",
-   "t": "0:50",
-   "t_s": 50,
+   "clip": "parents-contract",
+   "t": "0:22",
+   "t_s": 22,
    "sources": [
     "https://www.imdb.com/title/tt0393162/quotes/"
    ],
@@ -1079,7 +1258,7 @@
    "text": "I promise you I'll do everything in my power to get you to college and to a better life.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": "2FKPDOpKzDo",
+   "clip": "better-life",
    "t": "1:56",
    "t_s": 116,
    "sources": [
@@ -1092,13 +1271,96 @@
    "text": "As of now, you are a sir. So are the rest of you. \"Sir\" is a term of respect, and you will have my respect until you abuse it.",
    "speaker": "Coach Ken Carter",
    "actor": "Samuel L. Jackson",
-   "clip": null,
-   "t": null,
+   "clip": "first-practice",
+   "t": "1:17",
    "sources": [
     "https://en.wikiquote.org/wiki/Coach_Carter"
    ],
-   "verified": "partial",
-   "wording_note": "Wikiquote only (27 words; Wikiquote punctuates with '--' before 'and'). Not on IMDb and not in any official clip found — no timestamp. The exact phrase 'Sir, yes sir' is NOT a documented line of this film."
+   "verified": true,
+   "wording_note": "Wikiquote wording; heard in the Day One scene at 1:17 (caption track).",
+   "t_s": 77
+  },
+  {
+   "text": "The losing stops now.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "first-practice",
+   "t": "2:03",
+   "t_s": 123,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09).",
+   "still": "contracts"
+  },
+  {
+   "text": "Basketball is a privilege. If you want to play basketball on this team, these are the simple rules you have to follow.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "parents-contract",
+   "t": "0:50",
+   "t_s": 50,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09)."
+  },
+  {
+   "text": "Part of growing up is making your own decisions and living with the consequences.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "parents-contract",
+   "t": "3:06",
+   "t_s": 186,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09)."
+  },
+  {
+   "text": "We are a team. And until we all meet the terms of this contract, the gym will remain locked.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "lockout",
+   "t": "1:15",
+   "t_s": 75,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09).",
+   "still": "chain"
+  },
+  {
+   "text": "I took this job because I wanted to effect change in a special group of young men.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "board-hearing",
+   "t": "2:55",
+   "t_s": 175,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09).",
+   "still": "board-speech"
+  },
+  {
+   "text": "If you vote to end the lockout, you won't have to terminate me. I'll quit.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "board-hearing",
+   "t": "3:07",
+   "t_s": 187,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09).",
+   "still": "board-room"
+  },
+  {
+   "text": "Those are some stats for your ass.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "better-life",
+   "t": "1:36",
+   "t_s": 96,
+   "sources": [],
+   "verified": true,
+   "wording_note": "Film audio, checked against the scene's caption track (2026-11-09).",
+   "still": "desks"
   }
  ],
  "stills": {
@@ -3172,10 +3434,299 @@
  ],
  "notes": [
   "Every official Coach Carter scene upload found is the Movieclips 9-clip set (all uploaded 2012-05-24, 1280x720, embeddable, age_limit 0). No Coach Carter uploads exist on Paramount Pictures, Paramount Movies or MTV channels (full upload lists scanned 2026-11-09).",
-  "Scenes asked for but NOT available from an official channel: the lockout/chained gym doors (only the aftermath in 'Our Deepest Fear'), the contract-signing parents' meeting, the 'are you a madam?' first-practice exchange, the board hearing. Unofficial re-uploads exist (Boxoffice Movie Scenes, Binge Society, etc.) — do not use.",
   "View counts change; refresh with tools/investigate/film_clips.py before quoting them publicly.",
   "Quote timestamps come from each clip's YouTube caption track (fan/auto captions) and are approximate (±2 s).",
   "Thumbnails: maxresdefault for the Movieclips clips is a clean 16:9 frame but has a Fandango 'F HD' badge; maxres1/2/3 are auto-frames that are scope (≈2.38:1) inside black bars with a MOVIECLIPS.com watermark in the bottom bar — crop to picture_box. sddefault (640x480) and hqdefault (480x360) are 4:3 letterboxed.",
-  "Coach Ken Carter's own channel 'Coach Carter' (UCX6fvPN4NHtzPkApTEmA08Q) has 3 low-view uploads titled 'CoachCarter salutes Actor Samuel L.Jackson's2005 Film, Coach Carter' — not checked for content/rights."
+  "Coach Ken Carter's own channel 'Coach Carter' (UCX6fvPN4NHtzPkApTEmA08Q) has 3 low-view uploads titled 'CoachCarter salutes Actor Samuel L.Jackson's2005 Film, Coach Carter' — not checked for content/rights.",
+  "2026-11-09: every scene now plays from self-hosted MP4s (github.com/dvolcore/coachcarter-film, Pages) — no YouTube ads. Missing scenes (lockout, contract/parents, board hearing, Renny, Junior's mother, pool party, vision) come from fan uploads; the lockout is only available at 266p. Owner direction: build everything, clearance handled by the Coach Carter team."
+ ],
+ "media_base": "https://dvolcore.github.io/coachcarter-film/",
+ "acts": [
+  {
+   "key": "contract",
+   "label": "Act I",
+   "title": "The contract",
+   "line": "A new coach, a 2.3 GPA, coats and ties, and the losing stops now."
+  },
+  {
+   "key": "lockout",
+   "label": "Act II",
+   "title": "The lockout",
+   "line": "Undefeated, then padlocked. The town turns on him. The team stays."
+  },
+  {
+   "key": "lastgame",
+   "label": "Act III",
+   "title": "The last game",
+   "line": "St. Francis, the final shot, and what they won instead."
+  }
+ ],
+ "real_carter": [
+  {
+   "slug": "real-carter-1",
+   "yt": "n8beCoP9lc8",
+   "file": "v/real-carter-1.mp4",
+   "poster": "assets/film/p/real-carter-1.jpg",
+   "aspect": 1.317,
+   "scene": "The Real Coach Carter · Part 1",
+   "kicker": "DVD featurette · Part 1",
+   "duration": "9:30",
+   "hook": "Ken Carter, his players and his son Damien on camera: the Richmond gym with no nets, the contracts, and why he took the job."
+  },
+  {
+   "slug": "real-carter-2",
+   "yt": "yzvd3xf6CTE",
+   "file": "v/real-carter-2.mp4",
+   "poster": "assets/film/p/real-carter-2.jpg",
+   "aspect": 1.317,
+   "scene": "The Real Coach Carter · Part 2",
+   "kicker": "DVD featurette · Part 2",
+   "duration": "9:59",
+   "hook": "The 1999 lockout as the people who lived it remember it — and what became of the team."
+  }
+ ],
+ "bands": [
+  {
+   "key": "team-lineup",
+   "alt": "The Richmond players line up in the old gym as Coach Carter walks in",
+   "scene": "first-practice",
+   "t": 20,
+   "aspect": 2.481,
+   "src": "assets/film/s/team-lineup-2400.webp",
+   "src_sm": "assets/film/s/team-lineup-1200.webp",
+   "from": "cmWstLTOqiQ",
+   "at": 24.539
+  },
+  {
+   "key": "contracts",
+   "alt": "The players react as Carter hands out the contracts",
+   "scene": "first-practice",
+   "t": 95,
+   "aspect": 2.481,
+   "src": "assets/film/s/contracts-2400.webp",
+   "src_sm": "assets/film/s/contracts-1200.webp",
+   "from": "cmWstLTOqiQ",
+   "at": 49.079
+  },
+  {
+   "key": "carter-gym",
+   "alt": "Carter in the Richmond gym on day one",
+   "scene": "first-practice",
+   "t": 270,
+   "aspect": 2.481,
+   "src": "assets/film/s/carter-gym-2400.webp",
+   "src_sm": "assets/film/s/carter-gym-1200.webp",
+   "from": "cmWstLTOqiQ",
+   "at": 282.202
+  },
+  {
+   "key": "carter-cruz",
+   "alt": "Carter faces Timo Cruz on the first day",
+   "scene": "first-practice",
+   "t": 228,
+   "aspect": 2.481,
+   "src": "assets/film/s/carter-cruz-2400.webp",
+   "src_sm": "assets/film/s/carter-cruz-1200.webp",
+   "from": "cmWstLTOqiQ",
+   "at": 225.0
+  },
+  {
+   "key": "stairs",
+   "alt": "Carter at the foot of the gym stairs as Cruz comes back",
+   "scene": "pushups",
+   "t": 0,
+   "aspect": 2.481,
+   "src": "assets/film/s/stairs-2400.webp",
+   "src_sm": "assets/film/s/stairs-1200.webp",
+   "from": "dfGYZMXUvnQ",
+   "at": 89.5
+  },
+  {
+   "key": "pushups",
+   "alt": "The whole team runs suicides and push-ups for Cruz",
+   "scene": "pushups",
+   "t": 50,
+   "aspect": 2.481,
+   "src": "assets/film/s/pushups-2400.webp",
+   "src_sm": "assets/film/s/pushups-1200.webp",
+   "from": "dfGYZMXUvnQ",
+   "at": 112.5
+  },
+  {
+   "key": "chain",
+   "alt": "Carter holds the chain cut from the gym doors",
+   "scene": "deepest-fear",
+   "t": 0,
+   "aspect": 2.481,
+   "src": "assets/film/s/chain-2400.webp",
+   "src_sm": "assets/film/s/chain-1200.webp",
+   "from": "sHgTSEhsRjQ",
+   "at": 47.674
+  },
+  {
+   "key": "desks",
+   "alt": "The team studying at desks on the gym floor",
+   "scene": "deepest-fear",
+   "t": 10,
+   "aspect": 2.481,
+   "src": "assets/film/s/desks-2400.webp",
+   "src_sm": "assets/film/s/desks-1200.webp",
+   "from": "sHgTSEhsRjQ",
+   "at": 68.5
+  },
+  {
+   "key": "desks-wide",
+   "alt": "Light through the gym windows over the players' desks",
+   "scene": "deepest-fear",
+   "t": 100,
+   "aspect": 2.481,
+   "src": "assets/film/s/desks-wide-2400.webp",
+   "src_sm": "assets/film/s/desks-wide-1200.webp",
+   "from": "sHgTSEhsRjQ",
+   "at": 170.5
+  },
+  {
+   "key": "board-room",
+   "alt": "Coach Carter before the packed school board",
+   "scene": "board-hearing",
+   "t": 9,
+   "aspect": 2.4,
+   "src": "assets/film/s/board-room-2400.webp",
+   "src_sm": "assets/film/s/board-room-1200.webp",
+   "from": "iCc9rFHuzlI",
+   "at": 24.286
+  },
+  {
+   "key": "board-speech",
+   "alt": "Coach Carter addresses the board",
+   "scene": "board-hearing",
+   "t": 150,
+   "aspect": 2.4,
+   "src": "assets/film/s/board-speech-2400.webp",
+   "src_sm": "assets/film/s/board-speech-1200.webp",
+   "from": "iCc9rFHuzlI",
+   "at": 170.005
+  },
+  {
+   "key": "street-night",
+   "alt": "Richmond streets at night",
+   "scene": "renny",
+   "t": 120,
+   "aspect": 2.388,
+   "src": "assets/film/s/street-night-2400.webp",
+   "src_sm": "assets/film/s/street-night-1200.webp",
+   "from": "jdrcX9zjS80",
+   "at": 130.829
+  },
+  {
+   "key": "bayhill-arena",
+   "alt": "The Bay Hill tournament, packed stands",
+   "scene": "bay-hill",
+   "t": 40,
+   "aspect": 2.481,
+   "src": "assets/film/s/bayhill-arena-2400.webp",
+   "src_sm": "assets/film/s/bayhill-arena-1200.webp",
+   "from": "ITuhV9Tw_bY",
+   "at": 119.904
+  },
+  {
+   "key": "bayhill-joy",
+   "alt": "Carter celebrates the Bay Hill championship",
+   "scene": "bay-hill",
+   "t": 120,
+   "aspect": 2.481,
+   "src": "assets/film/s/bayhill-joy-2400.webp",
+   "src_sm": "assets/film/s/bayhill-joy-1200.webp",
+   "from": "ITuhV9Tw_bY",
+   "at": 314.749
+  },
+  {
+   "key": "stfrancis-crowd",
+   "alt": "Carter and Kenyon on the sideline at St. Francis",
+   "scene": "final-shot",
+   "t": 10,
+   "aspect": 2.481,
+   "src": "assets/film/s/stfrancis-crowd-2400.webp",
+   "src_sm": "assets/film/s/stfrancis-crowd-1200.webp",
+   "from": "kLENW1JSjqk",
+   "at": 391.223
+  },
+  {
+   "key": "dream-team",
+   "alt": "Carter with his team in the locker room",
+   "scene": "storybook-ending",
+   "t": 0,
+   "aspect": 2.481,
+   "src": "assets/film/s/dream-team-2400.webp",
+   "src_sm": "assets/film/s/dream-team-1200.webp",
+   "from": "kLENW1JSjqk",
+   "at": 576.54
+  },
+  {
+   "key": "locker-team",
+   "alt": "The team in the locker room after St. Francis",
+   "scene": "storybook-ending",
+   "t": 30,
+   "aspect": 2.481,
+   "src": "assets/film/s/locker-team-2400.webp",
+   "src_sm": "assets/film/s/locker-team-1200.webp",
+   "from": "8WJ2C1s1ee8",
+   "at": 51.0
+  },
+  {
+   "key": "locker-carter",
+   "alt": "Carter in the locker room after the last game",
+   "scene": "storybook-ending",
+   "t": 64,
+   "aspect": 2.481,
+   "src": "assets/film/s/locker-carter-2400.webp",
+   "src_sm": "assets/film/s/locker-carter-1200.webp",
+   "from": "8WJ2C1s1ee8",
+   "at": 79.78
+  },
+  {
+   "key": "homecoming",
+   "alt": "Richmond's gym packed for the team's return",
+   "scene": "storybook-ending",
+   "t": 110,
+   "aspect": 2.481,
+   "src": "assets/film/s/homecoming-2400.webp",
+   "src_sm": "assets/film/s/homecoming-1200.webp",
+   "from": "8WJ2C1s1ee8",
+   "at": 127.758
+  },
+  {
+   "key": "store",
+   "alt": "Junior Battle's mother comes to see Carter",
+   "scene": "juniors-mother",
+   "t": 30,
+   "aspect": 2.4,
+   "src": "assets/film/s/store-2400.webp",
+   "src_sm": "assets/film/s/store-1200.webp",
+   "from": "WuSCEbZF4i4",
+   "at": 42.796
+  }
+ ],
+ "loops": [
+  {
+   "key": "desks",
+   "src": "assets/film/l/desks.mp4",
+   "poster": "assets/film/l/desks.webp"
+  },
+  {
+   "key": "practice",
+   "src": "assets/film/l/practice.mp4",
+   "poster": "assets/film/l/practice.webp"
+  },
+  {
+   "key": "crowd",
+   "src": "assets/film/l/crowd.mp4",
+   "poster": "assets/film/l/crowd.webp"
+  },
+  {
+   "key": "carter",
+   "src": "assets/film/l/carter.mp4",
+   "poster": "assets/film/l/carter.webp"
+  }
  ]
 }
