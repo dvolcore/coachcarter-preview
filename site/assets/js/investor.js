@@ -29,10 +29,10 @@
   /* ---- chart A: horizontal bars, one highlighted ---- */
   function hbar(wrap, data, highlight) {
     const svgBox = $(".cbody", wrap); const W = svgBox.clientWidth || 700; const rowH = 34, padL = Math.min(230, W * 0.38), padR = 64, top = 6;
-    const H = top + data.length * rowH + 24; const max = Math.max(...data.map((d) => d.v)) * 1.05;
+    const H = top + data.length * rowH + 24; const step = 25; const max = Math.ceil(Math.max(...data.map((d) => d.v)) / step) * step;
     const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, role: "img", "aria-label": wrap.dataset.title || "" }, null);
     const x = (v) => padL + (v / max) * (W - padL - padR);
-    [0, 0.25, 0.5, 0.75, 1].forEach((t) => { const gx = x(max * t / 1.05 * 1.0); el("line", { x1: gx, x2: gx, y1: top, y2: H - 22, stroke: GRID }, svg); const tx = el("text", { x: gx, y: H - 6, "text-anchor": "middle", class: "ctick" }, svg); tx.textContent = fmtM(max * t / 1.05); });
+    for (let v = 0; v <= max; v += step) { const gx = x(v); el("line", { x1: gx, x2: gx, y1: top, y2: H - 22, stroke: GRID }, svg); const tx = el("text", { x: gx, y: H - 6, "text-anchor": "middle", class: "ctick" }, svg); tx.textContent = v ? "$" + v + "M" : "$0"; }
     data.forEach((d, i) => {
       const y = top + i * rowH + 7; const isH = d.label === highlight; const bw = Math.max(2, x(d.v) - padL);
       const lbl = el("text", { x: padL - 12, y: y + 14, "text-anchor": "end", class: isH ? "clabel strong" : "clabel" }, svg); lbl.textContent = d.label.length > 30 ? d.label.slice(0, 29) + "…" : d.label;

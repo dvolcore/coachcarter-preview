@@ -41,7 +41,14 @@ getty = json.loads((ROOT / "site/assets/data/getty_all.json").read_text())["phot
 film = {}
 fs = INV / "film_stats.json"
 if fs.exists():
-    film = json.loads(fs.read_text())
+    F = json.loads(fs.read_text())
+    rows = F["basketball_rank"]["chart_rows"]
+    film = {
+        "basketball_domestic": [{"title": r["title"], "domestic_m": round(r["domestic_usd"] / 1e6, 1), "year": r["release"][-4:], "rank": r["rank"], "imdb": r.get("imdb_rating")} for r in rows[:12]],
+        "basketball_source": F["basketball_rank"]["chart_source"],
+        "facts": {"opening_m": "24.2", "theaters": "2,524", "domestic_m": "67.3", "worldwide_m": "76.7",
+                  "imdb": f'{F["scores"]["imdb"]["value"]["rating"]}', "rt_audience": f'{F["scores"]["rotten_tomatoes_audience"]["value"]["pct"]}%'},
+    }
 
 out = {
     "updated": "2026-11-09",
