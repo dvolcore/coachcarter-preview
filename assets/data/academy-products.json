@@ -12,16 +12,17 @@
       "image_width": 487,
       "image_height": 728,
       "image_caption": "Front view · AI garment rendering",
-      "flat": "assets/img/academy/front-row-jacket.webp",
-      "flat_alt": "Front, open, and back views of the Front Row Letterman showing the lapels, gold monogram, court lining, and Academy Contract",
-      "flat_width": 1774,
-      "flat_height": 887,
-      "flat_caption": "Jacket exterior and lining · AI concept image",
+      "flat": "assets/img/academy/front-row-contract.webp",
+      "flat_alt": "Gold basketball court and tonal Academy Contract patch on the Richmond-red lining",
+      "flat_width": 529,
+      "flat_height": 716,
+      "flat_caption": "The Academy Contract and court lining · AI garment rendering",
       "specs": [
         "Suit-coat lapels frame an ink-navy body, black leather sleeves and gold-tone hardware.",
         "Gold K|C monogram on the chest.",
-        "Richmond-inspired lining with a center-court motif, a 13–0 record patch and a tonal Academy Contract panel."
-      ]
+        "Richmond-red lining frames a gold center-court motif and the tonal Academy Contract patch."
+      ],
+      "campaign": "gallery.html"
     },
     {
       "id": "court-short",
