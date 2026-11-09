@@ -1,0 +1,222 @@
+[
+ {
+  "key": "team-lineup",
+  "alt": "The Richmond players line up in the old gym as Coach Carter walks in",
+  "scene": "first-practice",
+  "t": 20,
+  "aspect": 2.481,
+  "src": "assets/film/s/team-lineup-2400.webp",
+  "src_sm": "assets/film/s/team-lineup-1200.webp",
+  "from": "cmWstLTOqiQ",
+  "at": 24.539
+ },
+ {
+  "key": "contracts",
+  "alt": "The players react as Carter hands out the contracts",
+  "scene": "first-practice",
+  "t": 95,
+  "aspect": 2.481,
+  "src": "assets/film/s/contracts-2400.webp",
+  "src_sm": "assets/film/s/contracts-1200.webp",
+  "from": "cmWstLTOqiQ",
+  "at": 49.079
+ },
+ {
+  "key": "carter-gym",
+  "alt": "Carter in the Richmond gym on day one",
+  "scene": "first-practice",
+  "t": 270,
+  "aspect": 2.481,
+  "src": "assets/film/s/carter-gym-2400.webp",
+  "src_sm": "assets/film/s/carter-gym-1200.webp",
+  "from": "cmWstLTOqiQ",
+  "at": 282.202
+ },
+ {
+  "key": "carter-cruz",
+  "alt": "Carter faces Timo Cruz on the first day",
+  "scene": "first-practice",
+  "t": 228,
+  "aspect": 2.481,
+  "src": "assets/film/s/carter-cruz-2400.webp",
+  "src_sm": "assets/film/s/carter-cruz-1200.webp",
+  "from": "cmWstLTOqiQ",
+  "at": 225.0
+ },
+ {
+  "key": "stairs",
+  "alt": "Carter at the foot of the gym stairs as Cruz comes back",
+  "scene": "pushups",
+  "t": 0,
+  "aspect": 2.481,
+  "src": "assets/film/s/stairs-2400.webp",
+  "src_sm": "assets/film/s/stairs-1200.webp",
+  "from": "dfGYZMXUvnQ",
+  "at": 89.5
+ },
+ {
+  "key": "pushups",
+  "alt": "The whole team runs suicides and push-ups for Cruz",
+  "scene": "pushups",
+  "t": 50,
+  "aspect": 2.481,
+  "src": "assets/film/s/pushups-2400.webp",
+  "src_sm": "assets/film/s/pushups-1200.webp",
+  "from": "dfGYZMXUvnQ",
+  "at": 112.5
+ },
+ {
+  "key": "chain",
+  "alt": "Carter holds the chain cut from the gym doors",
+  "scene": "deepest-fear",
+  "t": 0,
+  "aspect": 2.481,
+  "src": "assets/film/s/chain-2400.webp",
+  "src_sm": "assets/film/s/chain-1200.webp",
+  "from": "sHgTSEhsRjQ",
+  "at": 47.674
+ },
+ {
+  "key": "desks",
+  "alt": "The team studying at desks on the gym floor",
+  "scene": "deepest-fear",
+  "t": 10,
+  "aspect": 2.481,
+  "src": "assets/film/s/desks-2400.webp",
+  "src_sm": "assets/film/s/desks-1200.webp",
+  "from": "sHgTSEhsRjQ",
+  "at": 68.5
+ },
+ {
+  "key": "desks-wide",
+  "alt": "Light through the gym windows over the players' desks",
+  "scene": "deepest-fear",
+  "t": 100,
+  "aspect": 2.481,
+  "src": "assets/film/s/desks-wide-2400.webp",
+  "src_sm": "assets/film/s/desks-wide-1200.webp",
+  "from": "sHgTSEhsRjQ",
+  "at": 170.5
+ },
+ {
+  "key": "board-room",
+  "alt": "Coach Carter before the packed school board",
+  "scene": "board-hearing",
+  "t": 9,
+  "aspect": 2.4,
+  "src": "assets/film/s/board-room-2400.webp",
+  "src_sm": "assets/film/s/board-room-1200.webp",
+  "from": "iCc9rFHuzlI",
+  "at": 24.286
+ },
+ {
+  "key": "board-speech",
+  "alt": "Coach Carter addresses the board",
+  "scene": "board-hearing",
+  "t": 150,
+  "aspect": 2.4,
+  "src": "assets/film/s/board-speech-2400.webp",
+  "src_sm": "assets/film/s/board-speech-1200.webp",
+  "from": "iCc9rFHuzlI",
+  "at": 170.005
+ },
+ {
+  "key": "street-night",
+  "alt": "Richmond streets at night",
+  "scene": "renny",
+  "t": 120,
+  "aspect": 2.388,
+  "src": "assets/film/s/street-night-2400.webp",
+  "src_sm": "assets/film/s/street-night-1200.webp",
+  "from": "jdrcX9zjS80",
+  "at": 130.829
+ },
+ {
+  "key": "bayhill-arena",
+  "alt": "The Bay Hill tournament, packed stands",
+  "scene": "bay-hill",
+  "t": 40,
+  "aspect": 2.481,
+  "src": "assets/film/s/bayhill-arena-2400.webp",
+  "src_sm": "assets/film/s/bayhill-arena-1200.webp",
+  "from": "ITuhV9Tw_bY",
+  "at": 119.904
+ },
+ {
+  "key": "bayhill-joy",
+  "alt": "Carter celebrates the Bay Hill championship",
+  "scene": "bay-hill",
+  "t": 120,
+  "aspect": 2.481,
+  "src": "assets/film/s/bayhill-joy-2400.webp",
+  "src_sm": "assets/film/s/bayhill-joy-1200.webp",
+  "from": "ITuhV9Tw_bY",
+  "at": 314.749
+ },
+ {
+  "key": "stfrancis-crowd",
+  "alt": "Carter and Kenyon on the sideline at St. Francis",
+  "scene": "final-shot",
+  "t": 10,
+  "aspect": 2.481,
+  "src": "assets/film/s/stfrancis-crowd-2400.webp",
+  "src_sm": "assets/film/s/stfrancis-crowd-1200.webp",
+  "from": "kLENW1JSjqk",
+  "at": 391.223
+ },
+ {
+  "key": "dream-team",
+  "alt": "Carter with his team in the locker room",
+  "scene": "storybook-ending",
+  "t": 0,
+  "aspect": 2.481,
+  "src": "assets/film/s/dream-team-2400.webp",
+  "src_sm": "assets/film/s/dream-team-1200.webp",
+  "from": "kLENW1JSjqk",
+  "at": 576.54
+ },
+ {
+  "key": "locker-team",
+  "alt": "The team in the locker room after St. Francis",
+  "scene": "storybook-ending",
+  "t": 30,
+  "aspect": 2.481,
+  "src": "assets/film/s/locker-team-2400.webp",
+  "src_sm": "assets/film/s/locker-team-1200.webp",
+  "from": "8WJ2C1s1ee8",
+  "at": 51.0
+ },
+ {
+  "key": "locker-carter",
+  "alt": "Carter in the locker room after the last game",
+  "scene": "storybook-ending",
+  "t": 64,
+  "aspect": 2.481,
+  "src": "assets/film/s/locker-carter-2400.webp",
+  "src_sm": "assets/film/s/locker-carter-1200.webp",
+  "from": "8WJ2C1s1ee8",
+  "at": 79.78
+ },
+ {
+  "key": "homecoming",
+  "alt": "Richmond's gym packed for the team's return",
+  "scene": "storybook-ending",
+  "t": 110,
+  "aspect": 2.481,
+  "src": "assets/film/s/homecoming-2400.webp",
+  "src_sm": "assets/film/s/homecoming-1200.webp",
+  "from": "8WJ2C1s1ee8",
+  "at": 127.758
+ },
+ {
+  "key": "store",
+  "alt": "Junior Battle's mother comes to see Carter",
+  "scene": "juniors-mother",
+  "t": 30,
+  "aspect": 2.4,
+  "src": "assets/film/s/store-2400.webp",
+  "src_sm": "assets/film/s/store-1200.webp",
+  "from": "WuSCEbZF4i4",
+  "at": 42.796
+ }
+]

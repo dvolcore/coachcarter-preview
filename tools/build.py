@@ -170,7 +170,7 @@ def footer():
     <div class="f-giant"><img src="assets/brand/wordmark_gold.svg" alt="The Real Coach Carter — Winners do one thing. We win." loading="lazy"></div>
     <div class="f-bottom">
       <span>© <span data-curyear>2026</span> Coach Ken Carter. All rights reserved.</span>
-      <span>"Coach Carter" (2005) is a Paramount Pictures / MTV Films release. Film scenes play from official Movieclips (Fandango) uploads on YouTube; no film footage is hosted here.</span>
+      <span>"Coach Carter" (2005) is a Paramount Pictures / MTV Films release. Coach Carter (2005) © Paramount Pictures / MTV Films. Film scenes included for private client review.</span>
     </div>
   </div>
 </footer>
