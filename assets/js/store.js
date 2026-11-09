@@ -57,18 +57,19 @@
       <div class="ct-author">Coach Ken Carter</div>${extra}
     </div></div><div class="face spine"></div><div class="face pages"></div><div class="face back"></div></div>`;
 
+  const photo = (src, alt) => `<img src="assets/img/products/${src}" alt="${alt}" loading="lazy">`;
   const P = [
     { id: "ymns-hc", cat: "books", name: "Yes Ma'am, No Sir", kind: "Hardcover · Business Plus / Hachette, 2012", price: 27, badge: "Hardcover", art: () => book("c1") },
-    { id: "ymns-signed", cat: "books", name: "Yes Ma'am, No Sir — Signed", kind: "Hardcover, signed by Coach", price: 49, badge: "Signed", art: () => book("c3") },
+    { id: "ymns-signed", cat: "books", name: "Yes Ma'am, No Sir — Signed", kind: "Hardcover, signed by Coach", price: 49, badge: "Signed", art: () => photo("book_signed.jpg", "Signed hardcover copies of Yes Ma'am, No Sir") },
     { id: "ymns-audio", cat: "books", name: "Yes Ma'am, No Sir — Audiobook", kind: "Hachette Audio · read by Coach Carter", price: 20, art: () => book("c2") },
     { id: "ymns-ebook", cat: "books", name: "Yes Ma'am, No Sir — eBook", kind: "Kindle · Apple Books · Nook", price: 15, art: () => book("c1") },
-    { id: "team-pack", cat: "books", name: "Team Pack — 25 Books", kind: "For schools, teams & companies · with contract cards", price: 525, badge: "Bulk", art: () => book("c3") },
+    { id: "team-pack", cat: "books", name: "Team Pack — 25 Books", kind: "For schools, teams & companies · with contract cards", price: 525, badge: "Bulk", art: () => photo("team_pack.jpg", "Team Pack box with books and contract cards") },
     { id: "film", cat: "film", name: "Coach Carter (2005)", kind: "The 2005 film · Blu-ray / DVD / Digital", price: 15, art: film },
-    { id: "tee-wewin", cat: "apparel", name: "WE WIN Tee", kind: "Heavyweight cotton · Legacy maroon", price: 42, badge: "New", art: () => tee("#541D30", `<text x="150" y="128" font-size="40" letter-spacing="2">WE WIN</text><text x="150" y="150" font-size="10" letter-spacing="4">WINNERS DO ONE THING</text>`) },
+    { id: "tee-wewin", cat: "apparel", name: "WE WIN Tee", kind: "Heavyweight cotton · Legacy maroon", price: 42, badge: "New", art: () => photo("tee_wewin.jpg", "Maroon WE WIN t-shirt") },
     { id: "tee-ymns", cat: "apparel", name: "Yes Ma'am. No Sir. Tee", kind: "Heavyweight cotton · Carbon", price: 42, art: () => tee("#16181D", `<text x="150" y="118" font-size="24" letter-spacing="2">YES MA'AM.</text><text x="150" y="146" font-size="24" letter-spacing="2">NO SIR.</text>`) },
     { id: "tee-average", cat: "apparel", name: "Average Is Not Good Enough Tee", kind: "Heavyweight cotton · Chalk", price: 42, art: () => tee("#EDE6D9", `<text x="150" y="112" font-size="17" letter-spacing="2">AVERAGE IS JUST</text><text x="150" y="134" font-size="17" letter-spacing="2">NOT GOOD ENOUGH.</text><text x="150" y="156" font-size="22" letter-spacing="4">PERIOD.</text>`, "#541D30") },
-    { id: "hoodie-contract", cat: "apparel", name: "The Contract Hoodie", kind: "Brushed fleece · Legacy maroon", price: 88, badge: "Limited", art: () => hoodie("#4a1829", `<text x="150" y="150" font-size="26" letter-spacing="3">I SIGNED</text><text x="150" y="172" font-size="12" letter-spacing="5">THE CONTRACT</text>`) },
-    { id: "cap-crest", cat: "apparel", name: "KC Crest Cap", kind: "Structured wool · Carbon", price: 38, art: () => cap("#16181D") },
+    { id: "hoodie-contract", cat: "apparel", name: "The Contract Hoodie", kind: "Brushed fleece · Legacy maroon", price: 88, badge: "Limited", art: () => photo("hoodie_contract.jpg", "Maroon I Signed The Contract hoodie") },
+    { id: "cap-crest", cat: "apparel", name: "KC Crest Cap", kind: "Structured wool · Carbon", price: 38, art: () => photo("cap_crest.jpg", "Black cap with gold KC embroidery") },
     { id: "ball-signed", cat: "collectibles", name: "Signed Game Ball", kind: "Full size · signed by Coach Ken Carter", price: 250, badge: "Signed", art: ball },
     { id: "print-contract", cat: "collectibles", name: "The Contract — Framed Print", kind: "Archival print · signed · 18×24", price: 180, art: print },
   ];
