@@ -3,3 +3,4 @@ tracking/
 .claude/
 node_modules/
 .omc/
+__pycache__/

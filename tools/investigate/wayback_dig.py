@@ -19,11 +19,11 @@ import argparse, hashlib, html, json, os, re, sys, time, urllib.parse, urllib.re
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-WORKERS = 2
+WORKERS = 1
 import threading
 _RATE_LOCK = threading.Lock()
 _LAST = [0.0]
-MIN_GAP = 1.5  # seconds between requests to web.archive.org (IA blocks IPs that go faster)
+MIN_GAP = 4.0  # seconds between requests to web.archive.org (IA blocks IPs that go faster)
 
 ROOT = "/Users/ralphd/Desktop/COACH_CARTER_PLATFORM/tracking/investigation"
 CDX_DIR = os.path.join(ROOT, "wayback_cdx")
@@ -40,7 +40,7 @@ DEFAULT_DOMAINS = [
 
 IMG_EXT = (".jpg", ".jpeg", ".png", ".gif", ".webp")
 DOC_EXT = (".pdf", ".doc", ".docx", ".ppt", ".pptx")
-VID_EXT = (".mp4", ".mov", ".m4v", ".flv", ".wmv", ".avi", ".mp3", ".wav", ".m4a")
+VID_EXT = (".swf", ".mp4", ".mov", ".m4v", ".flv", ".wmv", ".avi", ".mp3", ".wav", ".m4a")
 SKIP_PATH = re.compile(r"/(wp-includes|wp-admin|plugins|themes/[^/]+/(images|img|assets|js|css)|"
                        r"cgi-bin|_vti|icons?|smilies|emoji|spacer|pixel|gravatar|captcha)/|"
                        r"(spacer|blank|pixel|bullet|arrow|btn_|button|bg_|_bg\.|shim|clear\.gif|"
@@ -139,7 +139,7 @@ def classify(c):
         return "image"
     if o.endswith(DOC_EXT) or "pdf" in m or "msword" in m or "powerpoint" in m:
         return "doc"
-    if o.endswith(VID_EXT) or m.startswith("video/") or m.startswith("audio/") or "flash-video" in m:
+    if o.endswith(VID_EXT) or m.startswith("video/") or m.startswith("audio/") or "flash" in m:
         return "video"
     if m.startswith("text/html") or o.endswith((".htm", ".html", ".php", ".asp", ".aspx", "/")):
         return "page"
