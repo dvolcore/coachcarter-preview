@@ -326,5 +326,101 @@
    "url": "https://ohb.org/ken-coach-carter-headlines-omaha-home-for-boys-fundraising-gala/"
   }
  ],
- "film": {}
+ "film": {
+  "basketball_domestic": [
+   {
+    "title": "Space Jam",
+    "domestic_m": 90.4,
+    "year": "1996",
+    "rank": 1,
+    "imdb": 6.5
+   },
+   {
+    "title": "White Men Can't Jump",
+    "domestic_m": 76.3,
+    "year": "1992",
+    "rank": 2,
+    "imdb": 6.8
+   },
+   {
+    "title": "Space Jam: A New Legacy",
+    "domestic_m": 70.6,
+    "year": "2021",
+    "rank": 3,
+    "imdb": 4.5
+   },
+   {
+    "title": "Coach Carter",
+    "domestic_m": 67.3,
+    "year": "2005",
+    "rank": 4,
+    "imdb": 7.4
+   },
+   {
+    "title": "Like Mike",
+    "domestic_m": 51.4,
+    "year": "2002",
+    "rank": 5,
+    "imdb": 5.5
+   },
+   {
+    "title": "Glory Road",
+    "domestic_m": 42.6,
+    "year": "2006",
+    "rank": 6,
+    "imdb": 7.2
+   },
+   {
+    "title": "Uncle Drew",
+    "domestic_m": 42.5,
+    "year": "2018",
+    "rank": 7,
+    "imdb": 5.8
+   },
+   {
+    "title": "Semi-Pro",
+    "domestic_m": 33.5,
+    "year": "2008",
+    "rank": 8,
+    "imdb": 5.8
+   },
+   {
+    "title": "Eddie",
+    "domestic_m": 31.4,
+    "year": "1996",
+    "rank": 9,
+    "imdb": 5.2
+   },
+   {
+    "title": "Hoosiers",
+    "domestic_m": 28.6,
+    "year": "1986",
+    "rank": 10,
+    "imdb": 7.4
+   },
+   {
+    "title": "Love & Basketball",
+    "domestic_m": 27.5,
+    "year": "2000",
+    "rank": 11,
+    "imdb": 7.2
+   },
+   {
+    "title": "Air Bud",
+    "domestic_m": 23.1,
+    "year": "1997",
+    "rank": 12,
+    "imdb": 5.4
+   }
+  ],
+  "basketball_source": "https://www.boxofficemojo.com/genre/sg2900291841/",
+  "facts": {
+   "opening_m": "24.2",
+   "theaters": "2,524",
+   "domestic_m": "67.3",
+   "worldwide_m": "76.7",
+   "imdb": "7.4",
+   "rt_audience": "85%"
+  }
+ }
 }
