@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="150mm" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Contract Grid editable textile concept, 150 mm repeat</title>
+  <rect width="600" height="600" fill="#5E1A2C"/>
+  <g fill="none" stroke="#D3B264">
+    <path opacity=".28" stroke-width="1.4" d="M0 30H600 M0 60H600 M0 90H600 M0 120H600 M0 150H600 M0 180H600 M0 210H600 M0 240H600 M0 270H600 M0 300H600 M0 330H600 M0 360H600 M0 390H600 M0 420H600 M0 450H600 M0 480H600 M0 510H600 M0 540H600 M0 570H600"/>
+    <g opacity=".82" stroke-width="2.3">
+      <path d="M73 105H527V495H73Z M73 300H527 M224 105V221H376V105 M224 495V379H376V495 M115 105V137a185 143 0 0 0 370 0v-32 M115 495v-32a185 143 0 0 1 370 0v32"/>
+      <circle cx="300" cy="300" r="35"/>
+      <path d="M275 105a25 24 0 0 0 50 0 M275 495a25 24 0 0 1 50 0"/>
+      <path stroke-dasharray="7 5" d="M267 221a33 26 0 0 0 66 0 M267 379a33 26 0 0 1 66 0"/>
+    </g>
+    <path opacity=".72" stroke-width="2.1" d="M359 556h151 M359 558l-7-7m0 7 7-7"/>
+  </g>
+</svg>

@@ -24,3 +24,8 @@ figcaption{padding:.5rem 0;font-size:.77rem}
 .marks img{width:100%;display:block;height:140px;object-fit:contain;padding:10px;background:var(--carbon);margin-bottom:10px}
 @media(max-width:800px){.boards,.looks,.marks{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:510px){header,footer{align-items:flex-start;flex-direction:column}.boards,.looks,.marks{grid-template-columns:1fr}}
+#last-bell .boards img {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #eee5da;
+}
