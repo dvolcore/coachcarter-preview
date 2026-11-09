@@ -11,12 +11,25 @@ async function showProduct() {
     document.title = product.name + " — Coach Carter Academy";
     document.querySelector("#product-name").textContent = product.name;
     document.querySelector("#product-kind").textContent = product.kind;
-    document.querySelector("#product-price").textContent = product.price;
+    document.querySelector("#product-price").textContent = product.status || product.price;
     const photo = document.querySelector("#product-image");
     photo.src = product.image;
     photo.alt = product.alt;
-    document.querySelector("#product-flat").src = product.flat;
-    document.querySelector("#product-flat-download").href = product.flat;
+    if (product.image_caption) {
+      photo.width = product.image_width;
+      photo.height = product.image_height;
+      document.querySelector("#product-image-caption").textContent = product.image_caption;
+    }
+    const flat = document.querySelector("#product-flat");
+    flat.src = product.flat;
+    if (product.flat_caption) {
+      flat.alt = product.flat_alt;
+      flat.width = product.flat_width;
+      flat.height = product.flat_height;
+      document.querySelector("#product-flat-caption").textContent = product.flat_caption;
+    } else {
+      document.querySelector("#product-flat-download").href = product.flat;
+    }
 
     const specs = document.querySelector("#product-specs");
     specs.replaceChildren(...product.specs.map((spec) => {
@@ -25,12 +38,18 @@ async function showProduct() {
       return item;
     }));
 
-    document.querySelector("#product-artwork").src = product.artwork;
-    document.querySelector("#product-artwork-label").textContent = product.artwork_label;
-    const companion = products.find(({ id }) => id !== product.id);
     const link = document.querySelector("#product-companion");
-    link.href = "?product=" + encodeURIComponent(companion.id);
-    link.textContent = "Complete the look · " + companion.name + " ↗";
+    const artwork = document.querySelector("#product-artwork");
+    if (product.artwork) {
+      artwork.src = product.artwork;
+      document.querySelector("#product-artwork-label").textContent = product.artwork_label;
+      const companion = products.find(({ id, artwork }) => id !== product.id && artwork);
+      link.href = "?product=" + encodeURIComponent(companion.id);
+      link.textContent = "Complete the look · " + companion.name + " ↗";
+    } else {
+      artwork.closest("figure").hidden = true;
+      link.remove();
+    }
     document.querySelector(".academy-product-layout").hidden = false;
     status.hidden = true;
   } catch {
