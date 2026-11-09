@@ -370,3 +370,18 @@ canvas.dust { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 
 @media (max-width: 560px) { .road { grid-template-columns: 1fr; } .road > div { border-right: 0 !important; padding-left: 0 !important; } .road > div::before { left: 0 !important; } }
 
 .facts b span { font: inherit; color: inherit; display: inline; }
+
+/* scrapbook polaroids */
+.sgroup { margin-top: clamp(48px, 6vw, 80px); }
+.sgroup:first-of-type { margin-top: 0; }
+.sgroup > header { border-top: 1px solid rgba(16,18,22,.14); padding-top: 16px; margin-bottom: 28px; }
+.sgroup h3 { margin: 0; font: 600 clamp(24px, 2.4vw, 34px)/1 var(--f-head); text-transform: uppercase; }
+.scrap { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 34px 26px; }
+.pol { margin: 0; background: #fff; padding: 12px 12px 16px; box-shadow: 0 18px 40px -18px rgba(16,18,22,.45), 0 2px 6px rgba(16,18,22,.08); transform: rotate(var(--t, 0deg)); transition: transform .6s var(--ease), box-shadow .6s; }
+.pol:hover { transform: rotate(0deg) translateY(-6px) scale(1.03); box-shadow: 0 30px 60px -20px rgba(16,18,22,.55); z-index: 2; position: relative; }
+.pol img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: saturate(.95) contrast(1.02); }
+.pol figcaption { margin-top: 12px; font: 500 italic 18px/1.25 var(--f-quote); color: #2a2a2e; }
+.pol-rail img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); }
+.clients { display: flex; flex-wrap: wrap; gap: 10px; }
+.clients span { padding: 12px 18px; border-radius: 999px; border: 1px solid var(--line-strong); font: 600 13px/1 var(--f-head); letter-spacing: .14em; text-transform: uppercase; color: rgba(245,240,232,.82); transition: all .3s; }
+.clients span:hover { border-color: var(--gold); color: var(--gold-hi); }
