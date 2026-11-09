@@ -30,7 +30,7 @@
 .store-nav span { color: var(--academy-maroon); margin-left: .2em; }
 .store-campaign {
   display: grid;
-  grid-template-columns: minmax(0, 39fr) minmax(0, 61fr);
+  grid-template-columns: minmax(0, 32fr) minmax(0, 68fr);
   background: #eae0d3;
   color: var(--academy-ink);
 }
@@ -39,8 +39,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: clamp(18px, 4vw, 50px);
-  padding: clamp(36px, 5.4vw, 98px);
+  gap: clamp(16px, 2.5vw, 36px);
+  padding: clamp(24px, 3.3vw, 64px);
 }
 .store-academy-mark { width: min(185px, 56%); height: auto; aspect-ratio: 100 / 72; }
 .store-label {
@@ -59,7 +59,7 @@
   line-height: 1;
   text-transform: none;
 }
-.store-campaign h1 { font-size: clamp(2.6rem, 5.1vw, 5.8rem); margin: .2em 0 .24em; }
+.store-campaign h1 { font-size: clamp(2.5rem, 4.25vw, 5.2rem); margin: .2em 0 .24em; }
 .store-campaign-copy > div > p:not(.store-label) { color: var(--academy-muted); font-size: .94rem; max-width: 29ch; }
 .store-button {
   display: inline-flex;
@@ -75,8 +75,8 @@
   font-weight: 600;
 }
 .store-button:hover { background: var(--academy-carbon); }
-.store-campaign-image { position: relative; min-height: 100%; margin: 0; background: #3b212b; }
-.store-campaign-image img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 51% center; }
+.store-campaign-image { position: relative; align-self: center; margin: 0; background: #3b212b; }
+.store-campaign-image img { display: block; width: 100%; height: auto; }
 .store-campaign-image figcaption {
   position: absolute;
   right: 12px;
@@ -156,7 +156,6 @@
 .product-info .store-text-link { display: block; margin-top: 12px; }
 #product-error { padding: 40px 0; }
 @media (min-width: 780px) {
-  .store-campaign { min-height: clamp(460px, 45vw, 690px); }
   .academy-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 779px) {
@@ -165,7 +164,7 @@
   .store-campaign-copy > div { grid-column: 1; grid-row: 1; }
   .store-academy-mark { grid-column: 2; grid-row: 1; align-self: start; width: clamp(64px, 20vw, 140px); }
   .store-campaign h1 { font-size: clamp(2.1rem, 7.9vw, 4.6rem); }
-  .store-campaign-image { aspect-ratio: 1.28; }
+  .store-campaign-image { grid-row: 1; }
   .store-section-heading { align-items: flex-start; flex-direction: column; gap: 9px; }
   .store-signature { grid-template-columns: 60px minmax(0, 1fr); }
   .store-signature > a { grid-column: 2; }
