@@ -6,12 +6,30 @@ Run: python3 tools/build.py
 """
 import json
 import re
+from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 OUT = ROOT / "site"
 SERIES_PRICE = "$19.99"
+
+
+def academy_cards():
+    catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
+    cards = []
+    for product in catalog["products"]:
+        item = {key: escape(product[key]) for key in ("id", "image", "alt", "name", "kind", "price")}
+        cards.append('''<article class="academy-product-card">
+        <a class="academy-product-link" href="academy-product.html?product={id}">
+          <img src="{image}" alt="{alt}" loading="lazy" width="900" height="1350">
+          <div class="academy-product-meta">
+            <div><h3>{name}</h3><p>{kind}</p></div>
+            <div><span>{price}</span><span class="academy-product-arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+      </article>'''.format(**item))
+    return "\n      ".join(cards)
 
 
 def series_offer():
@@ -190,6 +208,8 @@ def build():
         meta = json.loads(m.group(1))
         body = raw[m.end():]
         body = body.replace("{{series_offer}}", series_offer()).replace("{{series_price}}", SERIES_PRICE)
+        if "{{academy_cards}}" in body:
+            body = body.replace("{{academy_cards}}", academy_cards())
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer()

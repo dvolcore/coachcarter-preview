@@ -1,0 +1,9 @@
+{
+  "brand": "Coach Carter Academy",
+  "collections": ["Court Collection", "First Whistle"],
+  "color": {"paper": "#F6F0E7", "bone": "#EDE0C9", "carbon": "#23252A", "academyMaroon": "#5C243A", "courtGold": "#B49158"},
+  "colorUsage": {"paper": "digital canvas", "bone": "shirt and alternate ink", "carbon": "core fabric and body copy", "academyMaroon": "hero fabric and headings", "courtGold": "metallic cue and trim; use bone for contrast on dark layouts"},
+  "typography": {"wordmark": "Use the supplied outlined Academy SVG", "siteDisplay": "Cinzel", "siteAccent": "Barlow Condensed"},
+  "artwork": ["academy_wordmark_descriptor.svg", "basketball_seam_motif.svg", "court-tee-signature.svg", "first-whistle-lining.svg"],
+  "status": "Digital values. Match thread, dye and print inks to approved physical swatches."
+}

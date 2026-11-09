@@ -6,33 +6,39 @@
       "id": "court-short",
       "name": "Court Short",
       "price": "$78 proposed",
-      "kind": "Development sample \u00b7 court short",
-      "image": "assets/img/academy/academy-court-short.png",
-      "alt": "Coach Carter Academy court short development look",
+      "kind": "Lined basketball mesh · Maroon / Bone",
+      "image": "assets/img/academy/academy-court-short.webp",
+      "alt": "Front view of the maroon Academy Court Short with ivory basketball-seam panels",
       "specs": [
-        "7-inch court short silhouette",
-        "Warm gold and maroon Academy treatment",
-        "Final fabric, fit and production subject to approval"
-      ]
+        "Target 7-inch inseam, lined basketball mesh and side pockets.",
+        "Bone side panels with basketball-seam detailing, fine gold piping and tipped drawcord.",
+        "Coach Carter Academy lettering on the leg."
+      ],
+      "artwork": "academy-studio/artwork/basketball_seam_motif.svg",
+      "artwork_label": "Basketball-seam panel artwork",
+      "flat": "academy-studio/flats/court-short.svg"
     },
     {
       "id": "court-tee",
       "name": "Court Tee",
       "price": "$68 proposed",
-      "kind": "Development sample \u00b7 tee",
-      "image": "assets/img/academy/academy-court-tee.png",
-      "alt": "Coach Carter Academy court tee development look",
+      "kind": "Heavyweight cotton jersey · Carbon",
+      "image": "assets/img/academy/academy-court-tee.webp",
+      "alt": "Front view of the carbon Court Tee with the gold Coach Carter Academy wordmark",
       "specs": [
-        "Premium heavyweight tee silhouette",
-        "Academy wordmark and basketball court detail",
-        "Final fabric, fit and production subject to approval"
-      ]
+        "Target 220–260 GSM cotton jersey with a structured rib collar.",
+        "Straight relaxed fit with room through the body and a clean hem.",
+        "Gold Academy wordmark on the chest and an oversized single-ink basketball on the back."
+      ],
+      "artwork": "academy-studio/artwork/court-tee-signature.svg",
+      "artwork_label": "Signature basketball print · one ink",
+      "flat": "academy-studio/flats/court-tee.svg"
     }
   ],
   "roadmap": [
-    "Jersey \u00b7 $98 proposed",
-    "Warm-up jacket \u00b7 $148 proposed",
-    "Hoodie \u00b7 $118 proposed",
-    "Basketball \u00b7 $68 proposed"
+    "Jersey · $98 proposed",
+    "Warm-up jacket · $148 proposed",
+    "Hoodie · $118 proposed",
+    "Basketball · $68 proposed"
   ]
 }

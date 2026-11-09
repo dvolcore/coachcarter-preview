@@ -35,12 +35,6 @@
     </div></div><div class="face spine"></div><div class="face pages"></div><div class="face back"></div></div>`;
 
   const photo = (src, alt) => `<img src="assets/img/products/${src}" alt="${alt}" loading="lazy">`;
-  const academyData = {
-    products: [
-      { id: "court-short", name: "Court Short", price: "$78 proposed", kind: "Development sample · court short", image: "assets/img/academy/academy-court-short.png", alt: "Coach Carter Academy court short development look" },
-      { id: "court-tee", name: "Court Tee", price: "$68 proposed", kind: "Development sample · tee", image: "assets/img/academy/academy-court-tee.png", alt: "Coach Carter Academy court tee development look" }
-    ]
-  };
   const P = [
     { id: "ymns-hc", cat: "books", name: "Yes Ma'am, No Sir", kind: "Hardcover · Business Plus / Hachette, 2012", price: 27, badge: "Hardcover", art: () => book("c1") },
     { id: "ymns-signed", cat: "books", name: "Yes Ma'am, No Sir — Signed", kind: "Hardcover, signed by Coach", price: 49, badge: "Signed", art: () => photo("book_signed.jpg", "Signed hardcover copies of Yes Ma'am, No Sir") },
@@ -103,17 +97,22 @@
       requestAnimationFrame(() => $$(".product", grid).forEach((el, i) => setTimeout(() => el.classList.add("in"), 60 * i)));
       $$(".glow", grid).forEach((el) => el.addEventListener("pointermove", (ev) => { const r = el.getBoundingClientRect(); el.style.setProperty("--mx", `${ev.clientX - r.left}px`); el.style.setProperty("--my", `${ev.clientY - r.top}px`); }));
     };
-    const filters = $(".filters"); filters.setAttribute("role", "group"); filters.removeAttribute("aria-label");
-    $$(".filters .chip").forEach((c) => { c.setAttribute("aria-pressed", c.classList.contains("on") ? "true" : "false"); c.addEventListener("click", () => { $$(".filters .chip").forEach((x) => { x.classList.toggle("on", x === c); x.setAttribute("aria-pressed", x === c ? "true" : "false"); }); if (c.dataset.cat === "academy") { grid.hidden = true; $("#academy-store-title")?.scrollIntoView({ behavior: "smooth", block: "start" }); return; } grid.hidden = false; draw(c.dataset.cat); }); });
-    const start = new URLSearchParams(location.search).get("cat") || "all";
-    const initial = ["all", "books", "collectibles", "film", "academy"].includes(start) ? start : "all";
-    $$(".filters .chip").forEach((x) => { x.classList.toggle("on", x.dataset.cat === initial); x.setAttribute("aria-pressed", x.dataset.cat === initial ? "true" : "false"); });
-    grid.hidden = initial === "academy";
-    if (initial !== "academy") draw(initial);
-  }
-  const academyGrid = $("#academy-product-grid");
-  if (academyGrid) {
-    academyGrid.innerHTML = academyData.products.map((p) => `<article class="academy-product-card"><a href="academy-product.html?product=${p.id}"><img src="${p.image}" alt="${p.alt}" loading="lazy"></a><div class="academy-product-meta"><h3>${p.name}</h3><span class="academy-price">${p.price}</span></div><div class="academy-kind">${p.kind}</div><a class="academy-card-link" href="academy-product.html?product=${p.id}">Review proposed spec <span class="arr">→</span></a></article>`).join("");
+    const chips = $$(".filters .chip");
+    const select = (category) => {
+      chips.forEach((chip) => {
+        const active = chip.dataset.cat === category;
+        chip.classList.toggle("on", active);
+        chip.setAttribute("aria-pressed", String(active));
+      });
+      draw(category);
+    };
+    chips.forEach((chip) => chip.addEventListener("click", () => select(chip.dataset.cat)));
+    const category = new URLSearchParams(location.search).get("cat");
+    select(chips.some((chip) => chip.dataset.cat === category) ? category : "all");
+    const section = ["academy", "apparel"].includes(category)
+      ? $("#academy-store-title")
+      : chips.some((chip) => chip.dataset.cat === category && category !== "all") ? $("#editions") : null;
+    if (section && !location.hash) section.scrollIntoView();
   }
   render();
 })();
