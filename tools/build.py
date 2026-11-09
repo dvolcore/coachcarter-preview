@@ -18,7 +18,8 @@ NAV = [
     ("keynotes", "keynotes.html", "Keynotes"),
     ("partners", "partners.html", "Partners"),
     ("store", "store.html", "Store"),
-    ("series", "series.html", "Coach Carter II"),
+    ("playbook", "playbook.html", "Playbook"),
+    ("series", "series.html", "Series"),
     ("impact", "impact.html", "Impact"),
 ]
 
@@ -47,7 +48,7 @@ def head(meta):
 <meta name="description" content="{desc}">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#08090B">
-<script>document.documentElement.classList.add("js")</script>
+<script>(function(d){{d.classList.add("js");try{{var q=location.search;if(/[?&]review(=|&|$)/.test(q))localStorage.setItem("cc_review","1");if(/[?&]client(=|&|$)/.test(q))localStorage.removeItem("cc_review");if(localStorage.getItem("cc_review"))d.classList.add("review")}}catch(e){{}}}})(document.documentElement)</script>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="assets/img/keyart_cc2.jpg">
@@ -89,7 +90,7 @@ def header(active):
   <button class="icon-btn close" data-menu aria-label="Close menu">{ICON['x']}</button>
   <a class="big" href="index.html">Home</a>{mlinks}
   <a class="btn btn-gold mt-m" href="keynotes.html#book" style="align-self:flex-start">Book Coach Carter</a>
-  <small>Preview build · not public</small>
+  <small class="internal">Review mode</small>
 </div>
 """
 
@@ -140,11 +141,13 @@ def footer():
 <div class="modal video" id="video-modal" role="dialog" aria-label="Video"><div class="box"><button class="icon-btn x" data-close aria-label="Close" style="background:rgba(0,0,0,.5)">{ICON['x']}</button><video controls playsinline preload="none"></video></div></div>
 <div class="modal" id="checkout-modal" role="dialog" aria-label="Checkout"><div class="box">
   <img src="assets/brand/crest_gold.svg" alt="" width="84" height="84">
-  <h3 class="h-m mt-s">Checkout opens at launch.</h3>
-  <p class="body-mute">This is the approval preview. Your bag is saved on this device. At launch, checkout runs on Shopify / Stripe with signed-copy fulfillment and bulk invoicing for schools and companies.</p>
-  <button class="btn btn-gold mt-s" data-close>Keep browsing</button></div></div>
+  <h3 class="h-m mt-s">The store opens soon.</h3>
+  <p class="body-mute">Your bag is saved. Join the Locker Room list and you'll get first access to the opening drop and signed editions.</p>
+  <form class="news" data-simple="You're on the list for the opening drop" style="max-width:none"><input type="email" required placeholder="Your email" aria-label="Email"><button type="submit">Notify me →</button></form>
+  <p class="body-mute internal" style="font-size:13px">Review note: checkout connects to Shopify / Stripe at launch.</p>
+  <button class="btn btn-ghost btn-sm mt-s" data-close>Keep browsing</button></div></div>
 <div class="toast" role="status" aria-live="polite"><img src="assets/brand/monogram_gold.svg" alt="" width="18" height="18" style="filter:brightness(.2)"><span></span></div>
-<div class="preview-flag">Preview · for approval</div>
+<div class="preview-flag internal">Review mode · internal notes visible</div>
 <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script defer src="assets/js/site.js"></script>
 <script defer src="assets/js/store.js"></script>

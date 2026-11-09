@@ -22,7 +22,7 @@ const step = +h * 0.9;
 let i = 0;
 for (let y = 0; y < total - 10 && i < 40; y += step, i++) {
   await p.evaluate((yy) => window.scrollTo(0, yy), y);
-  await p.waitForTimeout(1300);
+  await p.waitForTimeout(+(process.env.WAIT||1300));
   await p.screenshot({ path: `${out}/${String(i).padStart(2, "0")}.jpg`, quality: 60, type: "jpeg" });
 }
 console.log(JSON.stringify({ shots: i, total, errors: [...new Set(errors)] }, null, 1));

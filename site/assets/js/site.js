@@ -429,7 +429,7 @@
       e.preventDefault();
       const data = Object.fromEntries(new FormData(form).entries());
       const log = store.get("cc_inquiries", []); log.push({ at: new Date().toISOString(), form: form.dataset.wizard, ...data }); store.set("cc_inquiries", log);
-      form.innerHTML = `<div class="sent"><img src="assets/brand/crest_gold.svg" alt="" width="120" height="120"><h3 class="h-m">Request received.</h3><p class="body-mute">Preview build — inquiries are saved on this device only. At launch this routes straight to Coach Carter's booking desk.</p></div>`;
+      form.innerHTML = `<div class="sent"><img src="assets/brand/crest_gold.svg" alt="" width="120" height="120"><h3 class="h-m">Request received.</h3><p class="body-mute">Coach Carter's team will be in touch within two business days.</p><p class="body-mute internal" style="font-size:13px">Review note: preview saves inquiries on this device only; connect to the booking inbox before launch.</p></div>`;
       say("Request received");
     });
     show();
@@ -463,6 +463,42 @@
       out.classList.remove("pop"); void out.offsetWidth; out.classList.add("pop");
     };
     b.addEventListener("input", calc); calc();
+  });
+
+  /* ---------------- Getty editorial embeds (official embed player, lazy) ---------------- */
+  const gSlots = $$("[data-getty]");
+  if (gSlots.length) {
+    const base = document.querySelector('script[src*="site.js"]').src.replace(/assets\/js\/site\.js.*$/, "");
+    fetch(base + "assets/data/getty.json").then((r) => r.json()).then((list) => {
+      const byId = Object.fromEntries(list.map((g) => [g.id, g]));
+      const gio = new IntersectionObserver((ents) => ents.forEach((en) => {
+        if (!en.isIntersecting) return; gio.unobserve(en.target);
+        const el = en.target; const g = byId[el.dataset.getty]; if (!g) return;
+        const f = document.createElement("iframe");
+        f.src = `https://embed.gettyimages.com/embed/${g.id}?et=${encodeURIComponent(g.et)}&tld=com&sig=${encodeURIComponent(g.sig)}&caption=false&ver=1`;
+        f.title = `${g.title} — Getty Images`; f.loading = "lazy"; f.scrolling = "no"; f.setAttribute("frameborder", "0");
+        f.addEventListener("load", () => el.classList.add("ready"));
+        el.appendChild(f);
+      }), { rootMargin: "400px 0px" });
+      gSlots.forEach((el) => {
+        const g = byId[el.dataset.getty]; if (!g) { el.closest(".gx") && el.closest(".gx").remove(); return; }
+        el.style.aspectRatio = `${g.w} / ${g.h + 34}`;
+        const cap = el.parentElement.querySelector("figcaption");
+        if (cap && !cap.textContent.trim()) cap.innerHTML = `<b>${g.title}</b><span>${g.where}</span>`;
+        gio.observe(el);
+      });
+    }).catch(() => {});
+  }
+
+  /* ---------------- countdowns ---------------- */
+  $$("[data-countdown]").forEach((el) => {
+    const t = new Date(el.dataset.countdown).getTime();
+    const tick = () => {
+      const d = Math.max(0, t - Date.now());
+      const v = { d: Math.floor(d / 864e5), h: Math.floor(d / 36e5) % 24, m: Math.floor(d / 6e4) % 60 };
+      $$("[data-u]", el).forEach((b) => { b.textContent = String(v[b.dataset.u]).padStart(b.dataset.u === "d" ? 1 : 2, "0"); });
+    };
+    tick(); setInterval(tick, 30000);
   });
 
   /* ---------------- year in footer ---------------- */
