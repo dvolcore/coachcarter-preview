@@ -11,6 +11,30 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 OUT = ROOT / "site"
+SERIES_PRICE = "$19.99"
+
+
+def series_offer():
+    return f'''<section class="series-offer section" id="watch-plans" aria-labelledby="series-offer-title">
+  <div class="wrap">
+    <div class="series-offer-grid">
+      <div class="series-offer-art">
+        <img src="assets/img/keyart_cc2.jpg" alt="Coach Carter II series key art" loading="lazy">
+        <span class="series-preview-tag">Free preview · 60 seconds</span>
+      </div>
+      <div class="series-offer-copy">
+        <span class="eyebrow">Coach Carter II · Web series</span>
+        <h2 class="h-l mt-s" id="series-offer-title">The preview is free.<br><span class="gold-text">The story is worth it.</span></h2>
+        <div class="series-price"><strong>{SERIES_PRICE}</strong><span>Season One<br>One-time purchase · USD</span></div>
+        <p class="series-price-note">Planned launch price · Paid access coming soon</p>
+        <p class="series-offer-description">Get a first look now. Full episodes will be available through paid season access when the series launches.</p>
+        <ul class="series-includes"><li>Full Season One access at launch</li><li>No monthly subscription</li><li>Public viewing is preview only</li></ul>
+        <button class="btn btn-gold" data-video="assets/video/series-preview-60.mp4" data-poster="assets/video/trailer_720p.jpg">{ICON['play']}<span>Watch the free preview</span></button>
+        <p class="series-availability">In development. Final episode lineup and release date will be announced before sales open. No payments are being taken.</p>
+      </div>
+    </div>
+  </div>
+</section>'''
 
 NAV = [
     ("story", "story.html", "Story"),
@@ -117,6 +141,7 @@ def footer():
         <li><a href="keynotes.html#book">Book a keynote</a></li><li><a href="partners.html">Brand partnerships</a></li>
         <li><a href="partners.html#builder">Build a package</a></li><li><a href="brand.html">Press &amp; brand kit</a></li></ul></div>
       <div><h6>Store</h6><ul>
+        <li><a href="series.html#watch-plans">Web series · {SERIES_PRICE} planned</a></li>
         <li><a href="store.html?cat=books">Books</a></li><li><a href="store.html?cat=apparel">Apparel</a></li>
         <li><a href="store.html?cat=collectibles">Signed collectibles</a></li><li><a href="store.html?cat=film">The film</a></li></ul>
         <div class="socials mt-m">
@@ -164,6 +189,7 @@ def build():
         m = re.match(r"<!--(\{.*?\})-->\s*", raw, re.S)
         meta = json.loads(m.group(1))
         body = raw[m.end():]
+        body = body.replace("{{series_offer}}", series_offer()).replace("{{series_price}}", SERIES_PRICE)
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer()
