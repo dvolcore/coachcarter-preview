@@ -1,0 +1,3181 @@
+{
+ "generated": "2026-11-09",
+ "rights": "Paramount Pictures owns Coach Carter (2005). Video = embeds of official uploads only (Movieclips/Fandango, Rotten Tomatoes Classic Trailers/Fandango, Paramount Plus). Nothing is downloaded or re-hosted. Stills = YouTube-served thumbnails of those official uploads, and Getty Images editorial embeds (et/sig from Getty oEmbed).",
+ "trailer": {
+  "primary": {
+   "id": "d_GleoanbPE",
+   "title": "Coach Carter (2005) Trailer #1 | Movieclips Classic Trailers",
+   "channel": "Rotten Tomatoes Classic Trailers",
+   "channel_id": "UCTCjFFoX1un-j7ni4B6HJ3Q",
+   "channel_verified": true,
+   "official_basis": "Rotten Tomatoes Classic Trailers — Fandango channel, formerly 'Movieclips Classic Trailers' (verified badge)",
+   "upload_date": "20180315",
+   "duration_s": 154,
+   "view_count": 871376,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1920x1080",
+   "description": "Original theatrical trailer (includes the 'Paramount Pictures and MTV Films present' card).",
+   "url": "https://www.youtube.com/watch?v=d_GleoanbPE",
+   "embed": "https://www.youtube-nocookie.com/embed/d_GleoanbPE",
+   "poster": "https://i.ytimg.com/vi/d_GleoanbPE/maxresdefault.jpg",
+   "poster_note": "maxresdefault 1280x720 carries 'CLASSIC TRAILER' text + Fandango badge; clean frames = thumbs.maxres1-3 (letterboxed)",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    }
+   }
+  },
+  "alternate": {
+   "id": "a6Zpa4rtpkA",
+   "title": "Coach Carter",
+   "channel": "Paramount Plus",
+   "channel_id": "UCrRttZIypNTA1Mrfwo745Sg",
+   "upload_date": "20231208",
+   "duration": 153,
+   "view_count": null,
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "channel_verified": null,
+   "official_basis": "Paramount Plus — Paramount's official streaming channel",
+   "description": "Paramount+ upload titled 'Coach Carter' (2:33). Its auto-frames maxres2/maxres3 match the Movieclips trailer frames, so it is the theatrical trailer; not watched end-to-end.",
+   "caveats": [
+    "view count not exposed by YouTube",
+    "yt-dlp lists no formats for anonymous clients (store-style item); watch page reports playabilityStatus OK and playableInEmbed true",
+    "maxresdefault here is an auto frame (letterboxed, no badge)"
+   ],
+   "url": "https://www.youtube.com/watch?v=a6Zpa4rtpkA",
+   "embed": "https://www.youtube-nocookie.com/embed/a6Zpa4rtpkA",
+   "poster": "https://i.ytimg.com/vi/a6Zpa4rtpkA/maxresdefault.jpg",
+   "thumbs": {
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/a6Zpa4rtpkA/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/a6Zpa4rtpkA/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/a6Zpa4rtpkA/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 88,
+      "w": 1280,
+      "h": 546,
+      "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+     }
+    }
+   }
+  }
+ },
+ "clips": [
+  {
+   "id": "V1wAemvxNaM",
+   "order": 1,
+   "scene": "First Practice",
+   "featured": true,
+   "title": "Coach Carter (1/9) Movie CLIP - First Practice (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 162,
+   "duration": "2:42",
+   "view_count": 7238262,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) presents his new team with conduct contracts at the start of practice, but Timo (Rick Gonzalez) has other plans.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": "Contracts, 'sir', and Carter pinning Timo to the wall: 'I'm not a teacher. I'm the new basketball coach.'",
+   "url": "https://www.youtube.com/watch?v=V1wAemvxNaM",
+   "embed": "https://www.youtube-nocookie.com/embed/V1wAemvxNaM",
+   "poster": "https://i.ytimg.com/vi/V1wAemvxNaM/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "qUiptlAJcyQ",
+   "order": 2,
+   "scene": "Come-from-Behind Win",
+   "featured": false,
+   "title": "Coach Carter (2/9) Movie CLIP - Come-from-Behind Win (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 161,
+   "duration": "2:41",
+   "view_count": 4125636,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter's (Samuel L. Jackson) Richmond High team overcomes a three point deficit with help from freshman Damien (Robert Ri'chard) to get their first win of the season.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": null,
+   "url": "https://www.youtube.com/watch?v=qUiptlAJcyQ",
+   "embed": "https://www.youtube-nocookie.com/embed/qUiptlAJcyQ",
+   "poster": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "1g82D68N-ys",
+   "order": 3,
+   "scene": "Push-Ups and Suicides",
+   "featured": true,
+   "title": "Coach Carter (3/9) Movie CLIP - Push-Ups and Suicides (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 157,
+   "duration": "2:37",
+   "view_count": 3664008,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "The team shoulders the remaining drills assigned by Coach Carter (Samuel L. Jackson) to Timo (Rick Gonzalez) in order to help him earn back his spot on the roster.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": "'One person struggles, we all struggle.'",
+   "url": "https://www.youtube.com/watch?v=1g82D68N-ys",
+   "embed": "https://www.youtube-nocookie.com/embed/1g82D68N-ys",
+   "poster": "https://i.ytimg.com/vi/1g82D68N-ys/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/1g82D68N-ys/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "JomrLxDiT5g",
+   "order": 4,
+   "scene": "Richmond vs. Bay Hill",
+   "featured": false,
+   "title": "Coach Carter (4/9) Movie CLIP - Richmond vs. Bay Hill (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 154,
+   "duration": "2:34",
+   "view_count": 3545902,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) manages the final seconds of Richmond's road game against Bay Hill.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": null,
+   "url": "https://www.youtube.com/watch?v=JomrLxDiT5g",
+   "embed": "https://www.youtube-nocookie.com/embed/JomrLxDiT5g",
+   "poster": "https://i.ytimg.com/vi/JomrLxDiT5g/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/JomrLxDiT5g/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "2FKPDOpKzDo",
+   "order": 5,
+   "scene": "A Better Life",
+   "featured": true,
+   "title": "Coach Carter (5/9) Movie CLIP - A Better Life (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 159,
+   "duration": "2:39",
+   "view_count": 4084266,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) assures his group of high school players that he will do anything to help them get to college.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": "The stats speech: 'I see a system that's designed for you to fail.'",
+   "url": "https://www.youtube.com/watch?v=2FKPDOpKzDo",
+   "embed": "https://www.youtube-nocookie.com/embed/2FKPDOpKzDo",
+   "poster": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "2_fDhqRk_Ro",
+   "order": 6,
+   "scene": "Our Deepest Fear",
+   "featured": true,
+   "title": "Coach Carter (6/9) Movie CLIP - Our Deepest Fear (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 149,
+   "duration": "2:29",
+   "view_count": 8304240,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "The team recommits to improving their grades while Timo (Rick Gonzalez) eloquently expresses his thanks to Coach Carter (Samuel L. Jackson).",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": "The lockout payoff: the team keeps studying and Timo answers 'What is your deepest fear?'",
+   "url": "https://www.youtube.com/watch?v=2_fDhqRk_Ro",
+   "embed": "https://www.youtube-nocookie.com/embed/2_fDhqRk_Ro",
+   "poster": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "J97F53CAA1I",
+   "order": 7,
+   "scene": "Timeout Pep Talk",
+   "featured": false,
+   "title": "Coach Carter (7/9) Movie CLIP - Timeout Pep Talk (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 146,
+   "duration": "2:26",
+   "view_count": 3202061,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) refocuses his team after getting behind during the third quarter of the championship game.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": null,
+   "url": "https://www.youtube.com/watch?v=J97F53CAA1I",
+   "embed": "https://www.youtube-nocookie.com/embed/J97F53CAA1I",
+   "poster": "https://i.ytimg.com/vi/J97F53CAA1I/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "fnH1ZtugoqU",
+   "order": 8,
+   "scene": "The Final Shot",
+   "featured": true,
+   "title": "Coach Carter (8/9) Movie CLIP - The Final Shot (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 145,
+   "duration": "2:25",
+   "view_count": 2774101,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) and the crowd watch Richmond and St. Francis play the final seconds of the championship game.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": null,
+   "url": "https://www.youtube.com/watch?v=fnH1ZtugoqU",
+   "embed": "https://www.youtube-nocookie.com/embed/fnH1ZtugoqU",
+   "poster": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  },
+  {
+   "id": "eSBnFu1YnrU",
+   "order": 9,
+   "scene": "Not Your Storybook Ending",
+   "featured": true,
+   "title": "Coach Carter (9/9) Movie CLIP - Not Your Storybook Ending (2005) HD",
+   "channel": "Movieclips",
+   "channel_id": "UC3gNmTGu-TTbFPpfSs5kNkg",
+   "channel_verified": true,
+   "official_basis": "Movieclips — Fandango-owned official licensed movie-clip channel (verified badge)",
+   "upload_date": "20120524",
+   "duration_s": 163,
+   "duration": "2:43",
+   "view_count": 3568638,
+   "view_count_checked": "2026-11-09",
+   "age_limit": 0,
+   "playable_in_embed": true,
+   "source_resolution": "1280x720",
+   "description": "Coach Carter (Samuel L. Jackson) addresses his team in the locker room following the championship game.",
+   "description_source": "Movieclips CLIP DESCRIPTION (YouTube description)",
+   "hook": "'I came to coach basketball players, and you became students.' Then: 'Rich-what?' 'RICHMOND!'",
+   "url": "https://www.youtube.com/watch?v=eSBnFu1YnrU",
+   "embed": "https://www.youtube-nocookie.com/embed/eSBnFu1YnrU",
+   "poster": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxresdefault.jpg",
+   "poster_note": "maxresdefault is a real 1280x720 custom thumbnail (HTTP 200, measured) but carries a Fandango 'F HD' badge bottom-left; for a clean frame use thumbs.maxres1-3 cropped to picture_box",
+   "thumbs": {
+    "maxresdefault": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxresdefault.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720
+    },
+    "sddefault": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/sddefault.jpg",
+     "status": 200,
+     "w": 640,
+     "h": 480
+    },
+    "hqdefault": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/hqdefault.jpg",
+     "status": 200,
+     "w": 480,
+     "h": 360
+    },
+    "maxres1": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxres1.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres2": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxres2.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    },
+    "maxres3": {
+     "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxres3.jpg",
+     "status": 200,
+     "w": 1280,
+     "h": 720,
+     "picture_box": {
+      "x": 0,
+      "y": 91,
+      "w": 1280,
+      "h": 538,
+      "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+     }
+    }
+   }
+  }
+ ],
+ "quotes": [
+  {
+   "text": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
+   "speaker": "Timo Cruz",
+   "actor": "Rick Gonzalez",
+   "clip": "2_fDhqRk_Ro",
+   "t": "0:40",
+   "t_s": 40,
+   "attribution": "Adapted from Marianne Williamson, 'A Return to Love: Reflections on the Principles of A Course in Miracles' (1992). Credit her whenever the line is shown.",
+   "attribution_sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter",
+    "https://en.wikipedia.org/wiki/A_Return_to_Love"
+   ],
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true,
+   "wording_note": "Both IMDb and Wikiquote open the speech with these two sentences (full speech is ~110 words)."
+  },
+  {
+   "text": "Sir, I just wanna say thank you. You saved my life.",
+   "speaker": "Timo Cruz",
+   "actor": "Rick Gonzalez",
+   "clip": "2_fDhqRk_Ro",
+   "t": "1:23",
+   "t_s": 83,
+   "sources": [
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true,
+   "wording_note": "Wikiquote gives it twice ('wanna say' / 'wanted to say'); the clip's caption track reads 'Sir, I just wanna say thank you.'"
+  },
+  {
+   "text": "I came to coach basketball players, and you became students. I came to teach boys, and you became men.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "eSBnFu1YnrU",
+   "t": "1:04",
+   "t_s": 64,
+   "also_in": [
+    {
+     "clip": "d_GleoanbPE",
+     "t": "2:09"
+    }
+   ],
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true
+  },
+  {
+   "text": "But you men played like champions, and never gave up. And champions hold their heads high.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "eSBnFu1YnrU",
+   "t": "0:15",
+   "t_s": 15,
+   "sources": [
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true,
+   "wording_note": "Wikiquote only (not on IMDb's quotes page)."
+  },
+  {
+   "text": "Rich-what? / RICHMOND!",
+   "speaker": "Coach Ken Carter and the team",
+   "actor": "Samuel L. Jackson and cast",
+   "clip": "eSBnFu1YnrU",
+   "t": "1:46",
+   "t_s": 106,
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true
+  },
+  {
+   "text": "You said we're a team. One person struggles, we all struggle. One person triumphs, we all triumph.",
+   "speaker": "Jason Lyle",
+   "actor": "Channing Tatum",
+   "clip": "1g82D68N-ys",
+   "t": "0:54",
+   "t_s": 54,
+   "also_in": [
+    {
+     "clip": "d_GleoanbPE",
+     "t": "~2:00 (partial)"
+    }
+   ],
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true,
+   "wording_note": "IMDb and Wikiquote agree on this wording; the clip's fan caption track reads 'One player triumphs'."
+  },
+  {
+   "text": "Sir, they can cut the chains off the door, but they can't make us play.",
+   "speaker": "Jason Lyle",
+   "actor": "Channing Tatum",
+   "clip": "2_fDhqRk_Ro",
+   "t": "0:10",
+   "t_s": 10,
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true
+  },
+  {
+   "text": "We've decided we're going to finish what you've started, sir.",
+   "speaker": "Damien Carter",
+   "actor": "Robert Ri'chard",
+   "clip": "2_fDhqRk_Ro",
+   "t": "0:17",
+   "t_s": 17,
+   "also_in": [
+    {
+     "clip": "d_GleoanbPE",
+     "t": "~2:02"
+    }
+   ],
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true
+  },
+  {
+   "text": "I'm not a teacher. I'm the new basketball coach.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "V1wAemvxNaM",
+   "t": "1:52",
+   "t_s": 112,
+   "also_in": [
+    {
+     "clip": "d_GleoanbPE",
+     "t": "0:31"
+    }
+   ],
+   "sources": [
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": true,
+   "wording_note": "Wikiquote dialogue section (reply to 'Teachers ain't supposed to touch students')."
+  },
+  {
+   "text": "These boys are student athletes. \"Student\" comes first.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "d_GleoanbPE",
+   "t": "0:50",
+   "t_s": 50,
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/"
+   ],
+   "verified": true,
+   "wording_note": "IMDb (parents' meeting scene). Not in any of the 9 Movieclips scenes; heard in the trailer."
+  },
+  {
+   "text": "I promise you I'll do everything in my power to get you to college and to a better life.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": "2FKPDOpKzDo",
+   "t": "1:56",
+   "t_s": 116,
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/quotes/"
+   ],
+   "verified": true,
+   "wording_note": "Closing line of the 'stats' speech on IMDb."
+  },
+  {
+   "text": "As of now, you are a sir. So are the rest of you. \"Sir\" is a term of respect, and you will have my respect until you abuse it.",
+   "speaker": "Coach Ken Carter",
+   "actor": "Samuel L. Jackson",
+   "clip": null,
+   "t": null,
+   "sources": [
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ],
+   "verified": "partial",
+   "wording_note": "Wikiquote only (27 words; Wikiquote punctuates with '--' before 'and'). Not on IMDb and not in any official clip found — no timestamp. The exact phrase 'Sir, yes sir' is NOT a documented line of this film."
+  }
+ ],
+ "stills": {
+  "youtube": [
+   {
+    "video_id": "1g82D68N-ys",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/1g82D68N-ys/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter, ball under his arm, watches Timo Cruz at the foot of the gym stairs",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "V1wAemvxNaM",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter pins Timo Cruz against the gym wall at the first practice",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "V1wAemvxNaM",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Carter, in suit and tie, squares up to a player in the gym",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "V1wAemvxNaM",
+    "variant": "maxres2",
+    "url": "https://i.ytimg.com/vi/V1wAemvxNaM/maxres2.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Players laughing at the new coach during the first practice",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "qUiptlAJcyQ",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter courtside under the gym lights",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "qUiptlAJcyQ",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/qUiptlAJcyQ/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Oilers players celebrate their first win",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "JomrLxDiT5g",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/JomrLxDiT5g/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter smiles in front of a packed, cheering crowd",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "2FKPDOpKzDo",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter addresses the team in the school library",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "2FKPDOpKzDo",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/2FKPDOpKzDo/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Carter close-up in the library",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "2_fDhqRk_Ro",
+    "variant": "maxres2",
+    "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxres2.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Timo Cruz in the library scene ('Our Deepest Fear')",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "2_fDhqRk_Ro",
+    "variant": "maxres3",
+    "url": "https://i.ytimg.com/vi/2_fDhqRk_Ro/maxres3.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Carter in a tan suit, listening in the library",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "J97F53CAA1I",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter on the bench in front of the championship-game crowd",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "J97F53CAA1I",
+    "variant": "maxres2",
+    "url": "https://i.ytimg.com/vi/J97F53CAA1I/maxres2.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Carter fires up the team during a timeout",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "fnH1ZtugoqU",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/fnH1ZtugoqU/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Fans in the stands during the final seconds against St. Francis",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "eSBnFu1YnrU",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter in the locker room after the championship game",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "eSBnFu1YnrU",
+    "variant": "maxres2",
+    "url": "https://i.ytimg.com/vi/eSBnFu1YnrU/maxres2.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 91,
+     "w": 1280,
+     "h": 538,
+     "note": "2.38:1 scope picture; black bars above/below, MOVIECLIPS.com watermark in the bottom bar (~y 640-680) — crop to this box"
+    },
+    "pick": false,
+    "description": "Players smiling in the locker room",
+    "channel": "Movieclips"
+   },
+   {
+    "video_id": "d_GleoanbPE",
+    "variant": "maxres2",
+    "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxres2.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 88,
+     "w": 1280,
+     "h": 546,
+     "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+    },
+    "pick": true,
+    "description": "Carter with two players outdoors in golden late-day light (trailer)",
+    "channel": "Rotten Tomatoes Classic Trailers"
+   },
+   {
+    "video_id": "d_GleoanbPE",
+    "variant": "maxres1",
+    "url": "https://i.ytimg.com/vi/d_GleoanbPE/maxres1.jpg",
+    "w": 1280,
+    "h": 720,
+    "http_status": 200,
+    "picture_box": {
+     "x": 0,
+     "y": 88,
+     "w": 1280,
+     "h": 546,
+     "note": "2.35:1 scope picture inside black letterbox bars — crop to this box"
+    },
+    "pick": false,
+    "description": "Two players in the gym (trailer)",
+    "channel": "Rotten Tomatoes Classic Trailers"
+   }
+  ],
+  "getty": [
+   {
+    "getty_id": "108766375",
+    "pick": true,
+    "label": "Samuel L. Jackson wins the NAACP Image Award (Outstanding Actor) for Coach Carter",
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter,\" with Chris \"Ludacris\" Bridges, presenter (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "eM2QAOwNSmt-5qgC3u7HaQ",
+    "sig": "aYJiAIqFrjONyfElH5FgxwfzYERuyDNANAWLC6Fv6TE=",
+    "thumb": "https://media.gettyimages.com/id/108766375/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=YsI9ytG0sE2obW6y_eK3X_EwB-duLoKTWavWsc9qHVE=",
+    "page": "https://www.gettyimages.com/detail/108766375"
+   },
+   {
+    "getty_id": "108769840",
+    "pick": true,
+    "label": "Samuel L. Jackson with his NAACP Image Award for Coach Carter",
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter\" (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "icmVKqKeT7lBhmBuzhyd5Q",
+    "sig": "ZtZCgIRDZbqHlc-YNd9lBVDo8ayqnisQnE3_aaBWW04=",
+    "thumb": "https://media.gettyimages.com/id/108769840/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=ZIz2OG6Wk6nbpDqHewIVg3ARXkJXPROoolKeeI3uxik=",
+    "page": "https://www.gettyimages.com/detail/108769840"
+   },
+   {
+    "getty_id": "109967051",
+    "pick": true,
+    "label": "Coach Carter cast with Knicks great John Starks at the NY screening",
+    "title": "Coach Carter Special Screening Hosted by Paramount Pictures and New York Knicks",
+    "caption": "Coach Carter cast with John Starks, former New York Knicks (Photo by Mychal Watts/WireImage)",
+    "photographer": "Mychal Watts",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 447,
+    "et": "qMa7FNzQQdxaCbkh3LSAqA",
+    "sig": "r-KcfECM5rxrH9OtKvcBFQAHlAZ_1FJjCU0qYMW2-ao=",
+    "thumb": "https://media.gettyimages.com/id/109967051/photo/coach-carter-special-screening-hosted-by-paramount-pictures-and-new-york-knicks.jpg?b=1&s=170x170&k=20&c=QXfjBCl4ciDKoP-TBWCjbqs-M3izljTeASBbw7Lb7Zk=",
+    "page": "https://www.gettyimages.com/detail/109967051"
+   },
+   {
+    "getty_id": "112420616",
+    "pick": true,
+    "label": "Samuel L. Jackson on the red carpet at Grauman's Chinese Theatre",
+    "title": "\"Coach Carter\" Los Angeles Premiere - Red Carpet",
+    "caption": "Samuel L. Jackson during \"Coach Carter\" Los Angeles Premiere - Red Carpet at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Lee Celano/WireImage)",
+    "photographer": "Lee Celano",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 423,
+    "et": "gpBl-KsBQ_VM4KrsCJnRFA",
+    "sig": "BReNW_0aO-ZC1lSgb8uT4fcWIkgfoIVhAFnj0sVXpxA=",
+    "thumb": "https://media.gettyimages.com/id/112420616/photo/coach-carter-los-angeles-premiere-red-carpet.jpg?b=1&s=170x170&k=20&c=3gEaYQfebQDYFeZD_0onJOTuiDWqqGYGDdJcfp06X7c=",
+    "page": "https://www.gettyimages.com/detail/112420616"
+   },
+   {
+    "getty_id": "452850363",
+    "pick": true,
+    "label": "Atmosphere at the Coach Carter New York premiere, Loews 68th Street",
+    "title": "Coach Carter New York City Premiere",
+    "caption": "Atmosphere during Coach Carter New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 418,
+    "et": "xFkuB8XzR-1B2-KZPAfLNA",
+    "sig": "o_W4fnl1Sy7xaBBTcTK9GLj1xjR0GxGNZou0_ot9FaA=",
+    "thumb": "https://media.gettyimages.com/id/452850363/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=Jmo4XV2VeUvW_0q35GBe2S1ezzAtC40VXeOtNhkSDys=",
+    "page": "https://www.gettyimages.com/detail/452850363"
+   },
+   {
+    "getty_id": "51856250",
+    "pick": true,
+    "label": "Channing Tatum, Robert Ri'chard, Nana Gbewonyo and Rick Gonzalez at a NY screening for high-school students",
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  (L to R) Actors Channing Tatum, Robert Ri'Chard, Nana Gbewonyo and Rick Gonzalez arrive at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "BLwAC72PSFJCWrhifV94_A",
+    "sig": "-szr0CjtDRyAztQeV8Awcfm7FcBcQmKOz3-MqhxSQuU=",
+    "thumb": "https://media.gettyimages.com/id/51856250/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=qZB8O3rizjUEeZqmwLJfhb0tx4PQ3IpmFYndxkMW0X8=",
+    "page": "https://www.gettyimages.com/detail/51856250"
+   },
+   {
+    "getty_id": "51962472",
+    "pick": true,
+    "label": "Samuel L. Jackson and Rick Gonzalez at the premiere afterparty",
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors Samuel L. Jackson (L) and Rick Gonzalez talkat the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 433,
+    "et": "MBuUewZLTSxY9IzX9WQNbg",
+    "sig": "zVfVc2ue-izWipejq9f_jf3N8XM_uFRUomOiFYZvTYI=",
+    "thumb": "https://media.gettyimages.com/id/51962472/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=HT-9kjtAHwz_ArOxgFBtfKNnnFy_tLzXt8GivD4RWTA=",
+    "page": "https://www.gettyimages.com/detail/51962472"
+   },
+   {
+    "getty_id": "51962751",
+    "pick": true,
+    "label": "Texas Battle, Nana Gbewonyo, Rob Brown and Rick Gonzalez at the LA premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Texas Battle, Nana Gbewonyo, Rob Brown and Rick Gonzalez pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "4gRTzpoRTv5a9W0EgiFKRg",
+    "sig": "dh1m6Xdnv2lCOOL5HSot3lhfOLpEs-8bh8tzU9_hqJI=",
+    "thumb": "https://media.gettyimages.com/id/51962751/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=gsS6Su9G-cLiuhetH6XH_EShomFX-eqQ1zVbIk63Vhc=",
+    "page": "https://www.gettyimages.com/detail/51962751"
+   },
+   {
+    "getty_id": "51962754",
+    "pick": true,
+    "label": "Nana Gbewonyo, Rob Brown, Denise Dowse, Texas Battle and Rick Gonzalez at the LA premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Nana Gbewonyo, Rob Brown, Denise Dowse, Texas Battle and Rick Gonzalez pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "RGVDwHxjQfJbXU2VxnhrbA",
+    "sig": "MsqogLYOXrhin85bgrJmbWyR4Wan5NMPdskv__Y4qlY=",
+    "thumb": "https://media.gettyimages.com/id/51962754/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=fuPVf0Tuk9TlWADaBy8NOCbF2pU9wOsRCQLm2Gesr5Y=",
+    "page": "https://www.gettyimages.com/detail/51962754"
+   },
+   {
+    "getty_id": "51962755",
+    "pick": true,
+    "label": "Rick Gonzalez, Denise Dowse, Antwon Tanner and Rob Brown compare watches at the premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Rick Gonzalez, Denise Dowse, Antwon Tanner and Rob Brown compare watches at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "ZdVT-DztTDxHeRnJC_R5ow",
+    "sig": "2YOSDT0_W7ej_Uid_4CPEC55nFtvQpQwfMZWtvaHAO0=",
+    "thumb": "https://media.gettyimages.com/id/51962755/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=UJzi4WMapEgK0FYU9RRluDvQpEsZOpBGObd1SuTcPiU=",
+    "page": "https://www.gettyimages.com/detail/51962755"
+   },
+   {
+    "getty_id": "51962764",
+    "pick": true,
+    "label": "Director Thomas Carter, Ashanti and Samuel L. Jackson at the LA premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Director Thomas Carter (L), actors Ashanti and Samuel L. Jackson pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 412,
+    "et": "tLxtjL3bSttXJyYw38FG1A",
+    "sig": "mM6lI-ZNsys8-gN-95Vd8gavfyJ1-vutjw57RjSG6wQ=",
+    "thumb": "https://media.gettyimages.com/id/51962764/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=UcudSaSXeogV1l9OcHt0hri7A4Jkgun7Yxz3PLUHBGI=",
+    "page": "https://www.gettyimages.com/detail/51962764"
+   },
+   {
+    "getty_id": "51962766",
+    "pick": true,
+    "label": "Director Thomas Carter, Ashanti and Samuel L. Jackson at the LA premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Director Thomas Carter (L), actors Ashanti and Samuel L. Jackson pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 435,
+    "et": "Gbr4i9QLQvlqV9JdD84YnQ",
+    "sig": "zVYy8rm-eDcFkYYsVY1dmuNRnN4SsMh9tR8WGoLeHW8=",
+    "thumb": "https://media.gettyimages.com/id/51962766/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=fnKRzzXmV3s7Ha_6UaLE7vpob8lUZ0ueYvWX3m0tuKo=",
+    "page": "https://www.gettyimages.com/detail/51962766"
+   },
+   {
+    "getty_id": "51962883",
+    "pick": true,
+    "label": "Producers Brian Robbins and Mike Tollin with Samuel L. Jackson at the premiere",
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Producers Brian Robbins (L) and Mike Tollin (R) pose with actor Samuel L. Jackson at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 436,
+    "et": "VFh-3LObTBlhW2YIhSdzEQ",
+    "sig": "80SeM03raJ5mwixmVqeEZPZ3znMhMENwaV2x05JuFlY=",
+    "thumb": "https://media.gettyimages.com/id/51962883/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=Vjn-rdxw259t6MLjEfvwGVPePLW5Hibh63gytOM1-Vg=",
+    "page": "https://www.gettyimages.com/detail/51962883"
+   },
+   {
+    "getty_id": "524780360",
+    "pick": true,
+    "label": "Samuel L. Jackson and Ashanti greet each other at the Grauman's Chinese premiere",
+    "title": "\"Coach Carter\" Premieres in Los Angeles",
+    "caption": "Castmembers Samuel L. Jackson (L) and Ashanti greet each other at the premiere of \"Coach Carter\" held at Grauman's Chinese Theater in Hollywood. (Photo by Paul Mounce/Corbis via Getty Images)",
+    "photographer": "Paul Mounce - Corbis",
+    "collection": "Corbis Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "EqZ0wwcMSulq0p4humOdvA",
+    "sig": "aFhmfp7ohwZkkxSmTKns0uAh45BlUMJXGXs1mX3kZUY=",
+    "thumb": "https://media.gettyimages.com/id/524780360/photo/coach-carter-premieres-in-los-angeles.jpg?b=1&s=170x170&k=20&c=SYdudjfRhluvC_ggNCT4JODa6atYaCvY960UuAaR340=",
+    "page": "https://www.gettyimages.com/detail/524780360"
+   },
+   {
+    "getty_id": "105260241",
+    "pick": false,
+    "label": null,
+    "title": "\"Twisted\" World Premiere - Red Carpet",
+    "caption": "Cast of \"Coach Carter\" during \"Twisted\" World Premiere - Red Carpet at Paramount Pictures in Los Angeles, California, United States. (Photo by L. Cohen/WireImage)",
+    "photographer": "L. Cohen",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 388,
+    "et": "LtL_myvPS9Z6fpMtzhFHjg",
+    "sig": "oiNK7xJoFkMqp-p5m1Erd0kp8DeX3E5rTX3k33gxPG4=",
+    "thumb": "https://media.gettyimages.com/id/105260241/photo/twisted-world-premiere-red-carpet.jpg?b=1&s=170x170&k=20&c=ETOdOSi0eQuw9mm58h87FgqyLpEV35tVqoXIzy2Ge28=",
+    "page": "https://www.gettyimages.com/detail/105260241"
+   },
+   {
+    "getty_id": "105349973",
+    "pick": false,
+    "label": null,
+    "title": "\"Twisted\" World Premiere - Red Carpet",
+    "caption": "Cast of \"Coach Carter\" during \"Twisted\" World Premiere - Red Carpet at Paramount Pictures in Los Angeles, California, United States. (Photo by L. Cohen/WireImage)",
+    "photographer": "L. Cohen",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 393,
+    "et": "6N8vty0-Site29bwHrLzyw",
+    "sig": "gAb4pQrZToi-guRo7VojCUIyL_jlztvfoB2n1hlxSOU=",
+    "thumb": "https://media.gettyimages.com/id/105349973/photo/twisted-world-premiere-red-carpet.jpg?b=1&s=170x170&k=20&c=g4O2SJHSPSR5s3f-Fnu8xsH0RmzwHnVRMslBj5SutFc=",
+    "page": "https://www.gettyimages.com/detail/105349973"
+   },
+   {
+    "getty_id": "105349974",
+    "pick": false,
+    "label": null,
+    "title": "\"Twisted\" World Premiere - Red Carpet",
+    "caption": "Cast of \"Coach Carter\" during \"Twisted\" World Premiere - Red Carpet at Paramount Pictures in Los Angeles, California, United States. (Photo by L. Cohen/WireImage)",
+    "photographer": "L. Cohen",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 389,
+    "et": "hruUmuyFT4JX_Vro6RYo7A",
+    "sig": "EZu3GqizPIbwvQfpXtnG76_Dbi_96stbzyfsoOukCvo=",
+    "thumb": "https://media.gettyimages.com/id/105349974/photo/twisted-world-premiere-red-carpet.jpg?b=1&s=170x170&k=20&c=LtTz0dBx_DX9AO9u7Xtzk_Ph8341Sad0Hk7N_TuD9_Y=",
+    "page": "https://www.gettyimages.com/detail/105349974"
+   },
+   {
+    "getty_id": "105367409",
+    "pick": false,
+    "label": null,
+    "title": "\"Twisted\" World Premiere - Red Carpet",
+    "caption": "Cast of \"Coach Carter\" during \"Twisted\" World Premiere - Red Carpet at Paramount Pictures in Los Angeles, California, United States. (Photo by L. Cohen/WireImage)",
+    "photographer": "L. Cohen",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 393,
+    "et": "SJOKgJ7vQBVZkKUNXcbeqA",
+    "sig": "PAOv_dm4juCKGJ5UOLBEQ-5Da1bvXXi3mqz_rh949pk=",
+    "thumb": "https://media.gettyimages.com/id/105367409/photo/twisted-world-premiere-red-carpet.jpg?b=1&s=170x170&k=20&c=obUuhbIkkElJxOl8TSaRgve8qcOmFrcAkDUUNCP4ja4=",
+    "page": "https://www.gettyimages.com/detail/105367409"
+   },
+   {
+    "getty_id": "105381295",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "Ashanti and family during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Gregg DeGuire/WireImage)",
+    "photographer": "Gregg DeGuire",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 397,
+    "et": "PttqcPu7Rel9D-KTqWB_HA",
+    "sig": "xzA34e9FfDXUEbMWpf2Yb32O6sZYXrL5GmdcEfX8QBs=",
+    "thumb": "https://media.gettyimages.com/id/105381295/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=hepNZ_e2pRfkeyC1Xi-o14Dc8dbsV6UphPYSKcnF4pg=",
+    "page": "https://www.gettyimages.com/detail/105381295"
+   },
+   {
+    "getty_id": "105381298",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "Ashanti and family during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Gregg DeGuire/WireImage)",
+    "photographer": "Gregg DeGuire",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 387,
+    "et": "74vytaO9R_he6uug0kc8tQ",
+    "sig": "urhzwY52QgH5x-xzLwBnHW4y4fKn0sj84uYZB0OPknw=",
+    "thumb": "https://media.gettyimages.com/id/105381298/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=Ipw32cAG1Fq0kg8ARMr-Sq6YMR6RYEUSCsF1T2RMNZs=",
+    "page": "https://www.gettyimages.com/detail/105381298"
+   },
+   {
+    "getty_id": "105393539",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "Chingy during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Gregg DeGuire/WireImage)",
+    "photographer": "Gregg DeGuire",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 586,
+    "et": "-E427UyJR0BJxil2PTkDtQ",
+    "sig": "CTWn_VWjncZHSRKp7xkBXG__52gqPSPnbuXexEF_itA=",
+    "thumb": "https://media.gettyimages.com/id/105393539/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=HyOahXe_tv1FL30AH6mbiuthyRXef6FTYyngDU07Xxs=",
+    "page": "https://www.gettyimages.com/detail/105393539"
+   },
+   {
+    "getty_id": "105561532",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "3LW during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by SGranitz/WireImage)",
+    "photographer": "Steve Granitz",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 435,
+    "et": "gyIf9ThTR4lNlpoJ2D7Jjg",
+    "sig": "2Yrix9Q0whXUXEZbKzqQaRaH-HGl7fcK9vHDPg9eAE0=",
+    "thumb": "https://media.gettyimages.com/id/105561532/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=jCCCGF9Ffnn2Rw_hxa6EQX2joaZSmwixu6XKZB3p4-A=",
+    "page": "https://www.gettyimages.com/detail/105561532"
+   },
+   {
+    "getty_id": "105593651",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "Ashanti during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Gregg DeGuire/WireImage)",
+    "photographer": "Gregg DeGuire",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 582,
+    "et": "L-Tx0uUlROhsJSD4HlpfHA",
+    "sig": "Drl1bYtOTwoMgNXgFNJblDm7HHFov7aDHVFEU7CUV0g=",
+    "thumb": "https://media.gettyimages.com/id/105593651/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=S05KdGqTlUUVjDUWc5_Oyf8ysh9gmDNqxPffOjI9eaM=",
+    "page": "https://www.gettyimages.com/detail/105593651"
+   },
+   {
+    "getty_id": "105593963",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - Arrivals",
+    "caption": "Samuel L. Jackson and LaTanya Richardson during \"Coach Carter\" Los Angeles Premiere - Arrivals at Grauman's Chinese Theatre in Hollywood, California, United States. (Photo by Gregg DeGuire/WireImage)",
+    "photographer": "Gregg DeGuire",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 581,
+    "et": "sMq4Wd0zRP5_O4xMgCVu5A",
+    "sig": "Fzrk_V856Fwk81niD8jmiNgLnd_uqvyH3EluSEWQK28=",
+    "thumb": "https://media.gettyimages.com/id/105593963/photo/coach-carter-los-angeles-premiere-arrivals.jpg?b=1&s=170x170&k=20&c=oMxzMHcKNTcN6gcWnOvSljGg-_Ta_V-qYEeiSAkV-M0=",
+    "page": "https://www.gettyimages.com/detail/105593963"
+   },
+   {
+    "getty_id": "108767391",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter\" (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "OyFEWZ3ET9x-S0hS-0CqUw",
+    "sig": "tn4u6YQqfZDjeLEVt7RIs2illJV78cx4KBGd0E07pt8=",
+    "thumb": "https://media.gettyimages.com/id/108767391/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=xcKoLbV0K94Ld0Nfzaeh4c9ftZuhexlcBDZIhvVAvEU=",
+    "page": "https://www.gettyimages.com/detail/108767391"
+   },
+   {
+    "getty_id": "108769996",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter\" (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "AY0WPH9XRE9G-61gmXXZPw",
+    "sig": "9gIUHhQ7Rb0INIfbFRUKUH7R6m7c24-QOGaH_YLSYf4=",
+    "thumb": "https://media.gettyimages.com/id/108769996/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=6B1G066c5f__QhEtiD0LP7rvDavR8aI5Ok75xR8XkWw=",
+    "page": "https://www.gettyimages.com/detail/108769996"
+   },
+   {
+    "getty_id": "108777819",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter,\" with Chris \"Ludacris\" Bridges, presenter (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 406,
+    "et": "Gh66UitlRgtw8zLL91zkzQ",
+    "sig": "8n2H82hMwbzgiKyh3AFy6tAj3SHx19bW15hUbbO_Q_E=",
+    "thumb": "https://media.gettyimages.com/id/108777819/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=lkWN9J4Kr8-MmIOmLjnFpnY75RpL-XjWDIkMg2Q4tW8=",
+    "page": "https://www.gettyimages.com/detail/108777819"
+   },
+   {
+    "getty_id": "108778737",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter\" (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "0bIcrlp7R6RJYK-Xs3ukwQ",
+    "sig": "bjEBwnCAoHvQ6Ik8iUClaWVENKquARSm3UPtUO4bHYk=",
+    "thumb": "https://media.gettyimages.com/id/108778737/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=pHYvHp3BZO1MAfBUuWpf9bY6D-17THH6p6yALO4lT0E=",
+    "page": "https://www.gettyimages.com/detail/108778737"
+   },
+   {
+    "getty_id": "108781558",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter,\" with Chris \"Ludacris\" Bridges and Kimberly Elise, presenters (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "h96ZV30QT_ZC8Q-87DDvFw",
+    "sig": "I6t9_UqTPhIsgkO9VD5cF40-Y_n-LNdk-JzFMJl4MAA=",
+    "thumb": "https://media.gettyimages.com/id/108781558/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=KB5NATSRwwXfJNV2B3zoVZcBD25YpCIpnLulsmNr19o=",
+    "page": "https://www.gettyimages.com/detail/108781558"
+   },
+   {
+    "getty_id": "109601335",
+    "pick": false,
+    "label": null,
+    "title": "The 37th Annual NAACP Image Awards - Show",
+    "caption": "Samuel L. Jackson, winner of Outstanding Actor in a Motion Picture for \"Coach Carter,\" with Chris \"Ludacris\" Bridges, presenter (Photo by M. Phillips/WireImage for The Lippin Group)",
+    "photographer": "M. Phillips",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 400,
+    "et": "TH-3B9zSQMxdNxZ5w8i23A",
+    "sig": "kGZ3isYuUJYbFi0dws32fZ8OO4iQRt2PXPzpEuhZDcE=",
+    "thumb": "https://media.gettyimages.com/id/109601335/photo/the-37th-annual-naacp-image-awards-show.jpg?b=1&s=170x170&k=20&c=O5MTxSOuD225zZg8dgxVrxCpTRKpYyDQc0LoKjillpk=",
+    "page": "https://www.gettyimages.com/detail/109601335"
+   },
+   {
+    "getty_id": "112417541",
+    "pick": false,
+    "label": null,
+    "title": "Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood",
+    "caption": "Ashanti presents a \"Coach Carter\" sweatshirt to Planet Hollywood (Photo by Carley Margolis/FilmMagic)",
+    "photographer": "Carley Margolis",
+    "collection": "FilmMagic",
+    "w": 594,
+    "h": 423,
+    "et": "E1UEDPjBTqBEq0eYEJWRHQ",
+    "sig": "w_kCWAUjX8Fd2RtihfvRavwyxjvS3c0Nr2D-1y4wWzI=",
+    "thumb": "https://media.gettyimages.com/id/112417541/photo/ashanti-presents-memorabilia-from-her-new-movie-coach-carter-to-planet-hollywood.jpg?b=1&s=170x170&k=20&c=oU8kBh3XYWn_JHEnFrnhXNk3kC6Exvc4ls08qz2F2X8=",
+    "page": "https://www.gettyimages.com/detail/112417541"
+   },
+   {
+    "getty_id": "112417542",
+    "pick": false,
+    "label": null,
+    "title": "Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood",
+    "caption": "Ashanti during Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood at Planet Hollywood in New York City, New York, United States. (Photo by Carley Margolis/FilmMagic)",
+    "photographer": "Carley Margolis",
+    "collection": "FilmMagic",
+    "w": 594,
+    "h": 406,
+    "et": "kBtIvNoYQgxfbYsq3o9iEw",
+    "sig": "ezD6ei1eO14RcipbIn0PPHGs_NZ4wnIJfZmNZQOvXQ4=",
+    "thumb": "https://media.gettyimages.com/id/112417542/photo/ashanti-presents-memorabilia-from-her-new-movie-coach-carter-to-planet-hollywood.jpg?b=1&s=170x170&k=20&c=BSCPZiRJ1KJSFuZxvZ81-j3fwynhojh2fjvXI2cyUeo=",
+    "page": "https://www.gettyimages.com/detail/112417542"
+   },
+   {
+    "getty_id": "112417544",
+    "pick": false,
+    "label": null,
+    "title": "Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood",
+    "caption": "Ashanti during Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood at Planet Hollywood in New York City, New York, United States. (Photo by Carley Margolis/FilmMagic)",
+    "photographer": "Carley Margolis",
+    "collection": "FilmMagic",
+    "w": 594,
+    "h": 451,
+    "et": "IYwyCFPmTyVn1pYG-JXL8Q",
+    "sig": "ZpiFGhHIRjPSrMK8JM4VvA5-oaWZUFNyamFvZvLZwrc=",
+    "thumb": "https://media.gettyimages.com/id/112417544/photo/ashanti-presents-memorabilia-from-her-new-movie-coach-carter-to-planet-hollywood.jpg?b=1&s=170x170&k=20&c=tVPdpf_fXlO7dP9R8zzU3uNDHsqSCB0HYO-qfxplG-Q=",
+    "page": "https://www.gettyimages.com/detail/112417544"
+   },
+   {
+    "getty_id": "112417545",
+    "pick": false,
+    "label": null,
+    "title": "Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood",
+    "caption": "Ashanti during Ashanti Presents Memorabilia from her New Movie \"Coach Carter\" to Planet Hollywood at Planet Hollywood in New York City, New York, United States. (Photo by Carley Margolis/FilmMagic)",
+    "photographer": "Carley Margolis",
+    "collection": "FilmMagic",
+    "w": 594,
+    "h": 429,
+    "et": "3LSsh26HS8tZ01YPuGlKmw",
+    "sig": "skAl3FsVeLX8ACqj5fkjalj65IoDMAWK42XmiYdVYFk=",
+    "thumb": "https://media.gettyimages.com/id/112417545/photo/ashanti-presents-memorabilia-from-her-new-movie-coach-carter-to-planet-hollywood.jpg?b=1&s=170x170&k=20&c=LIr6SaxEUCETWSEJBoJH_d4iROysLFNIwkfiU0jeSDU=",
+    "page": "https://www.gettyimages.com/detail/112417545"
+   },
+   {
+    "getty_id": "112420036",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" New York City Premiere",
+    "caption": "Diana Taurasi of the Phoenix Mercury during \"Coach Carter\" New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 489,
+    "et": "unI3d6nKRZRk04Sr4glBow",
+    "sig": "u7n6P3B7YYRxOhUiEQ5ZT8zMi0eHwmPJVxGmVVgfOqU=",
+    "thumb": "https://media.gettyimages.com/id/112420036/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=gdUGCoVUFsy37jgDT_d9_HIze0D9FcitNIynAq8o_98=",
+    "page": "https://www.gettyimages.com/detail/112420036"
+   },
+   {
+    "getty_id": "112420634",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" New York City Premiere - Screening Panel",
+    "caption": "Jean Boyd, co-founder of Scholar Baller during \"Coach Carter\" New York City Premiere - Screening Panel at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 525,
+    "et": "4oIpDmm-SzB5a2rArFBwCQ",
+    "sig": "wTtUPOYu5nDzp0XexynkdfBlg6XGQlZw_qbZlD-QrX4=",
+    "thumb": "https://media.gettyimages.com/id/112420634/photo/coach-carter-new-york-city-premiere-screening-panel.jpg?b=1&s=170x170&k=20&c=6tGxbyBsrM8_mHOIpz6kDUZNY2mPoQv8xnouMbyEJRI=",
+    "page": "https://www.gettyimages.com/detail/112420634"
+   },
+   {
+    "getty_id": "112420651",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Los Angeles Premiere - After Party",
+    "caption": "Samuel L. Jackson and Renny Harlin during \"Coach Carter\" Los Angeles Premiere - After Party at The Highlands Nightclub in Hollywood, Nevada, United States. (Photo by Lee Celano/WireImage)",
+    "photographer": "Lee Celano",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 465,
+    "et": "uuDjB4vrTulKX2qxdLp_Iw",
+    "sig": "ozJ3-XqBzVkxZ2aD6aVZKFj-WvJvvyU2CnoWv3NWJTA=",
+    "thumb": "https://media.gettyimages.com/id/112420651/photo/coach-carter-los-angeles-premiere-after-party.jpg?b=1&s=170x170&k=20&c=6Rl7arKNXRRhDTL62D4fxvDUhs_ffpGacQ-x4lxDFUQ=",
+    "page": "https://www.gettyimages.com/detail/112420651"
+   },
+   {
+    "getty_id": "452850411",
+    "pick": false,
+    "label": null,
+    "title": "Coach Carter New York City Premiere",
+    "caption": "Atmosphere during Coach Carter New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 437,
+    "et": "211nEHFNQWlTp2LV3KeiqQ",
+    "sig": "pKHNAa4OmCy3yuSHDTfR_E33xH3qeqt4b148ODIiCwU=",
+    "thumb": "https://media.gettyimages.com/id/452850411/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=vCckaE81YPTZJcfrkIxruvXylBBKK4P67VI-2kGfJYM=",
+    "page": "https://www.gettyimages.com/detail/452850411"
+   },
+   {
+    "getty_id": "452850873",
+    "pick": false,
+    "label": null,
+    "title": "Coach Carter New York City Premiere",
+    "caption": "Cliff Parker, co-founder of Scholar Baller during Coach Carter New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 474,
+    "et": "R89Jr-MtTWZB8IDS6HguYA",
+    "sig": "pM1FtSVsyv8RBFW4S52CASQ1kQb8x_BjW2NUbg32afg=",
+    "thumb": "https://media.gettyimages.com/id/452850873/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=ZQd6NxRZi-t4bHTzacemMfIZic08jSfz0sW__6sSBfU=",
+    "page": "https://www.gettyimages.com/detail/452850873"
+   },
+   {
+    "getty_id": "452850879",
+    "pick": false,
+    "label": null,
+    "title": "Coach Carter New York City Premiere",
+    "caption": "Myor and guest during Coach Carter New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 422,
+    "et": "4fJzT0ClS3JLCKs7BQt2lA",
+    "sig": "y0YFoqSc8zPfc-KxzqNHLJCHm_czjU9r7nk1Rabkj-4=",
+    "thumb": "https://media.gettyimages.com/id/452850879/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=32FX6iEXFlBkovekz3u2HQYPFZyzcRZ6RStXg8ZvHDk=",
+    "page": "https://www.gettyimages.com/detail/452850879"
+   },
+   {
+    "getty_id": "452850885",
+    "pick": false,
+    "label": null,
+    "title": "Coach Carter New York City Premiere",
+    "caption": "Russell Simmons during Coach Carter New York City Premiere at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 533,
+    "et": "jVOuqdW1S6h0ZY3AonQAng",
+    "sig": "ObYiTVe4OZKC2KDQweRxMiAw0zsgKTwvsj3kXbyD7SE=",
+    "thumb": "https://media.gettyimages.com/id/452850885/photo/coach-carter-new-york-city-premiere.jpg?b=1&s=170x170&k=20&c=GviG2aj8u0qyind3V7kBNTHTmNEG-C2mCpjrQRSovyc=",
+    "page": "https://www.gettyimages.com/detail/452850885"
+   },
+   {
+    "getty_id": "452850919",
+    "pick": false,
+    "label": null,
+    "title": "Coach Carter New York City Premiere - Screening Panel",
+    "caption": "Atmosphere during Coach Carter New York City Premiere - Screening Panel at Loews Theater 68th Street in New York City, New York, United States. (Photo by Johnny Nunez/WireImage)",
+    "photographer": "Johnny Nunez",
+    "collection": "WireImage",
+    "w": 594,
+    "h": 396,
+    "et": "ckLGt8GzQGRrTbHnaqPxVQ",
+    "sig": "q-bzoc_U8J40jpNUKehoHsihSbHkm6a_PK74w6J88zg=",
+    "thumb": "https://media.gettyimages.com/id/452850919/photo/coach-carter-new-york-city-premiere-screening-panel.jpg?b=1&s=170x170&k=20&c=mSV_pG-ME0z32kh5S9WMm9xTaebo74amEXMJeflZSaA=",
+    "page": "https://www.gettyimages.com/detail/452850919"
+   },
+   {
+    "getty_id": "51856253",
+    "pick": false,
+    "label": null,
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  (L to R) Actors Channing Tatum, Robert Ri'Chard, Nana Gbewonyo and Rick Gonzalez arrive at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "Sp_F2ODaSeFuRVuzPJ1NmQ",
+    "sig": "Er05L-08UfzTb_CAozqkUl00JGnw6p_HPIePDge4Qx8=",
+    "thumb": "https://media.gettyimages.com/id/51856253/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=F2Ae3oKoubpX5l5jbB-vo8sm3guCrrIZe7zXFVcn2KE=",
+    "page": "https://www.gettyimages.com/detail/51856253"
+   },
+   {
+    "getty_id": "51856257",
+    "pick": false,
+    "label": null,
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  (L to R) Actors Channing Tatum and Robert Ri'Chard greet John Starks, New York Knicks alumni and fan development advisor, at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "In4dfXlVSrFx1TEURV0oSg",
+    "sig": "bmknWINcPUCUrNo8tbyONokksEXQBG7pKt3xz4QfvvE=",
+    "thumb": "https://media.gettyimages.com/id/51856257/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=2cMqa4RcHEE_nlpT5tTp8NCopIyTjHdfDhMaBR4NetI=",
+    "page": "https://www.gettyimages.com/detail/51856257"
+   },
+   {
+    "getty_id": "51856263",
+    "pick": false,
+    "label": null,
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  (L to R) Actors Channing Tatum, Robert Ri'Chard and John Starks, New York Knicks alumni and fan development advisor, arrive at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "nm3Ph3PhSsdRAyImjsb8wQ",
+    "sig": "tnjzUUEIWWbSSLQijGBb2AgXpDzhS1lxQ8mgeOmH90A=",
+    "thumb": "https://media.gettyimages.com/id/51856263/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=oLxAfUe3j7WYy64EhVXKzPpLT2I2THjKRuUJjeD3vsI=",
+    "page": "https://www.gettyimages.com/detail/51856263"
+   },
+   {
+    "getty_id": "51856272",
+    "pick": false,
+    "label": null,
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  Actor Robert Ri'Chard arrives at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "c-eiqeNnTB1_E-JoTCdeJw",
+    "sig": "glB8MoMNN104xeh6D1N8LLKx20G5-5ccHPBrumB0vl4=",
+    "thumb": "https://media.gettyimages.com/id/51856272/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=B_zwUsDmtgZASYGpPFFeIHoISk_l1YHEaVm_jmxbgR8=",
+    "page": "https://www.gettyimages.com/detail/51856272"
+   },
+   {
+    "getty_id": "51856276",
+    "pick": false,
+    "label": null,
+    "title": "New York Knicks And Paramount Host Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - DECEMBER 13:  Fans take photos at a screening of \"Coach Carter\" for New York area high school students at the Clearview Chelsea West theater December 13, 2004 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "pIHAzL3FTjlC2044J1BzNw",
+    "sig": "7vCeHQLSlNxsaDb_hthk24jYkdLgFpQlU4hGHghVmho=",
+    "thumb": "https://media.gettyimages.com/id/51856276/photo/new-york-knicks-and-paramount-host-screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=v2ZydHgd93CY6fTjtkQhQ2ojIc7ceYpTNAM5EAsiyvw=",
+    "page": "https://www.gettyimages.com/detail/51856276"
+   },
+   {
+    "getty_id": "51960555",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller Dr. Keith Harrison, Diana Taurasi of the WNBA Phoenix Mercury, Cliff Parks and Jean Boyd attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 394,
+    "et": "TR_GhAmkSLxM2Pb3GuwTQg",
+    "sig": "-QHx24S06KHQKxW14LgeBu1LJA51fl3ENJQZBkWILhI=",
+    "thumb": "https://media.gettyimages.com/id/51960555/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=YxCBvgk3SpJy2SsBGoqJj2zkHQeud_LQ9cmXJk1xnF8=",
+    "page": "https://www.gettyimages.com/detail/51960555"
+   },
+   {
+    "getty_id": "51960561",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller Dr. Keith Harrison, Diana Taurasi of the WNBA Phoenix Mercury, Cliff Parks and Jean Boyd attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 394,
+    "et": "4EbpwlE7TDlehm7_0FXKhg",
+    "sig": "kb_0G5KJ_6VoSzzWvX3thg1s88o_FnWILGoxUaSS8M4=",
+    "thumb": "https://media.gettyimages.com/id/51960561/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=JzV5S7O3oAwsfIwrv5zTMSRCEkOss7rgHTaCU6tK0Vg=",
+    "page": "https://www.gettyimages.com/detail/51960561"
+   },
+   {
+    "getty_id": "51960563",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller Dr. Keith Harrison, Diana Taurasi of the WNBA Phoenix Mercury, Cliff Parks and Jean Boyd attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 394,
+    "et": "VjPbnlTiQVxSz3zrdrgczg",
+    "sig": "OgJr_ZK_p9fju_X0-DR7_p8f73HmbeWVcpYC_5gN2OY=",
+    "thumb": "https://media.gettyimages.com/id/51960563/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=7hd9yirKxC_7pt1TZ3NIV1yUd4L5OJHLiVWW8cf6Yw0=",
+    "page": "https://www.gettyimages.com/detail/51960563"
+   },
+   {
+    "getty_id": "51960648",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller co-founders Cliff Parks, Dr. C. Keith Harrison and Jean Boyd attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 417,
+    "et": "HYLuP517SOVDcLehEPkzJg",
+    "sig": "T4uGKb-FnYzyWEdMn0prLRyFsUYYrne_i3iaVYkfKw8=",
+    "thumb": "https://media.gettyimages.com/id/51960648/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=TURGvC0XAhAvcZ3HTP5wiDx5Gq2fiC9xMs9MjTwB3nc=",
+    "page": "https://www.gettyimages.com/detail/51960648"
+   },
+   {
+    "getty_id": "51960650",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller co-creator Dr. C. Keith Harrison, Diana Taurasi of the WNBA Phoenix Mercury and Cliff Parks attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 505,
+    "et": "QPGtYWp0RJNNSlYRVmxjCA",
+    "sig": "3V9RG1lgtyfsRMViFVyW808OSKzEcQRM1k3Q3c9vQdg=",
+    "thumb": "https://media.gettyimages.com/id/51960650/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=9BRRoXx7803XWrfQ8DWAE4378xI1vBoRM79XlSFDYTA=",
+    "page": "https://www.gettyimages.com/detail/51960650"
+   },
+   {
+    "getty_id": "51960660",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13: (L-R) Scholar-Baller co-founders Dr. C. Keith Harrison, Cliff Parks and Jean Boyd attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 481,
+    "et": "fm2D7d9tTH5nY9g3xXfuSQ",
+    "sig": "l6YTv61zvk2_kps6UvKdV1NfIXpFiZ1r0FgYWeV-fGQ=",
+    "thumb": "https://media.gettyimages.com/id/51960660/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=cUZZ8IzZLB5Q9j94BerhulyoeSKoxiyzrusIDROuXWE=",
+    "page": "https://www.gettyimages.com/detail/51960660"
+   },
+   {
+    "getty_id": "51960671",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13:  Diana Taurasi of the WNBA Phoenix Mercury and Scholar-Baller co-founder Cliff Parks attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 394,
+    "et": "6ZepNYrESvlhPYc0CSiPpQ",
+    "sig": "Gv-VFj2-4ZAA-cD1ltAwjjbXNfAzPTW8T38opHsuE80=",
+    "thumb": "https://media.gettyimages.com/id/51960671/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=y2geBH4FqOuCO4Lhiri78A9P5LZ-f5YDOLxrkKi8hrg=",
+    "page": "https://www.gettyimages.com/detail/51960671"
+   },
+   {
+    "getty_id": "51960672",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13:  Diana Taurasi of the WNBA Phoenix Mercury and Scholar-Baller co-founder Cliff Parks attend a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 406,
+    "et": "GHJdgvzwRXNCQ2CsUrijcw",
+    "sig": "un37cTpSWLzNsrSzZV_fHvD1oRpp4RGN-HMPoaPyahQ=",
+    "thumb": "https://media.gettyimages.com/id/51960672/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=KDRD_wX4k38Um17mhfSk3uiEMgVC-axTGCte94_Gs1Y=",
+    "page": "https://www.gettyimages.com/detail/51960672"
+   },
+   {
+    "getty_id": "51960776",
+    "pick": false,
+    "label": null,
+    "title": "Screening Of \"Coach Carter\"",
+    "caption": "NEW YORK - JANUARY 13:  Diana Taurasi of the WNBA Phoenix Mercury attends a screening of \"Coach Carter\" at Loews Lincoln Square theaters on January 13, 2005 in New York City.  (Photo by Paul Hawthorne/Getty Images)",
+    "photographer": "Paul Hawthorne",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 422,
+    "et": "OSKTCZFzR9p9E5CnRJp0YA",
+    "sig": "l08UQ_KMKrMsfwYSXKhk93Tfp0i_z73OH9RWap6dOEQ=",
+    "thumb": "https://media.gettyimages.com/id/51960776/photo/screening-of-coach-carter.jpg?b=1&s=170x170&k=20&c=Xo_yqy97vqEBKCUik6LE6pbSoIGFpK4rxSIRmiyzb48=",
+    "page": "https://www.gettyimages.com/detail/51960776"
+   },
+   {
+    "getty_id": "51962448",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Samuel L. Jackson (L) talks with director Renny Harlin at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 442,
+    "et": "d-dfcsLIRjdIigWmCIlb5g",
+    "sig": "QqHRpWf82iEnvbjBtXgKSQdRZO_ma81ON6JvasIs_JM=",
+    "thumb": "https://media.gettyimages.com/id/51962448/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=_QNzZVyJ9TW1rR8XDwV35FvotuA04bMspC4oOvUkIMg=",
+    "page": "https://www.gettyimages.com/detail/51962448"
+   },
+   {
+    "getty_id": "51962449",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Samuel L. Jackson (L) talks with director Renny Harlin at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "B7_cgV5RQT99KJFZ0hzbaw",
+    "sig": "LRUMgewAii6DxZOz56xoRWptTD89iCzAtTG-HzBBvSU=",
+    "thumb": "https://media.gettyimages.com/id/51962449/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=dHN0v6CfN70x01VYPnFxueQTuwoWw1edDNkCIwDHbow=",
+    "page": "https://www.gettyimages.com/detail/51962449"
+   },
+   {
+    "getty_id": "51962451",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Samuel L. Jackson (L) talks with director Renny Harlin at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "sfI8pDYeQhd-2yRq08KxdQ",
+    "sig": "43vO1rMsEL_4xGVKGniDoGgXaDSgqUb2R7eDQvtRngw=",
+    "thumb": "https://media.gettyimages.com/id/51962451/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=B8lzZNaM_vcH-JlCXsj6I8Vc58g_e5SiWfFMDFprfF0=",
+    "page": "https://www.gettyimages.com/detail/51962451"
+   },
+   {
+    "getty_id": "51962457",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  National Baseball Hall of Fame members Hank Aaron (L) and Dave Winfield pose  at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 460,
+    "et": "iH3vWVj5TLluZ7xaRhzC6g",
+    "sig": "rJA2m_rGI2Q6JgdEWfBL4nu8mAMSD4DUs0JlDw6VnUI=",
+    "thumb": "https://media.gettyimages.com/id/51962457/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=13_7-F-fWzeTvzBGoXpl8OdX6SMjLAhJjEX9RCf5ero=",
+    "page": "https://www.gettyimages.com/detail/51962457"
+   },
+   {
+    "getty_id": "51962461",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  National Baseball Hall of Fame members Ernie Banks (L) and Hank Aaron pose at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 442,
+    "et": "1Tf2HspQTdl_bRCbFIw6Wg",
+    "sig": "P7zQ8o5jy1f80Frj8gZr0DUkFYt5ikrY6BXPjfRlWWg=",
+    "thumb": "https://media.gettyimages.com/id/51962461/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=_mGki8_r_iXdYE9Ca0lgnW4yihcP3Sllr2Tc83cUS7E=",
+    "page": "https://www.gettyimages.com/detail/51962461"
+   },
+   {
+    "getty_id": "51962466",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors Rob Brown (L) ans Rick Gonzalez arrive at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 446,
+    "et": "H3V0yIEOT8Z6xQKu5ZyQ6g",
+    "sig": "4UezoMkQoIS-22tFW7OnU3xt9rxFacvo3D_yXbJsnpM=",
+    "thumb": "https://media.gettyimages.com/id/51962466/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=GhcmGiztHRmKwS5-vQ5nBea_M7bkY7hjCNW-IyhvRBU=",
+    "page": "https://www.gettyimages.com/detail/51962466"
+   },
+   {
+    "getty_id": "51962469",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Rick Gonzalez (L) meets actor Obba Babatunde at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 436,
+    "et": "YLBsI82CTNRjyMpb6U02JA",
+    "sig": "ZzFuFv58Wy5cakgzmqnfYJb3Bl8AJqK2SU4aKxl6i_g=",
+    "thumb": "https://media.gettyimages.com/id/51962469/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=95Afp3a5o77UAjOKVd5q3pYd7zAf0WfL074icScrWZg=",
+    "page": "https://www.gettyimages.com/detail/51962469"
+   },
+   {
+    "getty_id": "51962471",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Rick Gonzalez (L) meets actor Obba Babatunde at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 468,
+    "et": "kLWGOxYkTDpSwDjjYv9qnw",
+    "sig": "xqfSC2nfqOQhrRbxUm9na64uRC6R-1YzL0wmtLGrHWQ=",
+    "thumb": "https://media.gettyimages.com/id/51962471/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=LxtcDUjnwr05ryw4TgSPe5PT0CUP65wIqkcjdReqLFE=",
+    "page": "https://www.gettyimages.com/detail/51962471"
+   },
+   {
+    "getty_id": "51962480",
+    "pick": false,
+    "label": null,
+    "title": "Premiere of Paramounts' \"Coach Carter\" - Afterparty",
+    "caption": "LOS ANGELES - JANUARY 13:  National Baseball Hall of Fame members Dave Winfield (L) and Ernie Banks talk at the afterparty for the premiere of Paramounts' \"Coach Carter\" at The Highland on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "nqx5V69iSPpwayRabgNlzg",
+    "sig": "7e9bpPxWF47vZQLMSsc8YunZdkV_ZE84o2EncAkHTxY=",
+    "thumb": "https://media.gettyimages.com/id/51962480/photo/premiere-of-paramounts-coach-carter-afterparty.jpg?b=1&s=170x170&k=20&c=la2uYQn9OqfT5B7CykMmCao8Ey1KQeYQP--nF-wwJrs=",
+    "page": "https://www.gettyimages.com/detail/51962480"
+   },
+   {
+    "getty_id": "51962569",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 431,
+    "et": "Uac9wxM0QOtpJRQTzoH_tg",
+    "sig": "Cqf0tRMRKfy475SuWNK0eQhGgZ8PTeeF_rhRdRt_uBo=",
+    "thumb": "https://media.gettyimages.com/id/51962569/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=CT1Lh2m34p4y7TMW_tEAfEG5KNJcLPBHEEDudPWOA5g=",
+    "page": "https://www.gettyimages.com/detail/51962569"
+   },
+   {
+    "getty_id": "51962571",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 444,
+    "et": "9IzzvWwqSLBGR1RmnQN3yg",
+    "sig": "y6WsyECizmBWr1C_pjfKHwP6cp-CJzQShsbh-PL6gP8=",
+    "thumb": "https://media.gettyimages.com/id/51962571/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=Ri_KV7GjLjICCuBUi3iyPiEPC0XKnaUpifsVqWIRPLk=",
+    "page": "https://www.gettyimages.com/detail/51962571"
+   },
+   {
+    "getty_id": "51962573",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "_V58CWXWQaFXunwEubetEg",
+    "sig": "kGBl0CBe11aT54ftGb9HxoozwHgAiiIrB2f_1EllPaQ=",
+    "thumb": "https://media.gettyimages.com/id/51962573/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=45h4ty5HcEOUqjgSnTIl1B1zr4UNMy4t59k-QTT76d0=",
+    "page": "https://www.gettyimages.com/detail/51962573"
+   },
+   {
+    "getty_id": "51962581",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "Q3BfRvZGTH9beoSxrlWmOg",
+    "sig": "TWIQzGijlOUqAEBLBV5acq_JaTCqhIOn0QDHwKdK2oY=",
+    "thumb": "https://media.gettyimages.com/id/51962581/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=6mhyAKgOggAECQtd-0Buy5yhcrffDOYaJumhdShN76Y=",
+    "page": "https://www.gettyimages.com/detail/51962581"
+   },
+   {
+    "getty_id": "51962582",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 434,
+    "et": "MXuz7df9T7p-2b36KdcXeA",
+    "sig": "H_EDxqsWFtiQR0X9iX17PuZV9UBbtROIMKd0COlKJxM=",
+    "thumb": "https://media.gettyimages.com/id/51962582/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=rfKYpK__IqXvWN55emogkU2DLNIDnhS25Cq_2lX0rNM=",
+    "page": "https://www.gettyimages.com/detail/51962582"
+   },
+   {
+    "getty_id": "51962583",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actress Ashanti arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "AflVMPeYSgBB-y8ITicE3g",
+    "sig": "FWYOlnrRvzPk6oiojem3zL7G40nnpbnSBxif4Da3WsM=",
+    "thumb": "https://media.gettyimages.com/id/51962583/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=7u0Uwze1y8tAOzB7iL_Vo5fSin-QzQhBf0ROXekPhYQ=",
+    "page": "https://www.gettyimages.com/detail/51962583"
+   },
+   {
+    "getty_id": "51962752",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Texas Battle, Nana Gbewonyo, Rob Brown and Rick Gonzalez pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "d2jyMnB7TZtdSv3Z9kn_ZA",
+    "sig": "YTpJVwrwFgX1gQcqn3KC4qaqFEY39Y5p2oP1HH_4BJY=",
+    "thumb": "https://media.gettyimages.com/id/51962752/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=azMx8f-ICnkS4O72RZiJcxNMUbgNOpCisz9OaEwLUNY=",
+    "page": "https://www.gettyimages.com/detail/51962752"
+   },
+   {
+    "getty_id": "51962753",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Texas Battle, Nana Gbewonyo, Rob Brown and Rick Gonzalez pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 386,
+    "et": "BfolPFD3TUZY4hhRfuateQ",
+    "sig": "KmNLWMWGMjyuq9HEU21slD_0cMpGx-8d_jYaov54VnY=",
+    "thumb": "https://media.gettyimages.com/id/51962753/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=FUwJX0ikGi0b1xY0xK2gMfAdS14U7CAUCj_a3XhTpVQ=",
+    "page": "https://www.gettyimages.com/detail/51962753"
+   },
+   {
+    "getty_id": "51962756",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors (L to R) Rick Gonzalez, Denise Dowse, Antwon Tanner and Rob Brown compare watches at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 397,
+    "et": "2MD4f7voSWV1FxE_KVNzFQ",
+    "sig": "S_jdfIp30uz-gF9qrxNa_98z9yUW1EOT2gn8hVYTC7E=",
+    "thumb": "https://media.gettyimages.com/id/51962756/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=pahu6rEH3TPTlK7Dk48xsoJzoGcOZbYbdBQFfE4ib6o=",
+    "page": "https://www.gettyimages.com/detail/51962756"
+   },
+   {
+    "getty_id": "51962758",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors Texas Battle (L) and Ashanti greet each other at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 540,
+    "et": "mTH1FFnzTcN773NMC-Y11w",
+    "sig": "GGmRLsCYDfzhy19sOvzS_sWSBzWuiTU9FdKMGgilTWQ=",
+    "thumb": "https://media.gettyimages.com/id/51962758/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=fhvLG6jNET0Y-AngEA7ID86Pwe8uUgrVMIHphMkoe4Q=",
+    "page": "https://www.gettyimages.com/detail/51962758"
+   },
+   {
+    "getty_id": "51962759",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actors Rob Brown (Rear), Antwon Tanner and Nana Gbewonyo (R) pose at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 452,
+    "et": "48eSoZ5NR9FqwfvxhyIMRw",
+    "sig": "UhM_UaL6kFDAcwPMMcqsXqLP9TN5t7bUj6c4qnuzVRE=",
+    "thumb": "https://media.gettyimages.com/id/51962759/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=RmVCxpF_Fb6IjT08LLDzIb6T7_l7xmAK4Rl-JYP_4Gc=",
+    "page": "https://www.gettyimages.com/detail/51962759"
+   },
+   {
+    "getty_id": "51962788",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Pop group 3LW arrive at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 451,
+    "et": "WLgTDhJiQp1K8HbYNXnV1Q",
+    "sig": "8af9INwwSEg9d2aF6hAQ9ClDWh6XwPO-oGA9-LZLp90=",
+    "thumb": "https://media.gettyimages.com/id/51962788/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=J15TWZMnHLAXiem5AuiNqcdnkYFaV7OqVAZZnnK792Y=",
+    "page": "https://www.gettyimages.com/detail/51962788"
+   },
+   {
+    "getty_id": "51962790",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Pop group 3LW arrive at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 454,
+    "et": "d5128iQETj5vSNpiWqAqJA",
+    "sig": "xpL9Ib9JhE-RjHj0SlQBIG9aX4erE6K90KRsP91YBP0=",
+    "thumb": "https://media.gettyimages.com/id/51962790/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=pFmwcMbxcUqv1ue2FJJtUHHt9L0K5kSokW2eL9jUFFY=",
+    "page": "https://www.gettyimages.com/detail/51962790"
+   },
+   {
+    "getty_id": "51962791",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Pop group 3LW arrive at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 447,
+    "et": "CFB3w2A3RV1PQ_fgEy3jcw",
+    "sig": "vSVnq27mrLBsxusyYfsw8MVyIlvKnNyH2dspKtNjizM=",
+    "thumb": "https://media.gettyimages.com/id/51962791/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=cop9PuS6h6jo6gHfgt3_TetzM1e61D1YQ2edHZM3up0=",
+    "page": "https://www.gettyimages.com/detail/51962791"
+   },
+   {
+    "getty_id": "51962868",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Actor Ron Lester arrives at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 417,
+    "et": "EwNwy8ECSLd6J_SnlUdl3w",
+    "sig": "vMN2srxaU05LM-BRqpnbrl2ZzhMU2YjuXZJg1pLpfP0=",
+    "thumb": "https://media.gettyimages.com/id/51962868/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=8l1AxJJtPZFFfrO1g5teLl_X4gA6lP2W-Eng27uR5Mw=",
+    "page": "https://www.gettyimages.com/detail/51962868"
+   },
+   {
+    "getty_id": "51962879",
+    "pick": false,
+    "label": null,
+    "title": "Los Angeles Premiere of Paramounts' \"Coach Carter\" - Arrivals",
+    "caption": "LOS ANGELES - JANUARY 13:  Producers Brian Robbins (L) and Mike Tollin (R) pose with Paramounts Donald DeLine at the premiere of Paramounts' \"Coach Carter\" at the Chinese Theater on January 13, 2005 in Los Angeles, California. (Photo by Kevin Winter/Getty Images)",
+    "photographer": "Kevin Winter",
+    "collection": "Getty Images Entertainment",
+    "w": 594,
+    "h": 419,
+    "et": "ZnhCOUrAQRlTFYly4HBkAQ",
+    "sig": "RLP0yMnLpo_48_AgLUODltZdT5THLAQdcXQjXu8zqHU=",
+    "thumb": "https://media.gettyimages.com/id/51962879/photo/los-angeles-premiere-of-paramounts-coach-carter-arrivals.jpg?b=1&s=170x170&k=20&c=VNl77kk260xENev1r2Ek5qyKtmbHyK6GviEEhK3amZ4=",
+    "page": "https://www.gettyimages.com/detail/51962879"
+   },
+   {
+    "getty_id": "524770970",
+    "pick": false,
+    "label": null,
+    "title": "\"Coach Carter\" Premieres in Los Angeles",
+    "caption": "R&B trio \"3LW\" arrives at the premiere of \"Coach Carter\" held at Grauman's Chinese Theater in Hollywood. (Photo by Paul Mounce/Corbis via Getty Images)",
+    "photographer": "Paul Mounce - Corbis",
+    "collection": "Corbis Entertainment",
+    "w": 594,
+    "h": 396,
+    "et": "t1IahsclQ9J4R6f7QmPL9w",
+    "sig": "fPHDX1pUR0_rAE5ZIOkDBMRknUQRbULaHPN6Ea96ORY=",
+    "thumb": "https://media.gettyimages.com/id/524770970/photo/coach-carter-premieres-in-los-angeles.jpg?b=1&s=170x170&k=20&c=DEa4xxnZGrmUN-1_CVw3hieTSkx47shlG_Pmv-a7dho=",
+    "page": "https://www.gettyimages.com/detail/524770970"
+   },
+   {
+    "getty_id": "590492136",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) William Highsmith, Diana Taurasi, Russell Simmons and Ashley Morales attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 395,
+    "et": "SLJPVEKARkBLS02WHvEkhg",
+    "sig": "iAS3oA8GgOG4iKzNrGMLv5PZ-S3Jn58wV5EaZ-9Q2yQ=",
+    "thumb": "https://media.gettyimages.com/id/590492136/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=P0FJFgqA2kROVCQaySHL7UL9ZuUjnam6NDcCKzVBCA0=",
+    "page": "https://www.gettyimages.com/detail/590492136"
+   },
+   {
+    "getty_id": "590492140",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Jean Boyd, Dr.C. Keith Harrison, Russell Simmons, Diana Taurasi and Cliff Parks attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "A6QZ1mvDQfhA59m7dUIHlw",
+    "sig": "NlQvsBcAlno9_-b0SU8GUQpKFCiq3O5b7_4F7JxoGmg=",
+    "thumb": "https://media.gettyimages.com/id/590492140/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=7R_Jn9fsv3qAhefGwvgXbzFftGx0KUZomFU2YkRruCU=",
+    "page": "https://www.gettyimages.com/detail/590492140"
+   },
+   {
+    "getty_id": "590492146",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: Cliff Parks attends Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "6bJ3d6AjS1B76xfRg-Q1wA",
+    "sig": "ZcaZPfUmUlSFAcHlXDpGq7n3Mas9b59W4XeljMqP5TI=",
+    "thumb": "https://media.gettyimages.com/id/590492146/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=p_6lNqEhstIpe19GWNldP5bGTEUab_cylkzq0B4J4rU=",
+    "page": "https://www.gettyimages.com/detail/590492146"
+   },
+   {
+    "getty_id": "590492156",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Cliff Parks, Dr.C. Keith Harrison and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "-v_PT8vnRXFxHvA9i0cnzQ",
+    "sig": "NwsIpVyex6QL0X6H3XUOkSoALkLsD_gV_urYT0MHOr4=",
+    "thumb": "https://media.gettyimages.com/id/590492156/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=TOu1m4lv_tw-_kweog_yJJ7p2p_6FzHck7XDbxYWD7g=",
+    "page": "https://www.gettyimages.com/detail/590492156"
+   },
+   {
+    "getty_id": "590492158",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: Russell Simmons attends Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "2B6d2CFkRKtcN_vAxCnYsA",
+    "sig": "XdKGhYazt355dSUd-r0AeFKzhIuKgPEUpaCDUAHQxpM=",
+    "thumb": "https://media.gettyimages.com/id/590492158/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=cOnkouEM_Y4w05bjmSulIW1F7Tpggwp01MyDj3gpJDs=",
+    "page": "https://www.gettyimages.com/detail/590492158"
+   },
+   {
+    "getty_id": "590492160",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) William Highsmith, Diana Taurasi, Russell Simmons and Ashley Morales attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 395,
+    "et": "wc9TZp5kTBVp8rMv1qwM0Q",
+    "sig": "BaGZ1jN-r5iEbWTjzoO8QsMN_Zd_aAX41f2GIxHcZdM=",
+    "thumb": "https://media.gettyimages.com/id/590492160/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=4dJ7XZLmvXnrYQv26UwpA-Uh_82hSraw8zyvblyV1EU=",
+    "page": "https://www.gettyimages.com/detail/590492160"
+   },
+   {
+    "getty_id": "590492162",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Dr.C. Keith Harrison. Diana Taurasi, Cliff Parks and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "isH6P3luQzhs3TD-2i_M0A",
+    "sig": "HZ2K9HLViWpFPffPWi5P5W7AtJ3nADHo1sfmt0W8bTw=",
+    "thumb": "https://media.gettyimages.com/id/590492162/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=k2BFgy5Bus2fP4NzGnnirTWs1OtpE6rRn9MSyhwTJWc=",
+    "page": "https://www.gettyimages.com/detail/590492162"
+   },
+   {
+    "getty_id": "590492174",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Jean Boyd, Dr.C. Keith Harrison, Russell Simmons, Diana Taurasi and Cliff Parks attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "1Xt4zvqVRk1bMQBsyGdrog",
+    "sig": "TI_pzMAWYIOPNxVTyf2wsFNuGKbRhV_TltMv44iDH2A=",
+    "thumb": "https://media.gettyimages.com/id/590492174/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=JUYMc1JiQ-FPj5frk8V7E2J4RDvNs2_IjmcqYYPgqwo=",
+    "page": "https://www.gettyimages.com/detail/590492174"
+   },
+   {
+    "getty_id": "590492178",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: Diana Taurasi and Cliff Parks attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "v7KJ40h8RoJmoUst7h6bZA",
+    "sig": "L66ZCRm1xrJobZNCeU6o6_LTJsvYY9nKdHTgC9gYnx4=",
+    "thumb": "https://media.gettyimages.com/id/590492178/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=ybrKmy0QEAHyTNt3nrDx0W_U8u-cRlENuOed6lK5Nbs=",
+    "page": "https://www.gettyimages.com/detail/590492178"
+   },
+   {
+    "getty_id": "590492182",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) William Highsmith, Diana Taurasi, Russell Simmons and Ashley Morales attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "0GTrH23aT-5t3mA-poe8vg",
+    "sig": "Jp3DJ9SEBHszXXxQU3K-cySUHcNRuLE-G56jbK9Ixg8=",
+    "thumb": "https://media.gettyimages.com/id/590492182/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=F8gafhwX_VXEHiUcLE6Id190TIPOZ7_dg0vcVlOCucQ=",
+    "page": "https://www.gettyimages.com/detail/590492182"
+   },
+   {
+    "getty_id": "590492184",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Dr.C. Keith Harrison. Diana Taurasi, Cliff Parks and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "RkcSexocQ2hCcetCWiz-aA",
+    "sig": "eHSlp6IMOoovVEx4Koim-BWvb_zQDp0nXc-gUMtF-zY=",
+    "thumb": "https://media.gettyimages.com/id/590492184/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=f43HcYvS_jqWWk-USN5-C5bQXEvZUKK4obFNXO4nMoQ=",
+    "page": "https://www.gettyimages.com/detail/590492184"
+   },
+   {
+    "getty_id": "590492186",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Diana Taurasi, Cliff Parks, Dr.C. Keith Harrison and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "lkwoocdfTa5mlIwBSe4zrQ",
+    "sig": "24zAbYfGSETLuluRWvdlqUtq4GP1J4L5AbNlZZY69wA=",
+    "thumb": "https://media.gettyimages.com/id/590492186/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=8HhFUj21VZVYunOXxmppW-JDIx5Dw0mXxDQilMaDlQM=",
+    "page": "https://www.gettyimages.com/detail/590492186"
+   },
+   {
+    "getty_id": "590492188",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) William Highsmith, Diana Taurasi, Russell Simmons and Ashley Morales attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "FyC3Y0__RBR7qSwBClyyHw",
+    "sig": "b-tLIAqfKdqGV2pmdodgSGXWM2pdihXUGZ-SaEls9Q0=",
+    "thumb": "https://media.gettyimages.com/id/590492188/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=ewmLWqDmYAnddJSXQ-5bHm5NlnECs0NULwq14LYBK28=",
+    "page": "https://www.gettyimages.com/detail/590492188"
+   },
+   {
+    "getty_id": "590492194",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) William Highsmith, Diana Taurasi, Russell Simmons and Ashley Morales attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 395,
+    "et": "68Eqm_t5RlNANp9sH5Uu5A",
+    "sig": "OdEzUq3L1wPfD_09i-1wcrVOCWEmOg1uolkKdVv8MWQ=",
+    "thumb": "https://media.gettyimages.com/id/590492194/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=MBwVxd0lAqrcSyJqgM9eYqrqs6C9GurFW3WrQfzKldQ=",
+    "page": "https://www.gettyimages.com/detail/590492194"
+   },
+   {
+    "getty_id": "590492200",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Dr.C. Keith Harrison. Diana Taurasi, Cliff Parks and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "AVS-qHWjQ_VRrXlSAE7MdA",
+    "sig": "xD3qOd3qYnE_5Dw3KyTDJO9ePQp7P0XlSjqbaDyTIX8=",
+    "thumb": "https://media.gettyimages.com/id/590492200/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=FAQYyDla91bmC6yw6jPQWrmQq9FtNIsViMLLD4RPNFE=",
+    "page": "https://www.gettyimages.com/detail/590492200"
+   },
+   {
+    "getty_id": "590492204",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Jean Boyd, Dr.C. Keith Harrison, Russell Simmons, Diana Taurasi and Cliff Parks attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 395,
+    "et": "RgKiZ46RSBhQTUczSRaJgw",
+    "sig": "ArErdkF7cBQUy1Je4S8GvgcqIPxPBTSdpO-Z22WGPdc=",
+    "thumb": "https://media.gettyimages.com/id/590492204/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=l4BDQMw7c2qCJZ2SV9LwvTbcBxKn-a_DovLzmsSB40o=",
+    "page": "https://www.gettyimages.com/detail/590492204"
+   },
+   {
+    "getty_id": "590492210",
+    "pick": false,
+    "label": null,
+    "title": "Patrick McMullan Archives",
+    "caption": "NEW YORK CITY, NY - JANUARY 13: (L-R) Dr. C. Keith Harrison, Diana Taurasi, New York Area Children and Jean Boyd attend Special Screening of Coach Carter hosted by Paramount Pictures, Scholar Baller and Rush Philanthropic for New York Area Children at Loews Lincoln Square on January 13, 2005 in New York City. (Photo by Michael Loccisano/Patrick McMullan via Getty Images)",
+    "photographer": "Patrick McMullan",
+    "collection": "Patrick McMullan",
+    "w": 594,
+    "h": 396,
+    "et": "9IVf307AQ6JLQZVMqXhXRg",
+    "sig": "cpEeV_qly8_0BfJ6dTty6lcksKMDr_PkApgdVfx2WaA=",
+    "thumb": "https://media.gettyimages.com/id/590492210/photo/patrick-mcmullan-archives.jpg?b=1&s=170x170&k=20&c=dN4lzeO1ycA4wgididFk_LQ05484Ek2x_fczt_JEF98=",
+    "page": "https://www.gettyimages.com/detail/590492210"
+   }
+  ],
+  "getty_note": "Getty has NO film/production stills for Coach Carter (19 editorial search phrases run 2026-11-09, ~600 results reviewed by caption). These are landscape premiere/screening/award photos NOT already in getty_all.json. 'pick' = curated 14; others are extra landscape options. Embed with the gie widget like getty_all.json (id=et, sig, w, h, items=getty_id)."
+ },
+ "facts": [
+  {
+   "key": "release_date",
+   "value": "January 14, 2005 (US)",
+   "sources": [
+    "https://www.boxofficemojo.com/title/tt0393162/",
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "la_premiere",
+   "value": "January 13, 2005, Grauman's Chinese Theatre, Hollywood (afterparty at The Highland)",
+   "sources": [
+    "https://www.gettyimages.com/detail/51962764",
+    "https://www.gettyimages.com/detail/51962472"
+   ]
+  },
+  {
+   "key": "director",
+   "value": "Thomas Carter",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "writers",
+   "value": "Mark Schwahn & John Gatins",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "producers",
+   "value": "David Gale, Brian Robbins, Michael Tollin",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter"
+   ]
+  },
+  {
+   "key": "studios",
+   "value": "MTV Films and Tollin/Robbins Productions; distributed by Paramount Pictures",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.boxofficemojo.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "cast",
+   "value": [
+    [
+     "Samuel L. Jackson",
+     "Coach Ken Carter"
+    ],
+    [
+     "Rob Brown",
+     "Kenyon Stone"
+    ],
+    [
+     "Robert Ri'chard",
+     "Damien Carter"
+    ],
+    [
+     "Rick Gonzalez",
+     "Timo Cruz"
+    ],
+    [
+     "Nana Gbewonyo",
+     "Junior Battle"
+    ],
+    [
+     "Antwon Tanner",
+     "Worm"
+    ],
+    [
+     "Channing Tatum",
+     "Jason Lyle (film debut)"
+    ],
+    [
+     "Ashanti",
+     "Kyra"
+    ],
+    [
+     "Debbi Morgan",
+     "Tonya Carter"
+    ],
+    [
+     "Texas Battle",
+     "Maddux"
+    ],
+    [
+     "Denise Dowse",
+     "Principal Garrison"
+    ],
+    [
+     "Octavia Spencer",
+     "Mrs. Willa Battle"
+    ]
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://en.wikiquote.org/wiki/Coach_Carter"
+   ]
+  },
+  {
+   "key": "runtime",
+   "value": "136 minutes (2 hr 16 min)",
+   "sources": [
+    "https://www.boxofficemojo.com/title/tt0393162/",
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "rating",
+   "value": "PG-13",
+   "sources": [
+    "https://www.boxofficemojo.com/title/tt0393162/",
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "music",
+   "value": "Score by Trevor Rabin; soundtrack 'Coach Carter: Music from the Motion Picture' (Capitol Records, Jan 11, 2005)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://en.wikipedia.org/wiki/Coach_Carter_(soundtrack)"
+   ]
+  },
+  {
+   "key": "soundtrack_tracks",
+   "value": [
+    "\"All Night Long\" – Red Café",
+    "\"No Need for Conversation\" – Fabolous & Mike Shorey",
+    "\"Professional\" – Chingy & G.I.B.",
+    "\"Southside\" – The Game & Lil Scrappy",
+    "\"Roll Wit' You\" – Ciara",
+    "\"Wouldn't You Like to Ride\" – Kanye West, Malik Yusef, Common & JV",
+    "\"Hope\" – Twista feat. Faith Evans (Billboard Hot 100 peak #31)",
+    "\"Your Love (Is the Greatest Drug I've Ever Known)\" – Van Hunt"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter_(soundtrack)",
+    "https://en.wikipedia.org/wiki/Hope_(Twista_song)"
+   ]
+  },
+  {
+   "key": "soundtrack_charts",
+   "value": "Billboard 200 #25; Billboard Soundtrack Albums #3; Top R&B/Hip-Hop Albums #15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter_(soundtrack)"
+   ]
+  },
+  {
+   "key": "opening_weekend",
+   "value": "#1 at the US box office, $24,182,961 from 2,524 theaters (Jan 14–16, 2005)",
+   "sources": [
+    "https://www.boxofficemojo.com/title/tt0393162/",
+    "https://www.boxofficemojo.com/weekend/2005W02/"
+   ]
+  },
+  {
+   "key": "box_office",
+   "value": "$67.26M domestic / $76.67M worldwide on a reported $30M budget (The Numbers reports $45M)",
+   "sources": [
+    "https://www.boxofficemojo.com/title/tt0393162/",
+    "https://www.the-numbers.com/movie/Coach-Carter-(2005)"
+   ],
+   "note": "Full stats with sources: tracking/investigation/FILM_STATS.md"
+  },
+  {
+   "key": "imdb_rating",
+   "value": "7.4/10 from 196,834 ratings (checked 2026-11-09)",
+   "sources": [
+    "https://www.imdb.com/title/tt0393162/"
+   ]
+  },
+  {
+   "key": "reception",
+   "value": "Rotten Tomatoes 64% (149 reviews); Metacritic 57; CinemaScore 'A'; Roger Ebert 3 of 4 stars",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.rogerebert.com/reviews/coach-carter-2005"
+   ]
+  },
+  {
+   "key": "awards",
+   "value": "Samuel L. Jackson won the NAACP Image Award for Outstanding Actor in a Motion Picture; Thomas Carter won Best Director at the Black Reel Awards and the Black Movie Awards",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter",
+    "https://www.gettyimages.com/detail/108766375"
+   ]
+  },
+  {
+   "key": "filming",
+   "value": "Los Angeles and Long Beach, California (incl. St. Anthony High School's gym)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter"
+   ]
+  },
+  {
+   "key": "home_video",
+   "value": "DVD June 21, 2005; Blu-ray December 16, 2008",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coach_Carter"
+   ]
+  }
+ ],
+ "real_vs_film": [
+  {
+   "real": "Ken Carter padlocked the Richmond High gym and cancelled practices and games in early January 1999 while the Oilers were 13-0.",
+   "sources": [
+    "https://www.cnn.com/US/9901/07/team.lockout/",
+    "https://www.sfgate.com/news/article/Coach-scores-points-for-academics-3240562.php"
+   ]
+  },
+  {
+   "real": "15 of the program's 45 players (varsity, JV and freshman) had broken the academic contract — tardiness, missing homework, GPA under 2.3.",
+   "sources": [
+    "https://www.sfgate.com/education/article/Richmond-Rebound-High-school-basketball-players-2952622.php"
+   ]
+  },
+  {
+   "real": "The contract said 'basketball is the hook and education is the goal'; CNN described a 19-point pledge incl. 10 study hours a week and front-row seating.",
+   "sources": [
+    "https://www.sfgate.com/news/article/Coach-scores-points-for-academics-3240562.php",
+    "https://www.cnn.com/US/9901/07/team.lockout/"
+   ]
+  },
+  {
+   "real": "The lockout lasted about a week: on Jan 11, 1999 school officials announced all 45 players met the criteria and the season resumed without forfeits.",
+   "film": "In the film the school board votes to end the lockout over Carter's objection and the team chooses to keep studying.",
+   "sources": [
+    "https://www.sfgate.com/education/article/Richmond-Rebound-High-school-basketball-players-2952622.php",
+    "https://en.wikipedia.org/wiki/Coach_Carter"
+   ]
+  },
+  {
+   "real": "Carter was a 1977 Richmond High graduate who held the school's scoring record and owned a sporting-goods store.",
+   "sources": [
+    "https://www.sfgate.com/news/article/Coach-scores-points-for-academics-3240562.php"
+   ]
+  },
+  {
+   "real": "His son Damien Carter was on the 1999 team (quoted by CNN); the film's Damien Carter is played by Robert Ri'chard.",
+   "sources": [
+    "https://www.cnn.com/US/9901/07/team.lockout/",
+    "https://en.wikipedia.org/wiki/Coach_Carter"
+   ]
+  }
+ ],
+ "notes": [
+  "Every official Coach Carter scene upload found is the Movieclips 9-clip set (all uploaded 2012-05-24, 1280x720, embeddable, age_limit 0). No Coach Carter uploads exist on Paramount Pictures, Paramount Movies or MTV channels (full upload lists scanned 2026-11-09).",
+  "Scenes asked for but NOT available from an official channel: the lockout/chained gym doors (only the aftermath in 'Our Deepest Fear'), the contract-signing parents' meeting, the 'are you a madam?' first-practice exchange, the board hearing. Unofficial re-uploads exist (Boxoffice Movie Scenes, Binge Society, etc.) — do not use.",
+  "View counts change; refresh with tools/investigate/film_clips.py before quoting them publicly.",
+  "Quote timestamps come from each clip's YouTube caption track (fan/auto captions) and are approximate (±2 s).",
+  "Thumbnails: maxresdefault for the Movieclips clips is a clean 16:9 frame but has a Fandango 'F HD' badge; maxres1/2/3 are auto-frames that are scope (≈2.38:1) inside black bars with a MOVIECLIPS.com watermark in the bottom bar — crop to picture_box. sddefault (640x480) and hqdefault (480x360) are 4:3 letterboxed.",
+  "Coach Ken Carter's own channel 'Coach Carter' (UCX6fvPN4NHtzPkApTEmA08Q) has 3 low-view uploads titled 'CoachCarter salutes Actor Samuel L.Jackson's2005 Film, Coach Carter' — not checked for content/rights."
+ ]
+}
