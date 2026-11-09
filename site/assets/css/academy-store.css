@@ -28,6 +28,62 @@
 }
 .store-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .store-nav span { color: var(--academy-maroon); margin-left: .2em; }
+.store-lookbook {
+  background: var(--academy-paper);
+  color: var(--academy-ink);
+  border-bottom: 1px solid var(--academy-rule);
+  padding: clamp(18px, 3vw, 40px) 0;
+}
+.store-lookbook-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 18px;
+  margin-bottom: 12px;
+}
+.store-lookbook-heading h2 {
+  font-family: var(--f-brand, Georgia);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  letter-spacing: -.035em;
+  line-height: 1.1;
+  text-transform: none;
+}
+.store-lookbook-heading p {
+  color: var(--academy-muted);
+  font-size: .75rem;
+}
+.store-lookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(8px, 1.2vw, 18px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.store-lookbook-grid a {
+  display: block;
+  font-size: clamp(.66rem, 1.15vw, .86rem);
+  font-weight: 650;
+  line-height: 1.2;
+}
+.store-lookbook-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 6px;
+}
+.store-lookbook-grid a:hover span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.store-lookbook-grid a:focus-visible {
+  outline: 2px solid var(--academy-maroon);
+  outline-offset: 3px;
+}
+@media (max-width: 779px) {
+  .store-lookbook-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .store-campaign {
   display: grid;
   grid-template-columns: minmax(0, 32fr) minmax(0, 68fr);
@@ -97,7 +153,7 @@
 }
 .store-section-heading h2 { font-size: clamp(2.2rem, 4vw, 4.45rem); margin-top: .15em; }
 .store-section-heading > p { font-size: .8rem; line-height: 1.55; color: var(--academy-muted); }
-.page-store :is(#academy-store-title, #lineup, #watch-plans, #editions, #first-whistle, #last-bell) { scroll-margin-top: calc(var(--nav-h) + 12px); }
+.page-store :is(#academy-store-title, #lineup, #watch-plans, #editions, #first-whistle, #last-bell, .last-bell-arrival, .last-bell-look) { scroll-margin-top: calc(var(--nav-h) + 12px); }
 .academy-product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 2vw, 28px); }
 .academy-product-link { display: block; }
 .academy-product-link > img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: cover; background: #eae0d3; }
