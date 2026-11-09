@@ -1,0 +1,96 @@
+/* gap worker 4 — store roadmap/waitlists/preorders, partners budget owners + precedent, host testimonials */
+
+/* ---------- Store: season offer now opens the page ---------- */
+.page-store .series-offer { padding-block: clamp(36px, 5vw, 72px); }
+
+/* ---------- Store: Coming next roadmap ---------- */
+.store-roadmap { margin-top: clamp(40px, 5vw, 64px); padding-top: clamp(26px, 3vw, 36px); border-top: 1px solid var(--academy-rule); }
+.store-roadmap[hidden] { display: none; }
+.store-roadmap-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 32px; align-items: end; margin-bottom: 22px; }
+.store-roadmap-head .store-label { grid-column: 1 / -1; }
+.store-roadmap-head h3 { font-family: var(--f-brand, "Cinzel", serif); font-size: clamp(1.5rem, 2.4vw, 2.3rem); font-weight: 600; letter-spacing: -.01em; margin: 0; color: var(--academy-ink); }
+.store-roadmap-head p:not(.store-label) { margin: 0; font-size: .8rem; line-height: 1.55; color: var(--academy-muted); justify-self: end; text-align: right; max-width: 40ch; }
+.store-roadmap-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); }
+.store-roadmap-item { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 20px 18px 18px; background: #fff; border: 1px solid var(--academy-rule); min-width: 0; }
+.store-roadmap-item::before { content: "Proposed"; position: absolute; top: 16px; right: 16px; font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--academy-maroon); border: 1px solid rgba(84, 29, 48, .3); border-radius: 999px; padding: 4px 8px; }
+.store-roadmap-n { font-size: .72rem; font-weight: 700; letter-spacing: .12em; color: var(--academy-muted); }
+.store-roadmap-item h4 { margin: 6px 0 0; font-size: 1.05rem; font-weight: 650; letter-spacing: -.02em; color: var(--academy-ink); line-height: 1.2; }
+.store-roadmap-item p { margin: 0; font-size: .78rem; line-height: 1.5; color: var(--academy-muted); flex: 1; }
+.store-roadmap-price { font-size: .8rem; font-weight: 700; color: var(--academy-maroon); padding-top: 10px; border-top: 1px solid var(--academy-rule); }
+
+/* ---------- Store: email waitlists (reuses .news + data-simple) ---------- */
+.store-news { max-width: 460px; border-bottom-color: var(--academy-ink); margin-top: 14px; }
+.store-news input { color: var(--academy-ink); }
+.store-news input::placeholder { color: #8a7e78; }
+.store-news button { color: var(--academy-maroon); white-space: nowrap; padding-left: 12px; }
+.store-news button:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.store-waitlist { margin-top: clamp(28px, 4vw, 44px); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px clamp(24px, 4vw, 64px); align-items: center; padding: clamp(22px, 3vw, 36px); background: #efe7dc; border-left: 3px solid var(--academy-maroon); }
+.store-waitlist h3 { font-family: var(--f-brand, "Cinzel", serif); font-size: clamp(1.35rem, 2.1vw, 2rem); font-weight: 600; margin: .2em 0 .35em; color: var(--academy-ink); }
+.store-waitlist p:not(.store-label) { margin: 0; font-size: .84rem; line-height: 1.6; color: var(--academy-muted); max-width: 56ch; }
+.store-waitlist .store-news { margin-top: 0; justify-self: stretch; max-width: none; }
+
+/* ---------- Store: proposed editions & kits ---------- */
+.store-preorders { padding: clamp(54px, 7vw, 104px) 0; background: #ede4d9; color: var(--academy-ink); scroll-margin-top: calc(var(--nav-h) + 12px); }
+.page-store :is(#first-drop, #collector-edition, #contract-kit, #parent-starter) { scroll-margin-top: calc(var(--nav-h) + 24px); }
+.store-pre-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.store-pre-card { display: flex; flex-direction: column; padding: clamp(22px, 2.4vw, 32px); background: var(--academy-paper); border: 1px solid var(--academy-rule); min-width: 0; }
+.store-pre-card:target { outline: 2px solid var(--academy-maroon); outline-offset: 4px; }
+.store-pre-card h3 { font-family: var(--f-brand, "Cinzel", serif); font-size: clamp(1.25rem, 1.8vw, 1.6rem); font-weight: 600; line-height: 1.15; margin: .45em 0 .5em; color: var(--academy-ink); }
+.store-pre-card > p:not(.store-label) { margin: 0; font-size: .84rem; line-height: 1.6; color: var(--academy-muted); flex: 1; }
+.store-pre-card .store-news { margin-top: 22px; max-width: none; }
+.store-pre-note { margin: 22px 0 0; font-size: .8rem; color: var(--academy-muted); }
+.store-editions .product .thumb .quick a.btn { text-decoration: none; }
+
+@media (max-width: 980px) {
+  .store-roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .store-pre-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 779px) {
+  .store-roadmap-head { grid-template-columns: 1fr; }
+  .store-roadmap-head p:not(.store-label) { justify-self: start; text-align: left; }
+  .store-waitlist { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .store-roadmap-grid { grid-template-columns: 1fr; }
+  .store-news button { letter-spacing: .14em; }
+}
+
+/* ---------- Host testimonials (partners + keynotes) ---------- */
+.host-tqs .tq { display: flex; flex-direction: column; }
+.host-tqs .tq figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.host-tqs .tq-src { font-size: 12px; letter-spacing: .08em; color: var(--slate); text-decoration: underline; text-underline-offset: 3px; margin-top: 4px; width: max-content; }
+.host-tqs .tq-src:hover { color: var(--gold-hi); }
+@media (max-width: 760px) { .host-tqs { columns: 1; } .host-tqs .tq blockquote { font-size: 19px; } }
+
+/* ---------- Partners: branded-content precedent ---------- */
+.precedent { margin: clamp(28px, 4vw, 48px) 0 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px clamp(20px, 3vw, 40px); align-items: start; padding: clamp(22px, 3vw, 36px); border: 1px solid var(--line-strong); border-radius: 18px; background: linear-gradient(135deg, rgba(84, 29, 48, .45), rgba(16, 18, 22, .2)); }
+.precedent h3 { font: 600 clamp(24px, 2.6vw, 34px)/1.05 var(--f-head); text-transform: uppercase; margin: 0 0 10px; }
+.precedent h3 em { font-family: var(--f-quote); text-transform: none; color: var(--gold-hi); }
+.precedent p { margin: 0; color: var(--slate); max-width: 64ch; }
+.precedent figcaption { grid-column: 2; font-size: 12.5px; color: var(--slate); letter-spacing: .04em; }
+@media (max-width: 760px) { .precedent { grid-template-columns: 1fr; } .precedent figcaption { grid-column: 1; } .precedent .tag { justify-self: start; } }
+
+/* ---------- Partners: five budget owners ---------- */
+.budget-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.budget-card { display: flex; flex-direction: column; gap: 10px; padding: 24px 20px; background: #fff; border: 1px solid rgba(16, 18, 22, .08); border-radius: 18px; min-width: 0; }
+.budget-n { font: 600 12px/1 var(--f-head); letter-spacing: .22em; color: var(--maroon); }
+.budget-card h4 { font: 600 22px/1.05 var(--f-head); text-transform: uppercase; margin: 4px 0 6px; color: var(--carbon); }
+.budget-card p { margin: 0; font-size: 14.5px; line-height: 1.5; color: #5B5F68; }
+.budget-card p b { display: block; font: 600 11px/1 var(--f-head); letter-spacing: .2em; text-transform: uppercase; color: var(--maroon); margin-bottom: 5px; }
+.budget-card p + p { padding-top: 10px; border-top: 1px solid rgba(16, 18, 22, .08); }
+.teams-callout { margin-top: clamp(28px, 4vw, 44px); display: flex; justify-content: space-between; align-items: center; gap: 20px 40px; flex-wrap: wrap; padding: clamp(22px, 3vw, 34px); border-radius: 18px; background: #fff; border: 1px solid rgba(84, 29, 48, .22); border-left: 4px solid var(--maroon); }
+.teams-callout > div { flex: 1 1 380px; min-width: 0; }
+.teams-callout h3 { font: 600 clamp(24px, 2.6vw, 32px)/1.05 var(--f-head); text-transform: uppercase; margin: 10px 0 8px; color: var(--carbon); }
+.teams-callout p { margin: 0; color: #5B5F68; max-width: 60ch; }
+@media (max-width: 1180px) { .budget-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .budget-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Keynotes: six formats ---------- */
+@media (min-width: 981px) { .formats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* store department nav: six links — scroll instead of clipping on narrow screens */
+@media (max-width: 900px) {
+  .page-store .store-nav { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; gap: 22px; padding: 0 16px; }
+  .page-store .store-nav::-webkit-scrollbar { display: none; }
+}

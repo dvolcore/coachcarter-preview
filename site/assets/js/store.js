@@ -43,17 +43,19 @@
     { id: "team-pack", cat: "books", name: "Team Pack — 25 Books", kind: "For schools, teams & companies · with contract cards", price: 525, badge: "Bulk", art: () => photo("team_pack.jpg", "Team Pack box with books and contract cards") },
     { id: "film", cat: "film", name: "Coach Carter (2005)", kind: "The 2005 film · Blu-ray / DVD / Digital", price: 15, art: film },
     { id: "ball-signed", cat: "collectibles", name: "Signed Game Ball", kind: "Full size · signed by Coach Ken Carter", price: 250, badge: "Signed", art: ball },
-    { id: "print-contract", cat: "collectibles", name: "The Contract — Framed Print", kind: "Archival print · signed · 18×24", price: 180, art: print },
+    { id: "print-contract", cat: "collectibles", name: "The Contract — Collector Edition", kind: "Modern numbered facsimile, labeled as such · preorder opens after the original is authenticated", price: 149, priceLabel: "$149 proposed", badge: "Preorder list", waitlist: "#collector-edition", art: print },
   ];
 
   const storedCart = CC.store.get("cc_cart", {});
-  const validIds = new Set(P.map((p) => p.id));
+  /* waitlist items are email-list only: never in the bag */
+  const validIds = new Set(P.filter((p) => !p.waitlist).map((p) => p.id));
   const cart = { items: Object.fromEntries(Object.entries(storedCart || {}).filter(([id, qty]) => validIds.has(id) && Number(qty) > 0).map(([id, qty]) => [id, Number(qty)])) };
   const save = () => { CC.store.set("cc_cart", cart.items); render(); };
   const count = () => Object.values(cart.items).reduce((a, b) => a + b, 0);
   const money = (n) => `$${n.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 
   const add = (id) => {
+    if (!validIds.has(id)) return;
     cart.items[id] = (cart.items[id] || 0) + 1; save();
     const p = P.find((x) => x.id === id); CC.say(`${p.name} added`);
     $$(".icon-btn.cart").forEach((b) => { b.animate([{ transform: "scale(1)" }, { transform: "scale(1.25)" }, { transform: "scale(1)" }], { duration: 450, easing: "cubic-bezier(.3,1.6,.5,1)" }); });
@@ -63,7 +65,7 @@
     const n = count();
     $$(".cart-count").forEach((c) => { c.textContent = n; c.classList.toggle("on", n > 0); });
     const list = $(".drawer .items"); if (!list) return;
-    const ids = Object.keys(cart.items).filter((k) => cart.items[k] > 0 && P.find((p) => p.id === k));
+    const ids = Object.keys(cart.items).filter((k) => cart.items[k] > 0 && validIds.has(k));
     if (!ids.length) { list.innerHTML = `<div class="empty"><p>Your bag is empty.</p><a class="link-u" href="store.html">Visit the store</a></div>`; $(".drawer .total b").textContent = "$0"; return; }
     let total = 0;
     list.innerHTML = ids.map((id) => {
@@ -90,8 +92,10 @@
       grid.innerHTML = P.filter((p) => cat === "all" || p.cat === cat).map((p) => `
         <article class="product" data-reveal>
           <div class="thumb glow">${p.badge ? `<span class="tag badge">${p.badge}</span>` : ""}${p.art()}
-            <div class="quick"><button class="btn btn-gold btn-sm" data-add="${p.id}">Add to bag <span class="arr">→</span></button></div></div>
-          <div class="meta"><h5>${p.name}</h5><span class="price">${money(p.price)}</span></div>
+            <div class="quick">${p.waitlist
+              ? `<a class="btn btn-gold btn-sm" href="${p.waitlist}">Join the preorder list <span class="arr">→</span></a>`
+              : `<button class="btn btn-gold btn-sm" data-add="${p.id}">Add to bag <span class="arr">→</span></button>`}</div></div>
+          <div class="meta"><h5>${p.name}</h5><span class="price">${p.priceLabel || money(p.price)}</span></div>
           <div class="kind">${p.kind}</div>
         </article>`).join("");
       requestAnimationFrame(() => $$(".product", grid).forEach((el, i) => setTimeout(() => el.classList.add("in"), 60 * i)));
@@ -113,6 +117,16 @@
       ? $("#academy-store-title")
       : chips.some((chip) => chip.dataset.cat === category && category !== "all") ? $("#editions") : null;
     if (section && !location.hash) section.scrollIntoView();
+  }
+  /* Academy "Coming next" roadmap, from academy-products.json */
+  const roadmap = $("[data-roadmap]");
+  if (roadmap) {
+    const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    fetch("assets/data/academy-products.json").then((r) => r.json()).then((d) => {
+      roadmap.innerHTML = (d.roadmap || []).map((item, i) => `<li class="store-roadmap-item">
+          <span class="store-roadmap-n">${String(i + 3).padStart(2, "0")}</span>
+          <h4>${esc(item.name)}</h4><p>${esc(item.spec || "")}</p><span class="store-roadmap-price">${esc(item.price)}</span></li>`).join("");
+    }).catch(() => { roadmap.closest(".store-roadmap") && (roadmap.closest(".store-roadmap").hidden = true); });
   }
   render();
 })();

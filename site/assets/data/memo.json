@@ -186,9 +186,23 @@
   },
   {
    "label": "Coach Ken Carter",
-   "film": "Coach Carter",
+   "film": "All American Speakers quote",
    "lo": 10,
    "hi": 20,
+   "hl": true
+  },
+  {
+   "label": "Coach Ken Carter",
+   "film": "Executive Speakers quote",
+   "lo": 15,
+   "hi": 20,
+   "hl": true
+  },
+  {
+   "label": "Coach Ken Carter",
+   "film": "Gotham Artists quote",
+   "lo": 20,
+   "hi": 30,
    "hl": true
   },
   {
@@ -198,12 +212,13 @@
    "hi": 20
   }
  ],
- "fee_source": "Speaker-bureau listings compiled in the Coach Carter Brand Valuation Playbook (Nov 2026): Key Speakers, AthleteSpeakers, All American Speakers, BigSpeak.",
+ "fee_source": "Coach Carter quotes: All American Speakers, Executive Speakers, Gotham Artists (Complete Brand Playbook, Nov 9 2026). Peer ranges: speaker-bureau listings compiled in the Coach Carter Brand Valuation Playbook (Nov 2026).",
  "revenue_lines": [
   {
-   "label": "Keynotes repriced to $30\u201350K",
+   "label": "Keynotes: 30\u201350 dates at $30\u201350K",
    "lo": 0.9,
-   "hi": 2.5
+   "hi": 2.5,
+   "note": "Assumption. Today's bureau quotes are $10\u201330K per keynote."
   },
   {
    "label": "Video podcast",
@@ -218,10 +233,11 @@
   {
    "label": "Documentary (archive, EP, subject fee)",
    "lo": 0.25,
-   "hi": 1.0
+   "hi": 1.0,
+   "note": "One-time receipts, not recurring revenue."
   },
   {
-   "label": "Coach Carter II series / sequel fees",
+   "label": "Coach Carter Academy series fees",
    "lo": 0.5,
    "hi": 3.0
   },
@@ -241,9 +257,11 @@
    "hi": 2.0
   },
   {
-   "label": "AI voice & likeness license",
+   "label": "AI voice & likeness license (unsupported)",
    "lo": 0.5,
-   "hi": 2.5
+   "hi": 2.5,
+   "muted": true,
+   "note": "Unsupported: historical celebrity AI deals do not establish a Carter license market. Test one paying buyer for a defined use first."
   },
   {
    "label": "Merch, memberships, licensing",
@@ -253,52 +271,49 @@
  ],
  "ladder": [
   {
-   "label": "As-is (today)",
-   "rev": "$0.2\u20130.6M",
+   "label": "Today, as run",
+   "rev": "not established",
    "lo": 1,
    "hi": 3,
-   "odds": "\u2014",
-   "what": "Keynote fees only; no owned media, store or list"
+   "basis": "Independent review's estimate",
+   "odds": null,
+   "what": "An estimate, not an appraisal: no authenticated financials, owned-audience analytics or Carter transactions yet"
   },
   {
-   "label": "Base build \u00b7 12\u201324 mo",
-   "rev": "$4\u20138M",
-   "lo": 5,
-   "hi": 15,
-   "odds": "High if executed",
-   "what": "New platform & socials, clip engine, podcast, 2 sponsored seasons, repriced speaking"
+   "label": "~3 yrs \u00b7 $15M revenue",
+   "rev": "$15M",
+   "lo": 18,
+   "hi": 30,
+   "basis": "$3M EBITDA \u00b7 6\u201310\u00d7",
+   "odds": null,
+   "what": "Planning scenario: 20% EBITDA margin on $15M revenue, valued at 6\u201310\u00d7"
   },
   {
-   "label": "Strong build \u00b7 ~3 yrs",
+   "label": "~3 yrs \u00b7 strong build",
    "rev": "$15\u201325M",
-   "lo": 25,
-   "hi": 75,
-   "odds": "~20\u201330%",
-   "what": "Documentary deal, Coach Carter II ordered, school & corporate programs, AI likeness license"
-  },
-  {
-   "label": "Breakout",
-   "rev": "$50\u201380M",
-   "lo": 150,
-   "hi": 320,
-   "odds": "~5\u201310%",
-   "what": "Owned values-media studio plus program, camp or academy network"
+   "lo": 24,
+   "hi": 60,
+   "basis": "$3\u20135M EBITDA \u00b7 8\u201312\u00d7",
+   "odds": null,
+   "what": "Planning scenario: $3\u20135M EBITDA at 8\u201312\u00d7. A $75M strategic case would need 15\u00d7 \u2014 and evidence of earning assets, durable contracts or synergies"
   },
   {
    "label": "$500M company",
-   "rev": "$125\u2013250M",
+   "rev": "$125M",
    "lo": 500,
    "hi": 500,
-   "odds": "~10% \u00b7 7\u201310 yrs",
-   "what": "Universe IP plus the club and academy network"
+   "basis": "$25M EBITDA \u00b7 20\u00d7",
+   "odds": "~10% in 7\u201310 yrs",
+   "what": "Arithmetic, not an offer: at an assumed 20\u00d7, $500M needs $25M EBITDA \u2014 $125M revenue at a 20% margin"
   },
   {
    "label": "$1B franchise",
-   "rev": "$250\u2013500M",
-   "lo": 1000,
-   "hi": 1000,
-   "odds": "~5% \u00b7 7\u201310 yrs",
-   "what": "Full stack: universe IP, clubs & academies, licensing, programs, platform stakes"
+   "rev": "$300M",
+   "lo": 1020,
+   "hi": 1020,
+   "basis": "$85M EBITDA \u00b7 12\u00d7",
+   "odds": "~5% in 7\u201310 yrs",
+   "what": "One assumed architecture: $300M company revenue, $60M central costs, $85M EBITDA at 12\u00d7 = $1.02B (at 20% margin and 8\u00d7: $480M)"
   }
  ],
  "stack": [
@@ -306,95 +321,105 @@
    "label": "Story universe IP",
    "lo": 200,
    "hi": 450,
-   "basis": "8\u201318\u00d7 licensing & library revenue (Roald Dahl ~18\u00d7, SpringHill ~7\u00d7)"
+   "scale": "$25\u201340M licensing & library revenue",
+   "prove": "Actual catalog earnings, renewals, costs and concentration. Roald Dahl's ~18\u00d7 is a reported comparison, not yet reconciled to transaction price and same-period revenue."
   },
   {
    "label": "Clubs & Academy network",
    "lo": 250,
    "hi": 450,
-   "basis": "12\u201315\u00d7 EBITDA (Unrivaled Sports >$650M; IMG Academy $1.25B)"
+   "scale": "$20\u201330M EBITDA",
+   "prove": "Profitable local operations or durable operator royalties. No universal youth-sports multiple exists: IMG Academy's $1.25B was enterprise value for an operating business; LOVB's $100M was capital raised."
   },
   {
    "label": "Licensing & consumer products",
    "lo": 80,
    "hi": 300,
-   "basis": "8\u201312\u00d7 royalties (Peanuts 23\u00d7 EBITDA)"
+   "scale": "$10\u201325M royalties a year",
+   "prove": "Licensee sell-through, minimum guarantees and renewal. Peanuts' ~23\u00d7 describes one transaction's attributable earnings."
   },
   {
    "label": "Programs: schools & companies",
    "lo": 50,
    "hi": 150,
-   "basis": "2\u20134\u00d7 revenue (FranklinCovey)"
+   "scale": "$20\u201340M revenue a year",
+   "prove": "Retention, delivery quality, margins and independence from Coach's attendance (FranklinCovey: $261.5M FY2026 revenue)."
   },
   {
    "label": "Platform stakes (AI / micro-drama)",
-   "lo": 25,
-   "hi": 100,
-   "basis": "Option value (Lionsgate\u2013Runway, Fox\u2013Holywater)"
+   "lo": 0,
+   "hi": 0,
+   "scale": "$0 in the base case",
+   "prove": "Counted at $0 until executed grants, ownership and realizable value exist. The review's $25\u2013100M option value is not counted."
   }
  ],
  "comps": [
   {
    "name": "SpringHill (LeBron James)",
-   "value": "$725M valuation, 2021",
+   "value": "$725M valuation, 2021 investment",
    "url": "https://redbirdcap.com/wp-content/uploads/2021/10/TSHC-Announcement.pdf"
   },
   {
    "name": "Omaha Productions (Peyton Manning)",
-   "value": "~$800M reported",
+   "value": "~$800M reported valuation (undated)",
    "url": "https://omahaproductions.com/about/jamie-horowitz/"
   },
   {
-   "name": "Unrivaled (3x3 basketball)",
-   "value": "$650M in ~3 years",
-   "url": "https://www.axios.com/2026/08/26/unrivaled-womens-basketball"
+   "name": "Unrivaled (3x3 league)",
+   "value": "$650M Series C valuation \u2014 financing, not revenue",
+   "url": "https://www.unrivaled.basketball/news/unrivaled-oversubscribes-series-c-fundraise-led-by-ten-pillars-sports-fund-exceeding-100-million-target-at-new-league-valuation-of-650-million-ler51aahcnya"
   },
   {
-   "name": "Unrivaled Sports (youth facilities)",
-   "value": ">$650M in 14 months",
-   "url": "https://www.sportspro.com/news/unrivaled-sports-youth-harris-blitzer-investment-dicks-sporting-goods-may-2025/"
+   "name": "LOVB (youth clubs + pro league)",
+   "value": "$100M new investment, 2024 \u2014 capital raised",
+   "url": "https://www.lovb.com/news/100m-in-new-funding-for-league-one-volleyball"
   },
   {
    "name": "IMG Academy",
-   "value": "$1.25B sale",
-   "url": "https://www.businesswire.com/news/home/20230425005615/en/Endeavor-Enters-Agreement-to-Sell-IMG-Academy-to-BPEA-EQT-in-Partnership-With-Nord-Anglia-Education-for-$1.25-Billion"
+   "value": "$1.25B enterprise value (EQT, 2023)",
+   "url": "https://eqtgroup.com/news/bpea-eqt-in-partnership-with-nord-anglia-education-to-acquire-img-academy-a-world-leading-sports-education-brand-2023-04-25"
   },
   {
    "name": "Wrexham AFC",
-   "value": "\u00a32M \u2192 ~\u00a3350M on a docuseries",
-   "url": "https://frontofficesports.com/article/wrexham-sale-valuation-growth-475-million/"
+   "value": "FY2025: \u00a333.3M turnover, \u00a314.8M operating loss",
+   "url": "https://images.gc.wrexhamafcservices.co.uk/5c5acf50-29e9-11f1-855d-ff156a5b91df.pdf"
   },
   {
    "name": "Peanuts",
-   "value": "~$219M \u2192 ~C$1.54B re-rating",
-   "url": "https://s25.q4cdn.com/252078091/files/doc_news/WILDBRAIN-TO-SELL-ITS-41-STAKE-IN-PEANUTS-TO-SONY-FOR-630-MILLION-12-18-2025-2025.pdf"
+   "value": "C$630M for a 41% stake \u00b7 ~23\u00d7 attributable EBITDA",
+   "url": "https://investors.wildbrain.com/news/news-details/2025/WILDBRAIN-TO-SELL-ITS-41-STAKE-IN-PEANUTS-TO-SONY-FOR-630-MILLION-12-18-2025/default.aspx"
   },
   {
    "name": "FranklinCovey",
-   "value": "$261.5M annual revenue; 8,000+ schools",
+   "value": "$261.5M FY2026 revenue \u00b7 $28.9M adj. EBITDA",
    "url": "https://ir.franklincovey.com/news-releases/news-release-details/franklin-covey-reports-financial-results-fourth-quarter-and-0"
   }
  ],
  "revivals": [
   {
    "label": "Creed (Rocky)",
-   "gap": 39
+   "gap": 39,
+   "how": "The Rocky world passed to a new lead, Adonis Creed \u2014 three released films."
   },
   {
    "label": "A Different World",
-   "gap": 39
+   "gap": 39,
+   "how": "Netflix's 2026 revival uses the college world and HBCU research; debuted Sept 24, 2026, entered the global English-language TV Top 10 and reached #2 in the US."
   },
   {
    "label": "Top Gun: Maverick",
-   "gap": 36
+   "gap": 36,
+   "how": "A legacy mentor introduces a new cohort; Paramount reports $1.5B+ worldwide gross (spectacle economics, not a Carter comp)."
   },
   {
    "label": "Cobra Kai (Karate Kid)",
-   "gap": 34
+   "gap": 34,
+   "how": "Legacy leads plus a new generation; Netflix reported 18M Season 6 views in H1 2025."
   },
   {
    "label": "Bel-Air",
-   "gap": 32
+   "gap": 32,
+   "how": "A fan film became the basis for a serialized drama that ran four seasons, 2022\u20132025 \u2014 same meaning, new tone."
   },
   {
    "label": "Happy Gilmore 2",
@@ -422,5 +447,13 @@
    "range": "20\u201330"
   }
  ],
- "cost_source": "https://www.thewrap.com/media-platforms/tv/ai-generated-microdramas-could-be-the-future-of-mobile-entertainment/"
+ "cost_source": "https://www.thewrap.com/media-platforms/tv/ai-generated-microdramas-could-be-the-future-of-mobile-entertainment/",
+ "fee_note": "Coach Carter rows: advertised booking-page quotes from three agencies (one also lists $5\u201310K virtual). Advertised estimates, not verified completed deals.",
+ "revenue_total": {
+  "lo": 4.2,
+  "hi": 24.3
+ },
+ "ladder_odds_note": "Odds appear only where the independent review gave them: its subjective judgments, not calibrated forecasts or measured success rates.",
+ "stack_note": "The review's five ranges add to $605M\u2013$1.45B, but the assets overlap (a character royalty can't sit in both library and consumer licensing) and are alternative paths, not amounts to stack.",
+ "cost_note": "Industry estimates reported by TheWrap \u2014 not verified Carter delivered costs."
 }

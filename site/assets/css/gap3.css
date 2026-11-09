@@ -1,0 +1,48 @@
+/* gap worker 3 */
+
+/* contract terms list (story + archive) */
+.g3-terms { list-style: none; margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; border-top: 1px solid var(--line); }
+.g3-terms li { display: grid; grid-template-columns: 9.5em 1fr; gap: 18px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.g3-terms b { font: 600 clamp(22px, 2vw, 28px)/1 var(--f-head); text-transform: uppercase; letter-spacing: .02em; color: var(--gold-hi); }
+.g3-terms span { color: var(--chalk-2); font-size: 16px; line-height: 1.5; }
+.g3-terms em { display: block; font-style: normal; font: 500 11px/1.4 var(--f-head); letter-spacing: .16em; text-transform: uppercase; color: var(--slate); margin-top: 4px; }
+.light .g3-terms, .g3-terms.on-light { border-color: rgba(16,18,22,.14); }
+.light .g3-terms li { border-color: rgba(16,18,22,.14); }
+.light .g3-terms b { color: var(--maroon); }
+.light .g3-terms span { color: rgba(16,18,22,.8); }
+.light .g3-terms em { color: #5B5F68; }
+.g3-src { margin: 16px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--slate); max-width: 56ch; }
+.g3-note { margin: 18px 0 0; font: 500 11px/1.4 var(--f-head); letter-spacing: .16em; text-transform: uppercase; color: var(--maroon); text-align: center; }
+
+/* historical demand / small figures */
+.g3-demand { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.g3-demand .n { font: 600 clamp(36px, 3.6vw, 56px)/1 var(--f-head); white-space: nowrap; }
+.g3-demand .l { margin-top: 6px; font: 500 12px/1.35 var(--f-head); letter-spacing: .16em; text-transform: uppercase; color: var(--slate); }
+.g3-demand p { grid-column: 1 / -1; margin: 10px 0 0; font-size: 14px; color: var(--slate); }
+.light .g3-demand { border-color: rgba(16,18,22,.14); }
+.light .g3-demand .n { color: var(--maroon); }
+.light .g3-demand .l { color: #5B5F68; }
+
+/* seven sisters */
+.g3-sisters { list-style: none; margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.g3-sisters li { font: 600 15px/1 var(--f-head); letter-spacing: .14em; text-transform: uppercase; padding: 11px 16px; border: 1px solid rgba(233,207,149,.4); border-radius: 999px; color: var(--gold-hi); }
+
+/* slate */
+.g3-slate { margin: 0; font-size: 15px; color: var(--slate); }
+.g3-slate b { color: var(--chalk); font-weight: 600; }
+.g3-slate-grid .card .pad { display: flex; flex-direction: column; gap: 10px; height: 100%; }
+.g3-slate-grid .card .link-u { margin-top: auto; align-self: flex-start; }
+
+/* archive contract */
+.g3-archive-contract { align-items: start; }
+.g3-archive-contract p { color: rgba(16,18,22,.78); line-height: 1.65; max-width: 58ch; }
+.g3-callout { padding: 22px 24px; border-radius: var(--radius); background: #fff; border: 1px solid rgba(16,18,22,.08); }
+.g3-callout strong { font: 600 20px/1.1 var(--f-head); text-transform: uppercase; color: var(--maroon); }
+.g3-callout p { margin: 8px 0 0; font-size: 15px; }
+.light .g3-callout .link-u, .light .g3-archive-contract .link-u { color: var(--maroon); }
+
+@media (max-width: 640px) {
+  .g3-terms li { grid-template-columns: 1fr; gap: 6px; }
+}
+.light .timeline .link-u { color: var(--maroon); }
+.g3-slate-grid .card .tag { align-self: flex-start; }

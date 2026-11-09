@@ -40,11 +40,11 @@ def series_offer():
   <div class="wrap">
     <div class="series-offer-grid">
       <div class="series-offer-art">
-        <img src="assets/img/keyart_cc2.jpg" alt="Coach Carter II series key art" loading="lazy">
+        <img src="assets/img/keyart_cc2.jpg" alt="Coach Carter Academy series key art" loading="lazy">
         <span class="series-preview-tag">Free preview · 60 seconds</span>
       </div>
       <div class="series-offer-copy">
-        <span class="eyebrow">Coach Carter II · Web series</span>
+        <span class="eyebrow">Coach Carter Academy · Web series</span>
         <h2 class="h-l mt-s" id="series-offer-title">The preview is free.<br><span class="gold-text">The story is worth it.</span></h2>
         <div class="series-price"><strong>{SERIES_PRICE}</strong><span>Season One<br>One-time purchase · USD</span></div>
         <p class="series-price-note">Planned launch price · Paid access coming soon</p>
@@ -62,6 +62,7 @@ NAV = [
     ("record", "record.html", "Record"),
     ("archive", "archive.html", "Archive"),
     ("keynotes", "keynotes.html", "Keynotes"),
+    ("teams", "teams.html", "Teams"),
     ("partners", "partners.html", "Partners"),
     ("store", "store.html", "Store"),
     ("playbook", "playbook.html", "Playbook"),
@@ -105,6 +106,10 @@ def head(meta):
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/fx.css">
+<link rel="stylesheet" href="assets/css/gap1.css">
+<link rel="stylesheet" href="assets/css/gap2.css">
+<link rel="stylesheet" href="assets/css/gap3.css">
+<link rel="stylesheet" href="assets/css/gap4.css">
 </head>
 <body class="page-{meta.get('nav', 'home')}">
 <div class="curtain" aria-hidden="true"><img src="assets/brand/crest_gold.svg" alt=""></div>
@@ -157,7 +162,7 @@ def footer():
       </div>
       <div><h6>Explore</h6><ul>
         <li><a href="story.html">The Story</a></li><li><a href="record.html">The Record</a></li>
-        <li><a href="series.html">Coach Carter II</a></li><li><a href="impact.html">Foundation</a></li></ul></div>
+        <li><a href="series.html">Coach Carter Academy</a></li><li><a href="impact.html">Foundation</a></li></ul></div>
       <div><h6>Work with Coach</h6><ul>
         <li><a href="keynotes.html#book">Book a keynote</a></li><li><a href="partners.html">Brand partnerships</a></li>
         <li><a href="partners.html#builder">Build a package</a></li><li><a href="brand.html">Press &amp; brand kit</a></li></ul></div>

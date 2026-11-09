@@ -1,16 +1,19 @@
-<!--{"title": "Store — Coach Carter Academy", "desc": "Explore Coach Carter Academy court apparel, signed editions and the Coach Carter II web series.", "nav": "store"}-->
+<!--{"title": "Store — Coach Carter Academy", "desc": "Explore Coach Carter Academy court apparel, signed editions and the Coach Carter Academy web series.", "nav": "store"}-->
 <link rel="stylesheet" href="assets/css/academy-gallery.css">
 <link rel="stylesheet" href="assets/css/academy-store.css">
 
 <nav class="store-nav" aria-label="Store departments">
+  <a href="#watch-plans">Season One <span>{{series_price}}</span></a>
   <a href="#academy-store-title">Academy</a>
   <a href="#lineup">The lineup</a>
   <a href="#first-whistle">First Whistle</a>
   <a href="#last-bell">Last Bell to Tipoff</a>
   <a href="gallery.html">Front Row Lookbook</a>
   <a href="#editions">Editions</a>
-  <a href="#watch-plans">Season One <span>{{series_price}}</span></a>
+  <a href="#preorders">Preorder lists</a>
 </nav>
+
+{{series_offer}}
 
 <section class="store-lookbook" id="last-bell" aria-labelledby="last-bell-gallery-title">
   <div class="store-shell">
@@ -91,6 +94,25 @@
         </div>
       </div>
     </section>
+    <div class="store-roadmap" aria-labelledby="roadmap-title">
+      <div class="store-roadmap-head">
+        <p class="store-label">Coming next · Proposed test prices</p>
+        <h3 id="roadmap-title">The rest of the uniform</h3>
+        <p>Four more pieces planned after the short and tee. Proposals, not products on sale.</p>
+      </div>
+      <ol class="store-roadmap-grid" id="academy-roadmap" data-roadmap></ol>
+    </div>
+    <div class="store-waitlist" id="first-drop">
+      <div>
+        <p class="store-label">First drop waitlist · Court Short + Court Tee</p>
+        <h3>Get first word on the first drop.</h3>
+        <p>The first run will be small, and it opens only after fit samples, wash tests and final artwork are approved. Join the list to hear first. No payment is taken.</p>
+      </div>
+      <form class="news store-news" data-simple="You're on the first-drop waitlist" aria-label="First drop waitlist">
+        <input type="email" required placeholder="Your email" aria-label="Email for the first-drop waitlist" autocomplete="email">
+        <button type="submit">Join the waitlist →</button>
+      </form>
+    </div>
     <div class="store-signature">
       <img src="academy-studio/artwork/basketball_seam_motif.svg" alt="" width="100" height="100" loading="lazy">
       <div>
@@ -237,7 +259,6 @@
   </div>
 </section>
 
-{{series_offer}}
 
 <section class="store-editions" id="editions" aria-labelledby="editions-title">
   <div class="store-shell">
@@ -254,6 +275,48 @@
       <button class="chip" data-cat="film">The film</button>
     </div>
     <div class="grid-3" id="product-grid"></div>
+  </div>
+</section>
+
+<section class="store-preorders" id="preorders" aria-labelledby="preorders-title">
+  <div class="store-shell">
+    <div class="store-section-heading">
+      <div>
+        <p class="store-label">In development · Preorder lists</p>
+        <h2 id="preorders-title">Proposed editions &amp; kits</h2>
+      </div>
+      <p>Proposed products and test prices.<br>Email lists only · No payment is taken.</p>
+    </div>
+    <div class="store-pre-grid">
+      <article class="store-pre-card" id="collector-edition">
+        <p class="store-label">Collector edition · Proposed $149</p>
+        <h3>The Contract — Collector Edition</h3>
+        <p>A numbered facsimile with Coach's commentary and a signed presentation. It is a modern edition and is labeled as one. The original signed contract has not yet been authenticated, so the preorder opens only after it is.</p>
+        <form class="news store-news" data-simple="You're on the Collector Edition preorder list" aria-label="Collector Edition preorder list">
+          <input type="email" required placeholder="Your email" aria-label="Email for the Collector Edition preorder list" autocomplete="email">
+          <button type="submit">Join the preorder list →</button>
+        </form>
+      </article>
+      <article class="store-pre-card" id="contract-kit">
+        <p class="store-label">The Contract · Price to be tested</p>
+        <h3>The Contract — 30-Day Kit</h3>
+        <p>The commitment as a tool you can use: a journal, short recordings from Coach, and a 30-day team challenge. Make a clear promise, take daily actions, review the consequences.</p>
+        <form class="news store-news" data-simple="You're on the Contract Kit waitlist" aria-label="Contract Kit waitlist">
+          <input type="email" required placeholder="Your email" aria-label="Email for the Contract Kit waitlist" autocomplete="email">
+          <button type="submit">Join the waitlist →</button>
+        </form>
+      </article>
+      <article class="store-pre-card" id="parent-starter">
+        <p class="store-label">Digital bundle · Proposed $39</p>
+        <h3>Parent + Player Starter</h3>
+        <p>One practical conversation a week. A short lesson, a printable commitment and a six-week check-in journal for a parent and player to keep together.</p>
+        <form class="news store-news" data-simple="You're on the Parent + Player Starter waitlist" aria-label="Parent and Player Starter waitlist">
+          <input type="email" required placeholder="Your email" aria-label="Email for the Parent and Player Starter waitlist" autocomplete="email">
+          <button type="submit">Join the waitlist →</button>
+        </form>
+      </article>
+    </div>
+    <p class="store-pre-note">For teams: the six-week Contract program for athletic directors and clubs is on the <a class="store-text-link" href="teams.html">For Teams page ↗</a></p>
   </div>
 </section>
 
