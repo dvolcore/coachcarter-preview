@@ -6,29 +6,6 @@
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const CC = window.CC || { store: { get: (k, d) => d, set() {} }, say() {} };
 
-  const tee = (body, print, ink = "#E9CF95") => `
-    <div class="tee"><svg viewBox="0 0 300 300" aria-hidden="true">
-      <defs><linearGradient id="sh${body.slice(1)}" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient></defs>
-      <path d="M95 30 L120 22 Q150 40 180 22 L205 30 L265 70 L240 115 L215 102 L215 275 Q150 285 85 275 L85 102 L60 115 L35 70 Z" fill="${body}"/>
-      <path d="M95 30 L120 22 Q150 40 180 22 L205 30 L265 70 L240 115 L215 102 L215 275 Q150 285 85 275 L85 102 L60 115 L35 70 Z" fill="url(#sh${body.slice(1)})"/>
-      <path d="M120 22 Q150 46 180 22" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="3"/>
-      <g fill="${ink}" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="600" text-anchor="middle">${print}</g>
-    </svg></div>`;
-  const hoodie = (body, print, ink = "#E9CF95") => `
-    <div class="tee"><svg viewBox="0 0 300 300" aria-hidden="true">
-      <path d="M100 40 Q150 5 200 40 L262 82 L244 175 L218 165 L218 278 Q150 288 82 278 L82 165 L56 175 L38 82 Z" fill="${body}"/>
-      <path d="M112 44 Q150 90 188 44 Q150 70 112 44" fill="#000" fill-opacity=".35"/>
-      <path d="M110 215 h80 v40 h-80z" fill="#000" fill-opacity=".14"/>
-      <line x1="140" y1="70" x2="138" y2="110" stroke="${ink}" stroke-width="2"/><line x1="160" y1="70" x2="162" y2="110" stroke="${ink}" stroke-width="2"/>
-      <g fill="${ink}" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="600" text-anchor="middle">${print}</g>
-    </svg></div>`;
-  const cap = (body) => `
-    <div class="tee"><svg viewBox="0 0 300 300" aria-hidden="true">
-      <path d="M60 175 Q60 80 150 75 Q240 80 240 175 Z" fill="${body}"/>
-      <path d="M60 175 Q150 160 240 175 Q285 182 290 200 Q200 190 150 192 Q80 192 60 175Z" fill="${body}" opacity=".85"/>
-      <path d="M150 75 L150 175" stroke="#000" stroke-opacity=".25"/>
-      <image href="assets/brand/monogram_gold.svg" x="110" y="105" width="80" height="80"/>
-    </svg></div>`;
   const ball = () => `
     <div class="tee"><svg viewBox="0 0 300 300" aria-hidden="true">
       <defs><radialGradient id="bg1" cx=".35" cy=".3"><stop offset="0" stop-color="#E8823A"/><stop offset="1" stop-color="#8A3C12"/></radialGradient></defs>
@@ -58,6 +35,12 @@
     </div></div><div class="face spine"></div><div class="face pages"></div><div class="face back"></div></div>`;
 
   const photo = (src, alt) => `<img src="assets/img/products/${src}" alt="${alt}" loading="lazy">`;
+  const academyData = {
+    products: [
+      { id: "court-short", name: "Court Short", price: "$78 proposed", kind: "Development sample · court short", image: "assets/img/academy/academy-court-short.png", alt: "Coach Carter Academy court short development look" },
+      { id: "court-tee", name: "Court Tee", price: "$68 proposed", kind: "Development sample · tee", image: "assets/img/academy/academy-court-tee.png", alt: "Coach Carter Academy court tee development look" }
+    ]
+  };
   const P = [
     { id: "ymns-hc", cat: "books", name: "Yes Ma'am, No Sir", kind: "Hardcover · Business Plus / Hachette, 2012", price: 27, badge: "Hardcover", art: () => book("c1") },
     { id: "ymns-signed", cat: "books", name: "Yes Ma'am, No Sir — Signed", kind: "Hardcover, signed by Coach", price: 49, badge: "Signed", art: () => photo("book_signed.jpg", "Signed hardcover copies of Yes Ma'am, No Sir") },
@@ -65,16 +48,13 @@
     { id: "ymns-ebook", cat: "books", name: "Yes Ma'am, No Sir — eBook", kind: "Kindle · Apple Books · Nook", price: 15, art: () => book("c1") },
     { id: "team-pack", cat: "books", name: "Team Pack — 25 Books", kind: "For schools, teams & companies · with contract cards", price: 525, badge: "Bulk", art: () => photo("team_pack.jpg", "Team Pack box with books and contract cards") },
     { id: "film", cat: "film", name: "Coach Carter (2005)", kind: "The 2005 film · Blu-ray / DVD / Digital", price: 15, art: film },
-    { id: "tee-wewin", cat: "apparel", name: "WE WIN Tee", kind: "Heavyweight cotton · Legacy maroon", price: 42, badge: "New", art: () => photo("tee_wewin.jpg", "Maroon WE WIN t-shirt") },
-    { id: "tee-ymns", cat: "apparel", name: "Yes Ma'am. No Sir. Tee", kind: "Heavyweight cotton · Carbon", price: 42, art: () => tee("#16181D", `<text x="150" y="118" font-size="24" letter-spacing="2">YES MA'AM.</text><text x="150" y="146" font-size="24" letter-spacing="2">NO SIR.</text>`) },
-    { id: "tee-average", cat: "apparel", name: "Average Is Not Good Enough Tee", kind: "Heavyweight cotton · Chalk", price: 42, art: () => tee("#EDE6D9", `<text x="150" y="112" font-size="17" letter-spacing="2">AVERAGE IS JUST</text><text x="150" y="134" font-size="17" letter-spacing="2">NOT GOOD ENOUGH.</text><text x="150" y="156" font-size="22" letter-spacing="4">PERIOD.</text>`, "#541D30") },
-    { id: "hoodie-contract", cat: "apparel", name: "The Contract Hoodie", kind: "Brushed fleece · Legacy maroon", price: 88, badge: "Limited", art: () => photo("hoodie_contract.jpg", "Maroon I Signed The Contract hoodie") },
-    { id: "cap-crest", cat: "apparel", name: "KC Crest Cap", kind: "Structured wool · Carbon", price: 38, art: () => photo("cap_crest.jpg", "Black cap with gold KC embroidery") },
     { id: "ball-signed", cat: "collectibles", name: "Signed Game Ball", kind: "Full size · signed by Coach Ken Carter", price: 250, badge: "Signed", art: ball },
     { id: "print-contract", cat: "collectibles", name: "The Contract — Framed Print", kind: "Archival print · signed · 18×24", price: 180, art: print },
   ];
 
-  const cart = { items: CC.store.get("cc_cart", {}) };
+  const storedCart = CC.store.get("cc_cart", {});
+  const validIds = new Set(P.map((p) => p.id));
+  const cart = { items: Object.fromEntries(Object.entries(storedCart || {}).filter(([id, qty]) => validIds.has(id) && Number(qty) > 0).map(([id, qty]) => [id, Number(qty)])) };
   const save = () => { CC.store.set("cc_cart", cart.items); render(); };
   const count = () => Object.values(cart.items).reduce((a, b) => a + b, 0);
   const money = (n) => `$${n.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
@@ -123,10 +103,17 @@
       requestAnimationFrame(() => $$(".product", grid).forEach((el, i) => setTimeout(() => el.classList.add("in"), 60 * i)));
       $$(".glow", grid).forEach((el) => el.addEventListener("pointermove", (ev) => { const r = el.getBoundingClientRect(); el.style.setProperty("--mx", `${ev.clientX - r.left}px`); el.style.setProperty("--my", `${ev.clientY - r.top}px`); }));
     };
-    $$(".filters .chip").forEach((c) => c.addEventListener("click", () => { $$(".filters .chip").forEach((x) => x.classList.toggle("on", x === c)); draw(c.dataset.cat); }));
+    const filters = $(".filters"); filters.setAttribute("role", "group"); filters.removeAttribute("aria-label");
+    $$(".filters .chip").forEach((c) => { c.setAttribute("aria-pressed", c.classList.contains("on") ? "true" : "false"); c.addEventListener("click", () => { $$(".filters .chip").forEach((x) => { x.classList.toggle("on", x === c); x.setAttribute("aria-pressed", x === c ? "true" : "false"); }); if (c.dataset.cat === "academy") { grid.hidden = true; $("#academy-store-title")?.scrollIntoView({ behavior: "smooth", block: "start" }); return; } grid.hidden = false; draw(c.dataset.cat); }); });
     const start = new URLSearchParams(location.search).get("cat") || "all";
-    $$(".filters .chip").forEach((x) => x.classList.toggle("on", x.dataset.cat === start));
-    draw(start);
+    const initial = ["all", "books", "collectibles", "film", "academy"].includes(start) ? start : "all";
+    $$(".filters .chip").forEach((x) => { x.classList.toggle("on", x.dataset.cat === initial); x.setAttribute("aria-pressed", x.dataset.cat === initial ? "true" : "false"); });
+    grid.hidden = initial === "academy";
+    if (initial !== "academy") draw(initial);
+  }
+  const academyGrid = $("#academy-product-grid");
+  if (academyGrid) {
+    academyGrid.innerHTML = academyData.products.map((p) => `<article class="academy-product-card"><a href="academy-product.html?product=${p.id}"><img src="${p.image}" alt="${p.alt}" loading="lazy"></a><div class="academy-product-meta"><h3>${p.name}</h3><span class="academy-price">${p.price}</span></div><div class="academy-kind">${p.kind}</div><a class="academy-card-link" href="academy-product.html?product=${p.id}">Review proposed spec <span class="arr">→</span></a></article>`).join("");
   }
   render();
 })();

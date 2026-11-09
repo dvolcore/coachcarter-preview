@@ -1,0 +1,30 @@
+[
+  {
+    "file": "basketball_seam_motif.svg",
+    "viewBox": "0 0 100 100",
+    "dimensions": "12in x 12in",
+    "intended_use": "Academy apparel/print asset",
+    "status": "concept master; not supplier approved"
+  },
+  {
+    "file": "court_diagram_basketball_backprint.svg",
+    "viewBox": "0 0 100 100",
+    "dimensions": "12in x 12in",
+    "intended_use": "Academy apparel/print asset",
+    "status": "concept master; not supplier approved"
+  },
+  {
+    "file": "academy_wordmark_descriptor.svg",
+    "viewBox": "0 0 100 72",
+    "dimensions": "12in x 8in SVG viewport; preserve native aspect ratio",
+    "intended_use": "Academy apparel/print asset",
+    "status": "concept master; not supplier approved"
+  },
+  {
+    "file": "official_wordmark_gold.svg",
+    "viewBox": "0 0 1400 350",
+    "dimensions": "1400 x 350 source units",
+    "intended_use": "Official supplied wordmark source",
+    "status": "copied unchanged; source master"
+  }
+]

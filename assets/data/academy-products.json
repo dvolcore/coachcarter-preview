@@ -1,0 +1,38 @@
+{
+  "status": "development-preview",
+  "note": "Proposed first test pieces. No checkout, inventory, or purchase promise.",
+  "products": [
+    {
+      "id": "court-short",
+      "name": "Court Short",
+      "price": "$78 proposed",
+      "kind": "Development sample \u00b7 court short",
+      "image": "assets/img/academy/academy-court-short.png",
+      "alt": "Coach Carter Academy court short development look",
+      "specs": [
+        "7-inch court short silhouette",
+        "Warm gold and maroon Academy treatment",
+        "Final fabric, fit and production subject to approval"
+      ]
+    },
+    {
+      "id": "court-tee",
+      "name": "Court Tee",
+      "price": "$68 proposed",
+      "kind": "Development sample \u00b7 tee",
+      "image": "assets/img/academy/academy-court-tee.png",
+      "alt": "Coach Carter Academy court tee development look",
+      "specs": [
+        "Premium heavyweight tee silhouette",
+        "Academy wordmark and basketball court detail",
+        "Final fabric, fit and production subject to approval"
+      ]
+    }
+  ],
+  "roadmap": [
+    "Jersey \u00b7 $98 proposed",
+    "Warm-up jacket \u00b7 $148 proposed",
+    "Hoodie \u00b7 $118 proposed",
+    "Basketball \u00b7 $68 proposed"
+  ]
+}
