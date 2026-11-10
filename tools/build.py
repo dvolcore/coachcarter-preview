@@ -40,7 +40,7 @@ def series_offer():
   <div class="wrap">
     <div class="series-offer-grid">
       <div class="series-offer-art">
-        <img src="assets/img/keyart_cc2.jpg" alt="Coach Carter Academy series key art" loading="lazy">
+        <img src="assets/img/academy-series-title-card.webp" alt="Coach Carter Academy title over an empty basketball court" width="1280" height="720" loading="lazy">
         <span class="series-preview-tag">Free preview · 60 seconds</span>
       </div>
       <div class="series-offer-copy">
@@ -50,7 +50,7 @@ def series_offer():
         <p class="series-price-note">Planned launch price · Paid access coming soon</p>
         <p class="series-offer-description">Get a first look now. Full episodes will be available through paid season access when the series launches.</p>
         <ul class="series-includes"><li>Full Season One access at launch</li><li>No monthly subscription</li><li>Public viewing is preview only</li></ul>
-        <button class="btn btn-gold" data-video="assets/video/series-preview-60.mp4" data-poster="assets/video/trailer_720p.jpg">{ICON['play']}<span>Watch the free preview</span></button>
+        <button class="btn btn-gold" data-video="assets/video/academy-preview-60.mp4" data-poster="assets/img/academy-series-title-card.webp">{ICON['play']}<span>Watch the free preview</span></button>
         <p class="series-availability">In development. Final episode lineup and release date will be announced before sales open. No payments are being taken.</p>
       </div>
     </div>
@@ -86,6 +86,11 @@ ICON = {
 def head(meta):
     title = meta["title"]
     desc = meta.get("desc", "")
+    share_image = {
+        "series": "assets/img/academy-series-title-card.webp",
+        "store": "assets/img/academy-series-title-card.webp",
+        "investors": "assets/img/coach_carter_investor_banner.webp",
+    }.get(meta.get("nav"), "assets/img/portrait_ken.jpg")
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -98,7 +103,7 @@ def head(meta):
 <script>(function(d){{d.classList.add("js");try{{var q=location.search;if(/[?&]review(=|&|$)/.test(q))localStorage.setItem("cc_review","1");if(/[?&]client(=|&|$)/.test(q))localStorage.removeItem("cc_review");if(localStorage.getItem("cc_review"))d.classList.add("review")}}catch(e){{}}}})(document.documentElement)</script>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
-<meta property="og:image" content="assets/img/keyart_cc2.jpg">
+<meta property="og:image" content="https://dvolcore.github.io/coachcarter-preview/{share_image}">
 <link rel="icon" href="assets/brand/appicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
