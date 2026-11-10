@@ -459,7 +459,7 @@
   color: var(--academy-ink);
 }
 .game-jersey-banner:hover, .game-jersey-banner:focus-visible { border-color: var(--academy-maroon); }
-.game-jersey-banner-images { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.game-jersey-banner-images { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .game-jersey-banner-images img {
   display: block;
   width: 100%;
@@ -478,4 +478,4 @@
 }
 .game-jersey-banner-copy h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2.5rem); }
 .game-jersey-banner-copy span { color: var(--academy-maroon); font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
-#game-jerseys .store-catalog-note { margin-top: 12px; }
+.game-jersey-banner + .store-catalog-note { margin-top: 12px; }

@@ -1,17 +1,19 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=9");
+    const response = await fetch("assets/data/academy-products.json?v=10");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
     const requestedKey = query.get("product") || "court-tee";
-    const jerseysKey = "official-game-jerseys";
+    const gameKey = "official-game-jerseys";
+    const practiceKey = "official-practice-jerseys";
     const jerseyStyles = {
       "reversible-practice-jersey": "cream-maroon",
       "reversible-game-jersey": "cream-maroon",
       "dark-knight-game-jersey": "dark-knight",
       "all-cream-game-jersey": "all-cream",
+      "all-maroon-game-jersey": "all-maroon",
     };
     const oldJerseyViews = {
       "#maroon": "maroon-cream",
@@ -27,18 +29,22 @@ async function showProduct() {
       "arc-warmup-set": "warm-up-zip-jacket",
     };
     const alias = Object.hasOwn(productAliases, requestedKey) ? productAliases[requestedKey] : null;
-    const key = legacyStyle ? jerseysKey : alias || requestedKey;
-    const jerseyUrl = (style) => "?product=" + jerseysKey + "&style=" + encodeURIComponent(style);
+    const requestedStyle = legacyStyle ? oldJerseyViews[location.hash] || legacyStyle : query.get("style");
+    const initialKey = legacyStyle ? gameKey : alias || requestedKey;
+    const practice = products.find(({ id }) => id === practiceKey);
+    const movedToPractice = initialKey === gameKey && practice.styles.some(({ style }) => style === requestedStyle);
+    const key = movedToPractice ? practiceKey : initialKey;
+    const jerseyUrl = (style) => "?product=" + key + "&style=" + encodeURIComponent(style);
     const entry = products.find(({ id }) => id === key);
     if (!entry) throw new Error("Product unavailable");
 
-    const requestedStyle = legacyStyle ? oldJerseyViews[location.hash] || legacyStyle : query.get("style");
     const style = entry.styles?.find((option) => option.style === requestedStyle) || entry.styles?.[0];
     const product = style ? { ...entry, ...style } : entry;
-    const isGameJersey = key === jerseysKey;
-    if (legacyStyle) {
-      const showEditorial = location.hash === "#game-jersey-editorial" || location.hash.endsWith("-on-court");
-      history.replaceState(null, "", jerseyUrl(style.style) + (showEditorial ? "#game-jersey-editorial" : ""));
+    const jerseyEditorial = key === gameKey ? "game-jersey-editorial" : "practice-jersey-editorial";
+    if (legacyStyle || movedToPractice) {
+      const showEditorial = location.hash === "#game-jersey-editorial" ||
+        location.hash === "#practice-jersey-editorial" || location.hash.endsWith("-on-court");
+      history.replaceState(null, "", jerseyUrl(style.style) + (showEditorial ? "#" + jerseyEditorial : ""));
     } else if (alias && requestedKey !== "court-short") {
       history.replaceState(null, "", "?product=" + alias);
     }
@@ -102,7 +108,7 @@ async function showProduct() {
       setPhoto(mainView);
     }
 
-    if (isGameJersey) {
+    if (style) {
       photo.closest("figure").classList.add("product-visual-gallery");
       const editions = document.querySelector("#product-editions");
       const editionLinks = entry.styles.map((edition) => {
@@ -121,7 +127,7 @@ async function showProduct() {
       editions.hidden = false;
       const back = document.querySelector("#product-back");
       back.href = product.campaign;
-      back.textContent = "← Uniforms";
+      back.textContent = "← " + entry.name;
     }
 
     if (product.campaign === "store.html#warm-ups") {
@@ -170,7 +176,7 @@ async function showProduct() {
     if (product.campaign) {
       campaign.href = product.campaign;
       if (product.campaign === "store.html#uniform-pieces") campaign.textContent = "Explore all uniform pieces ↗";
-      else if (isGameJersey) campaign.textContent = "Browse uniforms ↗";
+      else if (style) campaign.textContent = "Browse " + entry.name.toLowerCase() + " ↗";
       else if (product.campaign === "store.html#shorts") campaign.textContent = "Browse shorts ↗";
       else if (product.campaign === "store.html#warm-ups") campaign.textContent = "Browse warm-ups ↗";
       else if (product.group === "last-bell") campaign.textContent = "See it styled ↗";
@@ -198,11 +204,11 @@ async function showProduct() {
     if (product.id === "front-row-letterman") {
       document.querySelector("#front-row-composite").hidden = false;
     }
-    const lifestyleId = isGameJersey ? "game-jersey-editorial" :
+    const lifestyleId = style ? jerseyEditorial :
       product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
-      "all-maroon-game-short": "game-jersey-editorial",
+      "all-maroon-game-short": "practice-jersey-editorial",
     }[product.id];
     const lifestyle = lifestyleId && document.getElementById(lifestyleId);
     if (lifestyle) {
@@ -210,7 +216,8 @@ async function showProduct() {
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
       if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
-      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the five looks and game action ↓";
+      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the game lineup and action ↓";
+      else if (lifestyle.id === "practice-jersey-editorial") lifestyleLink.textContent = "See the practice lineup on court ↓";
       else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
 

@@ -44,8 +44,8 @@ def academy_cards(catalog, group=None, heading="h3"):
     return "\n      ".join(cards)
 
 
-def game_jersey_previews(catalog):
-    jersey = next(product for product in catalog["products"] if product["id"] == "official-game-jerseys")
+def jersey_previews(catalog, product_id):
+    jersey = next(product for product in catalog["products"] if product["id"] == product_id)
     return "".join(
         f'<img src="{escape(style["image"])}" alt="" loading="lazy" width="{style["image_width"]}" height="{style["image_height"]}">'
         for style in jersey["styles"]
@@ -282,7 +282,8 @@ def build():
                     .replace("{{school_bottoms_cards}}", academy_cards(catalog, "school-bottoms", "h4"))
                     .replace("{{school_footwear_cards}}", academy_cards(catalog, "school-footwear", "h4"))
                     .replace("{{last_bell_cards}}", academy_cards(catalog, "last-bell"))
-                    .replace("{{game_jersey_previews}}", game_jersey_previews(catalog))
+                    .replace("{{game_jersey_previews}}", jersey_previews(catalog, "official-game-jerseys"))
+                    .replace("{{practice_jersey_previews}}", jersey_previews(catalog, "official-practice-jerseys"))
                     .replace("{{shorts_cards}}", academy_cards(catalog, "shorts", "h4"))
                     .replace("{{court_gear_cards}}", academy_cards(catalog, "court-gear", "h4"))
                     .replace("{{warm_ups_cards}}", academy_cards(catalog, "warm-ups", "h4"))

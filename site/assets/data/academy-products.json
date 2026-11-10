@@ -338,21 +338,6 @@
       "group": "game-jerseys",
       "styles": [
         {
-          "style": "cream-maroon",
-          "label": "Cream with maroon trim",
-          "kind": "Mesh game jersey · Cream / Maroon",
-          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
-          "image_width": 432,
-          "image_height": 539,
-          "alt": "Cream mesh game jersey with maroon trim and woven KC side panels",
-          "image_caption": "Cream with maroon trim · AI garment rendering",
-          "specs": [
-            "Cream mesh with maroon binding, side panels and Coach Carter Academy lettering.",
-            "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
-          ],
-          "price": "$98 proposed"
-        },
-        {
           "style": "maroon-cream",
           "label": "Maroon with cream trim",
           "kind": "Mesh game jersey · Maroon / Cream",
@@ -365,51 +350,95 @@
             "Richmond maroon mesh with cream binding, side panels and Coach Carter Academy lettering.",
             "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
           ],
-          "price": "$98 proposed"
+          "price": "$98 proposed",
+          "name": "Maroon with Cream Game Jersey"
+        },
+        {
+          "style": "cream-maroon",
+          "label": "Cream with maroon trim",
+          "kind": "Mesh game jersey · Cream / Maroon",
+          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
+          "image_width": 432,
+          "image_height": 539,
+          "alt": "Cream mesh game jersey with maroon trim and woven KC side panels",
+          "image_caption": "Cream with maroon trim · AI garment rendering",
+          "specs": [
+            "Cream mesh with maroon binding, side panels and Coach Carter Academy lettering.",
+            "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
+          ],
+          "price": "$98 proposed",
+          "name": "Cream with Maroon Game Jersey"
         },
         {
           "style": "dark-knight",
-          "label": "Dark Knight",
-          "kind": "Mesh game jersey · All black",
-          "image": "assets/img/academy/roadmap/fit/game-jersey-dark-knight.webp",
+          "label": "Black with cream trim",
+          "kind": "Mesh game jersey · Black / Cream",
+          "image": "assets/img/academy/roadmap/fit/game-jersey-black-cream.webp",
           "image_width": 750,
           "image_height": 1024,
-          "alt": "All-black mesh Dark Knight game jersey with tonal KC side panels and gold Academy lettering",
-          "image_caption": "Dark Knight · AI garment rendering",
+          "alt": "Black mesh Academy game jersey with cream KC side panels and gold lettering",
+          "image_caption": "Black with cream trim · AI garment rendering",
           "specs": [
-            "The Academy’s official all-black game jersey. Black mesh and binding frame tonal KC side panels.",
+            "Black mesh with contrast cream side panels and a woven KC repeat.",
             "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
           ],
           "pieces": [
             "warm-up-zip-jacket"
-          ]
+          ],
+          "name": "Dark Knight Game Jersey"
+        }
+      ],
+      "pieces": [
+        "kc-reversible-short",
+        "warm-up-zip-jacket"
+      ],
+      "campaign": "store.html#game-jerseys"
+    },
+    {
+      "id": "official-practice-jerseys",
+      "name": "Official Practice Jerseys",
+      "status": "Coming soon",
+      "group": "practice-jerseys",
+      "styles": [
+        {
+          "style": "all-black",
+          "label": "All-Black",
+          "kind": "Mesh practice jersey · Tonal black",
+          "image": "assets/img/academy/roadmap/fit/game-jersey-dark-knight.webp",
+          "image_width": 750,
+          "image_height": 1024,
+          "alt": "All-black mesh practice jersey with tonal KC side panels and gold Academy lettering",
+          "image_caption": "All-Black · AI garment rendering",
+          "specs": [
+            "Black mesh and matching binding frame tonal KC side panels.",
+            "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
+          ],
+          "name": "All-Black Practice Jersey"
         },
         {
           "style": "all-cream",
           "label": "All-Cream",
-          "kind": "Mesh game jersey · Cream / Gold",
+          "kind": "Mesh practice jersey · Tonal cream",
           "image": "assets/img/academy/roadmap/fit/game-jersey-all-cream.webp",
           "image_width": 716,
           "image_height": 1024,
-          "alt": "All-cream mesh game jersey with matching cream trim, gold Academy lettering and gold KC side panels",
+          "alt": "All-cream mesh practice jersey with matching cream trim, gold Academy lettering and gold KC side panels",
           "image_caption": "All-Cream · AI garment rendering",
           "specs": [
-            "The Academy’s official all-cream game jersey. Bone mesh, matching cream binding and a muted gold KC repeat run down the sides.",
+            "Cream mesh, matching cream binding and a muted gold KC repeat down the sides.",
             "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
           ],
-          "pieces": [
-            "warm-up-zip-jacket"
-          ]
+          "name": "All-Cream Practice Jersey"
         },
         {
           "style": "all-maroon",
           "label": "All-Maroon",
-          "name": "All-Maroon Game Jersey",
-          "kind": "Mesh game jersey · Tonal Richmond maroon",
+          "name": "All-Maroon Practice Jersey",
+          "kind": "Mesh practice jersey · Tonal Richmond maroon",
           "image": "assets/img/academy/roadmap/fit/game-jersey-all-maroon.webp",
           "image_width": 1254,
           "image_height": 1254,
-          "alt": "All-maroon mesh game jersey with tonal trim, antique-gold KC side panels and number 4",
+          "alt": "All-maroon mesh practice jersey with tonal trim, antique-gold KC side panels and number 4",
           "image_caption": "All-Maroon front · AI garment rendering",
           "specs": [
             "Richmond maroon mesh and matching binding at the neck and armholes.",
@@ -420,11 +449,7 @@
           ]
         }
       ],
-      "pieces": [
-        "kc-reversible-short",
-        "warm-up-zip-jacket"
-      ],
-      "campaign": "store.html#uniforms"
+      "campaign": "store.html#practice-jerseys"
     },
     {
       "id": "kc-reversible-short",
@@ -454,16 +479,16 @@
     },
     {
       "id": "all-maroon-game-short",
-      "name": "All-Maroon Game Short",
-      "kind": "Mesh game short · Tonal Richmond maroon",
+      "name": "All-Maroon Practice Short",
+      "kind": "Mesh practice short · Tonal Richmond maroon",
       "image": "assets/img/academy/roadmap/fit/game-short-all-maroon.webp",
       "image_width": 1254,
       "image_height": 1254,
-      "alt": "All-maroon mesh game shorts with a gathered waistband and antique-gold KC side panels",
+      "alt": "All-maroon mesh practice shorts with a gathered waistband and antique-gold KC side panels",
       "image_caption": "All-Maroon short front · AI garment rendering",
       "specs": [
-        "An above-the-knee game short in Richmond maroon mesh with a matching elastic waistband.",
-        "Narrow woven KC side panels pair with the All-Maroon Game Jersey."
+        "An above-the-knee practice short in Richmond maroon mesh with a matching elastic waistband.",
+        "Narrow woven KC side panels pair with the All-Maroon Practice Jersey."
       ],
       "status": "Coming soon",
       "group": "court-gear",
