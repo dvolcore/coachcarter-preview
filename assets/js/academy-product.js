@@ -217,7 +217,7 @@ async function showProduct() {
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
       if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
-      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the game lineup and action ↓";
+      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the game lineup ↓";
       else if (lifestyle.id === "practice-jersey-editorial") lifestyleLink.textContent = "See the practice lineup on court ↓";
       else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
