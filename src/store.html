@@ -1,15 +1,12 @@
 <!--{"title": "Store — Coach Carter Academy", "desc": "Explore Coach Carter Academy court apparel, signed editions and the Coach Carter Academy web series.", "nav": "store"}-->
 <link rel="stylesheet" href="assets/css/academy-gallery.css">
-<link rel="stylesheet" href="assets/css/academy-store.css?v=6">
+<link rel="stylesheet" href="assets/css/academy-store.css?v=7">
 
 <nav class="store-nav" aria-label="Store departments">
-  <a href="#academy-store-title">Academy</a>
+  <a href="#uniforms">Uniforms</a>
   <a href="#watch-plans">Season One <span>{{series_price}}</span></a>
   <a href="#lineup">The lineup</a>
   <a href="academy-product.html?product=front-row-letterman">Letterman</a>
-  <a href="#look-01-school-uniform">School Uniforms</a>
-  <a href="#game-jerseys">Game Jerseys</a>
-  <a href="#court-gear">Court Gear</a>
   <a href="academy-product.html?product=kc-signature-backpack">Backpack</a>
   <a href="#signature-collection">Campaign</a>
   <a href="#first-whistle">First Whistle</a>
@@ -94,48 +91,51 @@
         {{last_bell_cards}}
       </div>
     </section>
-    <section class="store-catalog-section" id="game-jerseys" aria-labelledby="game-jerseys-title">
+    <section class="store-catalog-section" id="uniforms" aria-labelledby="uniforms-title">
       <div class="store-section-heading">
-        <div><p class="store-label">Academy basketball · Coming soon</p><h2 id="game-jerseys-title">Official Game Jerseys</h2></div>
-        <p>Choose the reversible Bone / Maroon jersey, the all-black Dark Knight, or the All-Cream edition.</p>
+        <div><p class="store-label">Academy basketball · Coming soon</p><h2 id="uniforms-title">Uniforms</h2></div>
+        <p>Explore the Academy’s official game jerseys, shorts and warm-ups.</p>
       </div>
-      <div class="academy-product-grid court-gear-products">
-        {{game_jersey_cards}}
-      </div>
-      <p class="store-catalog-note"><a class="store-text-link" href="academy-product.html?product=reversible-game-jersey#game-jersey-editorial">See the jerseys in game action ↗</a></p>
-    </section>
-    <section class="store-catalog-section" id="court-gear" aria-labelledby="court-gear-title">
-      <div class="store-section-heading">
-        <div><p class="store-label">Court gear · Coming soon</p><h2 id="court-gear-title">The rest of the uniform</h2></div>
-        <p>Academy gear for practice, game day and after the final whistle.</p>
-      </div>
-      <div class="academy-product-grid court-gear-products">
-        {{court_gear_cards}}
-      </div>
-    </section>
-    <section class="store-catalog-section" id="warm-ups" aria-labelledby="warm-ups-title">
-      <div class="store-section-heading">
-        <div><p class="store-label">Warm-ups · Coming soon</p><h2 id="warm-ups-title">Warm up, then walk out.</h2></div>
-        <p>Arc silhouettes and the revised Academy warm-up jacket, built to move between court and campus.</p>
-      </div>
-      <div class="academy-product-grid warm-ups-products">
-        {{warm_ups_cards}}
-      </div>
-    </section>
-    <section class="store-catalog-section" id="accessories" aria-labelledby="accessories-title">
-      <div class="store-section-heading">
-        <div><p class="store-label">Accessories · Coming soon</p><h2 id="accessories-title">Finish the kit.</h2></div>
-        <p>Headwear, sleeves, socks and the Academy backpack complete the court-to-campus uniform.</p>
-      </div>
-      <div class="academy-product-grid accessories-products">
-        {{accessories_cards}}
-      </div>
+      <nav class="uniform-links" aria-label="Uniform categories">
+        <a class="store-text-link" href="#game-jerseys">Official Game Jerseys</a>
+        <a class="store-text-link" href="#shorts">Shorts</a>
+        <a class="store-text-link" href="#warm-ups">Warm-Ups</a>
+        <a class="store-text-link" href="#court-gear">Court Gear</a>
+        <a class="store-text-link" href="#accessories">Accessories</a>
+        <a class="store-text-link" href="#look-01-school-uniform">School Uniforms</a>
+      </nav>
+      <section class="uniform-group" id="game-jerseys" aria-labelledby="game-jerseys-title">
+        <a class="game-jersey-banner" href="academy-product.html?product=official-game-jerseys">
+          <div class="game-jersey-banner-images" aria-hidden="true">{{game_jersey_previews}}</div>
+          <div class="game-jersey-banner-copy">
+            <h3 id="game-jerseys-title">Official Game Jerseys</h3>
+            <span>Explore all four styles ↗</span>
+          </div>
+        </a>
+        <p class="store-catalog-note"><a class="store-text-link" href="academy-product.html?product=official-game-jerseys#game-jersey-editorial">See the jerseys in game action ↗</a></p>
+      </section>
+      <section class="uniform-group" id="shorts" aria-labelledby="shorts-title">
+        <h3 id="shorts-title">Shorts</h3>
+        <div class="academy-product-grid court-gear-products">{{shorts_cards}}</div>
+      </section>
+      <section class="uniform-group" id="warm-ups" aria-labelledby="warm-ups-title">
+        <h3 id="warm-ups-title">Warm-Ups</h3>
+        <div class="academy-product-grid warm-ups-products">{{warm_ups_cards}}</div>
+      </section>
+      <section class="uniform-group" id="court-gear" aria-labelledby="court-gear-title">
+        <h3 id="court-gear-title">Court Gear</h3>
+        <div class="academy-product-grid court-gear-products">{{court_gear_cards}}</div>
+      </section>
+      <section class="uniform-group" id="accessories" aria-labelledby="accessories-title">
+        <h3 id="accessories-title">Accessories</h3>
+        <div class="academy-product-grid accessories-products">{{accessories_cards}}</div>
+      </section>
     </section>
 
     <section class="academy-signature-editorial" id="signature-collection" aria-labelledby="signature-collection-title">
       <div class="store-section-heading">
         <div><p class="store-label">Signature collection · Coming soon</p><h2 id="signature-collection-title">Built for the whole school day.</h2></div>
-        <p>The reversible court kit and Academy warm-ups, from the layup line to the street.</p>
+        <p>Game jerseys, court shorts and Academy warm-ups, from the layup line to the street.</p>
       </div>
       <div class="academy-signature-editorial-grid">
         <figure>
@@ -143,7 +143,7 @@
           <figcaption><span>01 / Layup line</span>Warm up together.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/academy/roadmap/fit/kc-campaign-shootaround.webp" alt="Academy students running a dribbling drill in matching warm-ups and shorts" width="720" height="539" loading="lazy">
+          <img src="assets/img/academy/campaign/game-jersey-maroon-fast-break.webp" alt="Academy students running a dribbling drill in matching warm-ups and shorts" width="720" height="539" loading="lazy">
           <figcaption><span>02 / Shootaround</span>Find your rhythm.</figcaption>
         </figure>
         <figure>
@@ -190,7 +190,7 @@
         </figure>
       </div>
       <div class="academy-combat-editions-actions">
-        <a class="store-text-link" href="academy-product.html?product=dark-knight-game-jersey">Explore the Dark Knight Game Jersey ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=official-game-jerseys&amp;style=dark-knight">Explore the Dark Knight Game Jersey ↗</a>
         <span class="academy-signature-editorial-note">AI styling concepts. Final fit, materials and artwork are subject to sampling.</span>
       </div>
     </section>
@@ -261,10 +261,10 @@
         <img src="assets/img/academy/roadmap/fit/next-up-short.webp" alt="Next Up Short AI fit rendering, carbon and maroon teen court short" width="561" height="701" loading="lazy">
         <p class="store-label">03 / Teens</p>
         <h3>Next Up</h3>
-        <p>6-inch carbon Arc Short and a reversible mesh game jersey for two colorways.</p>
-        <details><summary>Fit notes</summary><p>Relaxed through the leg for movement, with an adjustable waist. Bone and maroon switch sides on the jersey.</p></details>
+        <p>6-inch carbon Arc Short styled with an Academy game jersey.</p>
+        <details><summary>Fit notes</summary><p>Relaxed through the leg for movement, with an adjustable waist.</p></details>
         <a class="store-text-link" href="academy-product.html?product=next-up-short">Explore the short ↗</a>
-        <a class="store-text-link" href="academy-product.html?product=reversible-game-jersey">Explore the reversible game jersey ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=official-game-jerseys">Explore Official Game Jerseys ↗</a>
       </article>
       <article class="store-look">
         <img src="assets/img/academy/roadmap/fit/first-team.webp" alt="First Team AI fit rendering, bone basketball tee and maroon pull-on short" width="561" height="701" loading="lazy">
@@ -317,8 +317,8 @@
         <span>Courtside warm-up</span>
       </a></li>
       <li><a href="#look-05-warmup-in-motion">
-        <img src="assets/img/academy/roadmap/fit/kc-campaign-shootaround.webp" alt="" width="720" height="539" loading="lazy">
-        <span>Practice kit</span>
+        <img src="assets/img/academy/campaign/game-jersey-maroon-fast-break.webp" alt="" width="1536" height="1024" loading="lazy">
+        <span>Game jerseys</span>
       </a></li>
       <li><a href="#look-06-locker-room">
         <img src="assets/img/academy/roadmap/fit/kc-signature-backpack-worn.webp" alt="" width="574" height="887" loading="lazy">
@@ -368,12 +368,12 @@
         </figcaption>
       </figure>
       <figure class="last-bell-look" id="look-05-warmup-in-motion">
-        <img src="assets/img/academy/roadmap/fit/kc-campaign-shootaround.webp" alt="Academy players on the court in reversible game jerseys and mesh shorts" width="720" height="539" loading="lazy">
+        <img src="assets/img/academy/campaign/game-jersey-maroon-fast-break.webp" alt="An Academy guard in a numbered maroon game jersey leads a fast break" width="1536" height="1024" loading="lazy">
         <figcaption>
           <p class="store-label">05 / First bounce</p>
-          <h3>The practice kit</h3>
-          <p>Bone and maroon game jerseys paired with Academy mesh shorts.</p>
-          <a class="store-text-link" href="#court-gear">Explore court gear ↗</a>
+          <h3>Official Game Jerseys</h3>
+          <p>Maroon and cream with the Academy’s woven KC side panels.</p>
+          <a class="store-text-link" href="academy-product.html?product=official-game-jerseys#game-jersey-editorial">See the jerseys in game action ↗</a>
         </figcaption>
       </figure>
       <figure class="last-bell-look" id="look-06-locker-room">
@@ -390,7 +390,6 @@
         <h3 id="last-bell-library-title">From the frame to the garment</h3>
         <p>Explore the revised court gear design flats.</p>
         <ul>
-          <li><a class="store-text-link" href="assets/img/academy/roadmap/reversible-practice-jersey.svg" download>Reversible Game Jersey (SVG) <span aria-hidden="true">↓</span></a></li>
           <li><a class="store-text-link" href="assets/img/academy/roadmap/warm-up-zip-jacket.svg" download>Warm-Up Zip Jacket (SVG) <span aria-hidden="true">↓</span></a></li>
           <li><a class="store-text-link" href="assets/img/academy/roadmap/kc-reversible-short.svg" download>KC Reversible Short (SVG) <span aria-hidden="true">↓</span></a></li>
           <li><a class="store-text-link" href="academy-studio/index.html#last-bell">See the Academy Studio library <span aria-hidden="true">↗</span></a></li>
