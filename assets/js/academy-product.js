@@ -1,25 +1,47 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=7");
+    const response = await fetch("assets/data/academy-products.json?v=8");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
-    const requestedKey = new URLSearchParams(location.search).get("product") || "court-tee";
-    const aliases = {
-      "court-short": "kc-reversible-short",
-      "reversible-practice-jersey": "reversible-game-jersey",
+    const query = new URLSearchParams(location.search);
+    const requestedKey = query.get("product") || "court-tee";
+    const jerseysKey = "official-game-jerseys";
+    const jerseyStyles = {
+      "reversible-practice-jersey": "cream-maroon",
+      "reversible-game-jersey": "cream-maroon",
+      "dark-knight-game-jersey": "dark-knight",
+      "all-cream-game-jersey": "all-cream",
     };
     const oldJerseyViews = {
-      "#dark-knights": ["dark-knight-game-jersey", ""],
-      "#black-bone": ["all-cream-game-jersey", ""],
-      "#dark-knights-on-court": ["dark-knight-game-jersey", "#game-jersey-editorial"],
-      "#black-bone-on-court": ["all-cream-game-jersey", "#game-jersey-editorial"],
+      "#maroon": "maroon-cream",
+      "#dark-knights": "dark-knight",
+      "#black-bone": "all-cream",
+      "#dark-knights-on-court": "dark-knight",
+      "#black-bone-on-court": "all-cream",
     };
-    const oldJerseyView = requestedKey === "reversible-practice-jersey" && oldJerseyViews[location.hash];
-    const key = oldJerseyView?.[0] || aliases[requestedKey] || requestedKey;
-    if (oldJerseyView) history.replaceState(null, "", "?product=" + key + oldJerseyView[1]);
-    const product = products.find(({ id }) => id === key);
-    if (!product) throw new Error("Product unavailable");
+    const legacyStyle = Object.hasOwn(jerseyStyles, requestedKey) ? jerseyStyles[requestedKey] : null;
+    const productAliases = {
+      "court-short": "kc-reversible-short",
+      "arc-tearaway-pant": "warm-up-tearaway-pant",
+      "arc-warmup-set": "warm-up-zip-jacket",
+    };
+    const alias = Object.hasOwn(productAliases, requestedKey) ? productAliases[requestedKey] : null;
+    const key = legacyStyle ? jerseysKey : alias || requestedKey;
+    const jerseyUrl = (style) => "?product=" + jerseysKey + "&style=" + encodeURIComponent(style);
+    const entry = products.find(({ id }) => id === key);
+    if (!entry) throw new Error("Product unavailable");
+
+    const requestedStyle = legacyStyle ? oldJerseyViews[location.hash] || legacyStyle : query.get("style");
+    const style = entry.styles?.find((option) => option.style === requestedStyle) || entry.styles?.[0];
+    const product = style ? { ...entry, ...style } : entry;
+    const isGameJersey = key === jerseysKey;
+    if (legacyStyle) {
+      const showEditorial = location.hash === "#game-jersey-editorial" || location.hash.endsWith("-on-court");
+      history.replaceState(null, "", jerseyUrl(style.style) + (showEditorial ? "#game-jersey-editorial" : ""));
+    } else if (alias && requestedKey !== "court-short") {
+      history.replaceState(null, "", "?product=" + alias);
+    }
 
     document.title = product.name + " — Coach Carter Academy";
     document.querySelector("#product-name").textContent = product.name;
@@ -80,24 +102,32 @@ async function showProduct() {
       setPhoto(mainView);
     }
 
-    const isGameJersey = product.group === "game-jerseys";
     if (isGameJersey) {
       photo.closest("figure").classList.add("product-visual-gallery");
       const editions = document.querySelector("#product-editions");
-      const editionLinks = products.filter(({ group }) => group === product.group).map((edition) => {
+      const editionLinks = entry.styles.map((edition) => {
         const link = document.createElement("a");
-        link.href = "?product=" + encodeURIComponent(edition.id);
-        if (edition.id === product.id) link.setAttribute("aria-current", "page");
+        link.href = jerseyUrl(edition.style);
+        if (edition === style) link.setAttribute("aria-current", "page");
         const preview = new Image(edition.image_width, edition.image_height);
         preview.src = edition.image;
         preview.alt = "";
         const label = document.createElement("span");
-        label.textContent = edition.edition_label;
+        label.textContent = edition.label;
         link.append(preview, label);
         return link;
       });
       editions.querySelector("div").replaceChildren(...editionLinks);
       editions.hidden = false;
+      const back = document.querySelector("#product-back");
+      back.href = product.campaign;
+      back.textContent = "← Uniforms";
+    }
+
+    if (product.campaign === "store.html#warm-ups") {
+      const back = document.querySelector("#product-back");
+      back.href = product.campaign;
+      back.textContent = "← Warm-Ups";
     }
 
     if (product.flat) {
@@ -140,7 +170,9 @@ async function showProduct() {
     if (product.campaign) {
       campaign.href = product.campaign;
       if (product.campaign === "store.html#uniform-pieces") campaign.textContent = "Explore all uniform pieces ↗";
-      else if (isGameJersey) campaign.textContent = "Browse all game jerseys ↗";
+      else if (isGameJersey) campaign.textContent = "Browse uniforms ↗";
+      else if (product.campaign === "store.html#shorts") campaign.textContent = "Browse shorts ↗";
+      else if (product.campaign === "store.html#warm-ups") campaign.textContent = "Browse warm-ups ↗";
       else if (product.group === "last-bell") campaign.textContent = "See it styled ↗";
       campaign.hidden = false;
     } else {

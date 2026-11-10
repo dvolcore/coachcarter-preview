@@ -154,29 +154,6 @@
       "campaign": "store.html#uniform-pieces"
     },
     {
-      "id": "arc-warmup-set",
-      "name": "The Arc Warmup",
-      "kind": "Court warmup set · Maroon / Bone / Ink",
-      "status": "Coming soon",
-      "group": "last-bell",
-      "image": "assets/img/academy/last-bell/05-warmup-in-motion.webp",
-      "image_width": 1536,
-      "image_height": 1024,
-      "alt": "Two athletes on a basketball court wearing the maroon and bone Arc warmup jacket with ink tearaway pants",
-      "image_caption": "Last Bell to Tipoff · AI styling study",
-      "specs": [
-        "Both athletes wear the maroon snap-front jacket with the sweeping bone court arc.",
-        "The ink tearaway pant has a wide leg, bone side stripe and snap openings.",
-        "The matching set is intended to layer over court gear for warmups and the bench."
-      ],
-      "campaign": "store.html#warm-ups",
-      "flat": "academy-studio/last-bell/arc-warmup.svg",
-      "pieces": [
-        "arc-snap-jacket",
-        "arc-tearaway-pant"
-      ]
-    },
-    {
       "id": "academy-rib-knit-polo",
       "name": "Bone Rib-Knit Polo",
       "kind": "Long-sleeve knit top · Bone",
@@ -281,116 +258,84 @@
         "Point collar, snap front and elastic cuffs.",
         "The bone insert sweeps diagonally from shoulder to hip, with an ink panel below."
       ],
-      "campaign": "store.html#warm-ups",
-      "flat": "academy-studio/last-bell/arc-warmup.svg"
+      "campaign": "store.html#warm-ups"
     },
     {
-      "id": "arc-tearaway-pant",
-      "name": "Arc Tearaway Pant",
-      "kind": "Court warmup pant · Ink / Bone",
-      "status": "Coming soon",
-      "group": "warm-ups",
-      "image": "assets/img/academy/last-bell/arc-tearaway-pant.webp",
-      "image_width": 835,
-      "image_height": 438,
-      "alt": "Ink warmup pants with a bone side stripe and visible ankle snaps",
-      "image_caption": "AI styling study · On-body garment detail",
-      "specs": [
-        "Wide-legged cut with a bone stripe down the side.",
-        "Side snaps let the pant open over court shoes."
-      ],
-      "campaign": "store.html#warm-ups",
-      "flat": "academy-studio/last-bell/arc-warmup.svg"
-    },
-    {
-      "id": "reversible-game-jersey",
-      "edition_label": "Bone / Maroon",
-      "name": "Reversible Game Jersey",
-      "kind": "Double-layer mesh · Bone / Maroon",
-      "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
-      "image_width": 432,
-      "image_height": 539,
-      "alt": "Bone reversible jersey with maroon woven side panels and gold KC crest on the right shoulder",
-      "image_caption": "Bone side · AI garment rendering",
-      "specs": [
-        "The Academy’s official reversible game jersey. Turn the double-layer mesh inside out to switch between bone with maroon insets and Richmond maroon with bone insets.",
-        "An original woven KC repeat runs down both sides. A small gold KC circle from the site’s Home transition sits on the wearer’s right shoulder."
-      ],
+      "id": "official-game-jerseys",
+      "name": "Official Game Jerseys",
       "status": "Coming soon",
       "group": "game-jerseys",
-      "price": "$98 proposed",
-      "view_label": "Bone side",
-      "views": [
+      "styles": [
         {
-          "id": "reversible",
-          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-turn.webp",
-          "alt": "Bone mesh jersey turned back at the hem to reveal the maroon reverse of the same garment",
-          "width": 1536,
-          "height": 1024,
-          "label": "Inside out",
-          "caption": "Bone and maroon on one jersey · AI garment rendering"
+          "style": "cream-maroon",
+          "label": "Cream with maroon trim",
+          "kind": "Mesh game jersey · Cream / Maroon",
+          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
+          "image_width": 432,
+          "image_height": 539,
+          "alt": "Cream mesh game jersey with maroon trim and woven KC side panels",
+          "image_caption": "Cream with maroon trim · AI garment rendering",
+          "specs": [
+            "Cream mesh with maroon binding, side panels and Coach Carter Academy lettering.",
+            "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
+          ],
+          "price": "$98 proposed"
         },
         {
-          "id": "maroon",
+          "style": "maroon-cream",
+          "label": "Maroon with cream trim",
+          "kind": "Mesh game jersey · Maroon / Cream",
           "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-maroon.webp",
-          "alt": "Maroon reversible jersey with bone woven side panels and gold KC crest on the right shoulder",
-          "width": 432,
-          "height": 539,
-          "label": "Maroon side",
-          "caption": "Maroon side · AI garment rendering"
+          "image_width": 432,
+          "image_height": 539,
+          "alt": "Richmond maroon mesh game jersey with cream trim and woven KC side panels",
+          "image_caption": "Maroon with cream trim · AI garment rendering",
+          "specs": [
+            "Richmond maroon mesh with cream binding, side panels and Coach Carter Academy lettering.",
+            "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
+          ],
+          "price": "$98 proposed"
+        },
+        {
+          "style": "dark-knight",
+          "label": "Dark Knight",
+          "kind": "Mesh game jersey · All black",
+          "image": "assets/img/academy/roadmap/fit/game-jersey-dark-knight.webp",
+          "image_width": 750,
+          "image_height": 1024,
+          "alt": "All-black mesh Dark Knight game jersey with tonal KC side panels and gold Academy lettering",
+          "image_caption": "Dark Knight · AI garment rendering",
+          "specs": [
+            "The Academy’s official all-black game jersey. Black mesh and binding frame tonal KC side panels.",
+            "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
+          ],
+          "pieces": [
+            "warm-up-zip-jacket"
+          ]
+        },
+        {
+          "style": "all-cream",
+          "label": "All-Cream",
+          "kind": "Mesh game jersey · Cream / Gold",
+          "image": "assets/img/academy/roadmap/fit/game-jersey-all-cream.webp",
+          "image_width": 716,
+          "image_height": 1024,
+          "alt": "All-cream mesh game jersey with matching cream trim, gold Academy lettering and gold KC side panels",
+          "image_caption": "All-Cream · AI garment rendering",
+          "specs": [
+            "The Academy’s official all-cream game jersey. Bone mesh, matching cream binding and a muted gold KC repeat run down the sides.",
+            "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
+          ],
+          "pieces": [
+            "warm-up-zip-jacket"
+          ]
         }
       ],
       "pieces": [
         "kc-reversible-short",
         "warm-up-zip-jacket"
       ],
-      "flat": "assets/img/academy/roadmap/reversible-practice-jersey.svg",
-      "flat_width": 1000,
-      "flat_height": 680,
-      "flat_alt": "Design board for the bone and maroon reversible game jersey with KC side panels",
-      "campaign": "store.html#game-jerseys"
-    },
-    {
-      "id": "dark-knight-game-jersey",
-      "edition_label": "Dark Knight",
-      "name": "Dark Knight Game Jersey",
-      "kind": "Mesh game jersey · All black",
-      "image": "assets/img/academy/roadmap/fit/game-jersey-dark-knight.webp",
-      "image_width": 750,
-      "image_height": 1024,
-      "alt": "All-black mesh Dark Knight game jersey with tonal KC side panels and gold Academy lettering",
-      "image_caption": "Dark Knight front · AI garment rendering",
-      "specs": [
-        "The Academy’s official all-black game jersey. Black mesh and binding frame tonal KC side panels.",
-        "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
-      ],
-      "status": "Coming soon",
-      "group": "game-jerseys",
-      "pieces": [
-        "warm-up-zip-jacket"
-      ],
-      "campaign": "store.html#game-jerseys"
-    },
-    {
-      "id": "all-cream-game-jersey",
-      "edition_label": "All-Cream",
-      "name": "All-Cream Game Jersey",
-      "kind": "Mesh game jersey · Bone / Gold",
-      "image": "assets/img/academy/roadmap/fit/game-jersey-all-cream.webp",
-      "image_width": 716,
-      "image_height": 1024,
-      "alt": "All-cream mesh game jersey with matching cream trim, gold Academy lettering and gold KC side panels",
-      "image_caption": "All-Cream front · AI garment rendering",
-      "specs": [
-        "The Academy’s official all-cream game jersey. Bone mesh, matching cream binding and a muted gold KC repeat run down the sides.",
-        "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
-      ],
-      "status": "Coming soon",
-      "group": "game-jerseys",
-      "pieces": [
-        "warm-up-zip-jacket"
-      ],
-      "campaign": "store.html#game-jerseys"
+      "campaign": "store.html#uniforms"
     },
     {
       "id": "kc-reversible-short",
@@ -403,7 +348,7 @@
         "Woven KC insets swap contrast as the short reverses. Narrow antique-gold piping ties the short to the Game Jersey and Warm-Up Zip Jacket."
       ],
       "pieces": [
-        "reversible-game-jersey",
+        "official-game-jerseys",
         "warm-up-zip-jacket"
       ],
       "image": "assets/img/academy/roadmap/fit/kc-reversible-short.webp",
@@ -416,7 +361,7 @@
       "flat_width": 960,
       "flat_height": 620,
       "flat_alt": "Matching reversible shorts design board showing both colorways",
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#shorts"
     },
     {
       "id": "warm-up-zip-jacket",
@@ -448,7 +393,7 @@
         {
           "id": "warm-up-line",
           "image": "assets/img/academy/campaign/warm-up-line.webp",
-          "alt": "Players in Richmond maroon warm-up jackets pass a basketball in front of crowded gym bleachers",
+          "alt": "Players in Richmond maroon warm-up jackets and carbon tearaway pants pass a basketball in front of crowded gym bleachers",
           "width": 1536,
           "height": 1024,
           "label": "Warm-up line",
@@ -456,11 +401,43 @@
         }
       ],
       "pieces": [
-        "reversible-game-jersey",
+        "warm-up-tearaway-pant",
+        "official-game-jerseys",
         "kc-reversible-short"
       ],
-      "campaign": "store.html#signature-collection",
+      "campaign": "store.html#warm-ups",
       "default_view": "warm-up-line"
+    },
+    {
+      "id": "warm-up-tearaway-pant",
+      "name": "Warm-Up Tearaway Pants",
+      "kind": "Court warm-up pants · Carbon / Antique Gold",
+      "image": "assets/img/academy/roadmap/fit/warm-up-tearaway-pant.webp",
+      "image_width": 1024,
+      "image_height": 1536,
+      "alt": "Carbon warm-up tearaway pants with thin antique-gold piping and black side snaps",
+      "image_caption": "Front · AI garment rendering",
+      "specs": [
+        "Carbon warm-up fabric with a tapered leg and narrow antique-gold piping along the outer seams.",
+        "Low-profile side snaps open over court shoes. Pair the pants with the Warm-Up Zip Jacket."
+      ],
+      "status": "Coming soon",
+      "group": "warm-ups",
+      "views": [
+        {
+          "id": "warm-up-line",
+          "image": "assets/img/academy/campaign/warm-up-line.webp",
+          "alt": "Players in Richmond maroon warm-up jackets and carbon tearaway pants pass a basketball in front of crowded gym bleachers",
+          "width": 1536,
+          "height": 1024,
+          "label": "Worn with the matching jacket",
+          "caption": "Worn with the matching jacket · AI styling study"
+        }
+      ],
+      "pieces": [
+        "warm-up-zip-jacket"
+      ],
+      "campaign": "store.html#warm-ups"
     },
     {
       "id": "academy-hoodie",
@@ -536,12 +513,12 @@
       "image_caption": "AI fit rendering · Concept mockup",
       "specs": [
         "Six-inch inseam target with a relaxed leg and adjustable waist.",
-        "Carbon body with maroon inserts. Pair with the Reversible Game Jersey."
+        "Carbon body with maroon inserts. Pair with an Official Game Jersey."
       ],
       "status": "Coming soon",
       "group": "lineup",
       "pieces": [
-        "reversible-game-jersey"
+        "official-game-jerseys"
       ],
       "flat": "academy-studio/flats/next-up-short.svg",
       "flat_width": 700,
@@ -994,10 +971,16 @@
   "collections": {
     "last-bell": [
       "last-bell-school-uniform",
-      "first-whistle-tailoring-set",
-      "arc-warmup-set"
+      "first-whistle-tailoring-set"
     ],
-    "school-outerwear": ["front-row-letterman", "fitted-richmond-maroon-sport-coat", "richmond-maroon-sport-coat", "bone-sport-coat", "charcoal-sport-coat", "academy-canvas-chore-jacket"],
+    "school-outerwear": [
+      "front-row-letterman",
+      "fitted-richmond-maroon-sport-coat",
+      "richmond-maroon-sport-coat",
+      "bone-sport-coat",
+      "charcoal-sport-coat",
+      "academy-canvas-chore-jacket"
+    ],
     "school-layers": [
       "first-whistle-oxford",
       "academy-rib-knit-polo",
@@ -1018,6 +1001,22 @@
       "black-penny-loafers",
       "ivory-low-top-sneakers",
       "oxblood-mary-jane-heels"
+    ],
+    "shorts": [
+      "kc-reversible-short",
+      "arc-05",
+      "next-up-short",
+      "first-team"
+    ],
+    "warm-ups": [
+      "warm-up-zip-jacket",
+      "warm-up-tearaway-pant",
+      "arc-snap-jacket"
+    ],
+    "court-gear": [
+      "court-tee",
+      "academy-hoodie",
+      "signature-court-ball"
     ]
   }
 }

@@ -450,3 +450,32 @@
 .uniform-group > h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); margin: 0 0 .65em; }
 .uniform-group .academy-product-meta { flex-direction: column; }
 .uniform-group .academy-product-link > img { aspect-ratio: 1; }
+
+#uniforms > .store-section-heading { margin-bottom: 12px; }
+#uniforms > .uniform-links { margin-bottom: clamp(20px, 3vw, 36px); }
+.game-jersey-banner {
+  display: block;
+  border: 1px solid var(--academy-rule);
+  color: var(--academy-ink);
+}
+.game-jersey-banner:hover, .game-jersey-banner:focus-visible { border-color: var(--academy-maroon); }
+.game-jersey-banner-images { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.game-jersey-banner-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #eee5da;
+}
+.game-jersey-banner-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 20px;
+  padding: clamp(12px, 2vw, 26px);
+}
+.game-jersey-banner-copy h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2.5rem); }
+.game-jersey-banner-copy span { color: var(--academy-maroon); font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
+#game-jerseys .store-catalog-note { margin-top: 12px; }
