@@ -34,7 +34,7 @@ async function showProduct() {
     };
     if (product.views?.length) {
       const overview = product.overview;
-      const views = [...(overview ? [overview] : []), mainView, ...product.views];
+      const views = [mainView, ...(overview ? [overview] : []), ...product.views];
       if (overview) photo.closest("article").classList.add("academy-product-with-overview");
       const gallery = document.querySelector("#product-views");
       photo.closest("figure").classList.add("product-visual-gallery");
@@ -54,7 +54,7 @@ async function showProduct() {
         return button;
       });
       function selectView() {
-        const selected = views.find((view) => "#" + view.id === location.hash) || overview || mainView;
+        const selected = views.find((view) => "#" + view.id === location.hash) || mainView;
         setPhoto(selected);
         buttons.forEach((button, index) => button.setAttribute("aria-pressed", String(views[index] === selected)));
       }

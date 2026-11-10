@@ -223,7 +223,8 @@
   {
    "label": "Video podcast",
    "lo": 0.3,
-   "hi": 5.0
+   "hi": 5.0,
+   "note": "The review's row. Our plan starts with a six-episode filmed season and an anchor underwriter; a weekly ad model is about $78K gross on assumed inputs."
   },
   {
    "label": "Brand-funded micro-drama seasons",
@@ -237,9 +238,10 @@
    "note": "One-time receipts, not recurring revenue."
   },
   {
-   "label": "Coach Carter Academy series fees",
+   "label": "Sequel/series personal fees",
    "lo": 0.5,
-   "hi": 3.0
+   "hi": 3.0,
+   "note": "Personal compensation, not company revenue; shown only because the review's ten rows include it."
   },
   {
    "label": "The Contract school program",
@@ -296,6 +298,15 @@
    "basis": "$3\u20135M EBITDA \u00b7 8\u201312\u00d7",
    "odds": null,
    "what": "Planning scenario: $3\u20135M EBITDA at 8\u201312\u00d7. A $75M strategic case would need 15\u00d7 \u2014 and evidence of earning assets, durable contracts or synergies"
+  },
+  {
+   "label": "Media + programs route",
+   "rev": "$220M",
+   "lo": 496,
+   "hi": 744,
+   "basis": "$62M EBITDA \u00b7 8\u201312\u00d7",
+   "odds": null,
+   "what": "A deliberately ambitious scale target, not a forecast: $220M revenue less $30M central overhead gives $62M EBITDA (28.2%). At a 15% margin and 8\u00d7, the same revenue gives $264M"
   },
   {
    "label": "$500M company",

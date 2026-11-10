@@ -1,0 +1,31 @@
+/* Investor memo: audit additions (2026-11-10) — table variants, Gate 4, notes */
+
+/* hero KPI that carries a word instead of a number */
+.kpi .n.kpi-word { font-size: clamp(22px, 2.7vw, 44px); line-height: 1.02; letter-spacing: 0; overflow-wrap: anywhere; }
+
+/* table variants built on .ptable/.prow */
+.prow.c2 { grid-template-columns: 1fr auto; }
+.prow.c2t { grid-template-columns: .8fr 1.6fr; }
+.prow.c3n { grid-template-columns: 1fr 1.5fr 1.3fr; }
+.prow.c4 { grid-template-columns: 1fr 1.25fr 1.25fr 1.2fr; }
+.prow.c5 { grid-template-columns: 1.35fr .9fr 1.2fr .7fr .95fr; }
+.prow.num span:not(:first-child) { font-variant-numeric: tabular-nums; }
+.prow.c2.num span:last-child { text-align: right; }
+.prow.total { background: rgba(184,130,46,.06); }
+.prow.total span { color: var(--gold-hi) !important; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .prow.c2 { grid-template-columns: 1fr auto; gap: 14px; }
+  .prow.c2 span:last-child::before { content: none; }
+  .prow.c2t, .prow.c3n, .prow.c4, .prow.c5 { grid-template-columns: 1fr; }
+  .prow.num [data-l]::before { content: attr(data-l) " · "; color: var(--slate); font-weight: 400; }
+  .prow.num span[data-l]:last-child::before { content: attr(data-l) " · "; }
+}
+
+/* Gate 4: full-width band after the four phases */
+.gate4 { margin-top: 16px; padding: 22px 24px; border-radius: 20px; border: 1px solid var(--line); background: linear-gradient(90deg, rgba(184,130,46,.12), rgba(184,130,46,0) 70%), #14161b; display: grid; grid-template-columns: minmax(200px, auto) 1fr; gap: 8px 28px; align-items: baseline; }
+.gate4 p { margin: 0; color: rgba(245,240,232,.82); font-size: 15px; line-height: 1.55; }
+@media (max-width: 760px) { .gate4 { grid-template-columns: 1fr; padding: 20px; } }
+
+/* brand-system note on the light section */
+.arch-note { margin: 18px 0 0; max-width: 70ch; font-size: 13.5px; line-height: 1.55; color: #5b5f68; }
