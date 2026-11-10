@@ -70,12 +70,6 @@ def short(base, panel, seam, length, hip, back=False, kids=False, high=False):
         parts += [path(f"M64 {waist+27} Q150 {waist+43} 236 {waist+27}", stroke=seam, width=.9, dash="4 4")]
     return "".join(parts)
 
-def jersey(back=False):
-    shell = "M92 42L119 35Q150 91 181 35L208 42Q205 95 225 118L218 253Q150 262 82 253L75 118Q95 95 92 42Z"
-    base, trim = (MAROON, BONE) if back else (BONE, MAROON)
-    return (path(shell, base, trim, 6) + path("M92 114L101 254 M208 114L199 254", stroke=trim, width=1.1)
-            + wordmark(104, 112, 92, trim) + ball(150, 174, .69, trim))
-
 def board(filename, title, code, front, back, labels, notes):
     columns = "".join(f'<g transform="translate({x} 109)">{art}</g>' for x, art in [(28, front), (364, back)])
     foot = "".join(f'<text x="28" y="{450+22*i}" font-size="13" fill="#4d4542">{note}</text>' for i, note in enumerate(notes))
@@ -105,9 +99,6 @@ board("arc-05", "Arc 05", "CCA-02-S",
 board("next-up-short", "Next Up Short", "CCA-03-S",
       short(INK, MAROON, GOLD, 232, 243), short(INK, MAROON, GOLD, 232, 243, True), ("FRONT", "BACK"),
       ("6-inch target · relaxed through the leg · adjustable waist", "Carbon and maroon · reinforce pocket corners and test youth size steps"))
-board("next-up-jersey", "Next Up Jersey", "CCA-03-J",
-      jersey(), jersey(True), ("BONE SIDE", "MAROON SIDE"),
-      ("Reversible mesh body · wider shoulder and bound armholes", "Wear-test the reversible seam and trim under a backpack"))
 board("first-team", "First Team Set", "CCA-04-SET",
       tee(BONE, MAROON, kids=True), short(MAROON, BONE, GOLD, 204, 241, kids=True), ("TEE FRONT", "SHORT FRONT"),
       ("Bone basketball tee · maroon pull-on mesh short", "Soft inner seams · encased elastic waist · no exposed drawcord"))

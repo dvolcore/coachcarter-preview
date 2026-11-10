@@ -393,7 +393,7 @@
 .academy-signature-editorial { margin-top: clamp(38px, 6vw, 82px); padding-top: clamp(26px, 4vw, 48px); border-top: 1px solid var(--academy-rule); }
 .academy-signature-editorial-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
 .academy-signature-editorial figure { margin: 0; }
-.academy-signature-editorial img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #eae0d3; }
+.academy-signature-editorial img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: #eae0d3; }
 .academy-signature-editorial-wide { grid-column: span 2; }
 .academy-signature-editorial-wide img { aspect-ratio: 8 / 5; }
 .academy-signature-editorial figcaption { padding-top: 10px; color: var(--academy-ink); font-size: .9rem; line-height: 1.35; }
@@ -403,7 +403,8 @@
 .academy-combat-editions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
 .academy-combat-editions figure { margin: 0; }
 .academy-combat-editions-wide { grid-column: span 2; }
-.academy-combat-editions img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #eae0d3; }
+.academy-combat-editions img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #eae0d3; }
+.academy-combat-editions-wide img { aspect-ratio: 3 / 2; }
 .academy-combat-editions figure:last-child img { aspect-ratio: 2 / 1; }
 .academy-combat-editions figcaption { padding-top: 10px; color: var(--academy-ink); font-size: .9rem; line-height: 1.35; }
 .academy-combat-editions figcaption span { display: block; color: var(--academy-muted); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 3px; }
