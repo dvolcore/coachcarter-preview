@@ -1,42 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 780" role="img" aria-labelledby="title">
-  <title id="title">Coach Carter Academy Warm-Up Zip Jacket, front and back</title>
-  <defs>
-    <linearGradient id="shell" x2="1" y2=".7" gradientUnits="objectBoundingBox"><stop stop-color="#69263b"/><stop offset=".55" stop-color="#50182b"/><stop offset="1" stop-color="#33121c"/></linearGradient>
-    <path id="body" d="M138 121l69-32 26 16h48l26-16 69 32 56 161-44 21-42-91v183H168V212l-42 91-44-21z"/>
-    <clipPath id="clip"><use href="#body"/></clipPath>
-    <g id="jacket">
-      <use href="#body" fill="url(#shell)" stroke="#30121c" stroke-width="3"/>
-      <g clip-path="url(#clip)">
-        <path d="M60 287q100-39 155-17t243-2l-5 155H66Z" fill="#222327"/>
-        <path d="M60 287q100-39 155-17t243-2" fill="none" stroke="#e4d2af" stroke-width="4"/>
-        <path d="M163 389h187M87 283l45 23m296-23-45 23" stroke="#151518" stroke-width="14"/>
-      </g>
-      <path d="M206 91l12-19h77l13 19-27 24h-48z" fill="#272327" stroke="#30121c" stroke-width="3"/>
-      <path d="M168 211l-27-88m206 88 27-88" fill="none" stroke="#e4d2af" stroke-width="2"/>
-    </g>
-  </defs>
-  <rect width="1080" height="780" fill="#eee5d8"/>
-  <g fill="#50182b" font-family="system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">
-    <text x="64" y="60">COACH CARTER ACADEMY · COLLECTION 01</text>
-    <text x="295" y="665" text-anchor="middle">FRONT</text>
-    <text x="785" y="665" text-anchor="middle">BACK</text>
-  </g>
-  <text x="62" y="112" fill="#221a19" font-family="Georgia,serif" font-size="43">Warm-Up Zip Jacket</text>
-  <path d="M64 141h952M64 700h952" stroke="#c8b8a9"/>
-  <g transform="translate(-52 112) scale(1.35)">
-    <use href="#jacket"/>
-    <path d="M257 109v279" stroke="#231b1d" stroke-width="8"/>
-    <path d="M257 112v276" stroke="#bda26b" stroke-width="1.2" stroke-dasharray="1 2"/>
-    <rect x="253" y="124" width="8" height="15" rx="2" fill="#c6a567"/>
-    <rect x="253" y="361" width="8" height="15" rx="2" fill="#c6a567"/>
-    <path d="M186 300l36-23m70 0 36 23" stroke="#c4a477" stroke-width="2"/>
-    <text x="307" y="178" text-anchor="middle" fill="#e4d2af" font-family="Georgia,serif" font-size="15">K|C</text>
-  </g>
-  <g transform="translate(438 112) scale(1.35)">
-    <use href="#jacket"/>
-    <g transform="translate(211 143)" fill="none" stroke="#894356" stroke-width="1.6">
-      <rect width="92" height="114" rx="2"/><path d="M0 57h92M31 0v18h30V0m-30 114V96h30v18M9 0v10a37 33 0 0 0 74 0V0M9 114v-10a37 33 0 0 1 74 0v10"/><circle cx="46" cy="57" r="10"/>
-    </g>
-  </g>
-  <text x="64" y="735" fill="#514743" font-family="system-ui,sans-serif" font-size="15">Lightweight shell · Two-way zip · Bone piping · Tonal court map</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" role="img" aria-labelledby="t d"><title id="t">Coach Carter Academy warm-up zip jacket</title><desc id="d">Richmond maroon warm-up jacket shown front and clean back, with KC repeat gussets and gold Home crest at wearer's right shoulder.</desc>
+<defs><pattern id="kc" width="56" height="56" patternUnits="userSpaceOnUse"><rect width="56" height="56" fill="#5b2036"/><path d="M17 4l10-6 10 6v12l-10 6-10-6zM17 32l10-6 10 6v12l-10 6-10-6z" fill="none" stroke="#d4af68" stroke-width="1.5"/><text x="28" y="17" text-anchor="middle" fill="#d4af68" font-family="Georgia,serif" font-size="10" font-weight="700">KC</text><text x="28" y="45" text-anchor="middle" fill="#d4af68" font-family="Georgia,serif" font-size="10" font-weight="700">KC</text></pattern><g id="crest"><circle r="24" fill="#17161a" stroke="#d4af68" stroke-width="3"/><circle r="18" fill="none" stroke="#d4af68" stroke-width="1"/><text y="5" text-anchor="middle" fill="#f3dfb0" font-family="Georgia,serif" font-size="15" font-weight="700">KC</text><text y="13" text-anchor="middle" fill="#d4af68" font-family="system-ui" font-size="4" letter-spacing="1">HOME</text></g><path id="body" d="M130 125l75-35 28 17h65l28-17 75 35 54 158-45 23-43-92v206H161V214l-43 92-45-23z"/></defs>
+<rect width="1080" height="680" fill="#efe4d2"/><text x="58" y="47" fill="#5b2036" font-family="system-ui" font-size="12" font-weight="700" letter-spacing="3">COACH CARTER ACADEMY · SIGNATURE OUTERWEAR</text><text x="58" y="91" fill="#191619" font-family="Georgia,serif" font-size="39">Warm-Up Zip Jacket</text><path d="M58 112h964" stroke="#c7b59d"/>
+<g transform="translate(48 142)"><use href="#body" fill="#5b2036" stroke="#191619" stroke-width="4"/><path d="M161 214v206h195V214" fill="#25252a"/><path d="M80 306l45-22 43 92v80h-43V214l-43 92zM477 306l-45-22-43 92v80h43V214l45 92z" fill="url(#kc)"/><path d="M259 107v313" stroke="#d4af68" stroke-width="3"/><path d="M202 91l31-23h65l30 23-30 28h-66z" fill="#25252a"/><use href="#crest" x="145" y="133"/><text x="259" y="330" text-anchor="middle" fill="#e9ddc9" font-family="Georgia,serif" font-size="24" font-weight="700">KC ACADEMY</text><text x="259" y="354" text-anchor="middle" fill="#d4af68" font-family="system-ui" font-size="10" letter-spacing="3">RICHMOND · CA</text></g>
+<g transform="translate(575 142)"><use href="#body" fill="#5b2036" stroke="#191619" stroke-width="4"/><path d="M161 214v206h195V214" fill="#25252a"/><path d="M80 306l45-22 43 92v80h-43V214l-43 92zM477 306l-45-22-43 92v80h43V214l45 92z" fill="#e9ddc9"/><path d="M202 91l31-23h65l30 23-30 28h-66z" fill="#25252a"/><use href="#crest" x="145" y="133"/><text x="259" y="330" text-anchor="middle" fill="#e9ddc9" font-family="Georgia,serif" font-size="24" font-weight="700">COACH CARTER</text><text x="259" y="354" text-anchor="middle" fill="#d4af68" font-family="system-ui" font-size="10" letter-spacing="3">ACADEMY · EST. RICHMOND</text></g>
+<text x="259" y="645" text-anchor="middle" fill="#5b2036" font-family="system-ui" font-size="12" font-weight="700" letter-spacing="2">FRONT · WEARER'S RIGHT CREST</text><text x="786" y="645" text-anchor="middle" fill="#5b2036" font-family="system-ui" font-size="12" font-weight="700" letter-spacing="2">BACK · CLEAN, NO COURT GRAPHIC</text></svg>
