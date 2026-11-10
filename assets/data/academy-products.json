@@ -1004,13 +1004,7 @@
       "first-whistle-tailoring-set",
       "arc-warmup-set"
     ],
-    "school-outerwear": [
-      "fitted-richmond-maroon-sport-coat",
-      "richmond-maroon-sport-coat",
-      "bone-sport-coat",
-      "charcoal-sport-coat",
-      "academy-canvas-chore-jacket"
-    ],
+    "school-outerwear": ["front-row-letterman", "fitted-richmond-maroon-sport-coat", "richmond-maroon-sport-coat", "bone-sport-coat", "charcoal-sport-coat", "academy-canvas-chore-jacket"],
     "school-layers": [
       "first-whistle-oxford",
       "academy-rib-knit-polo",
