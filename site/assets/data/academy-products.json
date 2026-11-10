@@ -119,6 +119,7 @@
     },
     {
       "id": "court-tee",
+      "group": "court-gear",
       "companion": "kc-reversible-short",
       "name": "Court Tee",
       "price": "$68 proposed",

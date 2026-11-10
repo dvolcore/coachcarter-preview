@@ -266,7 +266,7 @@ def build():
         if "{{coach_index}}" in body:
             c = coach_sections()
             body = body.replace("{{coach_index}}", c["index"]).replace("{{coach_body}}", c["body"]).replace("{{coach_count}}", c["count"])
-        if "{{academy_cards}}" in body:
+        if "_cards}}" in body:
             catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
             body = (body.replace("{{academy_cards}}", academy_cards(catalog))
                     .replace("{{school_outerwear_cards}}", academy_cards(catalog, "school-outerwear", "h4"))
@@ -279,6 +279,9 @@ def build():
                     .replace("{{accessories_cards}}", academy_cards(catalog, "accessories")))
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
+        left = re.findall(r"\{\{[a-z_]*cards\}\}", body)
+        if left:
+            raise SystemExit(f"{p.name}: unfilled product grids {left}")
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer(meta.get("nav", "home"))
         (OUT / p.name).write_text(html)
         print("built", p.name, len(html))
