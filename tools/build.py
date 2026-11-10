@@ -151,7 +151,7 @@ def header(active):
 
 
 def footer(nav=""):
-    bgv = "" if nav == "investors" else '<div class="bgv"><video data-auto muted loop playsinline preload="none" poster="assets/video/outro.jpg" data-src="assets/video/outro.mp4"></video></div>'
+    bgv = "" if nav == "investors" else '<div class="bgv"><video data-auto muted loop playsinline preload="none" poster="assets/video/outro.jpg?v=2" data-src="assets/video/outro.mp4?v=2"></video></div>'
     return f"""
 <footer class="footer">
   {bgv}
