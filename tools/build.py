@@ -171,6 +171,9 @@ def header(active):
 
 def footer(nav=""):
     bgv = "" if nav == "investors" else '<div class="bgv"><video data-auto muted loop playsinline preload="none" poster="assets/video/outro.jpg?v=2" data-src="assets/video/outro.mp4?v=2"></video></div>'
+    # investors page is business-only: no video modal, no film player script
+    vmodal = "" if nav == "investors" else f"""<div class="modal video" id="video-modal" role="dialog" aria-label="Video"><div class="box"><button class="icon-btn x" data-close aria-label="Close" style="background:rgba(0,0,0,.5)">{ICON['x']}</button><video controls playsinline preload="none"></video></div></div>"""
+    filmjs = "" if nav == "investors" else '<script defer src="assets/js/film.js"></script>'
     return f"""
 <footer class="footer">
   {bgv}
@@ -207,12 +210,12 @@ def footer(nav=""):
   </div>
 </footer>
 <div class="scrim"></div>
-<div class="modal video" id="video-modal" role="dialog" aria-label="Video"><div class="box"><button class="icon-btn x" data-close aria-label="Close" style="background:rgba(0,0,0,.5)">{ICON['x']}</button><video controls playsinline preload="none"></video></div></div>
+{vmodal}
 <div class="toast" role="status" aria-live="polite"><img src="assets/brand/monogram_gold.svg" alt="" width="18" height="18" style="filter:brightness(.2)"><span></span></div>
 <div class="preview-flag internal">Review mode · internal notes visible</div>
 <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script defer src="assets/js/site.js"></script>
-<script defer src="assets/js/film.js"></script>
+{filmjs}
 <script defer src="assets/js/store.js"></script>
 </body>
 </html>
