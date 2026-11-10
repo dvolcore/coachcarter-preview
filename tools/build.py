@@ -86,6 +86,7 @@ NAV = [
     ("playbook", "playbook.html", "Playbook"),
     ("series", "series.html", "Series"),
     ("investors", "investors.html", "Investors"),
+    ("coach", "coach.html", "Coach"),
 ]
 
 ICON = {
@@ -218,6 +219,48 @@ def footer(nav=""):
 """
 
 
+def coach_sections():
+    """Private Coach briefing: index of strong bullets, then every section (key points, then detail)."""
+    from html import escape as e
+    data = json.loads((OUT / "assets/data/coach.json").read_text())
+    idx, body, n = [], [], 0
+    for pi, part in enumerate(data["parts"]):
+        sec_html, links = [], []
+        for s in part["sections"]:
+            n += 1
+            links.append(f'<li><a href="#c-{e(s["id"])}"><span class="ch-n">{n:02d}</span><b>{e(s["title"])}</b><span class="ch-k">{e(s["key_points"][0])}</span></a></li>')
+            kp = "".join(f"<li>{e(k)}</li>" for k in s["key_points"])
+            det = []
+            for d in s.get("detail", []):
+                h = f'<h4>{e(d["heading"])}</h4>' if d.get("heading") else ""
+                if "table" in d:
+                    t = d["table"]
+                    th = "".join(f"<th>{e(str(c))}</th>" for c in t["head"])
+                    rows = "".join("<tr>" + "".join(f"<td>{e(str(c))}</td>" for c in r) + "</tr>" for r in t["rows"])
+                    det.append(f'<div class="ch-block">{h}<div class="ch-table"><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div></div>')
+                elif "items" in d:
+                    items = [str(i) for i in d["items"]]
+                    if items and all(re.match(r"\d+[.)] ", i) for i in items):
+                        lis = "".join(f"<li>{e(re.sub(r'^\d+[.)] ', '', i))}</li>" for i in items)
+                        det.append(f'<div class="ch-block">{h}<ol class="ch-list">{lis}</ol></div>')
+                    else:
+                        det.append(f'<div class="ch-block">{h}<ul class="ch-list">' + "".join(f"<li>{e(i)}</li>" for i in items) + "</ul></div>")
+                elif "note" in d:
+                    det.append(f'<div class="ch-block">{h}<p>{e(d["note"])}</p></div>')
+            sec_html.append(f'''<article class="ch-sec" id="c-{e(s["id"])}">
+  <header class="ch-sec-head"><span class="ch-tag">{n:02d} · {e(s.get("chapter",""))}</span><h3 class="h-m">{e(s["title"])}</h3>
+  <p class="ch-why"><span>Why it's here, not on the public site:</span> {e(s.get("why_left_out",""))}</p></header>
+  <div class="ch-key"><span class="ch-key-l">The key points</span><ul>{kp}</ul></div>
+  <div class="ch-detail"><span class="ch-key-l">In full</span>{"".join(det)}</div>
+</article>''')
+        idx.append(f'<div class="ch-idx-part"><h3><span>Part {pi+1}</span> {e(part["title"])}</h3><ul>{"".join(links)}</ul></div>')
+        body.append(f'''<section class="section ch-part" id="part-{pi+1}"><div class="wrap">
+  <div class="ch-part-head"><span class="eyebrow">Part {pi+1}</span><h2 class="h-l">{e(part["title"])}</h2><p class="lede">{e(part["sub"])}</p></div>
+  {"".join(sec_html)}
+</div></section>''')
+    return {"index": "".join(idx), "body": "".join(body), "count": str(n)}
+
+
 def build():
     pages = sorted(SRC.glob("*.html"))
     for p in pages:
@@ -226,6 +269,9 @@ def build():
         meta = json.loads(m.group(1))
         body = raw[m.end():]
         body = body.replace("{{series_offer}}", series_offer()).replace("{{series_price}}", SERIES_PRICE)
+        if "{{coach_index}}" in body:
+            c = coach_sections()
+            body = body.replace("{{coach_index}}", c["index"]).replace("{{coach_body}}", c["body"]).replace("{{coach_count}}", c["count"])
         if "{{academy_cards}}" in body:
             catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
             body = (body.replace("{{academy_cards}}", academy_cards(catalog))
