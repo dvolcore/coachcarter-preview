@@ -89,7 +89,8 @@
 }
 .academy-gallery-detail-views img { aspect-ratio: 4 / 5; }
 .academy-gallery-detail .academy-gallery-note { margin: 14px 0 20px; }
-#after-hours, #academy-contract { scroll-margin-top: calc(var(--nav-h) + 20px); }
+#fashion-editorial { margin-top: clamp(50px, 8vw, 112px); }
+#fashion-editorial, #after-hours, #academy-contract { scroll-margin-top: calc(var(--nav-h) + 20px); }
 .academy-gallery-note { margin-top: 28px; }
 
 .academy-lightbox {
