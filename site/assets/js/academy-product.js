@@ -150,6 +150,9 @@ async function showProduct() {
     }
     document.querySelector(".academy-product-layout").hidden = false;
     status.hidden = true;
+    if (product.id === "front-row-letterman" && location.hash === "#front-row-lifestyle") {
+      document.querySelector("#front-row-lifestyle").scrollIntoView();
+    }
   } catch {
     status.firstChild.textContent = "This piece could not be loaded. ";
   }
