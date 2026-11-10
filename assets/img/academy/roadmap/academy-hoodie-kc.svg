@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="t d">
+<title id="t">KC Academy black satin-patch hoodie</title><desc id="d">Black 380 GSM Academy hoodie with a Richmond-maroon satin chest patch and exact KC Academy mark.</desc>
+<rect width="900" height="1100" fill="#f4ede3"/>
+<text x="55" y="72" font-family="Arial,sans-serif" font-size="18" letter-spacing="5" fill="#5c243a">COACH CARTER ACADEMY · LAST BELL</text>
+<path d="M280 270Q450 170 620 270L770 410 690 520 635 460V880Q450 950 265 880V460l-55 60-80-110z" fill="#090a0c" stroke="#1f2024" stroke-width="16"/>
+<path d="M280 270Q450 155 620 270L584 350Q450 270 316 350z" fill="#17191e" stroke="#5c243a" stroke-width="10"/>
+<path d="M270 438Q450 400 630 438V608Q450 570 270 608z" fill="#551f36" stroke="#d3b264" stroke-width="5"/>
+<path d="M310 465Q450 440 590 465V585Q450 560 310 585z" fill="#17191e" stroke="#7c3a53" stroke-width="4"/>
+<text x="450" y="525" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-weight="700" letter-spacing="4" fill="#d3b264">KC ACADEMY</text>
+<path d="M150 475L90 645 170 675 260 535M750 475L810 645 730 675 640 535" fill="#090a0c" stroke="#1f2024" stroke-width="16"/>
+<path d="M265 880Q450 940 635 880" fill="none" stroke="#d3b264" stroke-width="10"/>
+<text x="55" y="1030" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#4d4542">INK BLACK FLEECE · RICHMOND-MAROON SATIN PATCH · GOLD EMBROIDERY</text>
+</svg>

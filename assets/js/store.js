@@ -1,4 +1,4 @@
-/* Store directory and Academy release roadmap. */
+/* Store directory. */
 (() => {
   "use strict";
   const $ = (selector) => document.querySelector(selector);
@@ -42,15 +42,5 @@
       ? $("#academy-store-title")
       : chips.some((chip) => chip.dataset.cat === category && category !== "all") ? $("#editions") : null;
     if (section && !location.hash) section.scrollIntoView();
-  }
-  /* Academy "Coming next" roadmap, from academy-products.json */
-  const roadmap = $("[data-roadmap]");
-  if (roadmap) {
-    const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-    fetch("assets/data/academy-products.json").then((r) => r.json()).then((d) => {
-      roadmap.innerHTML = (d.roadmap || []).map((item, i) => `<li class="store-roadmap-item">
-          <span class="store-roadmap-n">${String(i + 3).padStart(2, "0")}</span>
-          <h4>${esc(item.name)}</h4><p>${esc(item.spec || "")}</p><span class="store-roadmap-price">${esc(item.price)}</span></li>`).join("");
-    }).catch(() => { roadmap.closest(".store-roadmap") && (roadmap.closest(".store-roadmap").hidden = true); });
   }
 })();

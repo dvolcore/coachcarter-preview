@@ -1,22 +1,7 @@
-/* gap worker 4 — store roadmap/waitlists/preorders, partners budget owners + precedent, host testimonials */
+/* gap worker 4 — store waitlists/preorders, partners budget owners + precedent, host testimonials */
 
-/* ---------- Store: season offer now opens the page ---------- */
+/* ---------- Store: season offer ---------- */
 .page-store .series-offer { padding-block: clamp(36px, 5vw, 72px); }
-
-/* ---------- Store: Coming next roadmap ---------- */
-.store-roadmap { margin-top: clamp(40px, 5vw, 64px); padding-top: clamp(26px, 3vw, 36px); border-top: 1px solid var(--academy-rule); }
-.store-roadmap[hidden] { display: none; }
-.store-roadmap-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 32px; align-items: end; margin-bottom: 22px; }
-.store-roadmap-head .store-label { grid-column: 1 / -1; }
-.store-roadmap-head h3 { font-family: var(--f-brand, "Cinzel", serif); font-size: clamp(1.5rem, 2.4vw, 2.3rem); font-weight: 600; letter-spacing: -.01em; margin: 0; color: var(--academy-ink); }
-.store-roadmap-head p:not(.store-label) { margin: 0; font-size: .8rem; line-height: 1.55; color: var(--academy-muted); justify-self: end; text-align: right; max-width: 40ch; }
-.store-roadmap-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); }
-.store-roadmap-item { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 20px 18px 18px; background: #fff; border: 1px solid var(--academy-rule); min-width: 0; }
-.store-roadmap-item::before { content: "Proposed"; position: absolute; top: 16px; right: 16px; font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--academy-maroon); border: 1px solid rgba(84, 29, 48, .3); border-radius: 999px; padding: 4px 8px; }
-.store-roadmap-n { font-size: .72rem; font-weight: 700; letter-spacing: .12em; color: var(--academy-muted); }
-.store-roadmap-item h4 { margin: 6px 0 0; font-size: 1.05rem; font-weight: 650; letter-spacing: -.02em; color: var(--academy-ink); line-height: 1.2; }
-.store-roadmap-item p { margin: 0; font-size: .78rem; line-height: 1.5; color: var(--academy-muted); flex: 1; }
-.store-roadmap-price { font-size: .8rem; font-weight: 700; color: var(--academy-maroon); padding-top: 10px; border-top: 1px solid var(--academy-rule); }
 
 /* ---------- Store: email waitlists (reuses .news + data-simple) ---------- */
 .store-news { max-width: 460px; border-bottom-color: var(--academy-ink); margin-top: 14px; }
@@ -42,16 +27,12 @@
 .store-pre-note { margin: 22px 0 0; font-size: .8rem; color: var(--academy-muted); }
 
 @media (max-width: 980px) {
-  .store-roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .store-pre-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 779px) {
-  .store-roadmap-head { grid-template-columns: 1fr; }
-  .store-roadmap-head p:not(.store-label) { justify-self: start; text-align: left; }
   .store-waitlist { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {
-  .store-roadmap-grid { grid-template-columns: 1fr; }
   .store-news button { letter-spacing: .14em; }
 }
 

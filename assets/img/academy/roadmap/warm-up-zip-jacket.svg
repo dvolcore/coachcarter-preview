@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 780" role="img" aria-labelledby="title">
+  <title id="title">Coach Carter Academy Warm-Up Zip Jacket, front and back</title>
+  <defs>
+    <linearGradient id="shell" x2="1" y2=".7" gradientUnits="objectBoundingBox"><stop stop-color="#69263b"/><stop offset=".55" stop-color="#50182b"/><stop offset="1" stop-color="#33121c"/></linearGradient>
+    <path id="body" d="M138 121l69-32 26 16h48l26-16 69 32 56 161-44 21-42-91v183H168V212l-42 91-44-21z"/>
+    <clipPath id="clip"><use href="#body"/></clipPath>
+    <g id="jacket">
+      <use href="#body" fill="url(#shell)" stroke="#30121c" stroke-width="3"/>
+      <g clip-path="url(#clip)">
+        <path d="M60 287q100-39 155-17t243-2l-5 155H66Z" fill="#222327"/>
+        <path d="M60 287q100-39 155-17t243-2" fill="none" stroke="#e4d2af" stroke-width="4"/>
+        <path d="M163 389h187M87 283l45 23m296-23-45 23" stroke="#151518" stroke-width="14"/>
+      </g>
+      <path d="M206 91l12-19h77l13 19-27 24h-48z" fill="#272327" stroke="#30121c" stroke-width="3"/>
+      <path d="M168 211l-27-88m206 88 27-88" fill="none" stroke="#e4d2af" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="1080" height="780" fill="#eee5d8"/>
+  <g fill="#50182b" font-family="system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">
+    <text x="64" y="60">COACH CARTER ACADEMY · COLLECTION 01</text>
+    <text x="295" y="665" text-anchor="middle">FRONT</text>
+    <text x="785" y="665" text-anchor="middle">BACK</text>
+  </g>
+  <text x="62" y="112" fill="#221a19" font-family="Georgia,serif" font-size="43">Warm-Up Zip Jacket</text>
+  <path d="M64 141h952M64 700h952" stroke="#c8b8a9"/>
+  <g transform="translate(-52 112) scale(1.35)">
+    <use href="#jacket"/>
+    <path d="M257 109v279" stroke="#231b1d" stroke-width="8"/>
+    <path d="M257 112v276" stroke="#bda26b" stroke-width="1.2" stroke-dasharray="1 2"/>
+    <rect x="253" y="124" width="8" height="15" rx="2" fill="#c6a567"/>
+    <rect x="253" y="361" width="8" height="15" rx="2" fill="#c6a567"/>
+    <path d="M186 300l36-23m70 0 36 23" stroke="#c4a477" stroke-width="2"/>
+    <text x="307" y="178" text-anchor="middle" fill="#e4d2af" font-family="Georgia,serif" font-size="15">K|C</text>
+  </g>
+  <g transform="translate(438 112) scale(1.35)">
+    <use href="#jacket"/>
+    <g transform="translate(211 143)" fill="none" stroke="#894356" stroke-width="1.6">
+      <rect width="92" height="114" rx="2"/><path d="M0 57h92M31 0v18h30V0m-30 114V96h30v18M9 0v10a37 33 0 0 0 74 0V0M9 114v-10a37 33 0 0 1 74 0v10"/><circle cx="46" cy="57" r="10"/>
+    </g>
+  </g>
+  <text x="64" y="735" fill="#514743" font-family="system-ui,sans-serif" font-size="15">Lightweight shell · Two-way zip · Bone piping · Tonal court map</text>
+</svg>

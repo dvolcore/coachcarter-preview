@@ -6,6 +6,22 @@
   <title>Court Collection — Coach Carter Academy</title>
   <link rel="stylesheet" href="assets/css/site.css">
   <link rel="stylesheet" href="assets/css/academy-store.css">
+  <link rel="stylesheet" href="assets/css/academy-gallery.css">
+  <style>
+    .front-row-lifestyle { margin: clamp(4rem, 9vw, 8rem) 0 2rem; padding-top: clamp(2.5rem, 5vw, 4.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
+    .front-row-lifestyle-head { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1rem; }
+    .front-row-lifestyle-head h2 { max-width: 16ch; margin: .25rem 0 0; }
+    .front-row-lifestyle-intro { max-width: 48rem; color: var(--academy-muted); margin: 0 0 2rem; }
+    .front-row-lifestyle-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem .9rem; }
+    .front-row-lifestyle-card { display: block; min-width: 0; margin: 0; color: inherit; text-decoration: none; }
+    .front-row-lifestyle-card.wide { grid-column: span 2; }
+    .front-row-lifestyle-card img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(184, 148, 75, .24); background: #161310; transition: transform .25s ease, border-color .25s ease; }
+    .front-row-lifestyle-card.wide img { aspect-ratio: 16 / 10; }
+    .front-row-lifestyle-card:hover img, .front-row-lifestyle-card:focus-visible img { transform: translateY(-3px); border-color: rgba(184, 148, 75, .8); }
+    .front-row-lifestyle-grid + .front-row-lifestyle-intro { margin-top: 1.5rem; }
+    .front-row-lifestyle-card figcaption { padding-top: .65rem; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--academy-muted); }
+    @media (max-width: 760px) { .front-row-lifestyle-head { display: block; } .front-row-lifestyle-head .store-text-link { display: inline-block; margin-top: 1rem; } .front-row-lifestyle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; } .front-row-lifestyle-card.wide { grid-column: span 2; } }
+  </style>
   <script defer src="assets/js/academy-product.js"></script>
 </head>
 <body class="academy-product-page">
@@ -21,9 +37,10 @@
       <div>
       <figure class="product-visual">
         <img id="product-image" width="900" height="1350" alt="">
-        <figcaption id="product-image-caption">Front view · AI garment rendering</figcaption>
+        <figcaption id="product-image-caption" aria-live="polite">Front view · AI garment rendering</figcaption>
       </figure>
-      <figure class="product-visual product-flat">
+      <div class="product-views" id="product-views" role="group" aria-label="Product views" hidden></div>
+      <figure class="product-visual product-flat" hidden>
         <img id="product-flat" width="700" height="520" alt="Front and back garment design board" loading="lazy">
         <figcaption id="product-flat-caption"><a class="store-text-link" id="product-flat-download" download>Download the design board ↓</a></figcaption>
       </figure>
@@ -33,9 +50,15 @@
         <h1 id="product-name"></h1>
         <p id="product-kind"></p>
         <p id="product-price" class="proposed"></p>
+        <p id="product-estimate" hidden></p>
         <p class="product-note">Collection preview. Final fit and materials will be confirmed after sampling.</p>
         <h2>Design details</h2>
         <ul id="product-specs"></ul>
+        <a class="store-text-link" id="product-lifestyle-link" href="#front-row-lifestyle" hidden>See the jacket styled ↓</a>
+        <section id="product-pieces" hidden>
+          <h2>Pieces in this look</h2>
+          <ul></ul>
+        </section>
         <figure class="product-artwork">
           <img id="product-artwork" alt="" width="500" height="160" loading="lazy">
           <figcaption id="product-artwork-label"></figcaption>
@@ -45,6 +68,40 @@
         <a class="store-text-link" href="academy-studio/index.html">Explore the Academy design library ↗</a>
       </div>
     </article>
+    <section id="front-row-lifestyle" class="front-row-lifestyle" hidden aria-labelledby="front-row-lifestyle-title">
+      <div class="front-row-lifestyle-head">
+        <div>
+          <p class="store-label">Front Row · Campus to After Hours</p>
+          <h2 id="front-row-lifestyle-title">See the jacket in motion.</h2>
+        </div>
+        <a class="store-text-link" href="gallery.html">Open the full lookbook ↗</a>
+      </div>
+      <p class="front-row-lifestyle-intro">School skirts, game-day layers and after-hours looks, all styled with the Front Row Letterman. Select a look to enlarge it.</p>
+      <div class="front-row-lifestyle-grid">
+        <a class="front-row-lifestyle-card wide" href="assets/img/academy/campaign/team-off-the-bus.webp" aria-label="Enlarge Team arrival"><figure><img src="assets/img/academy/campaign/team-off-the-bus.webp" alt="The team steps off the bus in matching Front Row Letterman jackets" width="1195" height="960" loading="lazy"><figcaption>Team arrival</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/a-line-skirt-courtyard.webp" aria-label="Enlarge Courtyard pleats"><figure><img src="assets/img/academy/campaign/a-line-skirt-courtyard.webp" alt="Student in the Front Row Letterman over a blouse and A-line school skirt" width="1122" height="1402" loading="lazy"><figcaption>Courtyard pleats</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/player-basketball.webp" aria-label="Enlarge Ball in hand"><figure><img src="assets/img/academy/campaign/player-basketball.webp" alt="Student holding a basketball in the gym in the Front Row Letterman" width="1122" height="1402" loading="lazy"><figcaption>Ball in hand</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/burgundy-knit-skirt.webp" aria-label="Enlarge Burgundy knit"><figure><img src="assets/img/academy/campaign/burgundy-knit-skirt.webp" alt="Student in a burgundy knit and plaid skirt wearing the Front Row Letterman on the school stairs" width="1122" height="1402" loading="lazy"><figcaption>Burgundy knit</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/campus-utility.webp" aria-label="Enlarge Campus utility"><figure><img src="assets/img/academy/campaign/campus-utility.webp" alt="Student in the Front Row Letterman, cream cargo pants and burgundy sneakers" width="1122" height="1402" loading="lazy"><figcaption>Campus utility</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/math-room.webp" aria-label="Enlarge In the classroom"><figure><img src="assets/img/academy/campaign/math-room.webp" alt="Student wearing the Front Row Letterman by a chalkboard" width="1122" height="1402" loading="lazy"><figcaption>In the classroom</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/bow-tie.webp" aria-label="Enlarge The bow tie"><figure><img src="assets/img/academy/campaign/bow-tie.webp" alt="Student wearing the Front Row Letterman with a bow tie in a school hallway" width="1122" height="1402" loading="lazy"><figcaption>The bow tie</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/hall-stairs.webp" aria-label="Enlarge Between bells"><figure><img src="assets/img/academy/campaign/hall-stairs.webp" alt="Student wearing the Front Row Letterman on the school stairs" width="1122" height="1402" loading="lazy"><figcaption>Between bells</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/gym-entry.webp" aria-label="Enlarge Gym entrance"><figure><img src="assets/img/academy/campaign/gym-entry.webp" alt="Student wearing the Front Row Letterman at the gym entrance" width="1122" height="1402" loading="lazy"><figcaption>Gym entrance</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/gym-sideline.webp" aria-label="Enlarge On the sideline"><figure><img src="assets/img/academy/campaign/gym-sideline.webp" alt="Coach in a Front Row Letterman seated on gym bleachers" width="1122" height="1402" loading="lazy"><figcaption>On the sideline</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/campus-covered-walk.webp" aria-label="Enlarge The covered walk"><figure><img src="assets/img/academy/campaign/campus-covered-walk.webp" alt="Student wearing the Front Row Letterman in a covered campus walkway" width="1122" height="1402" loading="lazy"><figcaption>The covered walk</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/student-commons.webp" aria-label="Enlarge After class"><figure><img src="assets/img/academy/campaign/student-commons.webp" alt="Student wearing the Front Row Letterman in a school common area" width="1122" height="1402" loading="lazy"><figcaption>After class</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/back-of-jacket.webp" aria-label="Enlarge The back view"><figure><img src="assets/img/academy/campaign/back-of-jacket.webp" alt="Back of the Front Row Letterman with a clean navy panel and gold-striped hem" width="1122" height="1402" loading="lazy"><figcaption>The back view</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/academy-contract-interior.webp" aria-label="Enlarge Inside the Academy Contract"><figure><img src="assets/img/academy/campaign/academy-contract-interior.webp" alt="Student holding the opposite side of the Front Row Letterman open to show the Academy Contract patch" width="1122" height="1402" loading="lazy"><figcaption>Inside the Academy Contract</figcaption></figure></a>
+        <a class="front-row-lifestyle-card wide" href="assets/img/academy/campaign/after-hours-stage.webp" aria-label="Enlarge Live on stage"><figure><img src="assets/img/academy/campaign/after-hours-stage.webp" alt="Rapper performing in the Front Row Letterman under warm stage lights" width="1440" height="810" loading="lazy"><figcaption>Live on stage</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/after-hours-society.webp" aria-label="Enlarge Museum benefit"><figure><img src="assets/img/academy/campaign/after-hours-society.webp" alt="Guest at a museum benefit wearing the Front Row Letterman over a burgundy satin skirt" width="960" height="1440" loading="lazy"><figcaption>Museum benefit</figcaption></figure></a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/after-hours-fashion.webp" aria-label="Enlarge Fashion show arrival"><figure><img src="assets/img/academy/campaign/after-hours-fashion.webp" alt="Guest arriving at a fashion show in the Front Row Letterman and wide-leg black trousers" width="960" height="1440" loading="lazy"><figcaption>Fashion show arrival</figcaption></figure></a>
+      </div>
+      <p class="front-row-lifestyle-intro">AI styling concepts. Final garment details are subject to sampling.</p>
+    </section>
   </main>
+  <dialog class="academy-lightbox" id="product-lifestyle-lightbox" aria-label="Expanded campaign image">
+    <button type="button" aria-label="Close image">×</button>
+    <img alt="">
+  </dialog>
 </body>
 </html>
