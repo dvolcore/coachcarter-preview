@@ -31,13 +31,14 @@
     .warm-up-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2.5rem); }
     .warm-up-grid .wide { grid-column: 1 / -1; }
     .warm-up-grid .wide img { aspect-ratio: 3 / 2; }
-    .product-editions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; }
+    .product-editions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; }
     .product-editions a { display: block; border: 1px solid var(--academy-rule); color: var(--academy-ink); font-size: .72rem; line-height: 1.25; text-decoration: none; }
     .product-editions a:hover, .product-editions a:focus-visible, .product-editions a[aria-current="page"] { border-color: var(--academy-maroon); }
     .product-editions a[aria-current="page"] { box-shadow: inset 0 0 0 1px var(--academy-maroon); }
     .product-editions img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; background: #eae0d3; }
     #game-jersey-editorial { scroll-margin-top: calc(var(--nav-h) + 12px); }
     .game-jersey-grid .front-row-lifestyle-card img { aspect-ratio: 3 / 2; }
+    .game-jersey-grid + h3 { margin-top: 2rem; }
     .product-editions span { display: block; padding: .5rem; }
     .front-row-composite { margin: clamp(2.5rem, 6vw, 5rem) 0 0; padding-top: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
     .front-row-composite img { display: block; width: 100%; height: auto; border: 1px solid rgba(184, 148, 75, .34); background: #161310; }
@@ -50,7 +51,7 @@
       .product-editions img { aspect-ratio: 4 / 3; }
     }
   </style>
-  <script defer src="assets/js/academy-product.js?v=8"></script>
+  <script defer src="assets/js/academy-product.js?v=9"></script>
 </head>
 <body class="academy-product-page">
   <header>
@@ -130,6 +131,18 @@
             <figcaption>All-Cream · Passing on the wing</figcaption>
           </figure>
         </a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-all-maroon-numbered-drive.webp" aria-label="Enlarge All-Maroon number 4 driving to the basket">
+          <figure>
+            <img src="assets/img/academy/campaign/game-jersey-all-maroon-numbered-drive.webp" alt="Number 4 drives to the basket in an all-maroon Coach Carter Academy uniform" width="1536" height="1024" loading="lazy">
+            <figcaption>All-Maroon · No. 4 on the drive</figcaption>
+          </figure>
+        </a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-all-maroon-numbered-jumper.webp" aria-label="Enlarge All-Maroon number 12 taking a contested jumper">
+          <figure>
+            <img src="assets/img/academy/campaign/game-jersey-all-maroon-numbered-jumper.webp" alt="Number 12 rises for a contested jump shot in an all-maroon Coach Carter Academy uniform" width="1536" height="1024" loading="lazy">
+            <figcaption>All-Maroon · No. 12 on the jumper</figcaption>
+          </figure>
+        </a>
         <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-maroon-detail.webp" aria-label="Enlarge Maroon with cream trim: Courtside close-up">
           <figure>
             <img src="assets/img/academy/campaign/game-jersey-maroon-detail.webp" alt="Close-up of the maroon Academy jersey’s cream trim, patterned side panel and number 4 as a guard holds the ball" width="1536" height="1024" loading="lazy">
@@ -143,7 +156,22 @@
           </figure>
         </a>
       </div>
-      <p class="front-row-lifestyle-intro">AI-generated game-action studies.</p>
+      <h3>Five jerseys, two ways</h3>
+      <div class="warm-up-grid game-jersey-grid">
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-five-colorways.webp" aria-label="Enlarge all five matching Academy uniforms">
+          <figure>
+            <img src="assets/img/academy/campaign/game-jersey-five-colorways.webp" alt="Five players line up in maroon with cream trim, cream with maroon trim, Dark Knight, All-Cream, and All-Maroon uniforms" width="1536" height="1024" loading="lazy">
+            <figcaption>All five jerseys · Matching shorts</figcaption>
+          </figure>
+        </a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-five-mixed-kits.webp" aria-label="Enlarge all five Academy jerseys with swapped shorts">
+          <figure>
+            <img src="assets/img/academy/campaign/game-jersey-five-mixed-kits.webp" alt="The same five jersey designs in the same order, each paired with shorts from a different uniform" width="1536" height="1024" loading="lazy">
+            <figcaption>All five jerseys · Swapped shorts</figcaption>
+          </figure>
+        </a>
+      </div>
+      <p class="front-row-lifestyle-intro">AI-generated game-action and uniform styling studies.</p>
     </section>
     <section id="school-uniform-editorial" class="front-row-lifestyle" hidden aria-labelledby="school-uniform-editorial-title">
       <div class="front-row-lifestyle-head">

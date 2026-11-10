@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=8");
+    const response = await fetch("assets/data/academy-products.json?v=9");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
@@ -202,6 +202,7 @@ async function showProduct() {
       product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
+      "all-maroon-game-short": "game-jersey-editorial",
     }[product.id];
     const lifestyle = lifestyleId && document.getElementById(lifestyleId);
     if (lifestyle) {
@@ -209,7 +210,7 @@ async function showProduct() {
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
       if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
-      else if (isGameJersey) lifestyleLink.textContent = "See the jerseys in game action ↓";
+      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the five looks and game action ↓";
       else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
 

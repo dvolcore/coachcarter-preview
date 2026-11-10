@@ -169,7 +169,18 @@
         "A long-sleeve rib knit with a pointed collar and a short button placket.",
         "The fitted waist layers under the longline vest and tucks into the high-rise trouser."
       ],
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-rib-knit-polo-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Rib-Knit Polo, worn by a student while reading at a lunchroom table",
+          "caption": "Lunchroom · AI styling study"
+        }
+      ]
     },
     {
       "id": "academy-longline-vest",
@@ -187,7 +198,18 @@
         "An open-front knit with wide shoulders and a long, straight hem.",
         "Shown with the Bone Rib-Knit Polo and khaki double-pleat trousers."
       ],
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-longline-vest-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Maroon Longline Cardigan Vest, worn by a student walking outside a school building",
+          "caption": "Outdoors · AI styling study"
+        }
+      ]
     },
     {
       "id": "academy-canvas-chore-jacket",
@@ -204,7 +226,45 @@
         "A maroon button-front work jacket with a contrast tan collar.",
         "Flapped chest pockets and low patch pockets echo the hallway reference."
       ],
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "portrait",
+          "label": "Studio portrait",
+          "image": "assets/img/academy/last-bell/uniform-pieces/studio/academy-canvas-chore-jacket-portrait.webp",
+          "width": 1120,
+          "height": 1120,
+          "alt": "Canvas Chore Jacket, worn by a student model in a studio",
+          "caption": "Studio portrait · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-canvas-chore-jacket-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Canvas Chore Jacket, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-canvas-chore-jacket-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Canvas Chore Jacket, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-canvas-chore-jacket-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Canvas Chore Jacket, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
+      ]
     },
     {
       "id": "academy-double-pleat-trouser",
@@ -241,7 +301,18 @@
         "Wear it tucked into pleated trousers or loose under the maroon coat."
       ],
       "campaign": "store.html#uniform-pieces",
-      "flat": "academy-studio/flats/first-whistle-oxford.svg"
+      "flat": "academy-studio/flats/first-whistle-oxford.svg",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Between classes",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/first-whistle-oxford-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Oxford Shirt, worn by a student by school lockers",
+          "caption": "Between classes · AI styling study"
+        }
+      ]
     },
     {
       "id": "arc-snap-jacket",
@@ -329,6 +400,24 @@
           "pieces": [
             "warm-up-zip-jacket"
           ]
+        },
+        {
+          "style": "all-maroon",
+          "label": "All-Maroon",
+          "name": "All-Maroon Game Jersey",
+          "kind": "Mesh game jersey · Tonal Richmond maroon",
+          "image": "assets/img/academy/roadmap/fit/game-jersey-all-maroon.webp",
+          "image_width": 1254,
+          "image_height": 1254,
+          "alt": "All-maroon mesh game jersey with tonal trim, antique-gold KC side panels and number 4",
+          "image_caption": "All-Maroon front · AI garment rendering",
+          "specs": [
+            "Richmond maroon mesh and matching binding at the neck and armholes.",
+            "Antique-gold Coach Carter Academy lettering, a numbered front and narrow woven KC side panels."
+          ],
+          "pieces": [
+            "all-maroon-game-short"
+          ]
         }
       ],
       "pieces": [
@@ -361,6 +450,23 @@
       "flat_width": 960,
       "flat_height": 620,
       "flat_alt": "Matching reversible shorts design board showing both colorways",
+      "campaign": "store.html#shorts"
+    },
+    {
+      "id": "all-maroon-game-short",
+      "name": "All-Maroon Game Short",
+      "kind": "Mesh game short · Tonal Richmond maroon",
+      "image": "assets/img/academy/roadmap/fit/game-short-all-maroon.webp",
+      "image_width": 1254,
+      "image_height": 1254,
+      "alt": "All-maroon mesh game shorts with a gathered waistband and antique-gold KC side panels",
+      "image_caption": "All-Maroon short front · AI garment rendering",
+      "specs": [
+        "An above-the-knee game short in Richmond maroon mesh with a matching elastic waistband.",
+        "Narrow woven KC side panels pair with the All-Maroon Game Jersey."
+      ],
+      "status": "Coming soon",
+      "group": "court-gear",
       "campaign": "store.html#shorts"
     },
     {
@@ -616,6 +722,15 @@
           "label": "Color details",
           "alt": "Academy combat color details showing the carbon, maroon, bone and gold accessory palette",
           "caption": "Supporting color detail · AI styling study"
+        },
+        {
+          "id": "game",
+          "label": "In play",
+          "image": "assets/img/academy/roadmap/fit/kc-headband-in-play.webp",
+          "width": 1440,
+          "height": 810,
+          "alt": "KC Court Headband, worn by a basketball player during live play",
+          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
@@ -646,6 +761,15 @@
           "label": "Color details",
           "alt": "Academy combat color details showing the carbon, maroon, bone and gold performance palette",
           "caption": "Supporting color detail · AI styling study"
+        },
+        {
+          "id": "game",
+          "label": "In play",
+          "image": "assets/img/academy/roadmap/fit/kc-arm-sleeve-in-play.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "KC Shooting Sleeve, worn by a basketball player during live play",
+          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
@@ -685,6 +809,15 @@
           "label": "Tonal details",
           "alt": "Dark Knights tonal Academy details used as supporting sock styling reference",
           "caption": "Supporting tonal detail · AI styling study"
+        },
+        {
+          "id": "game",
+          "label": "In play",
+          "image": "assets/img/academy/roadmap/fit/kc-court-socks-in-play.webp",
+          "width": 1440,
+          "height": 810,
+          "alt": "KC Court Socks — All Black, worn by a basketball player during live play",
+          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
@@ -709,7 +842,45 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "portrait",
+          "label": "Studio portrait",
+          "image": "assets/img/academy/last-bell/uniform-pieces/studio/richmond-maroon-sport-coat-portrait.webp",
+          "width": 1120,
+          "height": 1120,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student model in a studio",
+          "caption": "Studio portrait · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/richmond-maroon-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/richmond-maroon-sport-coat-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/richmond-maroon-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
+      ]
     },
     {
       "id": "bone-sport-coat",
@@ -727,7 +898,45 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "portrait",
+          "label": "Studio portrait",
+          "image": "assets/img/academy/last-bell/uniform-pieces/studio/bone-sport-coat-portrait.webp",
+          "width": 1120,
+          "height": 1120,
+          "alt": "Bone Sport Coat, worn by a student model in a studio",
+          "caption": "Studio portrait · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/bone-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 810,
+          "alt": "Bone Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/bone-sport-coat-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Sport Coat, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/bone-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
+      ]
     },
     {
       "id": "charcoal-sport-coat",
@@ -745,7 +954,45 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "portrait",
+          "label": "Studio portrait",
+          "image": "assets/img/academy/last-bell/uniform-pieces/studio/charcoal-sport-coat-portrait.webp",
+          "width": 1120,
+          "height": 1120,
+          "alt": "Charcoal Sport Coat, worn by a student model in a studio",
+          "caption": "Studio portrait · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-sport-coat-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Sport Coat, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
+      ]
     },
     {
       "id": "maroon-knit-polo",
@@ -763,7 +1010,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/maroon-knit-polo-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Maroon Rib-Knit Polo, worn by a student greeting a classmate in the school quad",
+          "caption": "Outdoors · AI styling study"
+        }
+      ]
     },
     {
       "id": "maroon-v-neck-sweater",
@@ -781,7 +1039,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "School library",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/maroon-v-neck-sweater-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Maroon V-Neck Sweater Vest, worn by a student browsing a library shelf",
+          "caption": "School library · AI styling study"
+        }
+      ]
     },
     {
       "id": "maroon-button-front-vest",
@@ -799,7 +1068,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Between classes",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/maroon-button-front-vest-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Maroon Tailored Waistcoat, worn by a student carrying books past a classroom",
+          "caption": "Between classes · AI styling study"
+        }
+      ]
     },
     {
       "id": "charcoal-pleated-skirt",
@@ -817,7 +1097,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-pleated-skirt-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Pleated Skirt, worn by a student walking across a brick courtyard",
+          "caption": "Outdoors · AI styling study"
+        }
+      ]
     },
     {
       "id": "khaki-double-pleat-trouser",
@@ -835,7 +1126,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/khaki-double-pleat-trouser-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Khaki Wide-Leg Pleated Trouser, worn by a student walking across a brick courtyard",
+          "caption": "Outdoors · AI styling study"
+        }
+      ]
     },
     {
       "id": "charcoal-double-pleat-trouser",
@@ -853,7 +1155,18 @@
       ],
       "status": "Coming soon",
       "group": "last-bell",
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-double-pleat-trouser-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Wide-Leg Pleated Trouser, worn by a student walking past classroom windows",
+          "caption": "Outdoors · AI styling study"
+        }
+      ]
     },
     {
       "id": "fitted-richmond-maroon-sport-coat",
@@ -869,6 +1182,44 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "A shaped waist, notched lapels and flap pockets define the fitted cut."
+      ],
+      "views": [
+        {
+          "id": "portrait",
+          "label": "Studio portrait",
+          "image": "assets/img/academy/last-bell/uniform-pieces/studio/fitted-richmond-maroon-sport-coat-portrait.webp",
+          "width": 1120,
+          "height": 1120,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student model in a studio",
+          "caption": "Studio portrait · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/fitted-richmond-maroon-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/fitted-richmond-maroon-sport-coat-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/fitted-richmond-maroon-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -885,6 +1236,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "Front pleats add room at the hip before the leg tapers toward the hem."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-tailored-pleat-trouser-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Tailored Pleated Trouser, worn by a student walking down a school hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -901,6 +1263,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "Front pleats and a tapered leg distinguish this cut from the wide-leg khaki trouser."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "School steps",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/khaki-tailored-pleat-trouser-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Khaki Tailored Pleated Trouser, worn by a student walking down the entry steps",
+          "caption": "School steps · AI styling study"
+        }
       ]
     },
     {
@@ -917,6 +1290,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "Vertical ribbing runs from the ankle to the mid-calf cuff."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "School steps",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/ivory-ribbed-crew-socks-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Ribbed Crew Socks, worn by a student walking down the school steps",
+          "caption": "School steps · AI styling study"
+        }
       ]
     },
     {
@@ -933,6 +1317,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "A classic penny strap, rounded toe and low stacked heel finish the loafer."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/black-penny-loafers-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Black Penny Loafers, worn by a student walking across a brick courtyard",
+          "caption": "Outdoors · AI styling study"
+        }
       ]
     },
     {
@@ -949,6 +1344,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "Tonal laces and a matching rubber cupsole give the sneaker a clean profile."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/ivory-low-top-sneakers-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Bone Low-Top Sneakers, worn by a student walking across a tiled hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -965,6 +1371,17 @@
       "campaign": "store.html#uniform-pieces",
       "specs": [
         "A slim instep strap, small buckle and low block heel finish the Mary Jane."
+      ],
+      "views": [
+        {
+          "id": "campus",
+          "label": "School steps",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/oxblood-mary-jane-heels-campus.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Oxblood Mary Janes, worn by a student walking down the entry steps",
+          "caption": "School steps · AI styling study"
+        }
       ]
     }
   ],
@@ -1004,6 +1421,7 @@
     ],
     "shorts": [
       "kc-reversible-short",
+      "all-maroon-game-short",
       "arc-05",
       "next-up-short",
       "first-team"
