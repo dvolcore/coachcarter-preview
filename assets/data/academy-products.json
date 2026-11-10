@@ -151,7 +151,45 @@
         "Four sport coats, two trouser cuts and a charcoal pleated skirt anchor the collection.",
         "Explore the campus editorial for a closer look at how students wear the pieces together."
       ],
-      "campaign": "store.html#uniform-pieces"
+      "campaign": "store.html#uniform-pieces",
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        }
+      ]
     },
     {
       "id": "academy-rib-knit-polo",
@@ -178,6 +216,35 @@
           "width": 1440,
           "height": 960,
           "alt": "Bone Rib-Knit Polo, worn by a student while reading at a lunchroom table",
+          "caption": "Lunchroom · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
           "caption": "Lunchroom · AI styling study"
         }
       ]
@@ -208,6 +275,35 @@
           "height": 960,
           "alt": "Maroon Longline Cardigan Vest, worn by a student walking outside a school building",
           "caption": "Outdoors · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -264,6 +360,26 @@
           "alt": "Canvas Chore Jacket, worn by a student between classes in the school hallway",
           "caption": "Hallway · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-canvas-chore-jacket-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Canvas Chore Jacket, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "outside",
+          "label": "Outdoors",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-canvas-chore-jacket-outside.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Canvas Chore Jacket, worn by a student walking outside on campus",
+          "caption": "Outdoors · AI styling study"
+        }
       ]
     },
     {
@@ -311,6 +427,44 @@
           "height": 960,
           "alt": "Bone Oxford Shirt, worn by a student by school lockers",
           "caption": "Between classes · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -878,6 +1032,53 @@
           "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
           "caption": "Hallway · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/richmond-maroon-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/richmond-maroon-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Relaxed Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -933,6 +1134,35 @@
           "height": 960,
           "alt": "Bone Sport Coat, worn by a student between classes in the school hallway",
           "caption": "Hallway · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -990,6 +1220,53 @@
           "alt": "Charcoal Sport Coat, worn by a student between classes in the school hallway",
           "caption": "Hallway · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Charcoal Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -1018,6 +1295,35 @@
           "height": 960,
           "alt": "Maroon Rib-Knit Polo, worn by a student greeting a classmate in the school quad",
           "caption": "Outdoors · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -1048,6 +1354,35 @@
           "alt": "Maroon V-Neck Sweater Vest, worn by a student browsing a library shelf",
           "caption": "School library · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        }
       ]
     },
     {
@@ -1076,6 +1411,35 @@
           "height": 960,
           "alt": "Maroon Tailored Waistcoat, worn by a student carrying books past a classroom",
           "caption": "Between classes · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -1106,6 +1470,35 @@
           "alt": "Charcoal Pleated Skirt, worn by a student walking across a brick courtyard",
           "caption": "Outdoors · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        }
       ]
     },
     {
@@ -1135,6 +1528,26 @@
           "alt": "Khaki Wide-Leg Pleated Trouser, worn by a student walking across a brick courtyard",
           "caption": "Outdoors · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-library",
+          "label": "Library",
+          "image": "assets/img/academy/campaign/signature-library.webp",
+          "alt": "Two students in Academy knitwear and maroon tailoring studying in the library",
+          "width": 1122,
+          "height": 1402,
+          "caption": "Library · AI styling study"
+        }
       ]
     },
     {
@@ -1163,6 +1576,26 @@
           "height": 960,
           "alt": "Charcoal Wide-Leg Pleated Trouser, worn by a student walking past classroom windows",
           "caption": "Outdoors · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
         }
       ]
     },
@@ -1218,6 +1651,44 @@
           "alt": "Fitted Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
           "caption": "Hallway · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "lunchroom",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/fitted-richmond-maroon-sport-coat-lunchroom.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student in the school lunchroom",
+          "caption": "Lunchroom · AI styling study"
+        },
+        {
+          "id": "hallway",
+          "label": "Hallway",
+          "image": "assets/img/academy/last-bell/uniform-pieces/campus/fitted-richmond-maroon-sport-coat-hallway.webp",
+          "width": 1440,
+          "height": 960,
+          "alt": "Fitted Richmond Maroon Sport Coat, worn by a student between classes in the school hallway",
+          "caption": "Hallway · AI styling study"
+        }
       ]
     },
     {
@@ -1244,6 +1715,17 @@
           "height": 960,
           "alt": "Charcoal Tailored Pleated Trouser, worn by a student walking down a school hallway",
           "caption": "Hallway · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
         }
       ]
     },
@@ -1272,6 +1754,35 @@
           "alt": "Khaki Tailored Pleated Trouser, worn by a student walking down the entry steps",
           "caption": "School steps · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        }
       ]
     },
     {
@@ -1298,6 +1809,26 @@
           "height": 960,
           "alt": "Bone Ribbed Crew Socks, worn by a student walking down the school steps",
           "caption": "School steps · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     },
@@ -1326,6 +1857,35 @@
           "alt": "Black Penny Loafers, worn by a student walking across a brick courtyard",
           "caption": "Outdoors · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
+        }
       ]
     },
     {
@@ -1353,6 +1913,26 @@
           "alt": "Bone Low-Top Sneakers, worn by a student walking across a tiled hallway",
           "caption": "Hallway · AI styling study"
         }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        }
       ]
     },
     {
@@ -1379,6 +1959,35 @@
           "height": 960,
           "alt": "Oxblood Mary Janes, worn by a student walking down the entry steps",
           "caption": "School steps · AI styling study"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "signature-court",
+          "label": "Courtyard",
+          "image": "assets/img/academy/campaign/signature-court.webp",
+          "alt": "Students in Academy tailoring crossing the courtyard",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Courtyard · AI styling study"
+        },
+        {
+          "id": "signature-hall",
+          "label": "Between classes",
+          "image": "assets/img/academy/campaign/signature-hall.webp",
+          "alt": "Students in Academy uniforms walking through a sunlit campus corridor",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Between classes · AI styling study"
+        },
+        {
+          "id": "signature-lunch",
+          "label": "Lunchroom",
+          "image": "assets/img/academy/campaign/signature-lunch.webp",
+          "alt": "Students in Academy uniforms talking over lunch in the dining hall",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Lunchroom · AI styling study"
         }
       ]
     }

@@ -51,7 +51,7 @@
       .product-editions img { aspect-ratio: 4 / 3; }
     }
   </style>
-  <script defer src="assets/js/academy-product.js?v=11"></script>
+  <script defer src="assets/js/academy-product.js?v=12"></script>
 </head>
 <body class="academy-product-page">
   <header>
@@ -107,6 +107,9 @@
         <a class="store-text-link" href="store.html#game-jerseys">Browse the game jerseys ↗</a>
       </div>
       <div class="warm-up-grid game-jersey-grid">
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/signature-bench.webp" aria-label="Enlarge the girls’ team on the bench">
+          <figure><img src="assets/img/academy/campaign/signature-bench.webp" alt="Girls’ basketball team on the bench in maroon game jerseys and Academy warm-ups" width="1536" height="1024" loading="lazy"><figcaption>Girls’ team · On the bench</figcaption></figure>
+        </a>
         <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-official-lineup.webp?v=casting-2" aria-label="Enlarge the three official game jerseys">
           <figure>
             <img src="assets/img/academy/campaign/game-jersey-official-lineup.webp?v=casting-2" alt="Three players line up in the official maroon with cream, cream with maroon, and black with cream Coach Carter Academy game uniforms" width="1536" height="1024" loading="lazy">
@@ -173,20 +176,12 @@
         <a class="store-text-link" href="store.html#uniform-pieces">Explore all uniform pieces ↗</a>
       </div>
       <p class="front-row-lifestyle-intro">Tailoring and knit layers on students across campus. Select a photo to see the full look.</p>
-      <div class="school-uniform-grid">
-        <a class="front-row-lifestyle-card wide" href="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" aria-label="Enlarge The uniform lineup">
-          <figure>
-            <img src="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" alt="Six students on the Academy steps in tailored blazers, knit layers, pleated skirts and trousers" width="1672" height="941" loading="lazy">
-            <figcaption>The uniform lineup</figcaption>
-          </figure>
+      <div class="school-uniform-grid" id="school-uniform-views"></div>
+      <template id="school-uniform-view">
+        <a class="front-row-lifestyle-card">
+          <figure><img loading="lazy" alt=""><figcaption></figcaption></figure>
         </a>
-        <a class="front-row-lifestyle-card" href="assets/img/academy/last-bell/01-school-uniform.webp" aria-label="Enlarge Between classes">
-          <figure>
-            <img src="assets/img/academy/last-bell/01-school-uniform.webp" alt="Students in a maroon longline vest and a canvas chore jacket walk past a row of lockers" width="1536" height="1024" loading="lazy">
-            <figcaption>Between classes</figcaption>
-          </figure>
-        </a>
-      </div>
+      </template>
       <p class="front-row-lifestyle-intro">AI styling studies. Final garment details are subject to sampling.</p>
     </section>
     <section id="warm-up-editorial" class="front-row-lifestyle" hidden aria-labelledby="warm-up-editorial-title">
@@ -196,7 +191,7 @@
           <h2 id="warm-up-editorial-title">Before the whistle</h2>
         </div>
       </div>
-      <p class="front-row-lifestyle-intro">The bleachers fill as the team runs its last drills. Four views of the Warm-Up Zip Jacket from the bench to the hardwood.</p>
+      <p class="front-row-lifestyle-intro">The bleachers fill as the team runs its last drills. Two views of the Warm-Up Zip Jacket from the bench to the hardwood.</p>
       <div class="warm-up-grid">
         <a class="front-row-lifestyle-card wide" href="assets/img/academy/campaign/warm-up-line.webp" aria-label="Enlarge the warm-up line">
           <figure>
@@ -204,22 +199,10 @@
             <figcaption>The warm-up line</figcaption>
           </figure>
         </a>
-        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/warm-up-sideline.webp" aria-label="Enlarge on the sideline">
+        <a class="front-row-lifestyle-card wide" href="assets/img/academy/campaign/signature-bench.webp" aria-label="Enlarge the girls’ game-night bench">
           <figure>
-            <img src="assets/img/academy/campaign/warm-up-sideline.webp" alt="A player in maroon warm-ups stops to talk to a seated teammate as fans applaud behind them" width="1122" height="1402" loading="lazy">
-            <figcaption>On the sideline</figcaption>
-          </figure>
-        </a>
-        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/warm-up-bench.webp" aria-label="Enlarge between drills">
-          <figure>
-            <img src="assets/img/academy/campaign/warm-up-bench.webp" alt="Two players in warm-ups lean forward on the bench, one holding a squeeze bottle, with fans in the bleachers" width="1122" height="1402" loading="lazy">
-            <figcaption>Between drills</figcaption>
-          </figure>
-        </a>
-        <a class="front-row-lifestyle-card wide" href="assets/img/academy/campaign/warm-up-court.webp" aria-label="Enlarge waiting for the pass">
-          <figure>
-            <img src="assets/img/academy/campaign/warm-up-court.webp" alt="A player in a maroon warm-up jacket sets his feet to receive a pass with the crowd behind him" width="1536" height="1024" loading="lazy">
-            <figcaption>Waiting for the pass</figcaption>
+            <img src="assets/img/academy/campaign/signature-bench.webp" alt="Girls’ basketball players in Academy jerseys and signature zip warm-ups watch play from the bench" width="1536" height="1024" loading="lazy">
+            <figcaption>Girls’ game-night bench</figcaption>
           </figure>
         </a>
       </div>

@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=11");
+    const response = await fetch("assets/data/academy-products.json?v=12");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
@@ -205,9 +205,10 @@ async function showProduct() {
       document.querySelector("#front-row-composite").hidden = false;
     }
     const lifestyleId = style ? jerseyEditorial :
-      product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
+      product.lifestyle_views?.length ? "school-uniform-editorial" : {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
+        "warm-up-tearaway-pant": "warm-up-editorial",
       "all-maroon-game-short": "practice-jersey-editorial",
     }[product.id];
     const lifestyle = lifestyleId && document.getElementById(lifestyleId);
@@ -220,6 +221,22 @@ async function showProduct() {
       else if (lifestyle.id === "practice-jersey-editorial") lifestyleLink.textContent = "See the practice lineup on court ↓";
       else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
+      if (lifestyleId === "school-uniform-editorial") {
+        const grid = document.getElementById("school-uniform-views");
+        const template = document.getElementById("school-uniform-view");
+        for (const view of product.lifestyle_views) {
+          const card = template.content.firstElementChild.cloneNode(true);
+          const image = card.querySelector("img");
+          card.href = view.image;
+          card.setAttribute("aria-label", `Enlarge ${view.label}`);
+          image.src = view.image;
+          image.alt = view.alt;
+          image.width = view.width;
+          image.height = view.height;
+          card.querySelector("figcaption").textContent = view.label;
+          grid.append(card);
+        }
+      }
 
       const lightbox = document.querySelector("#product-lifestyle-lightbox");
       const expandedImage = lightbox.querySelector("img");
