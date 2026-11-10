@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Court Collection — Coach Carter Academy</title>
   <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="stylesheet" href="assets/css/academy-store.css">
+  <link rel="stylesheet" href="assets/css/academy-store.css?v=4">
   <link rel="stylesheet" href="assets/css/academy-gallery.css">
   <style>
     .front-row-lifestyle { margin: clamp(4rem, 9vw, 8rem) 0 2rem; padding-top: clamp(2.5rem, 5vw, 4.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
@@ -21,6 +21,9 @@
     .front-row-lifestyle-card:hover img, .front-row-lifestyle-card:focus-visible img { transform: translateY(-3px); border-color: rgba(184, 148, 75, .8); }
     .front-row-lifestyle-grid + .front-row-lifestyle-intro { margin-top: 1.5rem; }
     .front-row-lifestyle-card figcaption { padding-top: .65rem; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--academy-muted); }
+    .front-row-composite { margin: clamp(2.5rem, 6vw, 5rem) 0 0; padding-top: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
+    .front-row-composite img { display: block; width: 100%; height: auto; border: 1px solid rgba(184, 148, 75, .34); background: #161310; }
+    .front-row-composite figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: .75rem; color: var(--academy-muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
     @media (max-width: 760px) { .front-row-lifestyle-head { display: block; } .front-row-lifestyle-head .store-text-link { display: inline-block; margin-top: 1rem; } .front-row-lifestyle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; } .front-row-lifestyle-card.wide { grid-column: span 2; } }
   </style>
   <script defer src="assets/js/academy-product.js?v=3"></script>
@@ -69,6 +72,10 @@
         <a class="store-text-link" href="academy-studio/index.html">Explore the Academy design library ↗</a>
       </div>
     </article>
+    <figure class="front-row-composite" id="front-row-composite" hidden aria-labelledby="front-row-composite-caption">
+      <img src="assets/img/academy/front-row-overview.png" alt="Front, open interior and back views of the Front Row Letterman jacket, including the Richmond record lining and Academy Contract panel" width="1774" height="887" loading="lazy">
+      <figcaption id="front-row-composite-caption"><span>Front Row Letterman · complete view</span><a class="store-text-link" href="assets/img/academy/front-row-overview.png">Open full view ↗</a></figcaption>
+    </figure>
     <section id="front-row-lifestyle" class="front-row-lifestyle" hidden aria-labelledby="front-row-lifestyle-title">
       <div class="front-row-lifestyle-head">
         <div>

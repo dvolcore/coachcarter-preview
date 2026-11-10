@@ -1,10 +1,12 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json");
+    const response = await fetch("assets/data/academy-products.json?v=3");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
-    const key = new URLSearchParams(location.search).get("product") || "court-tee";
+    const requestedKey = new URLSearchParams(location.search).get("product") || "court-tee";
+    const aliases = { "court-short": "kc-reversible-short" };
+    const key = aliases[requestedKey] || requestedKey;
     const product = products.find(({ id }) => id === key);
     if (!product) throw new Error("Product unavailable");
 
@@ -70,10 +72,10 @@ async function showProduct() {
       const flat = document.querySelector("#product-flat");
       flat.src = product.flat;
       flat.closest("figure").hidden = false;
+      if (product.flat_alt) flat.alt = product.flat_alt;
+      if (product.flat_width) flat.width = product.flat_width;
+      if (product.flat_height) flat.height = product.flat_height;
       if (product.flat_caption) {
-        flat.alt = product.flat_alt;
-        flat.width = product.flat_width;
-        flat.height = product.flat_height;
         document.querySelector("#product-flat-caption").textContent = product.flat_caption;
       } else {
         document.querySelector("#product-flat-download").href = product.flat;
@@ -128,6 +130,7 @@ async function showProduct() {
       link.remove();
     }
     if (product.id === "front-row-letterman") {
+      document.querySelector("#front-row-composite").hidden = false;
       const lifestyle = document.querySelector("#front-row-lifestyle");
       lifestyle.hidden = false;
       document.querySelector("#product-lifestyle-link").hidden = false;

@@ -43,16 +43,6 @@ def academy_cards(catalog, group=None):
     return "\n      ".join(cards)
 
 
-def front_row_views(catalog):
-    jacket = next(product for product in catalog["products"] if product["id"] == "front-row-letterman")
-    return "\n        ".join(
-        f'<a href="academy-product.html?product=front-row-letterman#{escape(view["id"])}">'
-        f'<img src="{escape(view["image"])}" alt="" width="{view["width"]}" height="{view["height"]}" loading="lazy">'
-        f'<span>{escape(view["label"])}</span></a>'
-        for view in jacket["views"]
-    )
-
-
 def series_offer():
     return f'''<section class="series-offer section" id="watch-plans" aria-labelledby="series-offer-title">
   <div class="wrap">
@@ -280,7 +270,8 @@ def build():
             body = (body.replace("{{academy_cards}}", academy_cards(catalog))
                     .replace("{{last_bell_cards}}", academy_cards(catalog, "last-bell"))
                     .replace("{{court_gear_cards}}", academy_cards(catalog, "court-gear"))
-                    .replace("{{front_row_views}}", front_row_views(catalog)))
+                    .replace("{{warm_ups_cards}}", academy_cards(catalog, "warm-ups"))
+                    .replace("{{accessories_cards}}", academy_cards(catalog, "accessories")))
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer(meta.get("nav", "home"))

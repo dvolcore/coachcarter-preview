@@ -52,7 +52,7 @@
       ],
       "artwork": "academy-studio/artwork/first-whistle-lining.svg",
       "artwork_label": "Contract lining repeat artwork",
-      "campaign": "store.html#look-03-contract-lining",
+      "campaign": "store.html#first-whistle",
       "status": "Coming soon",
       "group": "last-bell",
       "flat_width": 700,
@@ -118,25 +118,8 @@
       }
     },
     {
-      "id": "court-short",
-      "companion": "court-tee",
-      "name": "Court Short",
-      "price": "$78 proposed",
-      "kind": "Lined basketball mesh · Maroon / Bone",
-      "image": "assets/img/academy/academy-court-short.webp",
-      "alt": "Front view of the maroon Academy Court Short with ivory basketball-seam panels",
-      "specs": [
-        "Target 7-inch inseam, lined basketball mesh and side pockets.",
-        "Bone side panels with basketball-seam detailing, fine gold piping and tipped drawcord.",
-        "Coach Carter Academy lettering on the leg."
-      ],
-      "artwork": "academy-studio/artwork/basketball_seam_motif.svg",
-      "artwork_label": "Basketball-seam panel artwork",
-      "flat": "academy-studio/flats/court-short.svg"
-    },
-    {
       "id": "court-tee",
-      "companion": "court-short",
+      "companion": "kc-reversible-short",
       "name": "Court Tee",
       "price": "$68 proposed",
       "kind": "Heavyweight cotton jersey · Carbon",
@@ -157,21 +140,21 @@
       "kind": "Campus separates · Maroon / Bone / Khaki / Charcoal",
       "status": "Coming soon",
       "group": "last-bell",
-      "image": "assets/img/academy/last-bell/01-school-uniform.webp",
-      "image_width": 1536,
-      "image_height": 1024,
-      "alt": "Two students in a school hallway wearing layered maroon and bone school uniforms with pleated trousers",
-      "image_caption": "Last Bell to Tipoff · AI styling study",
+      "image": "assets/img/academy/last-bell/academy-school-uniform-lineup.webp",
+      "image_width": 1672,
+      "image_height": 941,
+      "alt": "Six students on the Academy steps in blazers, knit layers, pleated skirts and tailored trousers",
+      "image_caption": "Academy school uniform · AI styling concept",
       "specs": [
-        "Her hallway look layers a bone rib-knit polo under a maroon longline vest, with high-waisted khaki trousers.",
-        "His hallway look pairs a maroon canvas chore jacket and bone collared layer with relaxed charcoal trousers.",
-        "The separates share the same palette so students can build their own uniform."
+        "The campus palette pairs maroon and bone with khaki and charcoal.",
+        "Structured blazers and knit layers are styled with pleated skirts and relaxed trousers.",
+        "Explore the individual pieces available to preview below."
       ],
       "campaign": "store.html#look-01-school-uniform",
       "pieces": [
+        "first-whistle-oxford",
         "academy-rib-knit-polo",
         "academy-longline-vest",
-        "academy-canvas-chore-jacket",
         "academy-double-pleat-trouser"
       ]
     },
@@ -191,7 +174,7 @@
         "The ink tearaway pant has a wide leg, bone side stripe and snap openings.",
         "The matching set is intended to layer over court gear for warmups and the bench."
       ],
-      "campaign": "store.html#look-05-warmup-in-motion",
+      "campaign": "store.html#warm-ups",
       "flat": "academy-studio/last-bell/arc-warmup.svg",
       "pieces": [
         "arc-snap-jacket",
@@ -300,7 +283,7 @@
         "Point collar, snap front and elastic cuffs.",
         "The bone insert sweeps diagonally from shoulder to hip, with an ink panel below."
       ],
-      "campaign": "store.html#look-05-warmup-in-motion",
+      "campaign": "store.html#warm-ups",
       "flat": "academy-studio/last-bell/arc-warmup.svg"
     },
     {
@@ -308,7 +291,7 @@
       "name": "Arc Tearaway Pant",
       "kind": "Court warmup pant · Ink / Bone",
       "status": "Coming soon",
-      "group": "last-bell",
+      "group": "warm-ups",
       "image": "assets/img/academy/last-bell/arc-tearaway-pant.webp",
       "image_width": 835,
       "image_height": 438,
@@ -318,42 +301,128 @@
         "Wide-legged cut with a bone stripe down the side.",
         "Side snaps let the pant open over court shoes."
       ],
-      "campaign": "store.html#look-05-warmup-in-motion",
+      "campaign": "store.html#warm-ups",
       "flat": "academy-studio/last-bell/arc-warmup.svg"
     },
     {
       "id": "reversible-practice-jersey",
       "name": "Reversible Practice Jersey",
       "kind": "Double-layer mesh · Bone / Maroon",
-      "image": "assets/img/academy/roadmap/reversible-practice-jersey.svg",
-      "image_width": 700,
-      "image_height": 520,
-      "alt": "Reversible mesh jersey design board in bone and maroon",
-      "image_caption": "Concept mockup",
+      "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
+      "image_width": 432,
+      "image_height": 539,
+      "alt": "Bone reversible jersey with maroon woven side panels and gold KC crest on the right shoulder",
+      "image_caption": "Bone side · AI garment rendering",
       "specs": [
-        "Two wearable sides switch between bone and maroon.",
-        "Mesh construction with contrast binding and Academy court-seam artwork."
+        "Reversible mesh in bone and Richmond maroon. The contrast side panels invert with each colorway.",
+        "An original woven KC repeat runs down both sides. A small gold KC circle from the site’s Home transition sits on the wearer’s right shoulder."
       ],
       "status": "Coming soon",
       "group": "court-gear",
-      "price": "$98 proposed"
+      "price": "$98 proposed",
+      "view_label": "Bone side",
+      "views": [
+        {
+          "id": "maroon",
+          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-maroon.webp",
+          "alt": "Maroon reversible jersey with bone woven side panels and gold KC crest on the right shoulder",
+          "width": 432,
+          "height": 539,
+          "label": "Maroon side",
+          "caption": "Maroon side · AI garment rendering"
+        },
+        {
+          "id": "black-bone",
+          "image": "assets/img/academy/roadmap/fit/kc-combat-black-bone.webp",
+          "alt": "Black and bone Academy court kit with KC repeat side panels and gold crest details",
+          "width": 1672,
+          "height": 941,
+          "label": "Black / bone alternate",
+          "caption": "Black / bone alternate · AI styling study"
+        },
+        {
+          "id": "dark-knights",
+          "image": "assets/img/academy/roadmap/fit/kc-dark-knights-game-two.webp",
+          "alt": "Black Dark Knights Academy court kit with tonal KC details and gold crest",
+          "width": 1672,
+          "height": 941,
+          "label": "Dark Knights",
+          "caption": "Dark Knights · AI styling study"
+        }
+      ],
+      "pieces": [
+        "kc-reversible-short",
+        "warm-up-zip-jacket"
+      ],
+      "flat": "assets/img/academy/roadmap/reversible-practice-jersey.svg",
+      "flat_width": 1000,
+      "flat_height": 680,
+      "flat_alt": "Design board for the bone and maroon reversible practice jersey with KC side panels",
+      "campaign": "store.html#signature-collection"
+    },
+    {
+      "id": "kc-reversible-short",
+      "name": "KC Reversible Short",
+      "kind": "Signature court short · Bone / Maroon",
+      "status": "Coming soon",
+      "group": "court-gear",
+      "specs": [
+        "A reversible, above-the-knee court short in bone and Richmond maroon with a clean waistband.",
+        "Woven KC insets swap contrast as the short reverses. Narrow antique-gold piping ties the short to the Practice Jersey and Warm-Up Zip Jacket."
+      ],
+      "pieces": [
+        "reversible-practice-jersey",
+        "warm-up-zip-jacket"
+      ],
+      "image": "assets/img/academy/roadmap/fit/kc-reversible-short.webp",
+      "image_width": 1448,
+      "image_height": 1086,
+      "alt": "Matching reversible court shorts in bone and maroon with contrast woven KC side panels",
+      "image_caption": "Bone and maroon sides · AI garment rendering",
+      "view_label": "Bone and maroon sides",
+      "flat": "assets/img/academy/roadmap/kc-reversible-short.svg",
+      "flat_width": 960,
+      "flat_height": 620,
+      "flat_alt": "Matching reversible shorts design board showing both colorways",
+      "campaign": "store.html#signature-collection"
     },
     {
       "id": "warm-up-zip-jacket",
       "name": "Warm-Up Zip Jacket",
       "kind": "Court outerwear · Maroon / Bone / Carbon",
-      "image": "assets/img/academy/roadmap/warm-up-zip-jacket.svg",
-      "image_width": 1080,
-      "image_height": 780,
-      "alt": "Front and back mockup of a maroon and carbon zip warm-up jacket with bone contrast piping",
-      "image_caption": "Concept mockup",
+      "image": "assets/img/academy/roadmap/fit/warm-up-zip-jacket-front.webp",
+      "image_width": 720,
+      "image_height": 539,
+      "alt": "Richmond maroon warm-up zip jacket with woven side panels and gold KC crest on the right shoulder",
+      "image_caption": "Front · AI garment rendering",
       "specs": [
-        "Lightweight shell with bone piping and a two-way front zip.",
-        "Tone-on-tone court map across the back."
+        "Lightweight Richmond maroon shell with a two-way front zip and antique-gold accents.",
+        "Woven KC side insets and a gold KC circle on the wearer’s right shoulder frame a clean, unadorned back."
       ],
       "status": "Coming soon",
-      "group": "court-gear",
-      "price": "$148 proposed"
+      "group": "warm-ups",
+      "price": "$148 proposed",
+      "view_label": "Front",
+      "views": [
+        {
+          "id": "back",
+          "image": "assets/img/academy/roadmap/fit/warm-up-zip-jacket-back.webp",
+          "alt": "Back of the Richmond maroon warm-up zip jacket with woven side insets",
+          "width": 720,
+          "height": 539,
+          "label": "Back",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "pieces": [
+        "reversible-practice-jersey",
+        "kc-reversible-short"
+      ],
+      "flat": "assets/img/academy/roadmap/warm-up-zip-jacket.svg",
+      "flat_width": 1080,
+      "flat_height": 680,
+      "flat_alt": "Front and back warm-up jacket design board with KC woven side insets",
+      "campaign": "store.html#signature-collection"
     },
     {
       "id": "academy-hoodie",
@@ -381,44 +450,52 @@
       "id": "signature-court-ball",
       "name": "Signature Court Ball",
       "kind": "Court equipment · Carbon / Bone / Gold",
-      "image": "assets/img/academy/roadmap/signature-court-ball.svg",
-      "image_width": 900,
-      "image_height": 780,
+      "image": "assets/img/academy/roadmap/fit/signature-court-ball.webp",
+      "image_width": 561,
+      "image_height": 701,
       "alt": "Black and bone signature basketball concept with gold channels and Academy wordmark",
-      "image_caption": "Concept mockup",
+      "image_caption": "AI product rendering · Concept mockup",
       "specs": [
         "Regulation-size design target with pebbled carbon and bone panels and gold channel accents.",
         "Edition hangtag and Academy story card planned."
       ],
       "status": "Coming soon",
       "group": "court-gear",
-      "price": "$68 proposed"
+      "price": "$68 proposed",
+      "flat": "assets/img/academy/roadmap/signature-court-ball.svg",
+      "flat_width": 900,
+      "flat_height": 780,
+      "flat_alt": "Signature Court Ball design board in carbon, bone and gold"
     },
     {
       "id": "arc-05",
       "name": "Arc 05",
       "kind": "Women’s court short · Maroon / Bone",
-      "image": "academy-studio/flats/arc-05.svg",
-      "image_width": 700,
-      "image_height": 520,
-      "alt": "Front and back of the women’s Arc 05 with maroon body and curved bone inserts",
-      "image_caption": "Front and back · Design board",
+      "image": "assets/img/academy/roadmap/fit/arc-05.webp",
+      "image_width": 561,
+      "image_height": 701,
+      "alt": "Model wearing the maroon Arc 05 with curved bone side inserts",
+      "image_caption": "AI fit rendering · Concept mockup",
       "specs": [
         "Five-inch inseam target with a flat high-rise waist and a curved hem.",
         "Bone side inserts carry the Academy Arc. Style with the bone court tank."
       ],
       "status": "Coming soon",
-      "group": "lineup"
+      "group": "lineup",
+      "flat": "academy-studio/flats/arc-05.svg",
+      "flat_width": 700,
+      "flat_height": 520,
+      "flat_alt": "Front and back design board for the maroon Arc 05"
     },
     {
       "id": "next-up-short",
       "name": "Next Up Short",
       "kind": "Teen court short · Carbon / Maroon",
-      "image": "academy-studio/flats/next-up-short.svg",
-      "image_width": 700,
-      "image_height": 520,
-      "alt": "Front and back of the Next Up Short in carbon with maroon side panels",
-      "image_caption": "Front and back · Design board",
+      "image": "assets/img/academy/roadmap/fit/next-up-short.webp",
+      "image_width": 561,
+      "image_height": 701,
+      "alt": "Model wearing the carbon Next Up Short with maroon side panels",
+      "image_caption": "AI fit rendering · Concept mockup",
       "specs": [
         "Six-inch inseam target with a relaxed leg and adjustable waist.",
         "Carbon body with maroon inserts. Pair with the Reversible Practice Jersey."
@@ -427,23 +504,179 @@
       "group": "lineup",
       "pieces": [
         "reversible-practice-jersey"
-      ]
+      ],
+      "flat": "academy-studio/flats/next-up-short.svg",
+      "flat_width": 700,
+      "flat_height": 520,
+      "flat_alt": "Front and back design board for the carbon Next Up Short"
     },
     {
       "id": "first-team",
       "name": "First Team Set",
       "kind": "Kids’ tee and pull-on short · Bone / Maroon",
-      "image": "academy-studio/flats/first-team.svg",
-      "image_width": 700,
-      "image_height": 520,
-      "alt": "First Team bone basketball tee and maroon pull-on short design board",
-      "image_caption": "Tee and short · Design board",
+      "image": "assets/img/academy/roadmap/fit/first-team.webp",
+      "image_width": 561,
+      "image_height": 701,
+      "alt": "Model wearing the bone First Team tee and maroon pull-on shorts",
+      "image_caption": "AI fit rendering · Concept mockup",
       "specs": [
         "Bone tee with the Academy basketball graphic, paired with a maroon pull-on mesh short.",
         "Encased elastic waistband and soft inner seams."
       ],
       "status": "Coming soon",
-      "group": "lineup"
+      "group": "lineup",
+      "flat": "academy-studio/flats/first-team.svg",
+      "flat_width": 700,
+      "flat_height": 520,
+      "flat_alt": "Design board for the First Team tee and pull-on shorts"
+    },
+    {
+      "id": "kc-signature-backpack",
+      "name": "KC Signature Backpack",
+      "kind": "Campus carry · Carbon / Richmond Maroon / Gold",
+      "status": "Coming soon",
+      "group": "accessories",
+      "price": "$168 proposed",
+      "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-exterior.webp",
+      "image_width": 591,
+      "image_height": 887,
+      "alt": "KC Signature Backpack in carbon with Richmond maroon lining and gold Academy details",
+      "image_caption": "Product study · Concept mockup",
+      "view_label": "Exterior",
+      "views": [
+        {
+          "id": "open",
+          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-open.webp",
+          "width": 620,
+          "height": 887,
+          "label": "Open interior",
+          "alt": "Open KC Signature Backpack showing Richmond maroon interior organization and gold Academy details",
+          "caption": "Open interior · Concept mockup"
+        },
+        {
+          "id": "worn",
+          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-worn.webp",
+          "width": 574,
+          "height": 887,
+          "label": "Worn on campus",
+          "alt": "Student wearing the KC Signature Backpack on campus with the Academy court collection",
+          "caption": "Worn on campus · AI styling study"
+        },
+        {
+          "id": "overview",
+          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack.webp",
+          "width": 1774,
+          "height": 887,
+          "label": "All angles",
+          "alt": "Exterior, open interior and worn views of the KC Signature Backpack",
+          "caption": "Backpack overview · Concept mockup"
+        }
+      ],
+      "specs": [
+        "Structured carbon shell with Richmond maroon interior and restrained antique-gold hardware.",
+        "Separate laptop sleeve, court-day compartment and small essentials pocket are shown in the open view.",
+        "Concept mockup only; dimensions, materials and production hardware remain to be sampled."
+      ],
+      "campaign": "store.html#look-06-locker-room"
+    },
+    {
+      "id": "kc-headband",
+      "name": "KC Court Headband",
+      "kind": "Court accessory · Carbon / Maroon / Bone",
+      "status": "Coming soon",
+      "group": "accessories",
+      "price": "$28 proposed",
+      "image": "assets/img/academy/roadmap/fit/kc-dark-knights-details.webp",
+      "image_width": 1774,
+      "image_height": 887,
+      "alt": "Dark Knights headband with a centered KC crest, shown beside the matching shooting sleeve",
+      "image_caption": "Dark Knights concept detail · AI styling study · Dedicated product image in development",
+      "view_label": "Concept detail",
+      "views": [
+        {
+          "id": "combat-details",
+          "image": "assets/img/academy/roadmap/fit/kc-combat-color-details.webp",
+          "width": 1774,
+          "height": 887,
+          "label": "Color details",
+          "alt": "Academy combat color details showing the carbon, maroon, bone and gold accessory palette",
+          "caption": "Supporting color detail · AI styling study"
+        }
+      ],
+      "specs": [
+        "Structured performance band with a restrained KC mark and the Academy woven repeat.",
+        "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
+      ],
+      "campaign": "store.html#signature-collection"
+    },
+    {
+      "id": "kc-arm-sleeve",
+      "name": "KC Court Arm Sleeve",
+      "kind": "Performance accessory · Carbon / Maroon / Bone",
+      "status": "Coming soon",
+      "group": "accessories",
+      "price": "$32 proposed",
+      "image": "assets/img/academy/roadmap/fit/kc-dark-knights-details.webp",
+      "image_width": 1774,
+      "image_height": 887,
+      "alt": "Dark Knights shooting sleeve with a woven elbow inset, shown beside the matching headband",
+      "image_caption": "Dark Knights concept detail · AI styling study · Dedicated product image in development",
+      "view_label": "Concept detail",
+      "views": [
+        {
+          "id": "combat-details",
+          "image": "assets/img/academy/roadmap/fit/kc-combat-color-details.webp",
+          "width": 1774,
+          "height": 887,
+          "label": "Color details",
+          "alt": "Academy combat color details showing the carbon, maroon, bone and gold performance palette",
+          "caption": "Supporting color detail · AI styling study"
+        }
+      ],
+      "specs": [
+        "Compression sleeve target with tonal KC micro-repeat and a small gold crest detail.",
+        "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
+      ],
+      "campaign": "store.html#signature-collection"
+    },
+    {
+      "id": "kc-court-socks",
+      "name": "KC Court Socks",
+      "kind": "Performance accessory · Carbon / Maroon / Bone",
+      "status": "Coming soon",
+      "group": "accessories",
+      "price": "$24 proposed",
+      "image": "assets/img/academy/roadmap/fit/kc-combat-lineup.webp",
+      "image_width": 1536,
+      "image_height": 1024,
+      "alt": "Approved Academy Combat lineup showing black, maroon and bone court socks with matching kits",
+      "image_caption": "Approved Combat lineup · AI styling study · Dedicated sock crop in development",
+      "view_label": "Hero",
+      "views": [
+        {
+          "id": "combat-details",
+          "image": "assets/img/academy/roadmap/fit/kc-combat-color-details.webp",
+          "width": 1774,
+          "height": 887,
+          "label": "Color details",
+          "alt": "Academy combat color details showing the carbon, maroon, bone and gold sock palette",
+          "caption": "Supporting color detail · AI styling study"
+        },
+        {
+          "id": "dark-knights-details",
+          "image": "assets/img/academy/roadmap/fit/kc-dark-knights-details.webp",
+          "width": 1774,
+          "height": 887,
+          "label": "Tonal details",
+          "alt": "Dark Knights tonal Academy details used as supporting sock styling reference",
+          "caption": "Supporting tonal detail · AI styling study"
+        }
+      ],
+      "specs": [
+        "Crew-height performance sock target with ribbed structure, maroon striping and a restrained KC mark.",
+        "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
+      ],
+      "campaign": "store.html#signature-collection"
     }
   ],
   "collections": {
