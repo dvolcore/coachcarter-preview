@@ -9,6 +9,8 @@ import re
 from html import escape
 from pathlib import Path
 
+import shell  # platform shell v2: worlds nav, local nav, chapter rail, next-up, search index
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 OUT = ROOT / "site"
@@ -294,8 +296,10 @@ def build():
         if left:
             raise SystemExit(f"{p.name}: unfilled product grids {left}")
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer(meta.get("nav", "home"))
+        html = shell.apply(html, meta, p.name, SERIES_PRICE)
         (OUT / p.name).write_text(html)
         print("built", p.name, len(html))
+    shell.write_index()
 
 
 if __name__ == "__main__":

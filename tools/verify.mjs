@@ -21,12 +21,12 @@ ok("story chapter advances", /Paramount|Now/.test(ch || ""), ch);
 const sw = await p.evaluate(() => document.documentElement.scrollWidth);
 ok("no horizontal overflow desktop", sw <= 1440, `scrollWidth=${sw}`);
 
-// 2. same-page link: no stuck wipe
+// 2. same-page link: no stuck page-transition overlay (old .wipe removed; view transitions now)
 await p.goto(base + "keynotes.html?qa"); await p.waitForTimeout(1500);
 await p.evaluate(() => window.scrollTo(0, 0));
 await p.click(".nav .btn-book"); await p.waitForTimeout(900);
-const wipe = await p.evaluate(() => document.querySelector(".wipe").classList.contains("go"));
-ok("same-page anchor does not trigger wipe", !wipe);
+const wipe = await p.evaluate(() => { const e = document.elementFromPoint(720, 450); return { hash: location.hash, stuck: !!(e && e.closest(".curtain, .wipe")), hasWipe: !!document.querySelector(".wipe") }; });
+ok("same-page anchor does not leave a blocking transition overlay", !wipe.stuck && !wipe.hasWipe && wipe.hash === "#book", JSON.stringify(wipe));
 
 // 3. modal backdrop click closes + pauses
 await p.goto(base + "index.html?qa"); await p.waitForTimeout(1500);
