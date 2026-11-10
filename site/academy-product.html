@@ -33,8 +33,10 @@
     .warm-up-grid .wide img { aspect-ratio: 3 / 2; }
     .product-editions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
     .product-editions a { display: block; border: 1px solid var(--academy-rule); color: var(--academy-ink); font-size: .72rem; line-height: 1.25; text-decoration: none; }
-    .product-editions a:hover, .product-editions a:focus-visible, .product-editions a[aria-current="true"] { border-color: var(--academy-maroon); }
-    .product-editions img { display: block; width: 100%; height: auto; background: #eae0d3; }
+    .product-editions a:hover, .product-editions a:focus-visible, .product-editions a[aria-current="page"] { border-color: var(--academy-maroon); }
+    .product-editions img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; background: #eae0d3; }
+    #game-jersey-editorial { scroll-margin-top: calc(var(--nav-h) + 12px); }
+    .game-jersey-grid .front-row-lifestyle-card img { aspect-ratio: 3 / 2; }
     .product-editions span { display: block; padding: .5rem; }
     .front-row-composite { margin: clamp(2.5rem, 6vw, 5rem) 0 0; padding-top: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
     .front-row-composite img { display: block; width: 100%; height: auto; border: 1px solid rgba(184, 148, 75, .34); background: #161310; }
@@ -45,7 +47,7 @@
       .warm-up-grid .wide { grid-column: 1; }
     }
   </style>
-  <script defer src="assets/js/academy-product.js?v=6"></script>
+  <script defer src="assets/js/academy-product.js?v=7"></script>
 </head>
 <body class="academy-product-page">
   <header>
@@ -76,7 +78,7 @@
         <p id="product-estimate" hidden></p>
         <p class="product-note">Collection preview. Final fit and materials will be confirmed after sampling.</p>
         <section id="product-editions" hidden aria-labelledby="product-editions-title">
-          <h2 id="product-editions-title">Jersey editions</h2>
+          <h2 id="product-editions-title">Game jersey editions</h2>
           <div class="product-editions"></div>
         </section>
         <h2>Design details</h2>
@@ -95,6 +97,21 @@
         <a class="store-text-link" href="academy-studio/index.html">Explore the Academy design library ↗</a>
       </div>
     </article>
+    <section id="game-jersey-editorial" class="front-row-lifestyle" hidden aria-labelledby="game-jersey-editorial-title">
+      <div class="front-row-lifestyle-head">
+        <div><p class="store-label">Academy basketball · On court</p><h2 id="game-jersey-editorial-title">Game Jerseys in Action</h2></div>
+        <a class="store-text-link" href="store.html#game-jerseys">Browse the game jerseys ↗</a>
+      </div>
+      <div class="warm-up-grid game-jersey-grid">
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-dark-knight-drive.webp" aria-label="Enlarge Dark Knight: Driving past the defender">
+          <figure><img src="assets/img/academy/campaign/game-jersey-dark-knight-drive.webp" alt="A varsity guard in a black Coach Carter Academy uniform drives past a defender in a school gym" width="1536" height="1024" loading="lazy"><figcaption>Dark Knight · Driving past the defender</figcaption></figure>
+        </a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/campaign/game-jersey-all-cream-pass.webp" aria-label="Enlarge All-Cream: Passing on the wing">
+          <figure><img src="assets/img/academy/campaign/game-jersey-all-cream-pass.webp" alt="Two varsity players in cream Coach Carter Academy uniforms pass the ball across the wing" width="1536" height="1024" loading="lazy"><figcaption>All-Cream · Passing on the wing</figcaption></figure>
+        </a>
+      </div>
+      <p class="front-row-lifestyle-intro">AI-generated game-action studies.</p>
+    </section>
     <section id="school-uniform-editorial" class="front-row-lifestyle" hidden aria-labelledby="school-uniform-editorial-title">
       <div class="front-row-lifestyle-head">
         <div>

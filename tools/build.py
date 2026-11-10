@@ -274,6 +274,7 @@ def build():
                     .replace("{{school_bottoms_cards}}", academy_cards(catalog, "school-bottoms", "h4"))
                     .replace("{{school_footwear_cards}}", academy_cards(catalog, "school-footwear", "h4"))
                     .replace("{{last_bell_cards}}", academy_cards(catalog, "last-bell"))
+                    .replace("{{game_jersey_cards}}", academy_cards(catalog, "game-jerseys"))
                     .replace("{{court_gear_cards}}", academy_cards(catalog, "court-gear"))
                     .replace("{{warm_ups_cards}}", academy_cards(catalog, "warm-ups"))
                     .replace("{{accessories_cards}}", academy_cards(catalog, "accessories")))

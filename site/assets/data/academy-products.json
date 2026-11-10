@@ -303,8 +303,9 @@
       "flat": "academy-studio/last-bell/arc-warmup.svg"
     },
     {
-      "id": "reversible-practice-jersey",
-      "name": "Reversible Practice Jersey",
+      "id": "reversible-game-jersey",
+      "edition_label": "Bone / Maroon",
+      "name": "Reversible Game Jersey",
       "kind": "Double-layer mesh · Bone / Maroon",
       "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-bone.webp",
       "image_width": 432,
@@ -312,11 +313,11 @@
       "alt": "Bone reversible jersey with maroon woven side panels and gold KC crest on the right shoulder",
       "image_caption": "Bone side · AI garment rendering",
       "specs": [
-        "One double-layer mesh jersey with two wearable faces. Turn it inside out to switch between bone with maroon insets and Richmond maroon with bone insets.",
+        "The Academy’s official reversible game jersey. Turn the double-layer mesh inside out to switch between bone with maroon insets and Richmond maroon with bone insets.",
         "An original woven KC repeat runs down both sides. A small gold KC circle from the site’s Home transition sits on the wearer’s right shoulder."
       ],
       "status": "Coming soon",
-      "group": "court-gear",
+      "group": "game-jerseys",
       "price": "$98 proposed",
       "view_label": "Bone side",
       "views": [
@@ -337,42 +338,6 @@
           "height": 539,
           "label": "Maroon side",
           "caption": "Maroon side · AI garment rendering"
-        },
-        {
-          "id": "black-bone",
-          "image": "assets/img/academy/roadmap/fit/practice-jersey-black-bone.webp",
-          "alt": "Black and bone mesh jersey concepts side by side with gold Academy lettering and KC side insets",
-          "width": 1536,
-          "height": 1024,
-          "label": "Black / Bone",
-          "caption": "Black / Bone edition · AI garment rendering"
-        },
-        {
-          "id": "dark-knights",
-          "image": "assets/img/academy/roadmap/fit/practice-jersey-dark-knights.webp",
-          "alt": "Black mesh Dark Knights jersey with tonal side panels and gold Academy lettering",
-          "width": 1536,
-          "height": 1024,
-          "label": "Dark Knights",
-          "caption": "Dark Knights edition · AI garment rendering"
-        },
-        {
-          "id": "black-bone-on-court",
-          "image": "assets/img/academy/roadmap/fit/kc-combat-black-bone.webp",
-          "alt": "Black and bone Academy court kit with KC repeat side panels and gold crest details",
-          "width": 1672,
-          "height": 941,
-          "label": "Black / bone on court",
-          "caption": "Black / bone alternate · AI styling study"
-        },
-        {
-          "id": "dark-knights-on-court",
-          "image": "assets/img/academy/roadmap/fit/kc-dark-knights-game-two.webp",
-          "alt": "Black Dark Knights Academy court kit with tonal KC details and gold crest",
-          "width": 1672,
-          "height": 941,
-          "label": "Dark Knights on court",
-          "caption": "Dark Knights · AI styling study"
         }
       ],
       "pieces": [
@@ -382,23 +347,50 @@
       "flat": "assets/img/academy/roadmap/reversible-practice-jersey.svg",
       "flat_width": 1000,
       "flat_height": 680,
-      "flat_alt": "Design board for the bone and maroon reversible practice jersey with KC side panels",
-      "campaign": "store.html#signature-collection",
-      "default_view": "reversible",
-      "editions": [
-        {
-          "view": "reversible",
-          "name": "Bone / Maroon"
-        },
-        {
-          "view": "black-bone",
-          "name": "Black / Bone"
-        },
-        {
-          "view": "dark-knights",
-          "name": "Dark Knights"
-        }
-      ]
+      "flat_alt": "Design board for the bone and maroon reversible game jersey with KC side panels",
+      "campaign": "store.html#game-jerseys"
+    },
+    {
+      "id": "dark-knight-game-jersey",
+      "edition_label": "Dark Knight",
+      "name": "Dark Knight Game Jersey",
+      "kind": "Mesh game jersey · All black",
+      "image": "assets/img/academy/roadmap/fit/game-jersey-dark-knight.webp",
+      "image_width": 750,
+      "image_height": 1024,
+      "alt": "All-black mesh Dark Knight game jersey with tonal KC side panels and gold Academy lettering",
+      "image_caption": "Dark Knight front · AI garment rendering",
+      "specs": [
+        "The Academy’s official all-black game jersey. Black mesh and binding frame tonal KC side panels.",
+        "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
+      ],
+      "status": "Coming soon",
+      "group": "game-jerseys",
+      "pieces": [
+        "warm-up-zip-jacket"
+      ],
+      "campaign": "store.html#game-jerseys"
+    },
+    {
+      "id": "all-cream-game-jersey",
+      "edition_label": "All-Cream",
+      "name": "All-Cream Game Jersey",
+      "kind": "Mesh game jersey · Bone / Gold",
+      "image": "assets/img/academy/roadmap/fit/game-jersey-all-cream.webp",
+      "image_width": 716,
+      "image_height": 1024,
+      "alt": "All-cream mesh game jersey with matching cream trim, gold Academy lettering and gold KC side panels",
+      "image_caption": "All-Cream front · AI garment rendering",
+      "specs": [
+        "The Academy’s official all-cream game jersey. Bone mesh, matching cream binding and a muted gold KC repeat run down the sides.",
+        "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
+      ],
+      "status": "Coming soon",
+      "group": "game-jerseys",
+      "pieces": [
+        "warm-up-zip-jacket"
+      ],
+      "campaign": "store.html#game-jerseys"
     },
     {
       "id": "kc-reversible-short",
@@ -408,10 +400,10 @@
       "group": "court-gear",
       "specs": [
         "A reversible, above-the-knee court short in bone and Richmond maroon with a clean waistband.",
-        "Woven KC insets swap contrast as the short reverses. Narrow antique-gold piping ties the short to the Practice Jersey and Warm-Up Zip Jacket."
+        "Woven KC insets swap contrast as the short reverses. Narrow antique-gold piping ties the short to the Game Jersey and Warm-Up Zip Jacket."
       ],
       "pieces": [
-        "reversible-practice-jersey",
+        "reversible-game-jersey",
         "warm-up-zip-jacket"
       ],
       "image": "assets/img/academy/roadmap/fit/kc-reversible-short.webp",
@@ -464,7 +456,7 @@
         }
       ],
       "pieces": [
-        "reversible-practice-jersey",
+        "reversible-game-jersey",
         "kc-reversible-short"
       ],
       "campaign": "store.html#signature-collection",
@@ -544,12 +536,12 @@
       "image_caption": "AI fit rendering · Concept mockup",
       "specs": [
         "Six-inch inseam target with a relaxed leg and adjustable waist.",
-        "Carbon body with maroon inserts. Pair with the Reversible Practice Jersey."
+        "Carbon body with maroon inserts. Pair with the Reversible Game Jersey."
       ],
       "status": "Coming soon",
       "group": "lineup",
       "pieces": [
-        "reversible-practice-jersey"
+        "reversible-game-jersey"
       ],
       "flat": "academy-studio/flats/next-up-short.svg",
       "flat_width": 700,

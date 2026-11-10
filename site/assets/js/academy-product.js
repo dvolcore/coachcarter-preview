@@ -1,12 +1,23 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=6");
+    const response = await fetch("assets/data/academy-products.json?v=7");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const requestedKey = new URLSearchParams(location.search).get("product") || "court-tee";
-    const aliases = { "court-short": "kc-reversible-short" };
-    const key = aliases[requestedKey] || requestedKey;
+    const aliases = {
+      "court-short": "kc-reversible-short",
+      "reversible-practice-jersey": "reversible-game-jersey",
+    };
+    const oldJerseyViews = {
+      "#dark-knights": ["dark-knight-game-jersey", ""],
+      "#black-bone": ["all-cream-game-jersey", ""],
+      "#dark-knights-on-court": ["dark-knight-game-jersey", "#game-jersey-editorial"],
+      "#black-bone-on-court": ["all-cream-game-jersey", "#game-jersey-editorial"],
+    };
+    const oldJerseyView = requestedKey === "reversible-practice-jersey" && oldJerseyViews[location.hash];
+    const key = oldJerseyView?.[0] || aliases[requestedKey] || requestedKey;
+    if (oldJerseyView) history.replaceState(null, "", "?product=" + key + oldJerseyView[1]);
     const product = products.find(({ id }) => id === key);
     if (!product) throw new Error("Product unavailable");
 
@@ -55,36 +66,11 @@ async function showProduct() {
         });
         return button;
       });
-      const editions = document.querySelector("#product-editions");
-      const editionLinks = (product.editions || []).map(({ view, name }) => {
-        const edition = views.find(({ id }) => id === view);
-        const link = document.createElement("a");
-        link.href = "#" + view;
-        const preview = new Image(edition.width, edition.height);
-        preview.src = edition.image;
-        preview.alt = "";
-        const label = document.createElement("span");
-        label.textContent = name;
-        link.append(preview, label);
-        link.addEventListener("click", (event) => {
-          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-          event.preventDefault();
-          history.replaceState(null, "", link.hash);
-          selectView();
-          photo.scrollIntoView({ block: "nearest" });
-        });
-        return link;
-      });
-      if (editionLinks.length) {
-        editions.querySelector("div").replaceChildren(...editionLinks);
-        editions.hidden = false;
-      }
       const defaultView = views.find(({ id }) => id === product.default_view) || mainView;
       function selectView() {
         const selected = views.find((view) => "#" + view.id === location.hash) || defaultView;
         setPhoto(selected);
         buttons.forEach((button, index) => button.setAttribute("aria-pressed", String(views[index] === selected)));
-        editionLinks.forEach((link) => link.setAttribute("aria-current", String(link.hash === "#" + selected.id)));
       }
       gallery.replaceChildren(...buttons);
       gallery.hidden = false;
@@ -92,6 +78,26 @@ async function showProduct() {
       window.addEventListener("hashchange", selectView);
     } else {
       setPhoto(mainView);
+    }
+
+    const isGameJersey = product.group === "game-jerseys";
+    if (isGameJersey) {
+      photo.closest("figure").classList.add("product-visual-gallery");
+      const editions = document.querySelector("#product-editions");
+      const editionLinks = products.filter(({ group }) => group === product.group).map((edition) => {
+        const link = document.createElement("a");
+        link.href = "?product=" + encodeURIComponent(edition.id);
+        if (edition.id === product.id) link.setAttribute("aria-current", "page");
+        const preview = new Image(edition.image_width, edition.image_height);
+        preview.src = edition.image;
+        preview.alt = "";
+        const label = document.createElement("span");
+        label.textContent = edition.edition_label;
+        link.append(preview, label);
+        return link;
+      });
+      editions.querySelector("div").replaceChildren(...editionLinks);
+      editions.hidden = false;
     }
 
     if (product.flat) {
@@ -134,6 +140,7 @@ async function showProduct() {
     if (product.campaign) {
       campaign.href = product.campaign;
       if (product.campaign === "store.html#uniform-pieces") campaign.textContent = "Explore all uniform pieces ↗";
+      else if (isGameJersey) campaign.textContent = "Browse all game jerseys ↗";
       else if (product.group === "last-bell") campaign.textContent = "See it styled ↗";
       campaign.hidden = false;
     } else {
@@ -159,7 +166,8 @@ async function showProduct() {
     if (product.id === "front-row-letterman") {
       document.querySelector("#front-row-composite").hidden = false;
     }
-    const lifestyleId = product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
+    const lifestyleId = isGameJersey ? "game-jersey-editorial" :
+      product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
     }[product.id];
@@ -169,6 +177,7 @@ async function showProduct() {
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
       if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
+      else if (isGameJersey) lifestyleLink.textContent = "See the jerseys in game action ↓";
       else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
 
