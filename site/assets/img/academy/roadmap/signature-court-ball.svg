@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" role="img" aria-labelledby="title">
+  <title id="title">Coach Carter Academy Signature Court Ball, carbon and bone</title>
+  <defs>
+    <radialGradient id="carbon" cx=".37" cy=".28" r=".75"><stop stop-color="#3c3937"/><stop offset=".66" stop-color="#232223"/><stop offset="1" stop-color="#100f10"/></radialGradient>
+    <radialGradient id="bone" cx=".37" cy=".28" r=".75"><stop stop-color="#efe4c8"/><stop offset=".65" stop-color="#d7c5a1"/><stop offset="1" stop-color="#977f5d"/></radialGradient>
+    <radialGradient id="shadow"><stop stop-color="#57453c" stop-opacity=".44"/><stop offset="1" stop-color="#57453c" stop-opacity="0"/></radialGradient>
+    <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" opacity=".12"/><circle cx="5.5" cy="5.5" r="1" opacity=".22"/></pattern>
+    <clipPath id="ball"><circle cx="450" cy="382" r="222"/></clipPath>
+  </defs>
+  <rect width="900" height="780" fill="#eee5d8"/>
+  <text x="58" y="58" fill="#50182b" font-family="system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">COACH CARTER ACADEMY · COLLECTION 01</text>
+  <text x="56" y="111" fill="#221a19" font-family="Georgia,serif" font-size="43">Signature Court Ball</text>
+  <path d="M58 140h784M58 705h784" stroke="#c8b8a9"/>
+  <ellipse cx="450" cy="619" rx="228" ry="30" fill="url(#shadow)"/>
+  <g clip-path="url(#ball)">
+    <circle cx="450" cy="382" r="222" fill="url(#carbon)"/>
+    <path d="M383 150Q334 236 258 309L201 367V150ZM636 183q-59 79-55 176 8 97 108 124l45 20V183Z" fill="url(#bone)"/>
+    <path d="M383 150Q334 236 258 309l-57 58m435-184q-59 79-55 176 8 97 108 124M231 410q248 16 456-108M459 152q-45 105-56 237-9 121 44 226M276 543q125-85 327-3" fill="none" stroke="#b29559" stroke-width="4.5"/>
+    <circle cx="450" cy="382" r="222" fill="url(#grain)"/>
+    <g transform="translate(503 468) rotate(-14)" fill="#e1c282" text-anchor="middle">
+      <text font-family="Georgia,serif" font-size="44">K|C</text>
+      <text y="25" font-family="system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="3">ACADEMY</text>
+    </g>
+  </g>
+  <circle cx="450" cy="382" r="222" fill="none" stroke="#342724" stroke-width="2"/>
+  <text x="58" y="742" fill="#514743" font-family="system-ui,sans-serif" font-size="15">Carbon and bone panels · Gold channels · Pebbled finish</text>
+</svg>

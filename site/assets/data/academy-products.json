@@ -4,33 +4,39 @@
   "products": [
     {
       "id": "first-whistle-tailoring-set",
-      "companion": "contract-lining-sport-coat",
       "name": "First Whistle Tailoring Set",
-      "price": "$328 proposed",
       "kind": "Pregame tailoring · Maroon / Charcoal",
-      "image": "assets/img/academy/last-bell/02-game-day-arrival.webp",
-      "alt": "Three Coach Carter Academy students in maroon and charcoal sport coats, bone Oxford shirts, knit ties and pleated trousers",
-      "image_width": 1536,
-      "image_height": 1024,
-      "image_caption": "02 / Game-day arrival · styling study",
+      "image": "assets/img/academy/academy-first-whistle.webp",
+      "alt": "Three students in maroon and charcoal sport coats, open-collar bone shirts and pleated trousers walking out of the gym",
+      "image_width": 1440,
+      "image_height": 960,
+      "image_caption": "First Whistle · AI styling study",
       "flat": "academy-studio/flats/first-whistle-blazer.svg",
       "flat_alt": "First Whistle sport coat flat with contrast lining and Academy styling notes",
       "flat_caption": "First Whistle sport coat flat · design board",
       "specs": [
-        "Maroon or charcoal soft-structure sport coat, bone Oxford shirt, square-end knit tie and wide pleated trouser.",
-        "Designed as a complete pregame uniform: polished enough for the walk-in, relaxed enough for the court.",
-        "Target premium wool-blend tailoring, breathable cotton Oxford and a clean sneaker-ready trouser break."
+        "Choose the maroon or charcoal sport coat. Both are styled with a bone Oxford worn open at the collar.",
+        "The charcoal double-pleat trouser has an easy, straight leg. The hallway look pairs it with clean court shoes.",
+        "The open maroon coat reveals the court-line lining, a detail carried over from the Academy’s basketball gear."
       ],
       "artwork": "academy-studio/artwork/first-whistle-lining.svg",
       "artwork_label": "First Whistle court-map lining artwork",
-      "campaign": "store.html#look-02-game-day-arrival"
+      "campaign": "store.html#first-whistle",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "flat_width": 700,
+      "flat_height": 520,
+      "pieces": [
+        "contract-lining-sport-coat",
+        "first-whistle-oxford",
+        "academy-double-pleat-trouser"
+      ]
     },
     {
       "id": "contract-lining-sport-coat",
       "companion": "first-whistle-tailoring-set",
       "name": "Contract Lining Sport Coat",
-      "price": "$198 proposed",
-      "kind": "Lined sport coat · Richmond Maroon",
+      "kind": "Soft sport coat · Richmond Maroon / Charcoal",
       "image": "assets/img/academy/last-bell/03-contract-lining.webp",
       "alt": "Open Coach Carter Academy maroon sport coat showing a gold basketball-court and notebook-ruling lining",
       "image_width": 1536,
@@ -40,13 +46,17 @@
       "flat_alt": "First Whistle maroon sport coat flat with court-map lining placement",
       "flat_caption": "The lined coat · design board",
       "specs": [
-        "Richmond-maroon sport coat with a soft shoulder, easy fit and a lining made to be seen when the jacket opens.",
-        "Antique-gold basketball-court diagram and notebook-rule repeat carries the Academy Contract story inside the garment.",
-        "Pair with the First Whistle Oxford and pleated trouser for the full game-day arrival."
+        "Soft shoulder and easy fit, shown in Richmond Maroon and Charcoal in the hallway styling study.",
+        "The maroon coat opens to reveal an antique-gold basketball-court design. The lining close-up shows the notebook-rule treatment.",
+        "Style with an open-collar Bone Oxford and the charcoal double-pleat trouser."
       ],
       "artwork": "academy-studio/artwork/first-whistle-lining.svg",
       "artwork_label": "Contract lining repeat artwork",
-      "campaign": "store.html#look-03-contract-lining"
+      "campaign": "store.html#look-03-contract-lining",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "flat_width": 700,
+      "flat_height": 520
     },
     {
       "id": "front-row-letterman",
@@ -58,17 +68,54 @@
       "image_width": 487,
       "image_height": 728,
       "image_caption": "Front view · AI garment rendering",
-      "flat": "assets/img/academy/front-row-contract.webp",
-      "flat_alt": "Gold basketball court and tonal Academy Contract patch on the Richmond-red lining",
-      "flat_width": 529,
-      "flat_height": 716,
-      "flat_caption": "The Academy Contract and court lining · AI garment rendering",
       "specs": [
         "Suit-coat lapels frame an ink-navy body, black leather sleeves and gold-tone hardware.",
         "Gold K|C monogram on the chest.",
         "Richmond-red lining frames a gold center-court motif and the tonal Academy Contract patch."
       ],
-      "campaign": "gallery.html"
+      "campaign": "gallery.html",
+      "views": [
+        {
+          "id": "open",
+          "label": "Fully open",
+          "image": "assets/img/academy/front-row-open.webp",
+          "width": 812,
+          "height": 751,
+          "alt": "Full open Letterman showing both Richmond-red lining panels, the center gold court, Richmond patch and Academy Contract"
+        },
+        {
+          "id": "richmond",
+          "label": "Richmond side",
+          "image": "assets/img/academy/front-row-richmond.webp",
+          "width": 529,
+          "height": 716,
+          "alt": "Left side of the open Letterman with its Richmond record patch beside the gold court"
+        },
+        {
+          "id": "contract",
+          "label": "Academy Contract side",
+          "image": "assets/img/academy/front-row-contract.webp",
+          "width": 529,
+          "height": 716,
+          "alt": "Gold basketball court and tonal Academy Contract patch on the Richmond-red lining"
+        },
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/front-row-back.webp",
+          "width": 496,
+          "height": 728,
+          "alt": "Full back of the ink-navy Letterman with a curved shoulder seam, black sleeves and gold-striped ribbing"
+        }
+      ],
+      "overview": {
+        "id": "overview",
+        "label": "All views",
+        "image": "assets/img/academy/front-row-overview.png",
+        "width": 1774,
+        "height": 887,
+        "alt": "Original Front Row Letterman design showing the front, fully opened jacket with both Richmond lining panels, and the full back side by side"
+      }
     },
     {
       "id": "court-short",
@@ -103,29 +150,307 @@
       "artwork": "academy-studio/artwork/court-tee-signature.svg",
       "artwork_label": "Signature basketball print · one ink",
       "flat": "academy-studio/flats/court-tee.svg"
-    }
-  ],
-  "roadmap": [
+    },
     {
+      "id": "last-bell-school-uniform",
+      "name": "The School Uniform",
+      "kind": "Campus separates · Maroon / Bone / Khaki / Charcoal",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/01-school-uniform.webp",
+      "image_width": 1536,
+      "image_height": 1024,
+      "alt": "Two students in a school hallway wearing layered maroon and bone school uniforms with pleated trousers",
+      "image_caption": "Last Bell to Tipoff · AI styling study",
+      "specs": [
+        "Her hallway look layers a bone rib-knit polo under a maroon longline vest, with high-waisted khaki trousers.",
+        "His hallway look pairs a maroon canvas chore jacket and bone collared layer with relaxed charcoal trousers.",
+        "The separates share the same palette so students can build their own uniform."
+      ],
+      "campaign": "store.html#look-01-school-uniform",
+      "pieces": [
+        "academy-rib-knit-polo",
+        "academy-longline-vest",
+        "academy-canvas-chore-jacket",
+        "academy-double-pleat-trouser"
+      ]
+    },
+    {
+      "id": "arc-warmup-set",
+      "name": "The Arc Warmup",
+      "kind": "Court warmup set · Maroon / Bone / Ink",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/05-warmup-in-motion.webp",
+      "image_width": 1536,
+      "image_height": 1024,
+      "alt": "Two athletes on a basketball court wearing the maroon and bone Arc warmup jacket with ink tearaway pants",
+      "image_caption": "Last Bell to Tipoff · AI styling study",
+      "specs": [
+        "Both athletes wear the maroon snap-front jacket with the sweeping bone court arc.",
+        "The ink tearaway pant has a wide leg, bone side stripe and snap openings.",
+        "The matching set is intended to layer over court gear for warmups and the bench."
+      ],
+      "campaign": "store.html#look-05-warmup-in-motion",
+      "flat": "academy-studio/last-bell/arc-warmup.svg",
+      "pieces": [
+        "arc-snap-jacket",
+        "arc-tearaway-pant"
+      ]
+    },
+    {
+      "id": "academy-rib-knit-polo",
+      "name": "Bone Rib-Knit Polo",
+      "kind": "Campus knitwear · Bone",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/academy-rib-knit-polo.webp",
+      "image_width": 417,
+      "image_height": 471,
+      "alt": "Bone long-sleeve rib-knit polo layered beneath the maroon vest",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "A long-sleeve rib knit with a pointed collar and a short button placket.",
+        "The fitted waist layers under the longline vest and tucks into the high-rise trouser."
+      ],
+      "campaign": "store.html#look-01-school-uniform"
+    },
+    {
+      "id": "academy-longline-vest",
+      "name": "Maroon Longline Vest",
+      "kind": "Campus knitwear · Richmond Maroon",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/academy-longline-vest.webp",
+      "image_width": 467,
+      "image_height": 611,
+      "alt": "Maroon open-front longline vest over a bone rib-knit polo",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "An open-front knit with wide shoulders and a long, straight hem.",
+        "Shown with the Bone Rib-Knit Polo and khaki double-pleat trousers."
+      ],
+      "campaign": "store.html#look-01-school-uniform"
+    },
+    {
+      "id": "academy-canvas-chore-jacket",
+      "name": "Canvas Chore Jacket",
+      "kind": "Campus outerwear · Richmond Maroon / Tan",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/academy-canvas-chore-jacket.webp",
+      "image_width": 411,
+      "image_height": 530,
+      "alt": "Maroon canvas chore jacket with a tan collar and four patch pockets",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "A maroon button-front work jacket with a contrast tan collar.",
+        "Flapped chest pockets and low patch pockets echo the hallway reference."
+      ],
+      "campaign": "store.html#look-01-school-uniform"
+    },
+    {
+      "id": "academy-double-pleat-trouser",
+      "name": "Double-Pleat Trouser",
+      "kind": "Campus and game-day tailoring · Khaki / Charcoal",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/academy-double-pleat-trouser.webp",
+      "image_width": 824,
+      "image_height": 560,
+      "alt": "High-waisted khaki pleated trouser and relaxed charcoal trouser on two students",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "Khaki is shown in a high-waisted, full-leg cut. Charcoal is shown in a relaxed straight leg.",
+        "Two front pleats add room through the hip and keep a clean drape over court shoes."
+      ],
+      "campaign": "store.html#look-01-school-uniform",
+      "flat": "academy-studio/flats/first-whistle-trouser.svg"
+    },
+    {
+      "id": "first-whistle-oxford",
+      "name": "Bone Oxford Shirt",
+      "kind": "Game-day shirting · Bone",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/first-whistle-oxford.webp",
+      "image_width": 663,
+      "image_height": 403,
+      "alt": "Open-collar bone Oxford shirts styled under charcoal and maroon sport coats",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "A button-front bone Oxford with a pointed collar, shown open at the neck.",
+        "Wear it tucked into pleated trousers or loose under the maroon coat."
+      ],
+      "campaign": "store.html#first-whistle",
+      "flat": "academy-studio/flats/first-whistle-oxford.svg"
+    },
+    {
+      "id": "arc-snap-jacket",
+      "name": "Arc Snap Jacket",
+      "kind": "Court warmup jacket · Maroon / Bone / Ink",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/arc-snap-jacket.webp",
+      "image_width": 675,
+      "image_height": 399,
+      "alt": "Maroon snap-front jacket with a bone arc sweeping diagonally across the chest",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "Point collar, snap front and elastic cuffs.",
+        "The bone insert sweeps diagonally from shoulder to hip, with an ink panel below."
+      ],
+      "campaign": "store.html#look-05-warmup-in-motion",
+      "flat": "academy-studio/last-bell/arc-warmup.svg"
+    },
+    {
+      "id": "arc-tearaway-pant",
+      "name": "Arc Tearaway Pant",
+      "kind": "Court warmup pant · Ink / Bone",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "image": "assets/img/academy/last-bell/arc-tearaway-pant.webp",
+      "image_width": 835,
+      "image_height": 438,
+      "alt": "Ink warmup pants with a bone side stripe and visible ankle snaps",
+      "image_caption": "AI styling study · On-body garment detail",
+      "specs": [
+        "Wide-legged cut with a bone stripe down the side.",
+        "Side snaps let the pant open over court shoes."
+      ],
+      "campaign": "store.html#look-05-warmup-in-motion",
+      "flat": "academy-studio/last-bell/arc-warmup.svg"
+    },
+    {
+      "id": "reversible-practice-jersey",
       "name": "Reversible Practice Jersey",
-      "price": "$98 proposed",
-      "spec": "Double-layer knit, numbered edition. One side black, one side bone and maroon."
+      "kind": "Double-layer mesh · Bone / Maroon",
+      "image": "assets/img/academy/roadmap/reversible-practice-jersey.svg",
+      "image_width": 700,
+      "image_height": 520,
+      "alt": "Reversible mesh jersey design board in bone and maroon",
+      "image_caption": "Concept mockup",
+      "specs": [
+        "Two wearable sides switch between bone and maroon.",
+        "Mesh construction with contrast binding and Academy court-seam artwork."
+      ],
+      "status": "Coming soon",
+      "group": "court-gear",
+      "price": "$98 proposed"
     },
     {
+      "id": "warm-up-zip-jacket",
       "name": "Warm-Up Zip Jacket",
-      "price": "$148 proposed",
-      "spec": "Lightweight satin or nylon, contrast piping, tonal back court map, two-way zip."
+      "kind": "Court outerwear · Maroon / Bone / Carbon",
+      "image": "assets/img/academy/roadmap/warm-up-zip-jacket.svg",
+      "image_width": 1080,
+      "image_height": 780,
+      "alt": "Front and back mockup of a maroon and carbon zip warm-up jacket with bone contrast piping",
+      "image_caption": "Concept mockup",
+      "specs": [
+        "Lightweight shell with bone piping and a two-way front zip.",
+        "Tone-on-tone court map across the back."
+      ],
+      "status": "Coming soon",
+      "group": "court-gear",
+      "price": "$148 proposed"
     },
     {
-      "name": "Academy Hoodie",
-      "price": "$118 proposed",
-      "spec": "380 GSM fleece, structured hood, restrained chest mark, edition number on the back."
+      "id": "academy-hoodie",
+      "name": "KC Academy Hoodie",
+      "kind": "Heavyweight fleece · Black / Richmond Maroon",
+      "image": "assets/img/academy/roadmap/academy-hoodie-kc.webp",
+      "image_width": 1000,
+      "image_height": 1250,
+      "flat": "assets/img/academy/roadmap/academy-hoodie-kc.svg",
+      "flat_width": 900,
+      "flat_height": 1100,
+      "flat_alt": "Design drawing of the black KC Academy hoodie and satin patch",
+      "flat_caption": "Hoodie and chest patch design drawing",
+      "alt": "Black fleece hoodie with a gold KC Academy wordmark embroidered on a Richmond-maroon satin chest patch",
+      "image_caption": "AI garment rendering · Concept mockup",
+      "specs": [
+        "Structured hood and a heavyweight matte black fleece body. Target fabric weight is 380 GSM.",
+        "A sewn-on Richmond-maroon satin patch borrows the sheen of the Letterman lining. Gold embroidery reads KC Academy."
+      ],
+      "status": "Coming soon",
+      "group": "court-gear",
+      "price": "$118 proposed"
     },
     {
+      "id": "signature-court-ball",
       "name": "Signature Court Ball",
-      "price": "$68 proposed",
-      "spec": "Regulation size, black and bone with gold panel detail, numbered hangtag and story card."
+      "kind": "Court equipment · Carbon / Bone / Gold",
+      "image": "assets/img/academy/roadmap/signature-court-ball.svg",
+      "image_width": 900,
+      "image_height": 780,
+      "alt": "Black and bone signature basketball concept with gold channels and Academy wordmark",
+      "image_caption": "Concept mockup",
+      "specs": [
+        "Regulation-size design target with pebbled carbon and bone panels and gold channel accents.",
+        "Edition hangtag and Academy story card planned."
+      ],
+      "status": "Coming soon",
+      "group": "court-gear",
+      "price": "$68 proposed"
+    },
+    {
+      "id": "arc-05",
+      "name": "Arc 05",
+      "kind": "Women’s court short · Maroon / Bone",
+      "image": "academy-studio/flats/arc-05.svg",
+      "image_width": 700,
+      "image_height": 520,
+      "alt": "Front and back of the women’s Arc 05 with maroon body and curved bone inserts",
+      "image_caption": "Front and back · Design board",
+      "specs": [
+        "Five-inch inseam target with a flat high-rise waist and a curved hem.",
+        "Bone side inserts carry the Academy Arc. Style with the bone court tank."
+      ],
+      "status": "Coming soon",
+      "group": "lineup"
+    },
+    {
+      "id": "next-up-short",
+      "name": "Next Up Short",
+      "kind": "Teen court short · Carbon / Maroon",
+      "image": "academy-studio/flats/next-up-short.svg",
+      "image_width": 700,
+      "image_height": 520,
+      "alt": "Front and back of the Next Up Short in carbon with maroon side panels",
+      "image_caption": "Front and back · Design board",
+      "specs": [
+        "Six-inch inseam target with a relaxed leg and adjustable waist.",
+        "Carbon body with maroon inserts. Pair with the Reversible Practice Jersey."
+      ],
+      "status": "Coming soon",
+      "group": "lineup",
+      "pieces": [
+        "reversible-practice-jersey"
+      ]
+    },
+    {
+      "id": "first-team",
+      "name": "First Team Set",
+      "kind": "Kids’ tee and pull-on short · Bone / Maroon",
+      "image": "academy-studio/flats/first-team.svg",
+      "image_width": 700,
+      "image_height": 520,
+      "alt": "First Team bone basketball tee and maroon pull-on short design board",
+      "image_caption": "Tee and short · Design board",
+      "specs": [
+        "Bone tee with the Academy basketball graphic, paired with a maroon pull-on mesh short.",
+        "Encased elastic waistband and soft inner seams."
+      ],
+      "status": "Coming soon",
+      "group": "lineup"
     }
   ],
-  "roadmap_note": "Proposed test prices from the brand playbook six-SKU roadmap. Not on sale."
+  "collections": {
+    "last-bell": [
+      "last-bell-school-uniform",
+      "first-whistle-tailoring-set",
+      "arc-warmup-set"
+    ]
+  }
 }

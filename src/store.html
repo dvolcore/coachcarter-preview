@@ -6,21 +6,21 @@
   <a href="#academy-store-title">Academy</a>
   <a href="#watch-plans">Season One <span>{{series_price}}</span></a>
   <a href="#lineup">The lineup</a>
+  <a href="#letterman-views">Letterman</a>
+  <a href="#court-gear">Court Gear</a>
   <a href="#first-whistle">First Whistle</a>
   <a href="#last-bell">Last Bell to Tipoff</a>
   <a href="gallery.html">Front Row Lookbook</a>
   <a href="#editions">Editions</a>
   <a href="#team-pack">Team Pack</a>
-  <a href="#preorders">In development</a>
 </nav>
-
 
 <section class="store-campaign" aria-labelledby="store-title">
   <div class="store-campaign-copy">
-    <img class="store-academy-mark" src="academy-studio/artwork/academy-wordmark-maroon.svg" alt="Coach Carter Academy" width="276" height="92">
+    <img class="store-academy-mark" src="assets/brand/crest_gold.svg" alt="Gold Coach Carter crest" width="800" height="800">
     <div>
       <p class="store-label">Collection 01</p>
-      <h1 id="store-title">The Academy Collection</h1>
+      <h1 id="store-title">The KC Academy Signature Collection</h1>
       <p>The Front Row Letterman, school uniforms, court gear and game-day tailoring.</p>
       <a class="store-button" href="#academy-store-title">Explore the collection <span aria-hidden="true">↓</span></a>
     </div>
@@ -44,6 +44,34 @@
       {{academy_cards}}
     </div>
 
+    <section class="store-catalog-section" id="letterman-views" aria-labelledby="letterman-views-title">
+      <div class="store-section-heading">
+        <div><p class="store-label">Front Row Letterman · Coming soon</p><h2 id="letterman-views-title">Inside the Letterman</h2></div>
+        <p>See the full court lining, both interior panels and the back.</p>
+      </div>
+      <div class="store-jacket-views">
+        {{front_row_views}}
+      </div>
+    </section>
+    <section class="store-catalog-section" id="last-bell" aria-labelledby="last-bell-products-title">
+      <div class="store-section-heading">
+        <div><p class="store-label">Campus to court · Coming soon</p><h2 id="last-bell-products-title">Last Bell to Tipoff</h2></div>
+        <p>Explore the complete looks or choose the pieces individually.</p>
+      </div>
+      <div class="academy-product-grid last-bell-products">
+        {{last_bell_cards}}
+      </div>
+    </section>
+    <section class="store-catalog-section" id="court-gear" aria-labelledby="court-gear-title">
+      <div class="store-section-heading">
+        <div><p class="store-label">Court gear · Coming soon</p><h2 id="court-gear-title">The rest of the uniform</h2></div>
+        <p>Four new Academy designs for practice, game day and after the final whistle.</p>
+      </div>
+      <div class="academy-product-grid court-gear-products">
+        {{court_gear_cards}}
+      </div>
+    </section>
+
     <section class="front-row-promo" aria-labelledby="front-row-store-title">
       <figure>
         <img src="assets/img/academy/campaign/a-line-skirt-courtyard.webp" alt="Front Row Letterman with a blouse and A-line school skirt in a courtyard" width="1122" height="1402" loading="lazy">
@@ -59,14 +87,6 @@
         </div>
       </div>
     </section>
-    <div class="store-roadmap" aria-labelledby="roadmap-title">
-      <div class="store-roadmap-head">
-        <p class="store-label">Coming next · Proposed test prices</p>
-        <h3 id="roadmap-title">The rest of the uniform</h3>
-        <p>Four more pieces planned after the short and tee. Proposals, not products on sale.</p>
-      </div>
-      <ol class="store-roadmap-grid" id="academy-roadmap" data-roadmap></ol>
-    </div>
     <div class="store-waitlist" id="first-drop">
       <div>
         <p class="store-label">First drop in development · Court Short + Court Tee</p>
@@ -104,6 +124,7 @@
         <h3>Court Uniform</h3>
         <p>7-inch lined mesh short. Structured tee. Maroon, bone and carbon.</p>
         <a class="store-text-link" href="academy-product.html?product=court-short">Explore the short <span aria-hidden="true">↗</span></a>
+        <a class="store-text-link" href="academy-product.html?product=court-tee">Explore the tee ↗</a>
       </article>
       <article class="store-look">
         <img src="academy-studio/flats/arc-05.svg" alt="Arc 05 design board, front and back with the flat high-rise waistband" width="700" height="520" loading="lazy">
@@ -111,7 +132,7 @@
         <h3>Arc 05</h3>
         <p>5-inch high-rise short with a flat waist and curved hem. Styled with the bone court tank.</p>
         <details><summary>Fit notes</summary><p>Graded through the hip with a shaped waistband. The shorter Arc insert follows the curve to the hem.</p></details>
-        <a class="store-text-link" href="academy-studio/flats/arc-05.svg">View the design board ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=arc-05">Explore Arc 05 ↗</a>
       </article>
       <article class="store-look">
         <img src="academy-studio/flats/next-up-short.svg" alt="Next Up Short design board, front and back in carbon and maroon" width="700" height="520" loading="lazy">
@@ -119,7 +140,8 @@
         <h3>Next Up</h3>
         <p>6-inch carbon Arc Short and a reversible mesh jersey for two colorways.</p>
         <details><summary>Fit notes</summary><p>Relaxed through the leg for movement, with an adjustable waist. Bone and maroon switch sides on the jersey.</p></details>
-        <a class="store-text-link" href="academy-studio/flats/next-up-jersey.svg">View the reversible jersey ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=next-up-short">Explore the short ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=reversible-practice-jersey">Explore the reversible jersey ↗</a>
       </article>
       <article class="store-look">
         <img src="academy-studio/flats/first-team.svg" alt="First Team design board with a bone basketball tee and maroon pull-on short" width="700" height="520" loading="lazy">
@@ -127,7 +149,7 @@
         <h3>First Team</h3>
         <p>Soft pull-on mesh short and a bone tee with the Academy basketball graphic.</p>
         <details><summary>Fit notes</summary><p>Soft waistband, smooth inner seams and a simplified Arc insert for an easy everyday set.</p></details>
-        <a class="store-text-link" href="academy-studio/flats/first-team.svg">View the design board ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=first-team">Explore the set ↗</a>
       </article>
     </div>
   </div>
@@ -143,14 +165,15 @@
       <img src="assets/img/academy/academy-first-whistle.webp" alt="First Whistle styling concept showing youth athletes arriving in tailored separates" width="1440" height="960" loading="lazy">
       <figcaption>AI styling study · First Whistle</figcaption>
     </figure>
+    <a class="store-text-link" href="academy-product.html?product=first-whistle-tailoring-set">Explore the tailoring set ↗</a>
     <a class="store-text-link" href="academy-studio/index.html#first-whistle">Explore the tailoring and design boards ↗</a>
   </div>
 </section>
 
-<section class="store-lookbook" id="last-bell" aria-labelledby="last-bell-gallery-title">
+<section class="store-lookbook" id="last-bell-lookbook" aria-labelledby="last-bell-gallery-title">
   <div class="store-shell">
     <header class="store-lookbook-heading">
-      <h2 id="last-bell-gallery-title">Last Bell to Tipoff</h2>
+      <h2 id="last-bell-gallery-title">Last Bell to Tipoff Lookbook</h2>
       <p>Six looks · AI styling studies</p>
     </header>
     <ul class="store-lookbook-grid">
@@ -198,7 +221,7 @@
         <p class="store-label">02 / Game-day arrival</p>
         <h3>The walk-in</h3>
         <p>Soft sport coats over bone Oxfords, wide charcoal slacks and square-end knit ties. Court shoes keep the look grounded in basketball.</p>
-        <a class="store-text-link" href="academy-product.html?product=first-whistle-tailoring-set">See the future purchase option ↗</a>
+        <a class="store-text-link" href="academy-product.html?product=first-whistle-tailoring-set">Explore the tailoring set ↗</a>
         <a class="store-text-link" href="academy-studio/last-bell/lookbook.pdf">Open the lookbook (PDF) <span aria-hidden="true">↗</span></a>
       </figcaption>
     </figure>
@@ -210,6 +233,7 @@
           <p class="store-label">01 / Last bell</p>
           <h3>The school uniform</h3>
           <p>Bone rib-knit polo, maroon vest and double-pleat trousers. The canvas chore jacket gives the uniform a second silhouette.</p>
+          <a class="store-text-link" href="academy-product.html?product=last-bell-school-uniform">Explore the school uniform ↗</a>
         </figcaption>
       </figure>
       <figure class="last-bell-look" id="look-03-contract-lining">
@@ -235,6 +259,7 @@
           <p class="store-label">05 / First bounce</p>
           <h3>The Arc warmup</h3>
           <p>A bone court arc sweeps from the wearer’s right shoulder toward the left hip. Wide side-snap pants leave room to move.</p>
+          <a class="store-text-link" href="academy-product.html?product=arc-warmup-set">Explore the Arc warmup ↗</a>
         </figcaption>
       </figure>
       <figure class="last-bell-look" id="look-06-locker-room">
@@ -258,7 +283,6 @@
     </div>
   </div>
 </section>
-
 
 <section class="store-editions" id="editions" aria-labelledby="editions-title">
   <div class="store-shell">

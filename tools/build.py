@@ -15,14 +15,22 @@ OUT = ROOT / "site"
 SERIES_PRICE = "$19.99"
 
 
-def academy_cards():
-    catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
+def academy_cards(catalog, group=None):
+    products = {product["id"]: product for product in catalog["products"]}
+    collection = catalog["collections"].get(group)
+    selected = ([products[key] for key in collection] if collection is not None else
+                [product for product in products.values() if product.get("group") == group])
     cards = []
-    for product in catalog["products"]:
+    for product in selected:
         item = {key: escape(product[key]) for key in ("id", "image", "alt", "name", "kind")}
         item["availability"] = escape(product.get("status") or product["price"])
         item["width"] = product.get("image_width", 900)
         item["height"] = product.get("image_height", 1350)
+        links = []
+        for key in product.get("pieces", []):
+            name = escape(products[key]["name"])
+            links.append(f'<li><a class="store-text-link" href="academy-product.html?product={escape(key)}">{name}</a></li>')
+        item["pieces"] = '<ul class="academy-piece-links">' + "".join(links) + "</ul>" if links else ""
         cards.append('''<article class="academy-product-card">
         <a class="academy-product-link" href="academy-product.html?product={id}">
           <img src="{image}" alt="{alt}" loading="lazy" width="{width}" height="{height}">
@@ -30,9 +38,19 @@ def academy_cards():
             <div><h3>{name}</h3><p>{kind}</p></div>
             <div><span>{availability}</span><span class="academy-product-arrow" aria-hidden="true">↗</span></div>
           </div>
-        </a>
+        </a>{pieces}
       </article>'''.format(**item))
     return "\n      ".join(cards)
+
+
+def front_row_views(catalog):
+    jacket = next(product for product in catalog["products"] if product["id"] == "front-row-letterman")
+    return "\n        ".join(
+        f'<a href="academy-product.html?product=front-row-letterman#{escape(view["id"])}">'
+        f'<img src="{escape(view["image"])}" alt="" width="{view["width"]}" height="{view["height"]}" loading="lazy">'
+        f'<span>{escape(view["label"])}</span></a>'
+        for view in jacket["views"]
+    )
 
 
 def series_offer():
@@ -209,7 +227,11 @@ def build():
         body = raw[m.end():]
         body = body.replace("{{series_offer}}", series_offer()).replace("{{series_price}}", SERIES_PRICE)
         if "{{academy_cards}}" in body:
-            body = body.replace("{{academy_cards}}", academy_cards())
+            catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
+            body = (body.replace("{{academy_cards}}", academy_cards(catalog))
+                    .replace("{{last_bell_cards}}", academy_cards(catalog, "last-bell"))
+                    .replace("{{court_gear_cards}}", academy_cards(catalog, "court-gear"))
+                    .replace("{{front_row_views}}", front_row_views(catalog)))
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
         html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer(meta.get("nav", "home"))
