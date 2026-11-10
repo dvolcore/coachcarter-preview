@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
+  <rect width="2550" height="3300" fill="#f5efe4"/>
+  <rect x="92" y="92" width="2366" height="3116" fill="none" stroke="#5b1d32" stroke-width="10"/>
+  <rect x="122" y="122" width="2306" height="3056" fill="none" stroke="#b58a3a" stroke-width="3"/>
+  <text x="1275" y="390" text-anchor="middle" fill="#5b1d32" font-family="Georgia,serif" font-size="86" letter-spacing="18">COACH CARTER ACADEMY</text>
+  <text x="1275" y="630" text-anchor="middle" fill="#15161b" font-family="Arial,sans-serif" font-size="112" font-weight="700" letter-spacing="10">CERTIFICATE OF PRESENTATION</text>
+  <text x="1275" y="760" text-anchor="middle" fill="#5b1d32" font-family="Georgia,serif" font-size="54" font-style="italic">Signed game ball · production record</text>
+  <line x1="420" y1="900" x2="2130" y2="900" stroke="#b58a3a" stroke-width="6"/>
+  <text x="420" y="1110" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Certificate number</text>
+  <line x1="420" y1="1170" x2="2130" y2="1170" stroke="#15161b" stroke-width="3"/>
+  <text x="420" y="1360" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Ball manufacturer / model</text>
+  <line x1="420" y1="1420" x2="2130" y2="1420" stroke="#15161b" stroke-width="3"/>
+  <text x="420" y="1610" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Serial or batch identifier</text>
+  <line x1="420" y1="1670" x2="2130" y2="1670" stroke="#15161b" stroke-width="3"/>
+  <text x="420" y="1860" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Signed on (date)</text>
+  <line x1="420" y1="1920" x2="1120" y2="1920" stroke="#15161b" stroke-width="3"/>
+  <text x="1300" y="1860" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Observed by</text>
+  <line x1="1300" y1="1920" x2="2130" y2="1920" stroke="#15161b" stroke-width="3"/>
+  <text x="420" y="2170" fill="#15161b" font-family="Arial,sans-serif" font-size="44">Coach approval / signature</text>
+  <line x1="420" y1="2330" x2="1350" y2="2330" stroke="#15161b" stroke-width="3"/>
+  <text x="420" y="2415" fill="#5b1d32" font-family="Arial,sans-serif" font-size="30">Leave blank until signed or approved by Coach.</text>
+  <text x="420" y="2700" fill="#15161b" font-family="Arial,sans-serif" font-size="34">This certificate identifies the physical item recorded above.</text>
+  <text x="420" y="2770" fill="#15161b" font-family="Arial,sans-serif" font-size="34">It is not valid as proof until the fields are completed and matched</text>
+  <text x="420" y="2840" fill="#15161b" font-family="Arial,sans-serif" font-size="34">to the retained inventory record and product photographs.</text>
+  <text x="1275" y="3050" text-anchor="middle" fill="#5b1d32" font-family="Arial,sans-serif" font-size="28" letter-spacing="8">ACCOUNTABILITY · DISCIPLINE · RESPECT · EDUCATION FIRST</text>
+</svg>

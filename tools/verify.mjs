@@ -5,7 +5,7 @@ const { chromium } = require("/opt/homebrew/lib/node_modules/playwright");
 const base = process.argv[2] || "http://localhost:8405/";
 const out = [];
 const ok = (name, cond, extra = "") => out.push(`${cond ? "PASS" : "FAIL"}  ${name}${extra ? "  — " + extra : ""}`);
-const b = await chromium.launch();
+const b = await chromium.launch({ executablePath: process.env.CHROME_PATH });
 const errors = [];
 const mk = async (opts = {}) => { const c = await b.newContext({ viewport: { width: 1440, height: 900 }, ...opts }); const p = await c.newPage(); p.on("pageerror", (e) => errors.push(e.message)); return p; };
 
@@ -56,11 +56,14 @@ ok("youtube click-to-load", await p.evaluate(() => !!document.querySelector(".ci
 // 6. store ?cat chip + mobile
 await p.goto(base + "store.html?qa&cat=books"); await p.waitForTimeout(1200);
 ok("?cat=books highlights Books chip", await p.evaluate(() => document.querySelector(".chip.on")?.dataset.cat === "books"));
-await p.click('#product-grid [data-add="ymns-hc"]', { force: true }); await p.waitForTimeout(300);
-await p.evaluate(() => document.querySelector("[data-cart]").click()); await p.waitForTimeout(800);
-ok("cart drawer opens w/ item thumb art", await p.evaluate(() => document.querySelector(".drawer.on .li-thumb svg, .drawer.on .li-thumb .book3d") !== null));
-await p.keyboard.press("Escape"); await p.waitForTimeout(500);
-ok("escape closes drawer", await p.evaluate(() => !document.querySelector(".drawer").classList.contains("on")));
+ok("book card links to the publisher edition", !!await p.locator('#product-grid a[href$="9781455502349/"]').count());
+await p.locator('.filters [data-cat="collectibles"]').click();
+ok("collectibles show development status", await p.locator('#product-grid .edition-card').count() === 2
+  && (await p.locator('#product-grid .store-label').allTextContents()).every((status) => status === "In development"));
+ok("store has no preview checkout", !(await p.locator('[data-add], [data-cart], [data-checkout]').count()));
+await p.locator('#team-pack .team-pack-faces').scrollIntoViewIfNeeded();
+await p.locator('#team-pack img').evaluateAll((images) => Promise.all(images.map((image) => image.decode())));
+ok("both Commitment Card sides display", await p.locator('#team-pack img').count() === 2);
 
 // 7. reduced motion keeps a visible cursor
 const pr = await mk({ reducedMotion: "reduce" });
@@ -90,3 +93,4 @@ ok("no-JS: curtain hidden + hero copy visible", vis.curtain === "none" && vis.h 
 ok("no page errors", errors.length === 0, errors.slice(0, 3).join(" | "));
 console.log(out.join("\n"));
 await b.close();
+if (out.some((line) => line.startsWith("FAIL"))) process.exitCode = 1;

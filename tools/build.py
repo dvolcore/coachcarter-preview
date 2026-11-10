@@ -137,7 +137,6 @@ def header(active):
     <nav class="nav-links" aria-label="Main">{links}</nav>
     <div class="nav-actions">
       <a class="btn btn-gold btn-sm btn-book" href="keynotes.html#book" data-magnetic>Book Coach Carter</a>
-      <button class="icon-btn cart" data-cart aria-label="Open bag">{ICON['bag']}<span class="cart-count">0</span></button>
       <button class="icon-btn menu-btn" data-menu aria-label="Menu" aria-expanded="false">{ICON['menu']}</button>
     </div>
   </div>
@@ -189,21 +188,7 @@ def footer(nav=""):
   </div>
 </footer>
 <div class="scrim"></div>
-<aside class="drawer" aria-label="Shopping bag">
-  <header><h4>Your bag</h4><button class="icon-btn" data-close aria-label="Close">{ICON['x']}</button></header>
-  <div class="items"></div>
-  <footer><div class="total"><span>Subtotal</span><b>$0</b></div>
-    <button class="btn btn-gold" style="width:100%;justify-content:center" data-checkout>Checkout {ICON['arr']}</button>
-    <p class="body-mute" style="font-size:13px;margin:12px 0 0;text-align:center">Free shipping over $100 · Bulk orders for schools</p></footer>
-</aside>
 <div class="modal video" id="video-modal" role="dialog" aria-label="Video"><div class="box"><button class="icon-btn x" data-close aria-label="Close" style="background:rgba(0,0,0,.5)">{ICON['x']}</button><video controls playsinline preload="none"></video></div></div>
-<div class="modal" id="checkout-modal" role="dialog" aria-label="Checkout"><div class="box">
-  <img src="assets/brand/crest_gold.svg" alt="" width="84" height="84">
-  <h3 class="h-m mt-s">The store opens soon.</h3>
-  <p class="body-mute">Your bag is saved. Join the Locker Room list and you'll get first access to the opening drop and signed editions.</p>
-  <form class="news" data-simple="You're on the list for the opening drop" style="max-width:none"><input type="email" required placeholder="Your email" aria-label="Email"><button type="submit">Notify me →</button></form>
-  <p class="body-mute internal" style="font-size:13px">Review note: checkout connects to Shopify / Stripe at launch.</p>
-  <button class="btn btn-ghost btn-sm mt-s" data-close>Keep browsing</button></div></div>
 <div class="toast" role="status" aria-live="polite"><img src="assets/brand/monogram_gold.svg" alt="" width="18" height="18" style="filter:brightness(.2)"><span></span></div>
 <div class="preview-flag internal">Review mode · internal notes visible</div>
 <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>

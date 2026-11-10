@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5in" height="7in" viewBox="0 0 1500 2100">
+  <rect width="1500" height="2100" fill="#f5eee5"/>
+  <rect x="62" y="62" width="1376" height="1976" fill="none" stroke="#711f32" stroke-width="5"/>
+  <text x="110" y="170" fill="#711f32" font-family="Arial,Helvetica,sans-serif" font-size="32" letter-spacing="7">MY NEXT STANDARD</text>
+  <text x="110" y="300" fill="#171922" font-family="Georgia,serif" font-size="70" font-weight="700">I will practice this:</text>
+  <line x1="110" y1="410" x2="1390" y2="410" stroke="#711f32" stroke-width="3"/>
+  <line x1="110" y1="520" x2="1390" y2="520" stroke="#b8a990" stroke-width="2"/>
+  <line x1="110" y1="630" x2="1390" y2="630" stroke="#b8a990" stroke-width="2"/>
+  <text x="110" y="790" fill="#171922" font-family="Georgia,serif" font-size="58" font-weight="700">My first action is:</text>
+  <line x1="110" y1="895" x2="1390" y2="895" stroke="#711f32" stroke-width="3"/>
+  <line x1="110" y1="1005" x2="1390" y2="1005" stroke="#b8a990" stroke-width="2"/>
+  <text x="110" y="1175" fill="#171922" font-family="Georgia,serif" font-size="58" font-weight="700">I will check in on:</text>
+  <line x1="110" y1="1280" x2="1390" y2="1280" stroke="#711f32" stroke-width="3"/>
+  <line x1="110" y1="1390" x2="1390" y2="1390" stroke="#b8a990" stroke-width="2"/>
+  <text x="110" y="1570" fill="#171922" font-family="Arial,Helvetica,sans-serif" font-size="34">Name</text>
+  <line x1="260" y1="1580" x2="1390" y2="1580" stroke="#711f32" stroke-width="3"/>
+  <text x="110" y="1740" fill="#171922" font-family="Arial,Helvetica,sans-serif" font-size="34">Signature</text>
+  <line x1="310" y1="1750" x2="930" y2="1750" stroke="#711f32" stroke-width="3"/>
+  <text x="1000" y="1740" fill="#171922" font-family="Arial,Helvetica,sans-serif" font-size="34">Date</text>
+  <line x1="1090" y1="1750" x2="1390" y2="1750" stroke="#711f32" stroke-width="3"/>
+  <text x="110" y="1940" fill="#711f32" font-family="Arial,Helvetica,sans-serif" font-size="27" letter-spacing="4">KEEP THE PROMISE VISIBLE.</text>
+</svg>

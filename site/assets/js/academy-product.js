@@ -51,9 +51,13 @@ async function showProduct() {
     if (product.artwork) {
       artwork.src = product.artwork;
       document.querySelector("#product-artwork-label").textContent = product.artwork_label;
-      const companion = products.find(({ id, artwork }) => id !== product.id && artwork);
-      link.href = "?product=" + encodeURIComponent(companion.id);
-      link.textContent = "Complete the look · " + companion.name + " ↗";
+      const companion = products.find(({ id }) => id === product.companion);
+      if (companion) {
+        link.href = "?product=" + encodeURIComponent(companion.id);
+        link.textContent = companion.name + " ↗";
+      } else {
+        link.remove();
+      }
     } else {
       artwork.closest("figure").hidden = true;
       link.remove();

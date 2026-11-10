@@ -3,6 +3,52 @@
   "note": "Proposed first test pieces. No checkout, inventory, or purchase promise.",
   "products": [
     {
+      "id": "first-whistle-tailoring-set",
+      "companion": "contract-lining-sport-coat",
+      "name": "First Whistle Tailoring Set",
+      "price": "$328 proposed",
+      "kind": "Pregame tailoring · Maroon / Charcoal",
+      "image": "assets/img/academy/last-bell/02-game-day-arrival.webp",
+      "alt": "Three Coach Carter Academy students in maroon and charcoal sport coats, bone Oxford shirts, knit ties and pleated trousers",
+      "image_width": 1536,
+      "image_height": 1024,
+      "image_caption": "02 / Game-day arrival · styling study",
+      "flat": "academy-studio/flats/first-whistle-blazer.svg",
+      "flat_alt": "First Whistle sport coat flat with contrast lining and Academy styling notes",
+      "flat_caption": "First Whistle sport coat flat · design board",
+      "specs": [
+        "Maroon or charcoal soft-structure sport coat, bone Oxford shirt, square-end knit tie and wide pleated trouser.",
+        "Designed as a complete pregame uniform: polished enough for the walk-in, relaxed enough for the court.",
+        "Target premium wool-blend tailoring, breathable cotton Oxford and a clean sneaker-ready trouser break."
+      ],
+      "artwork": "academy-studio/artwork/first-whistle-lining.svg",
+      "artwork_label": "First Whistle court-map lining artwork",
+      "campaign": "store.html#look-02-game-day-arrival"
+    },
+    {
+      "id": "contract-lining-sport-coat",
+      "companion": "first-whistle-tailoring-set",
+      "name": "Contract Lining Sport Coat",
+      "price": "$198 proposed",
+      "kind": "Lined sport coat · Richmond Maroon",
+      "image": "assets/img/academy/last-bell/03-contract-lining.webp",
+      "alt": "Open Coach Carter Academy maroon sport coat showing a gold basketball-court and notebook-ruling lining",
+      "image_width": 1536,
+      "image_height": 1024,
+      "image_caption": "03 / Inside the jacket · lining detail study",
+      "flat": "academy-studio/flats/first-whistle-blazer.svg",
+      "flat_alt": "First Whistle maroon sport coat flat with court-map lining placement",
+      "flat_caption": "The lined coat · design board",
+      "specs": [
+        "Richmond-maroon sport coat with a soft shoulder, easy fit and a lining made to be seen when the jacket opens.",
+        "Antique-gold basketball-court diagram and notebook-rule repeat carries the Academy Contract story inside the garment.",
+        "Pair with the First Whistle Oxford and pleated trouser for the full game-day arrival."
+      ],
+      "artwork": "academy-studio/artwork/first-whistle-lining.svg",
+      "artwork_label": "Contract lining repeat artwork",
+      "campaign": "store.html#look-03-contract-lining"
+    },
+    {
       "id": "front-row-letterman",
       "name": "Front Row Letterman",
       "status": "Coming soon",
@@ -26,6 +72,7 @@
     },
     {
       "id": "court-short",
+      "companion": "court-tee",
       "name": "Court Short",
       "price": "$78 proposed",
       "kind": "Lined basketball mesh · Maroon / Bone",
@@ -42,6 +89,7 @@
     },
     {
       "id": "court-tee",
+      "companion": "court-short",
       "name": "Court Tee",
       "price": "$68 proposed",
       "kind": "Heavyweight cotton jersey · Carbon",

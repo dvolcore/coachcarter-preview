@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5in" height="7in" viewBox="0 0 1500 2100">
+  <rect width="1500" height="2100" fill="#711f32"/>
+  <rect x="62" y="62" width="1376" height="1976" fill="none" stroke="#d3ad5b" stroke-width="4"/>
+  <path d="M62 1600H1438M750 62V2038" stroke="#d3ad5b" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="750" cy="950" r="420" fill="none" stroke="#d3ad5b" stroke-opacity=".15" stroke-width="5"/>
+  <text x="110" y="180" fill="#f5eee5" font-family="Arial,Helvetica,sans-serif" font-size="35" letter-spacing="8">COACH CARTER ACADEMY</text>
+  <text x="110" y="540" fill="#f5eee5" font-family="Georgia,serif" font-size="118" font-weight="700">THE</text>
+  <text x="110" y="680" fill="#d3ad5b" font-family="Georgia,serif" font-size="150" font-weight="700">COMMITMENT</text>
+  <text x="110" y="825" fill="#f5eee5" font-family="Georgia,serif" font-size="150" font-weight="700">CARD</text>
+  <text x="110" y="1015" fill="#f5eee5" font-family="Arial,Helvetica,sans-serif" font-size="42" letter-spacing="2">READ WITH PURPOSE. SHOW UP WITH PURPOSE.</text>
+  <text x="110" y="1735" fill="#f5eee5" font-family="Arial,Helvetica,sans-serif" font-size="35" letter-spacing="3">ONE PROMISE FOR THE NEXT 30 DAYS</text>
+  <line x1="110" y1="1815" x2="1390" y2="1815" stroke="#d3ad5b" stroke-width="5"/>
+  <text x="110" y="1935" fill="#d3ad5b" font-family="Arial,Helvetica,sans-serif" font-size="28" letter-spacing="5">ACADEMY READING + ACTION SESSION</text>
+</svg>

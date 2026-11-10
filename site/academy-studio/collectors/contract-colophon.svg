@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="1650" viewBox="0 0 2550 1650">
+  <rect width="2550" height="1650" fill="#15161b"/>
+  <rect x="80" y="80" width="2390" height="1490" fill="none" stroke="#b58a3a" stroke-width="7"/>
+  <text x="180" y="270" fill="#e9d29a" font-family="Arial,sans-serif" font-size="34" letter-spacing="12">COACH CARTER ACADEMY · COLLECTOR SERIES</text>
+  <text x="180" y="500" fill="#f5efe4" font-family="Georgia,serif" font-size="106">The Contract</text>
+  <text x="180" y="620" fill="#c8bdb0" font-family="Arial,sans-serif" font-size="42" letter-spacing="4">MODERN NUMBERED EDITION</text>
+  <line x1="180" y1="740" x2="2370" y2="740" stroke="#5b1d32" stroke-width="8"/>
+  <text x="180" y="900" fill="#f5efe4" font-family="Arial,sans-serif" font-size="40">Edition number</text>
+  <line x1="620" y1="915" x2="1120" y2="915" stroke="#e9d29a" stroke-width="3"/>
+  <text x="180" y="1060" fill="#f5efe4" font-family="Arial,sans-serif" font-size="40">Produced (date)</text>
+  <line x1="620" y1="1075" x2="1120" y2="1075" stroke="#e9d29a" stroke-width="3"/>
+  <text x="180" y="1270" fill="#c8bdb0" font-family="Arial,sans-serif" font-size="31">This presentation piece is original artwork for a future modern edition.</text>
+  <text x="180" y="1335" fill="#c8bdb0" font-family="Arial,sans-serif" font-size="31">It is not the 1999 Richmond High contract, an archival scan, or proof of any signature.</text>
+  <text x="2370" y="1470" text-anchor="end" fill="#e9d29a" font-family="Arial,sans-serif" font-size="28" letter-spacing="5">KEEP YOUR STANDARD</text>
+</svg>
