@@ -18,6 +18,7 @@ from html import escape, unescape
 from pathlib import Path
 
 import motion  # code-authored motion plates (store department title cards)
+import motion_pages  # more scenes + the plate that opens each inner page
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "site"
@@ -548,6 +549,16 @@ def apply(html, meta, name, series_price="$19.99"):
             if top:
                 card = f'<div class="plate-wrap">{card}</div>'
             html = html[:m.start()] + card + "\n" + html[m.start():]
+
+    # every inner page opens with its own plate: a title card that is also the chapter index
+    if nav in motion_pages.PAGE_PLATES:
+        scene, kicker, lines, blurb, links, target = motion_pages.PAGE_PLATES[nav]
+        m = re.search(target, html)
+        if not m:
+            raise SystemExit(f"{name}: no section for the page plate ({target})")
+        label = PAGES[nav][1][2]
+        card = motion.plate(nav, scene, "", lines, blurb, links, label, kicker=kicker, pid="chapters")
+        html = html[:m.start()] + f'<div class="plate-wrap plate-wrap--page">{card}</div>\n' + html[m.start():]
 
     # 5. rail + next-up band before the footer
     if html.count("\n</main>") != 1:

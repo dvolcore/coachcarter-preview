@@ -41,6 +41,23 @@ for (const [tag, w, h] of [["d", 1440, 900], ["m", 390, 844]]) {
     await p.click('.localnav a[href="store.html#dept-basketball"]'); await p.waitForURL(/store\.html#dept-basketball/); await p.waitForTimeout(1200); r.landed = await p.evaluate(() => ({ top: Math.round(document.getElementById("dept-basketball").getBoundingClientRect().top), on: (document.querySelector(".localnav a.on") || {}).textContent })); }
   else { await p.click(".menu-btn"); await p.waitForTimeout(1200); r.menuOpen = await p.evaluate(() => document.querySelector(".menu").classList.contains("open") && !document.querySelector(".menu").inert); await p.screenshot({ path: out + "/product_m_menu.jpg", type: "jpeg", quality: 72 }); await p.click(".menu .close"); await p.waitForTimeout(900); r.menuClosed = await p.evaluate(() => document.querySelector(".menu").inert); await p.screenshot({ path: out + "/product_m.jpg", type: "jpeg", quality: 72 }); }
   R["product_" + tag] = r; await p.context().close(); }
+// D. the plate that opens each inner page: readable without JS, fits at 3 widths, chips land on real sections
+const PAGES = ["story", "record", "archive", "impact", "keynotes", "teams", "partners", "playbook", "series", "gallery", "investors", "brand", "coach"];
+R.pages = [];
+{ const nojs = await (await chromium.newContext({ viewport: { width: 1440, height: 900 }, javaScriptEnabled: false })).newPage();
+  for (const pg of PAGES) { await nojs.goto(base + pg + ".html"); await nojs.waitForTimeout(250);
+    const r = await nojs.evaluate(() => { const el = document.getElementById("chapters"); if (!el) return { missing: true }; const t = getComputedStyle(el.querySelector(".plate-t .w i")).transform;
+      return { title: t === "none" || t === "matrix(1, 0, 0, 1, 0, 0)", links: getComputedStyle(el.querySelector(".plate-links")).opacity !== "0", undrawn: [...el.querySelectorAll(".sc .d")].filter((d) => parseFloat(getComputedStyle(d).strokeDashoffset) > 0.01).length, hidden: [...el.querySelectorAll(".sc .p, .sc .f")].filter((n) => getComputedStyle(n).opacity === "0").length }; });
+    if (r.missing || !r.title || !r.links || r.undrawn || r.hidden) R.pages.push(pg + " noJS " + JSON.stringify(r)); }
+  await nojs.context().close(); }
+for (const w of [1440, 760, 390]) { const p = await (await chromium.newContext({ viewport: { width: w, height: 900 } })).newPage(); watch(p, "page-plate w" + w);
+  for (const pg of PAGES) { await p.goto(base + pg + ".html?qa", { waitUntil: "domcontentloaded" }); await p.waitForTimeout(500);
+    const r = await p.evaluate(() => { const el = document.getElementById("chapters"); const art = el.querySelector(".plate-art").getBoundingClientRect(), svg = el.querySelector(".sc").getBoundingClientRect(), copy = el.querySelector(".plate-copy").getBoundingClientRect(), title = el.querySelector(".plate-t").getBoundingClientRect();
+      const bad = []; if (document.documentElement.scrollWidth > innerWidth) bad.push("overflow"); if (copy.top >= art.bottom - 2 && svg.bottom > title.top + 1) bad.push("art over title"); if (svg.height < 60) bad.push("art collapsed");
+      if (Math.max(...[...el.querySelectorAll(".plate-t .w i")].map((i) => i.scrollWidth)) > copy.width - 30) bad.push("title too wide");
+      el.querySelectorAll('.plate-links a[href^="#"]').forEach((a) => { if (!document.getElementById(a.hash.slice(1))) bad.push("dead chip " + a.hash); }); return bad; });
+    if (r.length) R.pages.push(pg + " w" + w + " " + r.join(", ")); }
+  await p.context().close(); }
 await chromium.close();
 
 const fails = [];
@@ -49,7 +66,8 @@ Object.entries(R.widths).forEach(([w, v]) => { if (v.overflowX > 0 || v.bad.leng
 for (const k of ["product_d", "product_m"]) { const v = R[k]; if (v.overflowX > 0 || v.worlds !== 5 || !v.productShown || v.back < v.lnBottom) fails.push(k + " " + JSON.stringify(v)); }
 if (R.product_d.megaOpen !== 1 || !R.product_d.palRows || R.product_d.landed.on !== "Basketball") fails.push("product_d interactions " + JSON.stringify(R.product_d));
 if (!R.product_m.menuOpen || !R.product_m.menuClosed) fails.push("product_m menu " + JSON.stringify(R.product_m));
+R.pages.forEach((x) => fails.push("page plate " + x));
 errs.forEach((e) => fails.push("error " + e));
-console.log(fails.length ? fails.join("\n") : "motion_test: all checks pass (6 plates no-JS, 8 widths, product page desktop + mobile)");
+console.log(fails.length ? fails.join("\n") : "motion_test: all checks pass (6 store plates + 13 page plates, no-JS, widths, product page)");
 console.log("TOTAL FAILS:", fails.length);
 process.exit(fails.length ? 1 : 0);

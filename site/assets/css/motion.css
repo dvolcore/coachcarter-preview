@@ -149,9 +149,9 @@
 @keyframes plate-n3 { 0% { opacity: 1; } 20%, 100% { opacity: 0; } }
 @keyframes plate-n2 { 0% { opacity: 0; } 20% { opacity: 1; } 40%, 100% { opacity: 0; } }
 @keyframes plate-n1 { 0%, 39.9% { opacity: 0; } 40% { opacity: 1; } 60%, 100% { opacity: 0; } }
-.sc-leader .play { opacity: 0; animation: plate-play 5s steps(1) infinite; }
+.sc-leader .go { opacity: 0; animation: plate-play 5s steps(1) infinite; }
 @keyframes plate-play { 0%, 59.9% { opacity: 0; } 60%, 100% { opacity: 1; } }
-.sc-leader .play path { fill: var(--gold); stroke: none; }
+.sc-leader .go path { fill: var(--gold); stroke: none; }
 .sc-leader .pulse { stroke: var(--gold-hi); stroke-width: 2; transform-origin: 320px 200px; animation: plate-pulse 5s ease-out infinite; }
 @keyframes plate-pulse { 0%, 60% { transform: scale(.8); opacity: 0; } 62% { opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
 .sc-leader .scratch path { stroke: rgba(245, 240, 232, .22); stroke-width: 1; animation: plate-scratch 1.7s steps(1) infinite; }
@@ -161,7 +161,7 @@
 .sc-leader .slate.r { text-anchor: end; }
 
 /* 25 cards */
-.sc-cards .card rect { fill: #EFE6D6; stroke: none; }
+.sc-cards .kcard rect { fill: #EFE6D6; stroke: none; }
 .sc-cards .ln { stroke: rgba(35, 28, 28, .32); stroke-width: 2; }
 .sc-cards .ck { stroke: #7A2A45; stroke-width: 3.6; }
 .sc-cards .bar { stroke: var(--gold); stroke-width: 3; }
@@ -182,8 +182,121 @@
 /* ---------- reduced motion: everything in its final state, nothing loops ---------- */
 @media (prefers-reduced-motion: reduce) {
   .plate *, .plate *::before, .plate *::after { animation: none !important; transition: none !important; }
-  .sc-leader .n1, .sc-leader .wedge { opacity: 0; } .sc-leader .play { opacity: 1; }
+  .sc-leader .n1, .sc-leader .wedge { opacity: 0; } .sc-leader .go { opacity: 1; }
   .sc-court .ball { offset-distance: 100%; }
   .sc-seal .marker { transform: translateX(320px); }
 }
 @media print { .plate-fx { display: none; } }
+
+/* ==========================================================================
+   INNER-PAGE PLATES (dark pages) + seven more scenes (tools/motion_pages.py)
+   ========================================================================== */
+.plate-wrap--page { background: #08090B; padding: clamp(28px, 4vw, 60px) 0; }
+.plate-wrap--page > .plate { width: min(calc(var(--max, 1360px) - 2 * var(--gutter, 24px)), calc(100% - 2 * var(--gutter, 24px))); box-shadow: 0 0 0 1px rgba(212, 175, 106, .2), 0 40px 80px -40px #000; }
+.plate--lock { background: linear-gradient(135deg, #0d0a08 0%, #1d1410 50%, #33150f 100%); }
+.plate--onair { background: radial-gradient(110% 130% at 85% 10%, #1c2330 0%, #0e1218 50%, #08090B 100%); }
+.plate--stage { background: radial-gradient(90% 120% at 70% 0%, #3a1622 0%, #170810 55%, #08090B 100%); }
+.plate--weeks { background: linear-gradient(120deg, #150d07 0%, #24160c 55%, #3a2413 100%); }
+.plate--wall { background: radial-gradient(120% 140% at 100% 0%, #1E2127 0%, #101216 50%, #08090B 100%); }
+.plate--chart { background: linear-gradient(135deg, #0b0c0f 0%, #14161b 60%, #1c1a14 100%); }
+
+/* padlocked gym doors */
+.sc-lock { stroke: rgba(245, 240, 232, .78); }
+.sc-lock .win { stroke: rgba(245, 240, 232, .4); }
+.sc-lock .sign rect { fill: rgba(8, 9, 11, .6); stroke: var(--gold); stroke-width: 1.4; }
+.sc-lock .sign text { fill: var(--gold-hi); font-size: 15px; letter-spacing: .5em; text-anchor: middle; }
+.sc-lock .handle { stroke: var(--gold); stroke-width: 7; }
+.sc-lock .chain { stroke: var(--gold-hi); stroke-width: 5; }
+.sc-lock .padlock { transform-origin: 320px 246px; animation: plate-swing 3.6s ease-in-out infinite; }
+@keyframes plate-swing { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+.sc-lock .shackle { stroke: var(--chalk); stroke-width: 5.5; }
+.js .plate:not(.in) .sc-lock .shackle { transform: translateY(-16px); opacity: 0; }
+.plate.in .sc-lock .shackle { transition: transform .35s cubic-bezier(.3, 1.8, .5, 1) 2.5s, opacity .2s 2.2s; }
+.sc-lock .body { fill: var(--gold); stroke: #7E5C2C; stroke-width: 1.5; }
+.sc-lock .key { fill: #2B0F19; stroke: #2B0F19; stroke-width: 3; }
+.sc-lock .notice rect { fill: #EFE6D6; stroke: none; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .45)); }
+.sc-lock .notice text { text-anchor: middle; fill: #231c1c; }
+.sc-lock .notice .a { fill: #7A2A45; font-size: 15px; letter-spacing: .1em; }
+.sc-lock .notice .b { font-size: 8.5px; letter-spacing: .14em; }
+.sc-lock .rec .n { fill: var(--gold-hi); font-size: 44px; }
+.sc-lock .rec .l { fill: var(--gold); font-size: 9.5px; letter-spacing: .24em; }
+.sc-lock .rec .rl { stroke: var(--gold); stroke-width: 1; opacity: .6; }
+
+/* on air */
+.sc-onair { stroke: rgba(245, 240, 232, .7); }
+.sc-onair .lamp rect { stroke: var(--gold); stroke-width: 1.4; fill: rgba(8, 9, 11, .5); }
+.sc-onair .lamp circle { fill: #E0624E; stroke: none; animation: plate-blink 1.6s steps(1) infinite; }
+@keyframes plate-blink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: .2; } }
+.sc-onair .lamp text { fill: var(--chalk); font-size: 12px; letter-spacing: .2em; }
+.sc-onair .wv { fill: var(--gold); stroke: none; transform-box: fill-box; transform-origin: center; animation: plate-wave 1.1s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -137ms); }
+@keyframes plate-wave { from { transform: scaleY(.25); } to { transform: scaleY(1); } }
+.sc-onair .oa-cap { fill: var(--gold); font-size: 11px; letter-spacing: .3em; }
+.sc-onair .third .bar { fill: #5E1A2C; stroke: none; }
+.sc-onair .third .edge { fill: var(--gold); stroke: none; }
+.sc-onair .third { clip-path: inset(0 0 0 0); }
+.js .plate:not(.in) .sc-onair .third { clip-path: inset(0 100% 0 0); }
+.plate.in .sc-onair .third { transition: clip-path .8s cubic-bezier(.2, .7, .1, 1) 1.2s; }
+.sc-onair .outlet { fill: var(--chalk); font-size: 24px; letter-spacing: .06em; opacity: 0; animation: 10s steps(1) infinite; }
+.sc-onair .outlet-1 { animation-name: plate-o1; } .sc-onair .outlet-2 { animation-name: plate-o2; } .sc-onair .outlet-3 { animation-name: plate-o3; } .sc-onair .outlet-4 { animation-name: plate-o4; } .sc-onair .outlet-5 { animation-name: plate-o5; }
+@keyframes plate-o1 { 0% { opacity: 1; } 20%, 100% { opacity: 0; } }
+@keyframes plate-o2 { 0%, 19.9% { opacity: 0; } 20% { opacity: 1; } 40%, 100% { opacity: 0; } }
+@keyframes plate-o3 { 0%, 39.9% { opacity: 0; } 40% { opacity: 1; } 60%, 100% { opacity: 0; } }
+@keyframes plate-o4 { 0%, 59.9% { opacity: 0; } 60% { opacity: 1; } 80%, 100% { opacity: 0; } }
+@keyframes plate-o5 { 0%, 79.9% { opacity: 0; } 80%, 100% { opacity: 1; } }
+.sc-onair .tick { stroke: rgba(245, 240, 232, .25); }
+
+/* stage */
+.sc-stage { stroke: rgba(245, 240, 232, .72); }
+.sc-stage .beam { fill: rgba(242, 220, 160, .1); stroke: none; transform-origin: 210px 0; animation: plate-beam 7s ease-in-out infinite alternate; }
+.sc-stage .b2 { transform-origin: 430px 0; animation-duration: 9s; animation-direction: alternate-reverse; }
+@keyframes plate-beam { from { transform: rotate(-7deg); } to { transform: rotate(8deg); } }
+.sc-stage .drape { stroke: rgba(122, 42, 69, .9); stroke-width: 3; }
+.sc-stage .mic { fill: var(--gold); stroke: none; }
+.sc-stage .crowd circle { fill: rgba(245, 240, 232, .3); stroke: none; }
+.sc-stage .ticket path { fill: #EFE6D6; stroke: none; filter: drop-shadow(0 10px 12px rgba(0, 0, 0, .5)); }
+.sc-stage .ticket .perf { fill: none; stroke: rgba(35, 28, 28, .4); stroke-width: 1.4; stroke-dasharray: 3 4; filter: none; }
+.sc-stage .ticket text { text-anchor: middle; }
+.sc-stage .ticket .a { fill: #5E1A2C; font-size: 19px; letter-spacing: .12em; }
+.sc-stage .ticket .b { fill: #231c1c; font-size: 8.5px; letter-spacing: .2em; }
+.sc-stage .ticket .c { fill: #7A2A45; font-size: 12px; letter-spacing: .2em; }
+
+/* six weeks */
+.sc-weeks .track { stroke: rgba(245, 240, 232, .5); }
+.sc-weeks .fill { fill: var(--gold); stroke: none; opacity: .92; transform-box: fill-box; transform-origin: 50% 100%; }
+.js .plate:not(.in) .sc-weeks .fill { transform: scaleY(0); }
+.plate.in .sc-weeks .fill { transition: transform .7s cubic-bezier(.3, .8, .2, 1) calc(var(--i) * 450ms + .9s); }
+.sc-weeks .ck { stroke: var(--gold-hi); stroke-width: 4; }
+.sc-weeks .wk { fill: rgba(245, 240, 232, .8); font-size: 10.5px; letter-spacing: .2em; text-anchor: middle; }
+.sc-weeks .base { stroke: rgba(245, 240, 232, .35); }
+.sc-weeks .tl { fill: var(--gold); font-size: 12px; letter-spacing: .26em; }
+.sc-weeks .tn { fill: var(--gold-hi); font-size: 40px; text-anchor: end; }
+.sc-weeks .tn .of { fill: rgba(245, 240, 232, .6); font-size: 20px; }
+
+/* sponsor wall */
+.sc-wall .tile rect { fill: rgba(245, 240, 232, .05); stroke: rgba(212, 175, 106, .55); stroke-width: 1.2; }
+.sc-wall .yours rect { stroke: rgba(245, 240, 232, .4); stroke-dasharray: 4 5; fill: none; }
+.sc-wall .yours text { fill: rgba(245, 240, 232, .82); font-size: 13px; letter-spacing: .24em; text-anchor: middle; }
+.sc-wall .flash { fill: #fff; stroke: none; opacity: 0; transform-box: fill-box; transform-origin: center; animation: plate-flash 4.2s linear infinite; }
+.sc-wall .f2 { animation-delay: -1.5s; animation-duration: 5.1s; } .sc-wall .f3 { animation-delay: -2.9s; animation-duration: 3.7s; }
+@keyframes plate-flash { 0%, 90% { opacity: 0; transform: scale(.4); } 92% { opacity: .85; transform: scale(1); } 100% { opacity: 0; transform: scale(2.4); } }
+.sc-wall .rope { stroke: #7A2A45; stroke-width: 5; }
+.sc-wall .post { stroke: var(--gold); stroke-width: 6; }
+
+/* the gap */
+.sc-chart { stroke: rgba(245, 240, 232, .6); }
+.sc-chart .bar { stroke: none; transform-box: fill-box; transform-origin: 50% 100%; }
+.sc-chart .hi { fill: var(--gold); } .sc-chart .lo { fill: #7A2A45; }
+.js .plate:not(.in) .sc-chart .bar { transform: scaleY(0); }
+.plate.in .sc-chart .hi { transition: transform 1.3s cubic-bezier(.3, .8, .2, 1) .7s; }
+.plate.in .sc-chart .lo { transition: transform .6s cubic-bezier(.3, .8, .2, 1) 1.5s; }
+.sc-chart .dash { stroke: rgba(245, 240, 232, .35); stroke-dasharray: 4 6; }
+.sc-chart .brk { stroke: var(--gold-hi); stroke-width: 2.5; }
+.sc-chart .gap rect { fill: #101216; stroke: var(--gold-hi); stroke-width: 1.5; }
+.sc-chart .gap text { fill: var(--gold-hi); font-size: 15px; letter-spacing: .22em; text-anchor: middle; }
+.sc-chart .lb { fill: rgba(245, 240, 232, .85); font-size: 12px; letter-spacing: .26em; text-anchor: middle; }
+.sc-chart .note { fill: #8F939C; font-size: 9.5px; letter-spacing: .2em; text-anchor: end; }
+.sc-cards .tl.sm { fill: rgba(245, 240, 232, .55); font-size: 9.5px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-onair .outlet-1 { opacity: 1; } .sc-onair .wv { transform: scaleY(.7); }
+}

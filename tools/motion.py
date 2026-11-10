@@ -16,7 +16,7 @@ SEAL = '''<svg viewBox="0 0 640 400" class="sc sc-seal">
   <defs><path id="seal-ring" d="M320 200 m-128 0 a128 128 0 1 1 256 0 a128 128 0 1 1 -256 0"/></defs>
   <g class="tape">
     <path class="d" style="--i:0;--t:1.6s" pathLength="1" d="M24 356 H616"/>
-    <g class="ticks f" style="--i:6"><path d="M40 356v-10M80 356v-16M120 356v-10M160 356v-16M200 356v-10M240 356v-16M280 356v-10M320 356v-16M360 356v-10M400 356v-16M440 356v-10M480 356v-16M520 356v-10M560 356v-16M600 356v-10"/></g>
+    <g class="tk f" style="--i:6"><path d="M40 356v-10M80 356v-16M120 356v-10M160 356v-16M200 356v-10M240 356v-16M280 356v-10M320 356v-16M360 356v-10M400 356v-16M440 356v-10M480 356v-16M520 356v-10M560 356v-16M600 356v-10"/></g>
     <g class="marker"><path d="M0 338 l7 -12 h-14z"/></g>
   </g>
   <circle class="d" style="--i:1;--t:1.5s" pathLength="1" cx="320" cy="200" r="150"/>
@@ -68,9 +68,9 @@ STRIP_IMAGES = [
 ]
 
 
-def _strip():
+def _strip(images=None):
     frames, holes = [], []
-    for i, src in enumerate(STRIP_IMAGES):
+    for i, src in enumerate(images or STRIP_IMAGES):
         x = 20 + i * 172
         frames.append(f'<g class="fr"><image data-href="{src}" x="{x}" y="118" width="156" height="164" preserveAspectRatio="xMidYMid slice"/>'
                       f'<rect x="{x}" y="118" width="156" height="164"/><text x="{x + 6}" y="300">{i + 1:02d}A</text></g>')
@@ -118,7 +118,7 @@ LEADER = '''<svg viewBox="0 0 640 400" class="sc sc-leader">
   <circle class="d" style="--i:4;--t:1.2s" pathLength="1" cx="320" cy="200" r="148"/>
   <circle class="d" style="--i:6;--t:1.2s" pathLength="1" cx="320" cy="200" r="126"/>
   <g class="count"><text class="n n3" x="320" y="246">3</text><text class="n n2" x="320" y="246">2</text><text class="n n1" x="320" y="246">1</text>
-    <g class="play"><circle class="pulse" cx="320" cy="200" r="60"/><path d="M298 164 v72 l62 -36z"/></g></g>
+    <g class="go"><circle class="pulse" cx="320" cy="200" r="60"/><path d="M298 164 v72 l62 -36z"/></g></g>
   <g class="scratch"><path d="M148 30 V370"/><path d="M471 30 V370"/><path d="M233 30 V370"/></g>
   <text class="slate f" style="--i:8" x="76" y="56">SEASON ONE</text><text class="slate f r" style="--i:9" x="564" y="56">FREE PREVIEW · 0:60</text>
   <text class="slate f" style="--i:10" x="76" y="354">COACH CARTER ACADEMY</text><text class="slate f r" style="--i:11" x="564" y="354">REEL 01</text>
@@ -131,7 +131,7 @@ def _cards():
         for c in range(5):
             i = r * 5 + c
             x, y = 96 + c * 92, 22 + r * 58
-            out.append(f'<g class="card p" style="--i:{i}"><rect x="{x}" y="{y}" width="80" height="46" rx="3"/>'
+            out.append(f'<g class="kcard p" style="--i:{i}"><rect x="{x}" y="{y}" width="80" height="46" rx="3"/>'
                        f'<path class="ln" d="M{x + 10} {y + 13} h34 M{x + 10} {y + 23} h46 M{x + 10} {y + 33} h26"/></g>'
                        f'<path class="ck d" style="--i:{i + 14};--t:.3s" pathLength="1" d="M{x + 56} {y + 28} l5 6 l11 -15"/>')
     return f'''<svg viewBox="0 0 640 400" class="sc sc-cards">
@@ -145,15 +145,18 @@ def _cards():
 SCENES = {"seal": SEAL, "court": COURT, "strip": _strip(), "contract": CONTRACT, "leader": LEADER, "cards": _cards()}
 
 
-def plate(key, scene, no, lines, blurb, links, label):
+def plate(key, scene, no, lines, blurb, links, label, kicker=None, pid=None):
     """One department title plate. `lines` = the title, one string per line (last line goes gold)."""
     words = "".join(f'<span class="w{" gold" if i == len(lines) - 1 and len(lines) > 1 else ""}" style="--i:{i}"><i>{escape(l)}</i></span>'
                     for i, l in enumerate(lines))
     chips = "".join(f'<a href="{href}">{escape(text)}</a>' for text, href in links)
-    return f'''<div class="plate plate--{scene}" id="dept-{key}" data-plate>
+    skin = scene.split("-")[0]          # "strip-archive" is styled as a strip
+    kicker = kicker or f"Department {no}"
+    pid = pid or f"dept-{key}"
+    return f'''<div class="plate plate--{skin}" id="{pid}" data-plate>
   <div class="plate-fx" aria-hidden="true"></div>
   <div class="plate-copy">
-    <p class="plate-k"><span>Department {no}</span></p>
+    <p class="plate-k"><span>{escape(kicker)}</span></p>
     <h2 class="plate-t"><span class="sr">{escape(label)}</span><span aria-hidden="true">{words}</span></h2>
     <p class="plate-d">{escape(blurb)}</p>
     <nav class="plate-links" aria-label="{escape(label)} sections">{chips}</nav>
