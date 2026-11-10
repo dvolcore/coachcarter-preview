@@ -8,6 +8,31 @@
   const fine = matchMedia("(hover: hover) and (pointer: fine)").matches;
   const nav = $(".nav2");
 
+  /* ---------------- standalone pages (no site.js): header hide/show + mobile menu ---------------- */
+  if (nav && nav.hasAttribute("data-standalone")) {
+    document.documentElement.classList.add("js", "loaded");
+    const menu = $(".menu");
+    let lastY = scrollY;
+    addEventListener("scroll", () => {
+      const y = scrollY;
+      nav.classList.toggle("hide", y > 500 && y > lastY + 4 && !document.body.classList.contains("menu-open"));
+      if (y < lastY - 4) nav.classList.remove("hide");
+      lastY = y;
+    }, { passive: true });
+    if (menu) {
+      menu.inert = true;
+      const setMenu = (open) => {
+        menu.classList.toggle("open", open); menu.inert = !open;
+        document.body.classList.toggle("menu-open", open);
+        document.documentElement.style.overflow = open ? "hidden" : "";
+        $$("[data-menu]").forEach((b) => b.setAttribute("aria-expanded", String(open)));
+        if (open) { const f = menu.querySelector("a"); f && setTimeout(() => f.focus(), 300); } else { const b = $(".menu-btn"); b && b.focus({ preventScroll: true }); }
+      };
+      $$("[data-menu]").forEach((b) => b.addEventListener("click", () => setMenu(!menu.classList.contains("open"))));
+      addEventListener("keydown", (e) => { if (e.key === "Escape" && menu.classList.contains("open")) setMenu(false); });
+    }
+  }
+
   /* ---------------- scroll: progress, rail, local-nav spy (one rAF) ---------------- */
   const progress = $(".progress");
   const rail = $(".rail");
@@ -54,7 +79,7 @@
       }
     }
     if (spy.length) {
-      const cur = current(spy, 140);
+      const cur = current(spy, Math.max(140, innerHeight * 0.5)); // a department is "current" once its plate passes mid-screen
       if ((cur && cur.a) !== (spyCur && spyCur.a)) {
         spyCur && spyCur.a.classList.remove("on");
         if (cur) {
@@ -167,7 +192,12 @@
       a.addEventListener("focus", swap);
     });
     // warm the preview images once the page is idle so the first hover is instant
-    const warm = () => $$(".mega-link[data-pv]").forEach((a) => { const i = new Image(); i.decoding = "async"; i.src = a.dataset.pv; });
+    // one at a time, never a burst of 19 requests competing with the page's own images
+    const warm = () => {
+      const queue = [...new Set($$(".mega-link[data-pv]").map((a) => a.dataset.pv))];
+      const next = () => { const src = queue.shift(); if (!src) return; const i = new Image(); i.decoding = "async"; i.onload = i.onerror = next; i.src = src; };
+      next();
+    };
     fine && pvWide.matches && ("requestIdleCallback" in window ? requestIdleCallback(warm, { timeout: 4000 }) : setTimeout(warm, 2500));
   }
 

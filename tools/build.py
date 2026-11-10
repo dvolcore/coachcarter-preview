@@ -300,6 +300,7 @@ def build():
         (OUT / p.name).write_text(html)
         print("built", p.name, len(html))
     shell.write_index()
+    shell.apply_product()
 
 
 if __name__ == "__main__":

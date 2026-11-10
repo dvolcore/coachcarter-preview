@@ -17,12 +17,14 @@ import re
 from html import escape, unescape
 from pathlib import Path
 
+import motion  # code-authored motion plates (store department title cards)
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "site"
 def _version():
     import hashlib
     h = hashlib.sha1()
-    for f in ("assets/css/shell.css", "assets/js/shell.js"):
+    for f in ("assets/css/shell.css", "assets/js/shell.js", "assets/css/motion.css", "assets/js/motion.js"):
         h.update((OUT / f).read_bytes())
     return h.hexdigest()[:8]
 
@@ -78,10 +80,10 @@ WORLDS = [
         "cta": ("store.html", "Shop everything"),
         "image": "assets/img/academy/campaign/team-off-the-bus.webp", "video": "",
         "pages": [
-            ("store", "store.html#uniform-pieces", "Campus Uniform", "Letterman, sport coats, knits, trousers and shoes.", "assets/img/academy/academy-collection-campaign.webp"),
-            ("store", "store.html#uniforms", "Basketball", "Game and practice jerseys, shorts, warm-ups, court gear.", "assets/img/academy/campaign/game-jersey-official-lineup.webp"),
-            ("store", "store.html#editions", "Books & Collectibles", "Yes Ma'am, No Sir in every format, and signed editions.", "assets/img/accountability-kit-concept.webp"),
-            ("store", "store.html#team-pack", "Team Pack", "The book and the Commitment Card for 25 people.", "assets/img/s_team.jpg"),
+            ("store", "store.html#dept-campus", "Campus Uniform", "Letterman, sport coats, knits, trousers and shoes.", "assets/img/academy/academy-collection-campaign.webp"),
+            ("store", "store.html#dept-basketball", "Basketball", "Game and practice jerseys, shorts, warm-ups, court gear.", "assets/img/academy/campaign/game-jersey-official-lineup.webp"),
+            ("store", "store.html#dept-books", "Books & Collectibles", "Yes Ma'am, No Sir in every format, and signed editions.", "assets/img/accountability-kit-concept.webp"),
+            ("store", "store.html#dept-team", "Team Pack", "The book and the Commitment Card for 25 people.", "assets/img/s_team.jpg"),
         ],
     },
     {
@@ -100,22 +102,38 @@ WORLDS = [
 
 # store departments (local nav + department directory on the store page)
 STORE_DEPTS = [
-    ("Campus Uniform", "#uniform-pieces", "assets/img/academy/academy-collection-campaign.webp",
-     [("Sport coats & jackets", "#school-outerwear"), ("Shirts & knits", "#school-layers"), ("Trousers & skirts", "#school-bottoms"),
+    ("Campus Uniform", "#dept-campus", "assets/img/academy/academy-collection-campaign.webp",
+     [("The full uniform", "#academy-store-title"), ("Sport coats & jackets", "#school-outerwear"), ("Shirts & knits", "#school-layers"), ("Trousers & skirts", "#school-bottoms"),
       ("Shoes & socks", "#school-footwear"), ("Complete looks", "#last-bell")]),
-    ("Basketball", "#uniforms", "assets/img/academy/campaign/game-jersey-official-lineup.webp",
+    ("Basketball", "#dept-basketball", "assets/img/academy/campaign/game-jersey-official-lineup.webp",
      [("Game jerseys", "#game-jerseys"), ("Practice jerseys", "#practice-jerseys"), ("Shorts", "#shorts"),
       ("Warm-ups", "#warm-ups"), ("Court gear", "#court-gear"), ("Accessories", "#accessories")]),
-    ("Collections", "#signature-collection", "assets/img/academy/campaign/team-off-the-bus.webp",
+    ("Collections", "#dept-collections", "assets/img/academy/campaign/team-off-the-bus.webp",
      [("Signature Collection", "#signature-collection"), ("Combat Editions", "#combat-editions"), ("The Academy lineup", "#lineup"),
       ("First Whistle", "#first-whistle"), ("Last Bell lookbook", "#last-bell-lookbook"),
       ("Front Row Letterman", "academy-product.html?product=front-row-letterman")]),
-    ("Books & Collectibles", "#editions", "assets/img/accountability-kit-concept.webp",
-     [("Yes Ma'am, No Sir", "#editions"), ("Signed editions", "#preorders")]),
-    ("Watch", "#watch-plans", "assets/img/academy-series-coach.webp",
+    ("Watch", "#dept-watch", "assets/img/academy-series-coach.webp",
      [("Season One access", "#watch-plans"), ("About the series", "series.html")]),
-    ("Team Pack", "#team-pack", "assets/img/s_team.jpg",
+    ("Books & Collectibles", "#dept-books", "assets/img/accountability-kit-concept.webp",
+     [("Yes Ma'am, No Sir", "#editions"), ("Signed editions", "#preorders")]),
+    ("Team Pack", "#dept-team", "assets/img/s_team.jpg",
      [("The book for 25", "#team-pack"), ("The six-week program", "teams.html")]),
+]
+
+# motion plates: (dept index, key, scene, title lines, blurb, regex of the section it opens, top-level?)
+PLATES = [
+    (0, "campus", "seal", ["Campus", "Uniform"], "Letterman, sport coats, knits, pleats and penny loafers. Dressed for the front row.",
+     r'<section\b[^>]*\bclass="academy-collection"', True),
+    (1, "basketball", "court", ["Basketball"], "Game and practice jerseys, shorts, warm-ups and court gear. Run the play.",
+     r'<section\b[^>]*\bid="uniforms"', False),
+    (2, "collections", "strip", ["The", "Collections"], "Signature, Combat Editions, First Whistle and the lookbooks. The contact sheet.",
+     r'<section\b[^>]*\bid="signature-collection"', False),
+    (3, "watch", "leader", ["Watch", "Season One"], "The series. A free sixty-second preview now, the full season at launch.",
+     r'<section\b[^>]*\bid="watch-plans"', True),
+    (4, "books", "contract", ["Books &", "Collectibles"], "Yes Ma\'am, No Sir in every format, and the signed editions in development.",
+     r'<section\b[^>]*\bid="editions"', True),
+    (5, "team", "cards", ["Team", "Pack"], "The book and the Commitment Card for twenty-five people. Everybody signs.",
+     r'<section\b[^>]*\bid="team-pack"', True),
 ]
 
 # reading order for the "next up" band
@@ -510,7 +528,6 @@ def apply(html, meta, name, series_price="$19.99"):
         m = re.search(r'</section>', html[html.index('class="store-campaign"'):])
         at = html.index('class="store-campaign"') + m.end()
         html = html[:at] + "\n" + store_directory() + html[at:]
-
     if "{{hub}}" in html:
         html = html.replace("{{hub}}", hub(), 1)
 
@@ -519,6 +536,18 @@ def apply(html, meta, name, series_price="$19.99"):
     body, items = chapters(html[a:b])
     html = html[:a] + body + html[b:]
     index_page(meta, name, items)
+
+    # plates are added after the chapter pass so their headings never label a neighbouring section
+    if nav == "store":
+        for di, key, scene, lines, blurb, target, top in PLATES:
+            label, _, _, subs = STORE_DEPTS[di]
+            m = re.search(target, html)
+            if not m:
+                raise SystemExit(f"{name}: no section for the {label} plate ({target})")
+            card = motion.plate(key, scene, f"{di + 1:02d}", lines, blurb, subs, label)
+            if top:
+                card = f'<div class="plate-wrap">{card}</div>'
+            html = html[:m.start()] + card + "\n" + html[m.start():]
 
     # 5. rail + next-up band before the footer
     if html.count("\n</main>") != 1:
@@ -536,5 +565,46 @@ def apply(html, meta, name, series_price="$19.99"):
     # 7. assets
     html = html.replace("</head>", f'<link rel="stylesheet" href="assets/css/shell.css?v={V}">\n{HEAD_BOOT}</head>', 1)
     html = html.replace("</body>", f'<script defer src="assets/js/shell.js?v={V}"></script>\n</body>', 1)
+    if "data-plate" in html:
+        html = html.replace("</head>", f'<link rel="stylesheet" href="assets/css/motion.css?v={V}">\n</head>', 1)
+        html = html.replace("</body>", f'<script defer src="assets/js/motion.js?v={V}"></script>\n</body>', 1)
     html = html.replace(f'<body class="page-{meta_nav}">', f'<body class="page-{meta_nav} world-{(world_of(nav) or {"key": "home"})["key"]}">', 1)
     return html
+
+# ------------------------------------------------- hand-built product page
+# site/academy-product.html is written by hand (another workstream owns its body). It gets the
+# same header, departments bar and search through three marked blocks that are replaced on
+# every build, so the rest of the file is never touched.
+FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
+         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+         '<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cinzel:wght@500;700'
+         '&family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
+
+
+def _marked(html, tag, block, before):
+    start, end = f"<!--shell:{tag}-->", f"<!--/shell:{tag}-->"
+    full = f"{start}{block}{end}\n"
+    if start in html:
+        a, b = html.index(start), html.index(end) + len(end)
+        return html[:a] + full.rstrip("\n") + html[b:]
+    if before not in html:
+        raise SystemExit(f"academy-product.html: shell could not find {before!r}")
+    return html.replace(before, full + before, 1)
+
+
+def apply_product():
+    path = OUT / "academy-product.html"
+    html = path.read_text()
+    bar = localnav("store").replace('href="#dept-', 'href="store.html#dept-')
+    bar = re.sub(r' data-spy="[^"]*"', "", bar)
+    top = (header("store").replace('<header class="nav nav2">', '<header class="nav nav2 solid" data-standalone>')
+           + bar)
+    html = _marked(html, "css", f'{FONTS}<link rel="stylesheet" href="assets/css/shell.css?v={V}">{HEAD_BOOT.strip()}', "</head>")
+    html = _marked(html, "js", f'<script defer src="assets/js/shell.js?v={V}"></script>', "</body>")
+    m = re.search(r"<body[^>]*>\n?", html)
+    if "<!--shell:top-->" in html:
+        html = _marked(html, "top", f'<div class="shell-top">{top}</div>', "")
+    else:
+        html = html[:m.end()] + f'<!--shell:top--><div class="shell-top">{top}</div><!--/shell:top-->\n' + html[m.end():]
+    path.write_text(html)
+    print("shelled academy-product.html", len(html))
