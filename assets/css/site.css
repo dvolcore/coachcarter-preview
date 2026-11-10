@@ -613,11 +613,29 @@ html:not(.js) .curtain { display: none; }
   [data-reveal], .split-line > span, .fade-up, .reveal-mask { opacity: 1 !important; transform: none !important; clip-path: none !important; }
 }
 
+.academy-series-hero { height:clamp(550px,78svh,820px); min-height:0; }
+.academy-series-hero .hero-media img { object-position:50% 30%; }
+.academy-series-hero .hero-media::after { background:linear-gradient(180deg,rgba(8,9,11,.2),transparent 34%,rgba(8,9,11,.74) 73%,var(--ink)); }
+.academy-series-hero h1 { font:700 clamp(36px,6.4vw,100px)/1.02 var(--f-brand); margin:12px 0 24px; }
+.academy-series-hero .flex { justify-content:center; flex-wrap:wrap; }
+
+.offer-concept { margin:0; border:1px solid var(--line-strong); background:var(--carbon); }
+.offer-concept.mt-m { margin-top:var(--space-m,32px); }
+.offer-concept img { display:block; width:100%; height:auto; }
+.offer-concept figcaption { padding:16px clamp(16px,3vw,32px); color:var(--slate); font-size:14px; }
+.offer-concept figcaption b { color:var(--chalk); }
+.plays .offer-concept img { aspect-ratio:2/1; object-fit:cover; object-position:center 46%; }
+
+@media(max-width:600px) {
+  .academy-series-hero .hero-media img { object-position:49% 36%; }
+  .academy-series-hero h1 span { display:block; }
+  .plays .offer-concept img { aspect-ratio:auto; }
+}
+
 /* Paid series offer: public playback uses a separate preview file. */
 .series-offer { scroll-margin-top:90px; background:var(--carbon); }
 .series-offer-grid { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line-strong); }
-.series-offer-art { position:relative; min-height:520px; overflow:hidden; background:var(--maroon-deep); }
-.series-offer-art::before { content:""; position:absolute; inset:-24px; background:linear-gradient(rgba(43,15,25,.6),rgba(8,9,11,.8)),url("../img/keyart_cc2.jpg") center/cover; filter:blur(18px); opacity:.65; }
+.series-offer-art { position:relative; min-height:520px; overflow:hidden; background:radial-gradient(ellipse at 50% 42%,var(--maroon-deep),var(--ink) 77%); }
 .series-offer-art img { width:100%; height:100%; object-fit:contain; object-position:center; position:absolute; padding:24px; }
 .series-preview-tag { position:absolute; bottom:24px; left:24px; right:24px; width:fit-content; padding:10px 16px; color:var(--chalk); background:rgba(8,9,11,.87); font:600 13px/1.4 var(--f-body); letter-spacing:.04em; }
 .series-offer-copy { padding:clamp(24px,3vw,48px); background:linear-gradient(145deg,var(--maroon-deep),var(--carbon)); }
