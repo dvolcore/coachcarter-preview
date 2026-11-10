@@ -747,15 +747,6 @@
           "label": "Color details",
           "alt": "Academy combat color details showing the carbon, maroon, bone and gold accessory palette",
           "caption": "Supporting color detail · AI styling study"
-        },
-        {
-          "id": "game",
-          "label": "In play",
-          "image": "assets/img/academy/roadmap/fit/kc-headband-in-play.webp",
-          "width": 1440,
-          "height": 810,
-          "alt": "KC Court Headband, worn by a basketball player during live play",
-          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
@@ -786,15 +777,6 @@
           "label": "Color details",
           "alt": "Academy combat color details showing the carbon, maroon, bone and gold performance palette",
           "caption": "Supporting color detail · AI styling study"
-        },
-        {
-          "id": "game",
-          "label": "In play",
-          "image": "assets/img/academy/roadmap/fit/kc-arm-sleeve-in-play.webp",
-          "width": 1440,
-          "height": 960,
-          "alt": "KC Shooting Sleeve, worn by a basketball player during live play",
-          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
@@ -834,15 +816,6 @@
           "label": "Tonal details",
           "alt": "Dark Knights tonal Academy details used as supporting sock styling reference",
           "caption": "Supporting tonal detail · AI styling study"
-        },
-        {
-          "id": "game",
-          "label": "In play",
-          "image": "assets/img/academy/roadmap/fit/kc-court-socks-in-play.webp",
-          "width": 1440,
-          "height": 810,
-          "alt": "KC Court Socks — All Black, worn by a basketball player during live play",
-          "caption": "In play · AI styling study"
         }
       ],
       "specs": [
