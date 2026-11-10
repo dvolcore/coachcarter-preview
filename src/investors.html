@@ -1,6 +1,7 @@
 <!--{"title": "Investors — The Coach Carter Brand", "desc": "The investment case for Coach Carter: a top-tier story run on bottom-tier infrastructure. The asset, the gap, the market window, the edge, the plan, the valuation path and the risks.", "nav": "investors"}-->
+<link rel="stylesheet" href="assets/css/inv-motion.css">
 <section class="page-hero inv-hero" style="min-height:100svh">
-  <div class="bg"><video data-auto muted loop playsinline preload="metadata" poster="assets/video/outro.jpg" src="assets/video/outro.mp4"></video></div>
+  <div class="bg inv-graph-bg"><canvas class="inv-graph" aria-hidden="true"></canvas></div>
   <canvas class="dust" aria-hidden="true"></canvas>
   <div class="wrap">
     <span class="eyebrow">Investor memo · November 2026</span>
@@ -14,6 +15,8 @@
     </div>
   </div>
 </section>
+
+<div class="im-ticker" aria-label="Key figures"><ul><li><b>$76.7M</b>Worldwide box office · 2005</li><li><b class="up">$132.3M</b>Same gross in today's dollars</li><li><b>#1</b>U.S. opening · January 2005</li><li><b class="up">$41.7M</b>Opening weekend in today's dollars</li><li><b class="up">16.9M</b>Netflix views · Jul–Dec 2025</li><li><b class="up">38.5M</b>Hours watched on Netflix</li><li><b>Top 10</b>Netflix Global · 2022 &amp; 2025</li><li><b>A</b>CinemaScore</li><li><b>4,000</b>Contract requests after the film · 2005</li><li><b>3,000+</b>Letters to Coach · 2005</li><li><b>13–0</b>Record before the lockout · 1999</li><li><b>2026</b>FIBA Foundation exhibition · Switzerland</li><li aria-hidden="true"><b>$76.7M</b>Worldwide box office · 2005</li><li aria-hidden="true"><b class="up">$132.3M</b>Same gross in today's dollars</li><li aria-hidden="true"><b>#1</b>U.S. opening · January 2005</li><li aria-hidden="true"><b class="up">$41.7M</b>Opening weekend in today's dollars</li><li aria-hidden="true"><b class="up">16.9M</b>Netflix views · Jul–Dec 2025</li><li aria-hidden="true"><b class="up">38.5M</b>Hours watched on Netflix</li><li aria-hidden="true"><b>Top 10</b>Netflix Global · 2022 &amp; 2025</li><li aria-hidden="true"><b>A</b>CinemaScore</li><li aria-hidden="true"><b>4,000</b>Contract requests after the film · 2005</li><li aria-hidden="true"><b>3,000+</b>Letters to Coach · 2005</li><li aria-hidden="true"><b>13–0</b>Record before the lockout · 1999</li><li aria-hidden="true"><b>2026</b>FIBA Foundation exhibition · Switzerland</li></ul></div>
 
 <nav class="inv-nav" aria-label="Memo sections">
   <a href="#thesis">Thesis</a><a href="#asset">The asset</a><a href="#gap">The gap</a><a href="#window">Why now</a><a href="#edge">Our edge</a><a href="#strategy">Strategy</a><a href="#model">Revenue</a><a href="#valuation">Valuation</a><a href="#plan">The plan</a><a href="#capital">Capital</a><a href="#proof">Proof</a><a href="#risks">Risks</a><a href="#contact">Data room</a>
@@ -40,7 +43,12 @@
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow">What the film built — in today's dollars</span><h2 class="h-l mt-s">The awareness<br><span class="gold-text">is already paid for.</span></h2></div>
       <p class="lede" style="max-width:42ch">Paramount and MTV Films spent the launch money in 2005. Adjusted for inflation, the film earned the equivalent of $132 million worldwide — and Netflix logged 38.5 million viewing hours of it in the second half of 2025.</p></div>
-    <div class="film-slot" data-film="strip" data-n="4"></div>
+    <div class="im-tiles" aria-label="The asset in numbers">
+      <div class="im-tile"><div class="n">$<span data-to="41.7">0</span>M</div><div class="l">Opening weekend in today's dollars<span class="src">$24.2M in January 2005 · BLS CPI-U to Sept 2026</span></div><div class="meter"><i style="--v:1"></i><s style="--w:.58"></s></div></div>
+      <div class="im-tile"><div class="n"><span data-to="38.5">0</span>M</div><div class="l">Hours watched on Netflix<span class="src">July–December 2025 · Netflix engagement report</span></div><div class="meter"><i style="--v:1"></i></div></div>
+      <div class="im-tile"><div class="n"><span data-to="40.5">0</span>M</div><div class="l">Plays of the film's nine official scenes<span class="src">Movieclips on YouTube · counted Nov 9, 2026</span></div><div class="meter"><i style="--v:1"></i></div></div>
+      <div class="im-tile"><div class="n"><span data-to="4000">0</span></div><div class="l">Requests for the contract after the film<span class="src">Plus 3,000+ letters · Christian Science Monitor, 2005</span></div><div class="meter"><i style="--v:1"></i></div></div>
+    </div>
     <div class="chart-card" id="chart-money" data-title="Box office then and now">
       <header><div><h3>2005 dollars vs. today's dollars</h3><p>Box office adjusted with the BLS Consumer Price Index (CPI-U) to September 2026</p></div><button class="chip ctoggle" type="button" aria-pressed="false">Show table</button></header>
       <div class="cbody"></div><div class="ctable"></div><p class="csrc">Box office: Box Office Mojo / The Numbers. Inflation: U.S. Bureau of Labor Statistics CPI-U. Box Office Mojo's ticket-price method puts domestic at $125.5M.</p>
@@ -234,7 +242,7 @@
       <p class="lede" style="max-width:42ch">Today's value is unestablished: there are no authenticated financials, owned-audience analytics or Carter transactions to appraise. An independent review estimated roughly $1–3M as run, carried mostly by keynote fees. Priced the way buyers price companies — on profit, not fame — every rung below is a planning scenario with a gate.</p></div>
     <div class="chart-card" id="chart-ladder" data-title="Company value by scenario">
       <header><div><h3>Company value by scenario</h3><p>Log scale, U.S. dollars · planning scenarios, not appraisals · hover for what has to be true</p></div><button class="chip ctoggle" type="button" aria-pressed="false">Show table</button></header>
-      <div class="cbody"></div><div class="ctable"></div><p class="csrc">Scenarios from the Complete Brand Playbook (Nov 2026), reconciling the independent Claude review. Odds appear only where that review gave them (10% for $500M, 5% for $1B, over 7–10 years) — its subjective judgments, not calibrated forecasts. For scale: BizBuySell's 2021–2025 education/school sales show a median 2.22× seller's discretionary earnings; premium multiples need an owned library, contracted renewals and a team that runs without Coach in every room.</p>
+      <div class="cbody"></div><div class="ctable"></div><p class="csrc">Scenarios from the Complete Brand Playbook (Nov 2026), reconciling the independent Claude review. *Odds appear only where that review gave them (10% for $500M, 5% for $1B, over 7–10 years) — its subjective judgments, not calibrated forecasts. For scale: BizBuySell's 2021–2025 education/school sales show a median 2.22× seller's discretionary earnings; premium multiples need an owned library, contracted renewals and a team that runs without Coach in every room.</p>
     </div>
     <div class="chart-card mt-l" id="chart-stack" data-title="The billion-dollar stack">
       <header><div><h3>The five-asset stack, as the review proposed it (years 7–10)</h3><p>Millions of U.S. dollars · assumed value range by asset · alternative paths, not a sum</p></div><button class="chip ctoggle" type="button" aria-pressed="false">Show table</button></header>
@@ -351,9 +359,13 @@
 </section>
 
 <!-- 13 CONTACT -->
-<section class="film-band" aria-label="From the film">
-<!-- film-band team-lineup -->
-  <div data-film="band" data-still="team-lineup" data-q="12"></div>
+<section class="im-close" aria-label="Summary">
+  <div class="wrap">
+    <h2 class="im-words"><span><em>Story.</em></span> <span><em>Distribution.</em></span> <span><em>Participation.</em></span></h2>
+    <div class="im-rule" aria-hidden="true"></div>
+    <p>One name tied to accountability since 2005. Three engines to turn that attention into repeatable revenue — each released only when its gate is met.</p>
+    <a class="btn btn-gold" href="#contact">Request the data room</a>
+  </div>
 </section>
 
 <section class="section maroon" id="contact">
@@ -380,3 +392,4 @@
   <div class="wrap"><p class="disclaimer mt-l">This page is for information only. It is not an offer to sell or a solicitation of an offer to buy any security; any offering would be made only through definitive documents to qualified investors. Valuations, revenue ranges and timelines are planning scenarios and forward-looking statements based on assumptions that may not occur; they are not appraisals or forecasts. Odds shown are an independent review's subjective judgments, not calibrated probabilities. Comparable companies are illustrations, not predictions. Third-party figures are cited to their sources.</p></div>
 </section>
 <script defer src="assets/js/investor.js"></script>
+<script defer src="assets/js/inv-motion.js"></script>

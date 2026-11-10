@@ -146,10 +146,11 @@ def header(active):
 """
 
 
-def footer():
+def footer(nav=""):
+    bgv = "" if nav == "investors" else '<div class="bgv"><video data-auto muted loop playsinline preload="none" poster="assets/video/outro.jpg" data-src="assets/video/outro.mp4"></video></div>'
     return f"""
 <footer class="footer">
-  <div class="bgv"><video data-auto muted loop playsinline preload="none" poster="assets/video/outro.jpg" data-src="assets/video/outro.mp4"></video></div>
+  {bgv}
   <div class="wrap">
     <div class="f-top">
       <div>
@@ -221,7 +222,7 @@ def build():
             body = body.replace("{{academy_cards}}", academy_cards())
         for k, v in ICON.items():
             body = body.replace("{{" + k + "}}", v)
-        html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer()
+        html = head(meta) + header(meta.get("nav", "home")) + '<main id="main">\n' + body + "\n</main>" + footer(meta.get("nav", "home"))
         (OUT / p.name).write_text(html)
         print("built", p.name, len(html))
 
