@@ -249,6 +249,7 @@
 .product-info > p:not(.store-label) { font-size: .9rem; }
 .product-info .proposed { margin-top: 12px; color: var(--academy-maroon); font-weight: 700; }
 .product-info h2 { margin: 26px 0 10px; font-size: 1.1rem; }
+.product-info #product-pairing p { max-width: 58ch; font-size: .86rem; line-height: 1.6; }
 .product-info ul { padding-left: 1.2em; list-style: disc; font-size: .86rem; }
 .product-info li + li { margin-top: 8px; }
 .product-info .product-artwork { margin: 24px 0; padding: 18px; background: #eee5da; }
@@ -480,4 +481,6 @@
 }
 .game-jersey-banner-copy h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2.5rem); }
 .game-jersey-banner-copy span { color: var(--academy-maroon); font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
+.store-catalog-note { max-width: 64ch; margin: 0 0 14px; font-size: .9rem; line-height: 1.55; color: var(--academy-muted); }
 .game-jersey-banner + .store-catalog-note { margin-top: 12px; }
+.store-catalog-note + .store-catalog-note { margin-top: -6px; }

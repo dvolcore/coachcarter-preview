@@ -115,7 +115,8 @@
         "width": 1774,
         "height": 887,
         "alt": "Original Front Row Letterman design showing the front, fully opened jacket with both Richmond lining panels, and the full back side by side"
-      }
+      },
+      "pairing": "For a campus look, layer it over an ivory knit with a charcoal pleated skirt. For an evening look, try it over burgundy satin or wide-leg black trousers."
     },
     {
       "id": "court-tee",
@@ -189,7 +190,8 @@
           "height": 1402,
           "caption": "Library · AI styling study"
         }
-      ]
+      ],
+      "pairing": "For a light base, start with the Bone Oxford and khaki trousers. Add maroon knitwear for color, or choose the bone sport coat and charcoal skirt for more contrast."
     },
     {
       "id": "academy-rib-knit-polo",
@@ -203,9 +205,8 @@
       "alt": "Bone Rib-Knit Polo shown on its own. Vertical ribbing, long sleeves and a short button placket give the knit its shape.",
       "image_caption": "Isolated product concept · AI rendering",
       "specs": [
-        "Vertical ribbing, long sleeves and a short button placket give the knit its shape.",
-        "A long-sleeve rib knit with a pointed collar and a short button placket.",
-        "The fitted waist layers under the longline vest and tucks into the high-rise trouser."
+        "Vertical ribbing gives the long-sleeve knit its shape.",
+        "A pointed collar frames the short button placket."
       ],
       "campaign": "store.html#uniform-pieces",
       "views": [
@@ -247,7 +248,8 @@
           "height": 1024,
           "caption": "Lunchroom · AI styling study"
         }
-      ]
+      ],
+      "pairing": "Tuck the bone polo into high-rise khaki trousers. The open maroon longline vest leaves the ribbing and short placket visible."
     },
     {
       "id": "academy-longline-vest",
@@ -261,9 +263,8 @@
       "alt": "Maroon Longline Cardigan Vest shown on its own. The sleeveless, open-front rib knit falls to the thigh.",
       "image_caption": "Isolated product concept · AI rendering",
       "specs": [
-        "The sleeveless, open-front rib knit falls to the thigh.",
-        "An open-front knit with wide shoulders and a long, straight hem.",
-        "Shown with the Bone Rib-Knit Polo and khaki double-pleat trousers."
+        "The sleeveless rib knit has an open front and a straight hem that falls to the thigh.",
+        "Wide shoulders frame the fitted knit layer underneath."
       ],
       "campaign": "store.html#uniform-pieces",
       "views": [
@@ -305,7 +306,8 @@
           "height": 1024,
           "caption": "Lunchroom · AI styling study"
         }
-      ]
+      ],
+      "pairing": "Wear it open over the Bone Rib-Knit Polo and khaki double-pleat trousers, as shown in the campus lineup."
     },
     {
       "id": "academy-canvas-chore-jacket",
@@ -412,9 +414,7 @@
       "alt": "Bone Oxford Shirt shown on its own. A pointed collar, button front and button cuffs finish the woven shirt.",
       "image_caption": "Isolated product concept · AI rendering",
       "specs": [
-        "A pointed collar, button front and button cuffs finish the woven shirt.",
-        "A button-front bone Oxford with a pointed collar, shown open at the neck.",
-        "Wear it tucked into pleated trousers or loose under the maroon coat."
+        "Bone woven shirt with a pointed collar, button front and button cuffs."
       ],
       "campaign": "store.html#uniform-pieces",
       "flat": "academy-studio/flats/first-whistle-oxford.svg",
@@ -466,7 +466,8 @@
           "height": 1024,
           "caption": "Lunchroom · AI styling study"
         }
-      ]
+      ],
+      "pairing": "Leave the collar open under the maroon Contract Lining Sport Coat and tuck the shirt into charcoal pleated trousers."
     },
     {
       "id": "arc-snap-jacket",
@@ -546,7 +547,8 @@
         "kc-reversible-short",
         "warm-up-zip-jacket"
       ],
-      "campaign": "store.html#game-jerseys"
+      "campaign": "store.html#game-jerseys",
+      "pairing": "Start with the numbered jersey and matching game shorts. The contrasting side panels distinguish the game kits from the tonal practice sets."
     },
     {
       "id": "official-practice-jerseys",
@@ -603,7 +605,8 @@
           ]
         }
       ],
-      "campaign": "store.html#practice-jerseys"
+      "campaign": "store.html#practice-jerseys",
+      "pairing": "Pair each jersey with shorts in the same base color to carry the tonal look from top to bottom. The maroon practice shorts are also listed separately in the store preview."
     },
     {
       "id": "kc-reversible-short",
@@ -629,7 +632,8 @@
       "flat_width": 960,
       "flat_height": 620,
       "flat_alt": "Matching reversible shorts design board showing both colorways",
-      "campaign": "store.html#shorts"
+      "campaign": "store.html#shorts",
+      "pairing": "Wear the bone face with the Court Tee for a lighter outfit or reverse to maroon. The KC insets pick up the pattern on the Warm-Up Zip Jacket."
     },
     {
       "id": "all-maroon-game-short",
@@ -646,7 +650,8 @@
       ],
       "status": "Coming soon",
       "group": "court-gear",
-      "campaign": "store.html#shorts"
+      "campaign": "store.html#shorts",
+      "pairing": "Keep the practice kit tonal with the All-Maroon Practice Jersey. The woven KC strips align visually along the sides of both pieces."
     },
     {
       "id": "warm-up-zip-jacket",
@@ -691,7 +696,8 @@
         "kc-reversible-short"
       ],
       "campaign": "store.html#warm-ups",
-      "default_view": "warm-up-line"
+      "default_view": "warm-up-line",
+      "pairing": "Pair the maroon shell with the carbon Tearaway Pant. Both use antique-gold trim, so the layers match without being the same color."
     },
     {
       "id": "warm-up-tearaway-pant",
@@ -877,7 +883,8 @@
         "Separate laptop sleeve, court-day compartment and small essentials pocket are shown in the open view.",
         "Concept mockup only; dimensions, materials and production hardware remain to be sampled."
       ],
-      "campaign": "store.html#look-06-locker-room"
+      "campaign": "store.html#look-06-locker-room",
+      "pairing": "Open the interior view to compare the laptop sleeve, the court-day compartment and the pocket for small essentials."
     },
     {
       "id": "kc-headband",
@@ -1499,7 +1506,8 @@
           "height": 1024,
           "caption": "Lunchroom · AI styling study"
         }
-      ]
+      ],
+      "pairing": "Pair it with the bone sport coat and maroon knit polo for the campus look, or wear it with an ivory knit under the Front Row Letterman."
     },
     {
       "id": "khaki-double-pleat-trouser",
@@ -1727,7 +1735,8 @@
           "height": 1024,
           "caption": "Between classes · AI styling study"
         }
-      ]
+      ],
+      "pairing": "Choose this tapered cut for a narrower line over loafers. The charcoal double-pleat trouser is the wider-leg option."
     },
     {
       "id": "khaki-tailored-pleat-trouser",

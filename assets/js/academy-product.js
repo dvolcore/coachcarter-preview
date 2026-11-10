@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=12");
+    const response = await fetch("assets/data/academy-products.json?v=13");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
@@ -171,6 +171,12 @@ async function showProduct() {
       item.textContent = spec;
       return item;
     }));
+
+    if (product.pairing) {
+      const pairing = document.querySelector("#product-pairing");
+      pairing.querySelector("p").textContent = product.pairing;
+      pairing.hidden = false;
+    }
 
     const campaign = document.querySelector("#product-campaign");
     if (product.campaign) {
