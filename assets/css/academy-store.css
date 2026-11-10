@@ -208,8 +208,27 @@
   font: 600 clamp(1.45rem, 2.3vw, 2rem)/1.13 var(--f-brand, Georgia);
   margin: .65em 0 .4em;
 }
+.edition-art {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  contain: size;
+  padding: clamp(12px, 2vw, 24px);
+  margin-bottom: 1.25rem;
+  background: #ede4d9;
+}
+.edition-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 5px rgb(41 26 23 / 20%));
+}
 .edition-description { color: var(--academy-muted); font-size: .9rem; margin-bottom: 1.3rem; }
-.edition-card .store-text-link { margin-top: auto; }
+.edition-links { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-top: auto; }
 #team-pack, #signed-ball { scroll-margin-top: calc(var(--nav-h) + 24px); }
 .team-pack-status { color: #ecd2a8; font-size: .9rem; }
 .team-pack-art {
