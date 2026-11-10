@@ -1,0 +1,189 @@
+/* ==========================================================================
+   MOTION PLATES — code-authored motion graphics (markup: tools/motion.py,
+   playback: assets/js/motion.js). A plate gets .in once (entrance) and
+   .live while it is on screen (loops run only then).
+   ========================================================================== */
+.plate-wrap { background: var(--academy-paper, #f8f5f0); padding: clamp(26px, 4vw, 56px) 0 0; }
+.plate-wrap > .plate { width: min(1280px, calc(100% - clamp(32px, 10vw, 168px))); margin-inline: auto; }
+.plate {
+  --gold: #D4AF6A; --gold-hi: #F2DCA0; --chalk: #F5F0E8; --wine: #7A2A45;
+  position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  min-height: clamp(330px, 31vw, 440px); margin: clamp(36px, 5vw, 72px) 0 clamp(28px, 4vw, 52px);
+  color: var(--chalk); color-scheme: dark; border-radius: 3px;
+  background: radial-gradient(120% 140% at 0% 0%, #5E1A2C 0%, #2B0F19 55%, #14070c 100%);
+  box-shadow: 0 30px 60px -34px rgba(20, 7, 12, .7);
+}
+.plate-wrap > .plate { margin-block: 0; }
+.plate--court { background: linear-gradient(120deg, #150d07 0%, #24160c 55%, #3a2413 100%); }
+.plate--court::before { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .028) 0 1px, transparent 1px 54px); }
+.plate--strip { background: radial-gradient(120% 140% at 100% 0%, #1E2127 0%, #101216 50%, #08090B 100%); }
+.plate--leader { background: radial-gradient(90% 120% at 74% 50%, #1b1a17 0%, #0B0806 70%); }
+
+/* halftone field + film grain */
+.plate-fx { position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(242, 220, 160, .3) 1.1px, transparent 1.7px); background-size: 11px 11px;
+  -webkit-mask-image: radial-gradient(58% 95% at 76% 50%, #000 0%, transparent 72%); mask-image: radial-gradient(58% 95% at 76% 50%, #000 0%, transparent 72%);
+  animation: plate-halftone 24s linear infinite; }
+.plate-fx::after { content: ""; position: absolute; inset: 0; opacity: .16; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"); }
+@keyframes plate-halftone { to { background-position: 110px 55px; } }
+
+/* ---------- copy ---------- */
+.plate-copy { container-type: inline-size; display: flex; flex-direction: column; justify-content: center; padding: clamp(26px, 4vw, 60px); min-width: 0; }
+.plate-k { margin: 0; font: 600 12px/1 var(--f-head, "Barlow Condensed", sans-serif); letter-spacing: .34em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 14px; }
+.plate-k::before { content: ""; width: 38px; height: 1px; background: currentColor; transition: width .9s cubic-bezier(.2, .7, .1, 1) .1s; }
+.js .plate:not(.in) .plate-k::before { width: 0; }
+.plate-t { margin: 16px 0 0; font: 600 clamp(52px, 7.4vw, 128px)/.86 var(--f-head, "Barlow Condensed", sans-serif); text-transform: uppercase; letter-spacing: -.012em; }
+@supports (font-size: 1cqi) { .plate-t { font-size: clamp(52px, 17.5cqi, 128px); } }
+.plate-t .w { display: block; overflow: hidden; padding-bottom: .06em; }
+.plate-t .w i { display: block; font-style: normal; }
+.js .plate:not(.in) .plate-t .w i { transform: translateY(110%); }
+.plate.in .plate-t .w i { transform: none; transition: transform 1s cubic-bezier(.2, .7, .1, 1) calc(var(--i) * 110ms + .1s); }
+.plate-t .gold i { background: linear-gradient(180deg, #F6E3B4 0%, #D4AF6A 48%, #BB9558 56%, #7E5C2C 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.plate-d { margin: 16px 0 0; max-width: 40ch; font-size: 15.5px; line-height: 1.5; color: rgba(245, 240, 232, .78); }
+.plate-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.plate-links a { display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border: 1px solid rgba(245, 240, 232, .26); border-radius: 999px;
+  font: 600 11.5px/1 var(--f-head, "Barlow Condensed", sans-serif); letter-spacing: .18em; text-transform: uppercase; color: var(--chalk); text-decoration: none;
+  transition: background .18s, color .18s, border-color .18s, transform .2s; }
+.plate-links a:hover { background: var(--chalk); border-color: var(--chalk); color: #101216; }
+.plate-links a:active { transform: scale(.96); }
+.js .plate:not(.in) .plate-d, .js .plate:not(.in) .plate-links { opacity: 0; transform: translateY(14px); }
+.plate.in .plate-d, .plate.in .plate-links { opacity: 1; transform: none; transition: opacity .8s .45s, transform .9s cubic-bezier(.2, .7, .1, 1) .45s; }
+.plate.in .plate-links { transition-delay: .6s; }
+
+/* ---------- art ---------- */
+.plate-art { position: relative; display: grid; place-items: center; min-width: 0; padding: clamp(8px, 1.6vw, 22px); }
+.sc { width: 100%; height: 100%; max-height: 440px; overflow: visible; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.sc text { stroke: none; font-family: var(--f-head, "Barlow Condensed", sans-serif); font-weight: 600; text-transform: uppercase; }
+.sc .d { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.js .plate:not(.in) .sc .d { stroke-dashoffset: 1; }
+.plate.in .sc .d { stroke-dashoffset: 0; transition: stroke-dashoffset var(--t, 1.1s) cubic-bezier(.6, 0, .2, 1) calc(var(--i, 0) * 90ms + .25s); }
+.sc .p { transform-box: fill-box; transform-origin: center; }
+.js .plate:not(.in) .sc .p { opacity: 0; transform: scale(.35); }
+.plate.in .sc .p { opacity: 1; transform: none; transition: opacity .3s calc(var(--i, 0) * 90ms + .25s), transform .65s cubic-bezier(.3, 1.6, .5, 1) calc(var(--i, 0) * 90ms + .25s); }
+.js .plate:not(.in) .sc .f { opacity: 0; }
+.plate.in .sc .f { opacity: 1; transition: opacity .8s calc(var(--i, 0) * 90ms + .25s); }
+.plate:not(.live) *, .plate:not(.live) *::before, .plate:not(.live) *::after { animation-play-state: paused !important; }
+@keyframes plate-spin { to { transform: rotate(360deg); } }
+
+/* seal */
+.sc-seal .stitch { stroke-dasharray: 3 9; opacity: .85; }
+.sc-seal .spin-slow { transform-origin: 320px 200px; animation: plate-spin 60s linear infinite; }
+.sc-seal .spin-rev { transform-origin: 320px 200px; animation: plate-spin 80s linear infinite reverse; }
+.js .plate:not(.in) .sc-seal .spin-rev { opacity: 0; }
+.plate.in .sc-seal .spin-rev { opacity: 1; transition: opacity 1.2s .9s; }
+.sc-seal .ring-text { fill: var(--gold-hi); font-size: 13.5px; }
+.sc-seal .tape { stroke: rgba(245, 240, 232, .5); stroke-width: 1.5; }
+.sc-seal .marker { fill: var(--gold); stroke: none; animation: plate-tape 9s ease-in-out infinite alternate; }
+@keyframes plate-tape { from { transform: translateX(40px); } to { transform: translateX(600px); } }
+.sc-seal .pole { stroke: rgba(245, 240, 232, .7); stroke-width: 3; }
+.sc-seal .flag { transform-origin: 94px 106px; animation: plate-sway 4.5s ease-in-out infinite; }
+.sc-seal .flag path { fill: var(--wine); stroke: var(--gold); }
+.sc-seal .flag text { fill: var(--chalk); font-size: 14px; letter-spacing: .16em; }
+@keyframes plate-sway { 0%, 100% { transform: rotate(-2.5deg) skewY(0); } 50% { transform: rotate(3deg) skewY(-2deg); } }
+.sc-seal .chev path { stroke: var(--gold-hi); stroke-width: 3.5; }
+.sc-seal .star path { fill: var(--gold); stroke: none; }
+
+/* court */
+.sc-court { stroke: rgba(245, 240, 232, .82); }
+.sc-court .board { stroke-width: 4; }
+.sc-court .rim, .sc-court .swish { stroke: var(--gold-hi); stroke-width: 3; }
+.sc-court .swish { opacity: 0; transform-origin: 560px 200px; animation: plate-swish 5.2s linear infinite; }
+@keyframes plate-swish { 0%, 69% { opacity: 0; transform: scale(1); } 71% { opacity: 1; transform: scale(1); } 92%, 100% { opacity: 0; transform: scale(3.6); } }
+.sc-court .o circle { stroke: var(--gold-hi); stroke-width: 3.5; }
+.sc-court .x path { stroke-width: 3.5; }
+.sc-court .pass { stroke: var(--gold); stroke-width: 1.6; }
+.sc-court .arrow { fill: rgba(245, 240, 232, .82); stroke: none; }
+.sc-court .ball { fill: #E8A04A; stroke: #7E4A16; stroke-width: 1.2; offset-path: path("M150 250 L300 110 Q 440 110 560 200"); offset-rotate: 0deg; animation: plate-ball 5.2s linear infinite; }
+.js .plate:not(.in) .sc-court .ball { opacity: 0; }
+.plate.in .sc-court .ball { opacity: 1; transition: opacity .4s 2.5s; }
+@supports not (offset-path: path("M0 0 L1 1")) { .sc-court .ball { display: none; } }
+@keyframes plate-ball { 0%, 12% { offset-distance: 0%; } 34%, 44% { offset-distance: 41%; } 70%, 86% { offset-distance: 100%; } 86.01%, 100% { offset-distance: 0%; } }
+.sc-court .board-score rect { fill: rgba(8, 9, 11, .62); stroke: var(--gold); stroke-width: 1.4; }
+.sc-court .lb { fill: #A7ABB4; font-size: 9px; letter-spacing: .22em; }
+.sc-court .n, .sc-court .roll text { fill: var(--gold-hi); font-size: 31px; letter-spacing: .02em; }
+.sc-court .roll { transform: translateY(-68px); }
+.js .plate:not(.in) .sc-court .roll { transform: none; }
+.plate.in .sc-court .roll { transform: translateY(-68px); transition: transform 1.5s steps(2, end) 1.5s; }
+
+/* film strip */
+.sc-strip .tilt { transform: rotate(-5deg); transform-origin: 320px 200px; }
+.js .plate:not(.in) .sc-strip .tilt { opacity: 0; transform: rotate(-5deg) translateX(140px); }
+.plate.in .sc-strip .tilt { opacity: 1; transform: rotate(-5deg); transition: opacity .6s .2s, transform 1.3s cubic-bezier(.2, .7, .1, 1) .2s; }
+.sc-strip .drift { animation: plate-drift 26s ease-in-out infinite alternate; }
+@keyframes plate-drift { from { transform: translateX(0); } to { transform: translateX(-400px); } }
+.sc-strip .film { fill: #040405; stroke: none; }
+.sc-strip .holes rect { fill: rgba(245, 240, 232, .2); stroke: none; }
+.sc-strip .fr rect { stroke: rgba(245, 240, 232, .28); stroke-width: 1; }
+.sc-strip .fr text { fill: var(--gold); font-size: 9px; letter-spacing: .2em; }
+.sc-strip .fr image { filter: saturate(.88) contrast(1.04); }
+.sc-strip .grease { stroke: var(--gold-hi); stroke-width: 4.5; }
+.sc-strip .sel { fill: var(--gold-hi); font-size: 19px; letter-spacing: .22em; }
+
+/* contract */
+.sc-contract .sheet { transform: rotate(-3.5deg); transform-origin: 320px 200px; }
+.js .plate:not(.in) .sc-contract .sheet { transform: rotate(-3.5deg) translateY(34px); opacity: 0; }
+.plate.in .sc-contract .sheet { transform: rotate(-3.5deg); opacity: 1; transition: opacity .5s .15s, transform 1.1s cubic-bezier(.2, .7, .1, 1) .15s; }
+.sc-contract .paper { fill: #EFE6D6; stroke: none; filter: drop-shadow(0 20px 26px rgba(0, 0, 0, .5)); }
+.sc-contract .h { fill: #2B0F19; font: 700 23px var(--f-brand, "Cinzel", Georgia, serif); text-anchor: middle; letter-spacing: .12em; }
+.sc-contract .rule { stroke: #5E1A2C; stroke-width: 1.5; }
+.sc-contract .terms rect { stroke: #5E1A2C; stroke-width: 1.5; }
+.sc-contract .terms text { fill: #231c1c; font-size: 13px; letter-spacing: .14em; }
+.sc-contract .tick { stroke: #7A2A45; stroke-width: 3.2; }
+.sc-contract .lbl { fill: #655a55; font-size: 9px; letter-spacing: .26em; }
+.sc-contract .sig { stroke: #16181D; stroke-width: 2.4; }
+.sc-contract .seal circle { fill: #C9A262; stroke: #7E5C2C; stroke-width: 2; }
+.sc-contract .seal .in { fill: none; stroke: rgba(43, 15, 25, .45); stroke-width: 1; stroke-dasharray: 2 4; }
+.sc-contract .seal text { fill: #2B0F19; font: 700 15px var(--f-brand, "Cinzel", Georgia, serif); text-anchor: middle; letter-spacing: .08em; }
+.sc-contract .seal { transform: rotate(-12deg); }
+.plate.in .sc-contract .seal { transform: rotate(-12deg); }
+
+/* film leader */
+.sc-leader { stroke: rgba(245, 240, 232, .5); stroke-width: 1.5; }
+.sc-leader .wedge { stroke: rgba(245, 240, 232, .14); stroke-width: 148; stroke-dasharray: 465; stroke-linecap: butt; transform: rotate(-90deg); transform-origin: 320px 200px;
+  animation: plate-sweep 1s linear infinite, plate-phase-num 5s steps(1) infinite; }
+@keyframes plate-sweep { from { stroke-dashoffset: 465; } to { stroke-dashoffset: 0; } }
+@keyframes plate-phase-num { 0% { opacity: 1; } 60%, 100% { opacity: 0; } }
+.sc-leader .n { fill: var(--chalk); font-size: 150px; text-anchor: middle; opacity: 0; animation: 5s steps(1) infinite; }
+.sc-leader .n3 { animation-name: plate-n3; } .sc-leader .n2 { animation-name: plate-n2; } .sc-leader .n1 { animation-name: plate-n1; }
+@keyframes plate-n3 { 0% { opacity: 1; } 20%, 100% { opacity: 0; } }
+@keyframes plate-n2 { 0% { opacity: 0; } 20% { opacity: 1; } 40%, 100% { opacity: 0; } }
+@keyframes plate-n1 { 0%, 39.9% { opacity: 0; } 40% { opacity: 1; } 60%, 100% { opacity: 0; } }
+.sc-leader .play { opacity: 0; animation: plate-play 5s steps(1) infinite; }
+@keyframes plate-play { 0%, 59.9% { opacity: 0; } 60%, 100% { opacity: 1; } }
+.sc-leader .play path { fill: var(--gold); stroke: none; }
+.sc-leader .pulse { stroke: var(--gold-hi); stroke-width: 2; transform-origin: 320px 200px; animation: plate-pulse 5s ease-out infinite; }
+@keyframes plate-pulse { 0%, 60% { transform: scale(.8); opacity: 0; } 62% { opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
+.sc-leader .scratch path { stroke: rgba(245, 240, 232, .22); stroke-width: 1; animation: plate-scratch 1.7s steps(1) infinite; }
+.sc-leader .scratch path:nth-child(2) { animation-duration: 2.3s; } .sc-leader .scratch path:nth-child(3) { animation-duration: 1.1s; }
+@keyframes plate-scratch { 0% { opacity: 0; transform: translateX(0); } 12% { opacity: 1; } 20% { opacity: 0; transform: translateX(23px); } 54% { opacity: .7; } 60% { opacity: 0; transform: translateX(-31px); } 100% { opacity: 0; } }
+.sc-leader .slate { fill: var(--gold); font-size: 12px; letter-spacing: .26em; }
+.sc-leader .slate.r { text-anchor: end; }
+
+/* 25 cards */
+.sc-cards .card rect { fill: #EFE6D6; stroke: none; }
+.sc-cards .ln { stroke: rgba(35, 28, 28, .32); stroke-width: 2; }
+.sc-cards .ck { stroke: #7A2A45; stroke-width: 3.6; }
+.sc-cards .bar { stroke: var(--gold); stroke-width: 3; }
+.sc-cards .tl { fill: var(--gold); font-size: 12px; letter-spacing: .26em; }
+.sc-cards .tn { fill: var(--gold-hi); font-size: 40px; text-anchor: end; }
+.sc-cards .tn .of { fill: rgba(245, 240, 232, .6); font-size: 20px; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 860px) {
+  .plate { grid-template-columns: 1fr; min-height: 0; }
+  .plate-art { order: -1; height: clamp(210px, 56vw, 320px); padding: 10px 10px 0; }
+  .plate-art .sc { height: auto; max-height: calc(clamp(210px, 56vw, 320px) - 12px); }
+  .plate-copy { padding: 18px 22px 26px; }
+  .plate-t { font-size: clamp(46px, 13vw, 96px); margin-top: 12px; }
+  @supports (font-size: 1cqi) { .plate-t { font-size: clamp(46px, 15.5cqi, 96px); } }
+}
+
+/* ---------- reduced motion: everything in its final state, nothing loops ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .plate *, .plate *::before, .plate *::after { animation: none !important; transition: none !important; }
+  .sc-leader .n1, .sc-leader .wedge { opacity: 0; } .sc-leader .play { opacity: 1; }
+  .sc-court .ball { offset-distance: 100%; }
+  .sc-seal .marker { transform: translateX(320px); }
+}
+@media print { .plate-fx { display: none; } }
