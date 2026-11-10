@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=3");
+    const response = await fetch("assets/data/academy-products.json?v=4");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const requestedKey = new URLSearchParams(location.search).get("product") || "court-tee";
@@ -55,10 +55,36 @@ async function showProduct() {
         });
         return button;
       });
+      const editions = document.querySelector("#product-editions");
+      const editionLinks = (product.editions || []).map(({ view, name }) => {
+        const edition = views.find(({ id }) => id === view);
+        const link = document.createElement("a");
+        link.href = "#" + view;
+        const preview = new Image(edition.width, edition.height);
+        preview.src = edition.image;
+        preview.alt = "";
+        const label = document.createElement("span");
+        label.textContent = name;
+        link.append(preview, label);
+        link.addEventListener("click", (event) => {
+          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          history.replaceState(null, "", link.hash);
+          selectView();
+          photo.scrollIntoView({ block: "nearest" });
+        });
+        return link;
+      });
+      if (editionLinks.length) {
+        editions.querySelector("div").replaceChildren(...editionLinks);
+        editions.hidden = false;
+      }
+      const defaultView = views.find(({ id }) => id === product.default_view) || mainView;
       function selectView() {
-        const selected = views.find((view) => "#" + view.id === location.hash) || mainView;
+        const selected = views.find((view) => "#" + view.id === location.hash) || defaultView;
         setPhoto(selected);
         buttons.forEach((button, index) => button.setAttribute("aria-pressed", String(views[index] === selected)));
+        editionLinks.forEach((link) => link.setAttribute("aria-current", String(link.hash === "#" + selected.id)));
       }
       gallery.replaceChildren(...buttons);
       gallery.hidden = false;
@@ -131,9 +157,18 @@ async function showProduct() {
     }
     if (product.id === "front-row-letterman") {
       document.querySelector("#front-row-composite").hidden = false;
-      const lifestyle = document.querySelector("#front-row-lifestyle");
+    }
+    const lifestyleId = {
+      "front-row-letterman": "front-row-lifestyle",
+      "warm-up-zip-jacket": "warm-up-editorial",
+    }[product.id];
+    const lifestyle = lifestyleId && document.getElementById(lifestyleId);
+    if (lifestyle) {
       lifestyle.hidden = false;
-      document.querySelector("#product-lifestyle-link").hidden = false;
+      const lifestyleLink = document.querySelector("#product-lifestyle-link");
+      lifestyleLink.href = "#" + lifestyle.id;
+      if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
+      lifestyleLink.hidden = false;
 
       const lightbox = document.querySelector("#product-lifestyle-lightbox");
       const expandedImage = lightbox.querySelector("img");
@@ -153,9 +188,7 @@ async function showProduct() {
     }
     document.querySelector(".academy-product-layout").hidden = false;
     status.hidden = true;
-    if (product.id === "front-row-letterman" && location.hash === "#front-row-lifestyle") {
-      document.querySelector("#front-row-lifestyle").scrollIntoView();
-    }
+    if (lifestyle && location.hash === "#" + lifestyle.id) lifestyle.scrollIntoView();
   } catch {
     status.firstChild.textContent = "This piece could not be loaded. ";
   }

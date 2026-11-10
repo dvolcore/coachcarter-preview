@@ -314,7 +314,7 @@
       "alt": "Bone reversible jersey with maroon woven side panels and gold KC crest on the right shoulder",
       "image_caption": "Bone side · AI garment rendering",
       "specs": [
-        "Reversible mesh in bone and Richmond maroon. The contrast side panels invert with each colorway.",
+        "One double-layer mesh jersey with two wearable faces. Turn it inside out to switch between bone with maroon insets and Richmond maroon with bone insets.",
         "An original woven KC repeat runs down both sides. A small gold KC circle from the site’s Home transition sits on the wearer’s right shoulder."
       ],
       "status": "Coming soon",
@@ -322,6 +322,15 @@
       "price": "$98 proposed",
       "view_label": "Bone side",
       "views": [
+        {
+          "id": "reversible",
+          "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-turn.webp",
+          "alt": "Bone mesh jersey turned back at the hem to reveal the maroon reverse of the same garment",
+          "width": 1536,
+          "height": 1024,
+          "label": "Inside out",
+          "caption": "Bone and maroon on one jersey · AI garment rendering"
+        },
         {
           "id": "maroon",
           "image": "assets/img/academy/roadmap/fit/reversible-practice-jersey-maroon.webp",
@@ -333,20 +342,38 @@
         },
         {
           "id": "black-bone",
+          "image": "assets/img/academy/roadmap/fit/practice-jersey-black-bone.webp",
+          "alt": "Black and bone mesh jersey concepts side by side with gold Academy lettering and KC side insets",
+          "width": 1536,
+          "height": 1024,
+          "label": "Black / Bone",
+          "caption": "Black / Bone edition · AI garment rendering"
+        },
+        {
+          "id": "dark-knights",
+          "image": "assets/img/academy/roadmap/fit/practice-jersey-dark-knights.webp",
+          "alt": "Black mesh Dark Knights jersey with tonal side panels and gold Academy lettering",
+          "width": 1536,
+          "height": 1024,
+          "label": "Dark Knights",
+          "caption": "Dark Knights edition · AI garment rendering"
+        },
+        {
+          "id": "black-bone-on-court",
           "image": "assets/img/academy/roadmap/fit/kc-combat-black-bone.webp",
           "alt": "Black and bone Academy court kit with KC repeat side panels and gold crest details",
           "width": 1672,
           "height": 941,
-          "label": "Black / bone alternate",
+          "label": "Black / bone on court",
           "caption": "Black / bone alternate · AI styling study"
         },
         {
-          "id": "dark-knights",
+          "id": "dark-knights-on-court",
           "image": "assets/img/academy/roadmap/fit/kc-dark-knights-game-two.webp",
           "alt": "Black Dark Knights Academy court kit with tonal KC details and gold crest",
           "width": 1672,
           "height": 941,
-          "label": "Dark Knights",
+          "label": "Dark Knights on court",
           "caption": "Dark Knights · AI styling study"
         }
       ],
@@ -358,7 +385,22 @@
       "flat_width": 1000,
       "flat_height": 680,
       "flat_alt": "Design board for the bone and maroon reversible practice jersey with KC side panels",
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#signature-collection",
+      "default_view": "reversible",
+      "editions": [
+        {
+          "view": "reversible",
+          "name": "Bone / Maroon"
+        },
+        {
+          "view": "black-bone",
+          "name": "Black / Bone"
+        },
+        {
+          "view": "dark-knights",
+          "name": "Dark Knights"
+        }
+      ]
     },
     {
       "id": "kc-reversible-short",
@@ -412,17 +454,23 @@
           "height": 539,
           "label": "Back",
           "caption": "Back · AI garment rendering"
+        },
+        {
+          "id": "warm-up-line",
+          "image": "assets/img/academy/campaign/warm-up-line.webp",
+          "alt": "Players in Richmond maroon warm-up jackets pass a basketball in front of crowded gym bleachers",
+          "width": 1536,
+          "height": 1024,
+          "label": "Warm-up line",
+          "caption": "Warm-up line · AI styling study"
         }
       ],
       "pieces": [
         "reversible-practice-jersey",
         "kc-reversible-short"
       ],
-      "flat": "assets/img/academy/roadmap/warm-up-zip-jacket.svg",
-      "flat_width": 1080,
-      "flat_height": 680,
-      "flat_alt": "Front and back warm-up jacket design board with KC woven side insets",
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#signature-collection",
+      "default_view": "warm-up-line"
     },
     {
       "id": "academy-hoodie",
