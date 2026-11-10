@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Court Collection — Coach Carter Academy</title>
   <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="stylesheet" href="assets/css/academy-store.css?v=4">
+  <link rel="stylesheet" href="assets/css/academy-store.css?v=6">
   <link rel="stylesheet" href="assets/css/academy-gallery.css">
   <style>
     .front-row-lifestyle { margin: clamp(4rem, 9vw, 8rem) 0 2rem; padding-top: clamp(2.5rem, 5vw, 4.5rem); border-top: 1px solid rgba(184, 148, 75, .34); }
@@ -21,6 +21,13 @@
     .front-row-lifestyle-card:hover img, .front-row-lifestyle-card:focus-visible img { transform: translateY(-3px); border-color: rgba(184, 148, 75, .8); }
     .front-row-lifestyle-grid + .front-row-lifestyle-intro, .warm-up-grid + .front-row-lifestyle-intro { margin-top: 1.5rem; }
     .front-row-lifestyle-card figcaption { padding-top: .65rem; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--academy-muted); }
+    #school-uniform-editorial { scroll-margin-top: calc(var(--nav-h) + 12px); }
+    .school-uniform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2rem); }
+    .school-uniform-grid .wide { grid-column: 1 / -1; }
+    .school-uniform-grid .front-row-lifestyle-card[hidden] { display: none; }
+    .school-uniform-grid .front-row-lifestyle-card:only-child { max-width: 52rem; }
+    .school-uniform-grid .wide img { aspect-ratio: 3 / 2; }
+    .school-uniform-grid + .front-row-lifestyle-intro { margin-top: 1.5rem; }
     .warm-up-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2.5rem); }
     .warm-up-grid .wide { grid-column: 1 / -1; }
     .warm-up-grid .wide img { aspect-ratio: 3 / 2; }
@@ -34,11 +41,11 @@
     .front-row-composite figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: .75rem; color: var(--academy-muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
     @media (max-width: 760px) { .front-row-lifestyle-head { display: block; } .front-row-lifestyle-head .store-text-link { display: inline-block; margin-top: 1rem; } .front-row-lifestyle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; } .front-row-lifestyle-card.wide { grid-column: span 2; } }
     @media (max-width: 560px) {
-      .warm-up-grid { grid-template-columns: minmax(0, 1fr); }
+      .warm-up-grid, .school-uniform-grid { grid-template-columns: minmax(0, 1fr); }
       .warm-up-grid .wide { grid-column: 1; }
     }
   </style>
-  <script defer src="assets/js/academy-product.js?v=4"></script>
+  <script defer src="assets/js/academy-product.js?v=6"></script>
 </head>
 <body class="academy-product-page">
   <header>
@@ -88,6 +95,31 @@
         <a class="store-text-link" href="academy-studio/index.html">Explore the Academy design library ↗</a>
       </div>
     </article>
+    <section id="school-uniform-editorial" class="front-row-lifestyle" hidden aria-labelledby="school-uniform-editorial-title">
+      <div class="front-row-lifestyle-head">
+        <div>
+          <p class="store-label">Collection 01 · Campus wear</p>
+          <h2 id="school-uniform-editorial-title">The uniform in motion</h2>
+        </div>
+        <a class="store-text-link" href="store.html#uniform-pieces">Explore all uniform pieces ↗</a>
+      </div>
+      <p class="front-row-lifestyle-intro">Tailoring and knit layers on students across campus. Select a photo to see the full look.</p>
+      <div class="school-uniform-grid">
+        <a class="front-row-lifestyle-card wide" href="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" aria-label="Enlarge The uniform lineup">
+          <figure>
+            <img src="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" alt="Six students on the Academy steps in tailored blazers, knit layers, pleated skirts and trousers" width="1672" height="941" loading="lazy">
+            <figcaption>The uniform lineup</figcaption>
+          </figure>
+        </a>
+        <a class="front-row-lifestyle-card" href="assets/img/academy/last-bell/01-school-uniform.webp" aria-label="Enlarge Between classes">
+          <figure>
+            <img src="assets/img/academy/last-bell/01-school-uniform.webp" alt="Students in a maroon longline vest and a canvas chore jacket walk past a row of lockers" width="1536" height="1024" loading="lazy">
+            <figcaption>Between classes</figcaption>
+          </figure>
+        </a>
+      </div>
+      <p class="front-row-lifestyle-intro">AI styling studies. Final garment details are subject to sampling.</p>
+    </section>
     <section id="warm-up-editorial" class="front-row-lifestyle" hidden aria-labelledby="warm-up-editorial-title">
       <div class="front-row-lifestyle-head">
         <div>

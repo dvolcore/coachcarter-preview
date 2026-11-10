@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=4");
+    const response = await fetch("assets/data/academy-products.json?v=6");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const requestedKey = new URLSearchParams(location.search).get("product") || "court-tee";
@@ -133,7 +133,8 @@ async function showProduct() {
     const campaign = document.querySelector("#product-campaign");
     if (product.campaign) {
       campaign.href = product.campaign;
-      if (product.group === "last-bell") campaign.textContent = "See it styled ↗";
+      if (product.campaign === "store.html#uniform-pieces") campaign.textContent = "Explore all uniform pieces ↗";
+      else if (product.group === "last-bell") campaign.textContent = "See it styled ↗";
       campaign.hidden = false;
     } else {
       campaign.remove();
@@ -158,7 +159,7 @@ async function showProduct() {
     if (product.id === "front-row-letterman") {
       document.querySelector("#front-row-composite").hidden = false;
     }
-    const lifestyleId = {
+    const lifestyleId = product.campaign === "store.html#uniform-pieces" ? "school-uniform-editorial" : {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
     }[product.id];
@@ -167,7 +168,8 @@ async function showProduct() {
       lifestyle.hidden = false;
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
-      if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
+      if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
+      else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
       lifestyleLink.hidden = false;
 
       const lightbox = document.querySelector("#product-lifestyle-lightbox");

@@ -146,17 +146,11 @@
       "alt": "Six students on the Academy steps in blazers, knit layers, pleated skirts and tailored trousers",
       "image_caption": "Academy school uniform · AI styling concept",
       "specs": [
-        "The campus palette pairs maroon and bone with khaki and charcoal.",
-        "Structured blazers and knit layers are styled with pleated skirts and relaxed trousers.",
-        "Explore the individual pieces available to preview below."
+        "Richmond maroon and bone knit layers sit alongside khaki and charcoal tailoring.",
+        "Four sport coats, two trouser cuts and a charcoal pleated skirt anchor the collection.",
+        "Explore the campus editorial for a closer look at how students wear the pieces together."
       ],
-      "campaign": "store.html#look-01-school-uniform",
-      "pieces": [
-        "first-whistle-oxford",
-        "academy-rib-knit-polo",
-        "academy-longline-vest",
-        "academy-double-pleat-trouser"
-      ]
+      "campaign": "store.html#uniform-pieces"
     },
     {
       "id": "arc-warmup-set",
@@ -184,36 +178,38 @@
     {
       "id": "academy-rib-knit-polo",
       "name": "Bone Rib-Knit Polo",
-      "kind": "Campus knitwear · Bone",
+      "kind": "Long-sleeve knit top · Bone",
       "status": "Coming soon",
       "group": "last-bell",
-      "image": "assets/img/academy/last-bell/academy-rib-knit-polo.webp",
-      "image_width": 417,
-      "image_height": 471,
-      "alt": "Bone long-sleeve rib-knit polo layered beneath the maroon vest",
-      "image_caption": "AI styling study · On-body garment detail",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/academy-rib-knit-polo.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Bone Rib-Knit Polo shown on its own. Vertical ribbing, long sleeves and a short button placket give the knit its shape.",
+      "image_caption": "Isolated product concept · AI rendering",
       "specs": [
+        "Vertical ribbing, long sleeves and a short button placket give the knit its shape.",
         "A long-sleeve rib knit with a pointed collar and a short button placket.",
         "The fitted waist layers under the longline vest and tucks into the high-rise trouser."
       ],
-      "campaign": "store.html#look-01-school-uniform"
+      "campaign": "store.html#uniform-pieces"
     },
     {
       "id": "academy-longline-vest",
-      "name": "Maroon Longline Vest",
-      "kind": "Campus knitwear · Richmond Maroon",
+      "name": "Maroon Longline Cardigan Vest",
+      "kind": "Open-front knit layer · Maroon",
       "status": "Coming soon",
       "group": "last-bell",
-      "image": "assets/img/academy/last-bell/academy-longline-vest.webp",
-      "image_width": 467,
-      "image_height": 611,
-      "alt": "Maroon open-front longline vest over a bone rib-knit polo",
-      "image_caption": "AI styling study · On-body garment detail",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/academy-longline-vest.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Maroon Longline Cardigan Vest shown on its own. The sleeveless, open-front rib knit falls to the thigh.",
+      "image_caption": "Isolated product concept · AI rendering",
       "specs": [
+        "The sleeveless, open-front rib knit falls to the thigh.",
         "An open-front knit with wide shoulders and a long, straight hem.",
         "Shown with the Bone Rib-Knit Polo and khaki double-pleat trousers."
       ],
-      "campaign": "store.html#look-01-school-uniform"
+      "campaign": "store.html#uniform-pieces"
     },
     {
       "id": "academy-canvas-chore-jacket",
@@ -230,7 +226,7 @@
         "A maroon button-front work jacket with a contrast tan collar.",
         "Flapped chest pockets and low patch pockets echo the hallway reference."
       ],
-      "campaign": "store.html#look-01-school-uniform"
+      "campaign": "store.html#uniform-pieces"
     },
     {
       "id": "academy-double-pleat-trouser",
@@ -253,19 +249,20 @@
     {
       "id": "first-whistle-oxford",
       "name": "Bone Oxford Shirt",
-      "kind": "Game-day shirting · Bone",
+      "kind": "Button-front shirting · Bone",
       "status": "Coming soon",
       "group": "last-bell",
-      "image": "assets/img/academy/last-bell/first-whistle-oxford.webp",
-      "image_width": 663,
-      "image_height": 403,
-      "alt": "Open-collar bone Oxford shirts styled under charcoal and maroon sport coats",
-      "image_caption": "AI styling study · On-body garment detail",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/first-whistle-oxford.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Bone Oxford Shirt shown on its own. A pointed collar, button front and button cuffs finish the woven shirt.",
+      "image_caption": "Isolated product concept · AI rendering",
       "specs": [
+        "A pointed collar, button front and button cuffs finish the woven shirt.",
         "A button-front bone Oxford with a pointed collar, shown open at the neck.",
         "Wear it tucked into pleated trousers or loose under the maroon coat."
       ],
-      "campaign": "store.html#first-whistle",
+      "campaign": "store.html#uniform-pieces",
       "flat": "academy-studio/flats/first-whistle-oxford.svg"
     },
     {
@@ -725,6 +722,280 @@
         "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
       ],
       "campaign": "store.html#signature-collection"
+    },
+    {
+      "id": "richmond-maroon-sport-coat",
+      "name": "Relaxed Richmond Maroon Sport Coat",
+      "kind": "Relaxed tailoring · Richmond Maroon",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/richmond-maroon-sport-coat.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Relaxed Richmond Maroon Sport Coat shown on its own. Broader notched lapels and a straighter cut leave room for layering.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "Broader notched lapels and a straighter cut leave room for layering.",
+        "A student wears the maroon sport coat over an open-collar bone shirt.",
+        "The notched lapel and small gold Academy mark stand out against the maroon."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "bone-sport-coat",
+      "name": "Bone Sport Coat",
+      "kind": "Fitted tailoring · Bone",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/bone-sport-coat.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Bone Sport Coat shown on its own. A shaped waist, a single dark button and flap pockets keep the light tailoring clean.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "A shaped waist, a single dark button and flap pockets keep the light tailoring clean.",
+        "A student wears the bone sport coat over a maroon polo.",
+        "Light tailoring pairs with a charcoal pleated skirt and maroon knit."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "charcoal-sport-coat",
+      "name": "Charcoal Sport Coat",
+      "kind": "Relaxed tailoring · Charcoal",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/charcoal-sport-coat.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Charcoal Sport Coat shown on its own. Dark buttons, notched lapels and a relaxed cut frame the knit layer underneath.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "Dark buttons, notched lapels and a relaxed cut frame the knit layer underneath.",
+        "A student wears the charcoal sport coat over a maroon V-neck.",
+        "The dark jacket frames a bone Oxford collar and contrasts with khaki trousers."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "maroon-knit-polo",
+      "name": "Maroon Rib-Knit Polo",
+      "kind": "Long-sleeve knit top · Maroon",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/maroon-knit-polo.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Maroon Rib-Knit Polo shown on its own. A pointed collar, three-button placket and ribbed hem sit under the bone sport coat.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "A pointed collar, three-button placket and ribbed hem sit under the bone sport coat.",
+        "A maroon knit polo is layered under a bone sport coat.",
+        "A tonal placket and collar show under the lighter jacket."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "maroon-v-neck-sweater",
+      "name": "Maroon V-Neck Sweater Vest",
+      "kind": "Sleeveless knit layer · Maroon",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/maroon-v-neck-sweater.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Maroon V-Neck Sweater Vest shown on its own. The sleeveless concept has a deep V-neck and a ribbed waistband.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "The sleeveless concept has a deep V-neck and a ribbed waistband.",
+        "A maroon V-neck sweater is layered over a bone Oxford.",
+        "The V-neck frames the shirt collar and sits under charcoal tailoring."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "maroon-button-front-vest",
+      "name": "Maroon Tailored Waistcoat",
+      "kind": "Button-front tailoring · Maroon",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/maroon-button-front-vest.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Maroon Tailored Waistcoat shown on its own. A deep V, brass-tone buttons, welt pockets and a pointed hem define the waistcoat.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "A deep V, brass-tone buttons, welt pockets and a pointed hem define the waistcoat.",
+        "A fitted maroon vest is worn over a bone knit top.",
+        "The button front and shaped hem sit above charcoal trousers."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "charcoal-pleated-skirt",
+      "name": "Charcoal Pleated Skirt",
+      "kind": "Knife-pleated skirt · Charcoal",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/charcoal-pleated-skirt.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Charcoal Pleated Skirt shown on its own. Knife pleats fall from a clean waistband to a knee-length hem.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "Knife pleats fall from a clean waistband to a knee-length hem.",
+        "A charcoal pleated skirt is styled with a bone sport coat.",
+        "The deep pleats open into an easy A-line silhouette."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "khaki-double-pleat-trouser",
+      "name": "Khaki Wide-Leg Pleated Trouser",
+      "kind": "Wide-leg tailoring · Khaki",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/khaki-double-pleat-trouser.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Khaki Wide-Leg Pleated Trouser shown on its own. Front pleats open into a full, wide leg.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "Front pleats open into a full, wide leg.",
+        "A student wears khaki double-pleat trousers with a maroon longline vest.",
+        "Front pleats and a relaxed leg give the lighter trouser its shape."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "charcoal-double-pleat-trouser",
+      "name": "Charcoal Wide-Leg Pleated Trouser",
+      "kind": "Wide-leg tailoring · Charcoal",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/charcoal-double-pleat-trouser.webp",
+      "image_width": 1100,
+      "image_height": 1100,
+      "alt": "Charcoal Wide-Leg Pleated Trouser shown on its own. Front pleats open into a full, wide leg.",
+      "image_caption": "Isolated product concept · AI rendering",
+      "specs": [
+        "Front pleats open into a full, wide leg.",
+        "A student wears charcoal double-pleat trousers with a maroon vest.",
+        "A full charcoal leg pairs with both tailored jackets and knit layers."
+      ],
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces"
+    },
+    {
+      "id": "fitted-richmond-maroon-sport-coat",
+      "name": "Fitted Richmond Maroon Sport Coat",
+      "kind": "Fitted tailoring · Richmond Maroon",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/fitted-richmond-maroon-sport-coat.webp",
+      "alt": "Fitted Richmond Maroon Sport Coat shown on its own. A shaped waist, notched lapels and flap pockets define the fitted cut.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "A shaped waist, notched lapels and flap pockets define the fitted cut."
+      ]
+    },
+    {
+      "id": "charcoal-tailored-pleat-trouser",
+      "name": "Charcoal Tailored Pleated Trouser",
+      "kind": "Tapered-leg tailoring · Charcoal",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/charcoal-tailored-pleat-trouser.webp",
+      "alt": "Charcoal Tailored Pleated Trouser shown on its own. Front pleats add room at the hip before the leg tapers toward the hem.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "Front pleats add room at the hip before the leg tapers toward the hem."
+      ]
+    },
+    {
+      "id": "khaki-tailored-pleat-trouser",
+      "name": "Khaki Tailored Pleated Trouser",
+      "kind": "Tapered-leg tailoring · Khaki",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/khaki-tailored-pleat-trouser.webp",
+      "alt": "Khaki Tailored Pleated Trouser shown on its own. Front pleats and a tapered leg distinguish this cut from the wide-leg khaki trouser.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "Front pleats and a tapered leg distinguish this cut from the wide-leg khaki trouser."
+      ]
+    },
+    {
+      "id": "ivory-ribbed-crew-socks",
+      "name": "Bone Ribbed Crew Socks",
+      "kind": "Ribbed hosiery · Bone",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/ivory-ribbed-crew-socks.webp",
+      "alt": "Bone Ribbed Crew Socks shown on its own. Vertical ribbing runs from the ankle to the mid-calf cuff.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "Vertical ribbing runs from the ankle to the mid-calf cuff."
+      ]
+    },
+    {
+      "id": "black-penny-loafers",
+      "name": "Black Penny Loafers",
+      "kind": "Penny loafer · Black",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/black-penny-loafers.webp",
+      "alt": "Black Penny Loafers shown on its own. A classic penny strap, rounded toe and low stacked heel finish the loafer.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "A classic penny strap, rounded toe and low stacked heel finish the loafer."
+      ]
+    },
+    {
+      "id": "ivory-low-top-sneakers",
+      "name": "Bone Low-Top Sneakers",
+      "kind": "Lace-up court shoe · Bone",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/ivory-low-top-sneakers.webp",
+      "alt": "Bone Low-Top Sneakers shown on its own. Tonal laces and a matching rubber cupsole give the sneaker a clean profile.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "Tonal laces and a matching rubber cupsole give the sneaker a clean profile."
+      ]
+    },
+    {
+      "id": "oxblood-mary-jane-heels",
+      "name": "Oxblood Mary Janes",
+      "kind": "Low block heel · Oxblood",
+      "image": "assets/img/academy/last-bell/uniform-pieces/studio/oxblood-mary-jane-heels.webp",
+      "alt": "Oxblood Mary Janes shown on its own. A slim instep strap, small buckle and low block heel finish the Mary Jane.",
+      "image_width": 1100,
+      "image_height": 1100,
+      "image_caption": "Isolated product concept · AI rendering",
+      "status": "Coming soon",
+      "group": "last-bell",
+      "campaign": "store.html#uniform-pieces",
+      "specs": [
+        "A slim instep strap, small buckle and low block heel finish the Mary Jane."
+      ]
     }
   ],
   "collections": {
@@ -732,6 +1003,34 @@
       "last-bell-school-uniform",
       "first-whistle-tailoring-set",
       "arc-warmup-set"
+    ],
+    "school-outerwear": [
+      "fitted-richmond-maroon-sport-coat",
+      "richmond-maroon-sport-coat",
+      "bone-sport-coat",
+      "charcoal-sport-coat",
+      "academy-canvas-chore-jacket"
+    ],
+    "school-layers": [
+      "first-whistle-oxford",
+      "academy-rib-knit-polo",
+      "maroon-knit-polo",
+      "academy-longline-vest",
+      "maroon-v-neck-sweater",
+      "maroon-button-front-vest"
+    ],
+    "school-bottoms": [
+      "charcoal-pleated-skirt",
+      "khaki-double-pleat-trouser",
+      "charcoal-tailored-pleat-trouser",
+      "khaki-tailored-pleat-trouser",
+      "charcoal-double-pleat-trouser"
+    ],
+    "school-footwear": [
+      "ivory-ribbed-crew-socks",
+      "black-penny-loafers",
+      "ivory-low-top-sneakers",
+      "oxblood-mary-jane-heels"
     ]
   }
 }

@@ -1,6 +1,6 @@
 <!--{"title": "Store — Coach Carter Academy", "desc": "Explore Coach Carter Academy court apparel, signed editions and the Coach Carter Academy web series.", "nav": "store"}-->
 <link rel="stylesheet" href="assets/css/academy-gallery.css">
-<link rel="stylesheet" href="assets/css/academy-store.css?v=4">
+<link rel="stylesheet" href="assets/css/academy-store.css?v=6">
 
 <nav class="store-nav" aria-label="Store departments">
   <a href="#academy-store-title">Academy</a>
@@ -41,23 +41,57 @@
         <p class="store-label">Coach Carter Academy</p>
         <h2 id="academy-store-title">The Academy uniform</h2>
       </div>
-      <p>From campus dress to game day.<br>Collection in development.</p>
+      <p>Tailored layers in maroon, bone, khaki and charcoal.<br>Collection in development.</p>
     </div>
-    <div class="academy-product-grid">
-      {{academy_cards}}
-    </div>
-
-    <p class="store-catalog-note">The Letterman’s interior, exterior and back views now live on the <a class="store-text-link" href="academy-product.html?product=front-row-letterman">product detail page</a>.</p>
-    <section class="store-catalog-section" id="look-01-school-uniform" aria-labelledby="school-uniform-title">
-      <div class="store-section-heading">
-        <div><p class="store-label">Campus wear · Coming soon</p><h2 id="school-uniform-title">The Academy school uniform</h2></div>
-        <p>Tailored layers in maroon, bone, khaki and charcoal.</p>
-      </div>
+    <div id="look-01-school-uniform">
       <figure class="academy-school-uniform">
-        <img src="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" alt="Six students on the Academy steps in blazers, knit layers, pleated skirts and tailored trousers" width="1672" height="941" loading="lazy">
-        <figcaption class="academy-signature-editorial-note">AI styling concept · Collection preview</figcaption>
+        <a href="academy-product.html?product=last-bell-school-uniform" aria-label="Explore The School Uniform">
+          <img src="assets/img/academy/last-bell/academy-school-uniform-lineup.webp" alt="Six students on the Academy steps in blazers, knit layers, pleated skirts and tailored trousers" width="1672" height="941" loading="lazy">
+        </a>
+        <figcaption class="academy-signature-editorial-note">AI styling study · Collection preview</figcaption>
       </figure>
-      <a class="store-text-link" href="academy-product.html?product=last-bell-school-uniform">Explore the uniform and its pieces ↗</a>
+      <div class="uniform-links">
+        <a class="store-text-link" href="#uniform-pieces">Browse individual pieces ↓</a>
+        <a class="store-text-link" href="academy-product.html?product=last-bell-school-uniform#school-uniform-editorial">See the uniform on campus ↗</a>
+      </div>
+    </div>
+    <section class="store-catalog-section" id="uniform-pieces" aria-labelledby="uniform-pieces-title">
+      <div class="store-section-heading">
+        <div><p class="store-label">Campus wear · Coming soon</p><h2 id="uniform-pieces-title">Shop the uniform by piece</h2></div>
+        <p>Choose a piece to see its details and how students wear it.</p>
+      </div>
+      <nav class="uniform-links" aria-label="School uniform categories">
+        <a class="store-text-link" href="#school-outerwear">Sport coats &amp; jackets</a>
+        <a class="store-text-link" href="#school-layers">Shirts &amp; knits</a>
+        <a class="store-text-link" href="#school-bottoms">Trousers &amp; skirt</a>
+        <a class="store-text-link" href="#school-footwear">Shoes &amp; socks</a>
+        <a class="store-text-link" href="academy-product.html?product=kc-signature-backpack">Academy backpack ↗</a>
+      </nav>
+      <section class="uniform-group" id="school-outerwear" aria-labelledby="school-outerwear-title">
+        <h3 id="school-outerwear-title">Sport coats &amp; jackets</h3>
+        <div class="academy-product-grid">{{school_outerwear_cards}}</div>
+      </section>
+      <section class="uniform-group" id="school-layers" aria-labelledby="school-layers-title">
+        <h3 id="school-layers-title">Shirts &amp; knits</h3>
+        <div class="academy-product-grid">{{school_layers_cards}}</div>
+      </section>
+      <section class="uniform-group" id="school-bottoms" aria-labelledby="school-bottoms-title">
+        <h3 id="school-bottoms-title">Trousers &amp; skirt</h3>
+        <div class="academy-product-grid">{{school_bottoms_cards}}</div>
+      </section>
+      <section class="uniform-group" id="school-footwear" aria-labelledby="school-footwear-title">
+        <h3 id="school-footwear-title">Shoes &amp; socks</h3>
+        <div class="academy-product-grid">{{school_footwear_cards}}</div>
+      </section>
+    </section>
+    <section class="store-catalog-section" aria-labelledby="signature-pieces-title">
+      <div class="store-section-heading">
+        <div><p class="store-label">Academy essentials</p><h2 id="signature-pieces-title">Signature pieces</h2></div>
+      </div>
+      <div class="academy-product-grid">
+        {{academy_cards}}
+      </div>
+      <p class="store-catalog-note">The Letterman’s interior, exterior and back views now live on the <a class="store-text-link" href="academy-product.html?product=front-row-letterman">product detail page</a>.</p>
     </section>
     <section class="store-catalog-section" id="last-bell" aria-labelledby="last-bell-products-title">
       <div class="store-section-heading">

@@ -15,7 +15,7 @@ OUT = ROOT / "site"
 SERIES_PRICE = "$19.99"
 
 
-def academy_cards(catalog, group=None):
+def academy_cards(catalog, group=None, heading="h3"):
     products = {product["id"]: product for product in catalog["products"]}
     collection = catalog["collections"].get(group)
     selected = ([products[key] for key in collection] if collection is not None else
@@ -24,6 +24,7 @@ def academy_cards(catalog, group=None):
     for product in selected:
         item = {key: escape(product[key]) for key in ("id", "image", "alt", "name", "kind")}
         item["availability"] = escape(product.get("status") or product["price"])
+        item["heading"] = heading
         item["width"] = product.get("image_width", 900)
         item["height"] = product.get("image_height", 1350)
         links = []
@@ -35,7 +36,7 @@ def academy_cards(catalog, group=None):
         <a class="academy-product-link" href="academy-product.html?product={id}">
           <img src="{image}" alt="{alt}" loading="lazy" width="{width}" height="{height}">
           <div class="academy-product-meta">
-            <div><h3>{name}</h3><p>{kind}</p></div>
+            <div><{heading}>{name}</{heading}><p>{kind}</p></div>
             <div><span>{availability}</span><span class="academy-product-arrow" aria-hidden="true">↗</span></div>
           </div>
         </a>{pieces}
@@ -268,6 +269,10 @@ def build():
         if "{{academy_cards}}" in body:
             catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
             body = (body.replace("{{academy_cards}}", academy_cards(catalog))
+                    .replace("{{school_outerwear_cards}}", academy_cards(catalog, "school-outerwear", "h4"))
+                    .replace("{{school_layers_cards}}", academy_cards(catalog, "school-layers", "h4"))
+                    .replace("{{school_bottoms_cards}}", academy_cards(catalog, "school-bottoms", "h4"))
+                    .replace("{{school_footwear_cards}}", academy_cards(catalog, "school-footwear", "h4"))
                     .replace("{{last_bell_cards}}", academy_cards(catalog, "last-bell"))
                     .replace("{{court_gear_cards}}", academy_cards(catalog, "court-gear"))
                     .replace("{{warm_ups_cards}}", academy_cards(catalog, "warm-ups"))
