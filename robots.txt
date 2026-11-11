@@ -1,0 +1,3 @@
+# Preview: pages carry noindex. Flip INDEXABLE in tools/seo.py at launch.
+User-agent: *
+Allow: /
