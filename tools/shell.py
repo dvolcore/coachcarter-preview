@@ -144,6 +144,10 @@ PLATES = [
 JOURNEY = ["home", "story", "record", "archive", "impact", "keynotes", "teams", "partners", "playbook",
            "series", "gallery", "store", "investors", "brand", "coach"]
 
+# next-up band image per destination, when the menu card image is wrong for a full-bleed band
+NEXT_IMG = {
+    "series": "assets/img/academy-series-duel.webp",   # the title-card poster prints "COACH CARTER ACADEMY" behind the band title
+}
 HOME = ("home", "index.html", "Home", "The platform, start to finish.", "assets/video/hero_reel.jpg")
 
 ICON = {
@@ -207,7 +211,7 @@ def header(active):
         <a class="mega-cta" href="{w["cta"][0]}">{escape(w["cta"][1])}{ICON["arr"]}</a>
       </div>
       <div class="mega-links">{"".join(links)}</div>
-      <figure class="mega-pv" aria-hidden="true"><img src="{w["pages"][0][4]}" alt="" loading="lazy" decoding="async"><img alt="" decoding="async"><figcaption>{escape(w["pages"][0][2])}</figcaption></figure>
+      <figure class="mega-pv" aria-hidden="true"><img src="{w["pages"][0][4]}" alt="" loading="lazy" decoding="async"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" decoding="async"><figcaption>{escape(w["pages"][0][2])}</figcaption></figure>
     </div>
   </div>''')
         mlinks = "".join(
@@ -234,7 +238,10 @@ def header(active):
 </header>
 <div class="mega-scrim" aria-hidden="true"></div>
 <div class="menu menu2" role="dialog" aria-label="Menu">
-  <button class="icon-btn close" data-menu aria-label="Close menu">{ICON["x"]}</button>
+  <div class="m-head">
+    <a class="m-logo" href="index.html" aria-label="Coach Carter — home"><img src="assets/brand/monogram_gold.svg" alt="" width="30" height="30"><img src="assets/brand/wordmark_gold.svg" alt="" height="26" style="height:26px;width:auto"></a>
+    <button class="icon-btn close" data-menu aria-label="Close menu">{ICON["x"]}</button>
+  </div>
   <div class="m-scroll">
     <a class="m-home" href="index.html">Home</a>
     {"".join(mobile)}
@@ -362,7 +369,7 @@ def nextup(active):
         others.append(f'<a class="nu-world" href="{href}"><span>{ow["no"]}</span><b>{escape(ow["label"])}</b><em>{escape(ow["title"])}</em>{ICON["arr"]}</a>')
     return f'''<section class="nextup" aria-label="Continue">
   <a class="nu-main" href="{p[1]}">
-    <span class="nu-bg"><img src="{p[4]}" alt="" loading="lazy" decoding="async"></span>
+    <span class="nu-bg"><img src="{NEXT_IMG.get(nxt, p[4])}" alt="" loading="lazy" decoding="async"></span>
     <span class="wrap nu-in">
       <span class="nu-kicker">{kicker}</span>
       <span class="nu-title"><span>{escape(p[2])}</span></span>

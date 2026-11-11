@@ -36,7 +36,7 @@ CLIPS = [
     ("final-shot",       "fnH1ZtugoqU", 0, None, 80),
     ("storybook-ending", "eSBnFu1YnrU", 0, None, 64),
     ("real-carter-1",    "n8beCoP9lc8", 0, None, 20),
-    ("real-carter-2",    "yzvd3xf6CTE", 0, None, 20),
+    ("real-carter-2",    "yzvd3xf6CTE", 0, None, 10),
 ]
 
 

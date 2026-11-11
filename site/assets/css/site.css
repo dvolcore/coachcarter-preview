@@ -54,7 +54,10 @@ img, video, svg { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 ::selection { background: var(--gold); color: var(--ink); }
-:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; border-radius: 4px; }
+:focus-visible { outline: 2px solid var(--focus-ring, var(--gold-hi)); outline-offset: 3px; border-radius: 4px; }
+/* light surfaces: the gold ring is ~1.4:1 on chalk/paper — use maroon (>7:1) */
+:is(.light, .section.light, [data-surface="light"]) { --focus-ring: var(--maroon); }
+:is(.light, .section.light, [data-surface="light"]) :is(.carbon, .dark, [data-surface="dark"]) { --focus-ring: var(--gold-hi); }
 
 .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -286,6 +289,12 @@ html:not(.js) .curtain { display: none; }
 .story-progress b { width: 2px; height: 34px; background: var(--line-strong); position: relative; overflow: hidden; }
 .story-progress b i { position: absolute; inset: 0; background: var(--gold); transform: scaleY(0); transform-origin: top; transition: transform .4s; }
 .story-progress b.on i { transform: scaleY(1); }
+@media (max-width: 760px) {
+  .story-progress { flex-direction: row; top: auto; bottom: 88px; left: var(--gutter); right: auto; transform: none; gap: 8px; }
+  .story-progress b { width: 28px; height: 2px; }
+  .story-progress b i { transform-origin: left; transform: scaleX(0); }
+  .story-progress b.on i { transform: scaleX(1); }
+}
 .story-year { position: absolute; z-index: 2; right: var(--gutter); bottom: 32px; font: 600 13px/1 var(--f-head); letter-spacing: .3em; color: var(--slate); text-transform: uppercase; }
 
 /* ---------- stats ---------- */
@@ -462,8 +471,8 @@ html:not(.js) .curtain { display: none; }
 .modal .x { position: absolute; top: 18px; right: 18px; z-index: 3; }
 
 /* toast */
-.toast { position: fixed; left: 50%; bottom: 28px; z-index: 150; transform: translate(-50%, calc(100% + 60px)); background: var(--chalk); color: var(--ink); padding: 14px 22px; border-radius: 999px; font: 600 13px/1 var(--f-head); letter-spacing: .14em; text-transform: uppercase; transition: transform .6s var(--ease); box-shadow: 0 20px 50px -10px rgba(0,0,0,.6); display: flex; gap: 10px; align-items: center; }
-.toast.on { transform: translate(-50%, 0); }
+.toast { position: fixed; left: 50%; bottom: 28px; z-index: 150; transform: translate(-50%, calc(100% + 60px)); background: var(--chalk); color: var(--ink); padding: 14px 22px; border-radius: 999px; font: 600 13px/1 var(--f-head); letter-spacing: .14em; text-transform: uppercase; transition: transform .6s var(--ease), visibility 0s linear .6s; visibility: hidden; box-shadow: 0 20px 50px -10px rgba(0,0,0,.6); display: flex; gap: 10px; align-items: center; }
+.toast.on { transform: translate(-50%, 0); visibility: visible; transition: transform .6s var(--ease), visibility 0s; }
 
 /* ---------- forms ---------- */
 .form { display: grid; gap: 18px; }
@@ -499,7 +508,7 @@ html:not(.js) .curtain { display: none; }
 .opt span { display: block; padding: 18px; border: 1px solid var(--line-strong); border-radius: 14px; font: 600 15px/1.2 var(--f-head); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; transition: all .3s; }
 .opt span small { display: block; margin-top: 6px; font: 400 13px/1.4 var(--f-body); letter-spacing: 0; text-transform: none; color: var(--slate); }
 .opt input:checked + span { border-color: var(--gold); background: rgba(187,149,88,.1); }
-.opt input:focus-visible + span { outline: 2px solid var(--gold-hi); outline-offset: 2px; }
+.opt input:focus-visible + span { outline: 2px solid var(--focus-ring, var(--gold-hi)); outline-offset: 2px; }
 @media (max-width: 560px) { .opt-grid { grid-template-columns: 1fr; } }
 
 /* ---------- tile map (speaking footprint) ---------- */
@@ -521,7 +530,16 @@ html:not(.js) .curtain { display: none; }
 .tl-item p { margin: 0; color: var(--slate); max-width: 62ch; }
 .light .tl-item { border-color: rgba(16,18,22,.12); }
 .light .tl-item p { color: #5B5F68; }
-@media (max-width: 700px) { .tl-item { grid-template-columns: 1fr; gap: 10px; } }
+/* anchor years (1999 lockout, 2005 #1 film) carry the weight */
+.tl-item.key { border-top: 2px solid var(--gold); }
+.tl-item.key .y { background: linear-gradient(180deg, #BB9558, #7E5C2C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.carbon .tl-item.key .y, .maroon .tl-item.key .y { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; }
+@media (min-width: 1101px) {
+  .tl-item { grid-template-columns: 160px minmax(0, 1fr); padding: 30px 0; align-items: baseline; }
+  .tl-item > div:last-child { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 40px; align-items: baseline; }
+  .tl-item > div:last-child h4 { margin: 0; }
+}
+@media (max-width: 700px) { .tl-item { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; } }
 
 /* ---------- gallery (proof wall) ---------- */
 .wall { columns: 3 300px; column-gap: 18px; }
@@ -547,9 +565,9 @@ html:not(.js) .curtain { display: none; }
 .appear .yr { font: 600 15px/1 var(--f-head); letter-spacing: .2em; color: var(--gold); }
 .appear .show { font: 600 clamp(22px, 2.2vw, 30px)/1.05 var(--f-head); text-transform: uppercase; }
 .appear .what { color: var(--slate); font-size: 15px; }
-.appear div.r .go { opacity: .3; }
+.appear div.r .go { visibility: hidden; }
 .appear .go { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-strong); display: grid; place-items: center; }
-@media (max-width: 760px) { .appear a, .appear div.r { grid-template-columns: 1fr auto; gap: 6px 14px; } .appear .what { grid-column: 1 / -1; } .appear .yr { grid-column: 1 / -1; } }
+@media (max-width: 760px) { .appear a, .appear div.r { grid-template-columns: 1fr 36px; gap: 4px 14px; padding: 20px 0; } .appear .yr { grid-column: 1; grid-row: 1; } .appear .show { grid-column: 1; grid-row: 2; } .appear .what { grid-column: 1 / -1; grid-row: 3; } .appear .go { grid-column: 2; grid-row: 1 / 3; width: 36px; height: 36px; align-self: center; } .appear a:hover { padding-left: 0; padding-right: 0; } }
 
 /* ---------- partner tiers ---------- */
 .tier { display: flex; flex-direction: column; height: 100%; }
@@ -578,6 +596,10 @@ html:not(.js) .curtain { display: none; }
 .f-top a:hover { color: var(--chalk); }
 .news { display: flex; gap: 0; border-bottom: 1px solid var(--line-strong); margin-top: 18px; max-width: 420px; }
 .news input { flex: 1; background: none; border: 0; color: inherit; font: 400 16px var(--f-body); padding: 14px 0; outline: none; min-width: 0; }
+.news:focus-within { border-bottom-color: var(--focus-ring, var(--gold-hi)); box-shadow: 0 1px 0 var(--focus-ring, var(--gold-hi)); }
+.news input:focus-visible { outline: none; }
+.news input::placeholder { color: rgba(245,240,232,.55); }
+.light .news input::placeholder { color: rgba(16,18,22,.5); }
 .news button { font: 600 12px/1 var(--f-head); letter-spacing: .22em; text-transform: uppercase; color: var(--gold-hi); }
 .f-giant { margin: clamp(60px, 9vw, 120px) 0 26px; }
 .f-giant img { width: 100%; opacity: .95; }
@@ -661,3 +683,17 @@ html:not(.js) .curtain { display: none; }
   .series-price { gap:16px; }
   .series-offer-copy .btn { width:100%; justify-content:center; }
 }
+
+/* record › honors: a hairline-ruled ledger (same grammar as "Four rules"), not clickable cards */
+.honors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(16,18,22,.14); }
+.hon { padding: 30px 28px 34px 0; border-bottom: 1px solid rgba(16,18,22,.14); }
+.hon:not(:nth-child(3n+1)) { padding-left: 28px; border-left: 1px solid rgba(16,18,22,.14); }
+.hon .tag { border: 0; padding: 0; background: none; color: var(--maroon); letter-spacing: .24em; }
+.hon h4 { font: 600 clamp(24px, 2.2vw, 30px)/1.05 var(--f-head); text-transform: uppercase; margin: 12px 0 10px; }
+.hon p { margin: 0; color: #4f535b; font-size: 15.5px; }
+@media (max-width: 900px) { .honors { grid-template-columns: 1fr 1fr; } .hon:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; } .hon:nth-child(even) { padding-left: 28px; border-left: 1px solid rgba(16,18,22,.14); } }
+@media (max-width: 560px) { .honors { grid-template-columns: 1fr; } .hon, .hon:nth-child(even) { padding: 24px 0; border-left: 0; } }
+
+/* brand › swatches: Chalk gets a hairline frame so it reads on the cream page; phones go 2×2 */
+.swatches .sw-chalk { box-shadow: inset 0 0 0 1px rgba(16,18,22,.16), inset 0 -1px 0 rgba(16,18,22,.16); }
+@media (max-width: 760px) { .swatches { grid-template-columns: 1fr 1fr; gap: 12px; } .swatches .card > div:first-child { height: 110px !important; } .swatches .pad { padding: 16px; } .swatches h4 { font-size: 20px; } }

@@ -224,45 +224,90 @@ def footer(nav=""):
 
 
 def coach_sections():
-    """Private Coach briefing: index of strong bullets, then every section (key points, then detail)."""
+    """Private Coach briefing: index of strong bullets, then every section (key points, then the detail folded
+    into a closed <details>). Also emits the sticky position bar and its Index sheet. Every word of coach.json
+    stays in the DOM; new interface text is marked data-ui."""
     from html import escape as e
     data = json.loads((OUT / "assets/data/coach.json").read_text())
-    idx, body, n = [], [], 0
+    total = sum(len(p["sections"]) for p in data["parts"])
+    idx, body, sheet, n = [], [], [], 0
+
+    def words(x):
+        return len(re.findall(r"\w+", str(x)))
+
+    def plural(k, w):
+        return f"{k} {w}" + ("" if k == 1 else "s")
+
     for pi, part in enumerate(data["parts"]):
-        sec_html, links = [], []
+        sec_html, links, toc = [], [], []
         for s in part["sections"]:
             n += 1
-            links.append(f'<li><a href="#c-{e(s["id"])}"><span class="ch-n">{n:02d}</span><b>{e(s["title"])}</b><span class="ch-k">{e(s["key_points"][0])}</span></a></li>')
+            sid = e(s["id"])
+            links.append(f'<li><a href="#c-{sid}"><span class="ch-n">{n:02d}</span><b>{e(s["title"])}</b><span class="ch-k">{e(s["key_points"][0])}</span></a></li>')
+            toc.append(f'<li><a href="#c-{sid}"><span>{n:02d}</span>{e(s["title"])}</a></li>')
             kp = "".join(f"<li>{e(k)}</li>" for k in s["key_points"])
-            det = []
+            det, wc, ntab = [], 0, 0
             for d in s.get("detail", []):
                 h = f'<h4>{e(d["heading"])}</h4>' if d.get("heading") else ""
+                wc += words(d.get("heading", ""))
                 if "table" in d:
                     t = d["table"]
-                    th = "".join(f"<th>{e(str(c))}</th>" for c in t["head"])
-                    rows = "".join("<tr>" + "".join(f"<td>{e(str(c))}</td>" for c in r) + "</tr>" for r in t["rows"])
-                    det.append(f'<div class="ch-block">{h}<div class="ch-table"><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div></div>')
+                    ntab += 1
+                    heads = [e(str(c)) for c in t["head"]]
+                    th = "".join(f'<th scope="col">{c}</th>' for c in heads)
+                    rows = "".join("<tr>" + "".join(
+                        f'<td data-label="{heads[i] if i < len(heads) else ""}">{e(str(c))}</td>' for i, c in enumerate(r)) + "</tr>" for r in t["rows"])
+                    wc += sum(words(c) for c in t["head"]) + sum(words(c) for r in t["rows"] for c in r)
+                    lab = e(d.get("heading") or s["title"]) + " (table)"
+                    det.append(f'<div class="ch-block">{h}<div class="ch-table" role="region" aria-label="{lab}"><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div></div>')
                 elif "items" in d:
                     items = [str(i) for i in d["items"]]
+                    wc += sum(words(i) for i in items)
                     if items and all(re.match(r"\d+[.)] ", i) for i in items):
                         lis = "".join(f"<li>{e(re.sub(r'^\d+[.)] ', '', i))}</li>" for i in items)
                         det.append(f'<div class="ch-block">{h}<ol class="ch-list">{lis}</ol></div>')
                     else:
                         det.append(f'<div class="ch-block">{h}<ul class="ch-list">' + "".join(f"<li>{e(i)}</li>" for i in items) + "</ul></div>")
                 elif "note" in d:
+                    wc += words(d["note"])
                     det.append(f'<div class="ch-block">{h}<p>{e(d["note"])}</p></div>')
-            sec_html.append(f'''<article class="ch-sec" id="c-{e(s["id"])}">
+            mins = max(1, -(-wc // 230))
+            meta = [f"~{mins} min read", plural(len(det), "block")] + ([plural(ntab, "table")] if ntab else [])
+            more = ""
+            if det:
+                more = f'''<details class="ch-more" id="c-{sid}-full">
+    <summary><span class="ch-key-l">In full</span><span class="ch-more-meta" data-ui>{" · ".join(meta)}</span><span class="ch-more-act" data-ui aria-hidden="true"><span class="o">Read in full</span><span class="c">Close</span><i></i></span></summary>
+    <div class="ch-detail">{"".join(det)}
+    <button class="ch-more-close" type="button" data-ui>Close “{e(s["title"])}” in full</button></div>
+  </details>'''
+            sec_html.append(f'''<article class="ch-sec" id="c-{sid}" data-n="{n}" data-part="{pi+1}" data-title="{e(s["title"])}">
   <header class="ch-sec-head"><span class="ch-tag">{n:02d} · {e(s.get("chapter",""))}</span><h3 class="h-m">{e(s["title"])}</h3>
   <p class="ch-why"><span>Why it's here, not on the public site:</span> {e(s.get("why_left_out",""))}</p></header>
   <div class="ch-key"><span class="ch-key-l">The key points</span><ul>{kp}</ul></div>
-  <div class="ch-detail"><span class="ch-key-l">In full</span>{"".join(det)}</div>
+  {more}
 </article>''')
+        cnt = len(part["sections"])
         idx.append(f'<div class="ch-idx-part"><h3><span>Part {pi+1}</span> {e(part["title"])}</h3><ul>{"".join(links)}</ul></div>')
-        body.append(f'''<section class="section ch-part" id="part-{pi+1}"><div class="wrap">
-  <div class="ch-part-head"><span class="eyebrow">Part {pi+1}</span><h2 class="h-l">{e(part["title"])}</h2><p class="lede">{e(part["sub"])}</p></div>
+        sheet.append(f'<li class="ch-sheet-part"><a class="ch-sheet-ph" href="#part-{pi+1}"><span>Part {pi+1}</span>{e(part["title"])}</a><ol>{"".join(toc)}</ol></li>')
+        body.append(f'''<section class="section ch-part" id="part-{pi+1}" data-title="{e(part["title"])}"><div class="wrap">
+  <div class="ch-part-head"><span class="ch-part-n" aria-hidden="true" data-ui>{pi+1:02d}</span><div class="ch-part-copy"><span class="eyebrow">Part {pi+1}</span><h2 class="h-l">{e(part["title"])}</h2><p class="lede">{e(part["sub"])}</p>
+  <p class="ch-part-count" data-ui>{plural(cnt, "section")} in this part</p><ol class="ch-part-toc" data-ui aria-label="Sections in part {pi+1}">{"".join(toc)}</ol></div></div>
   {"".join(sec_html)}
 </div></section>''')
-    return {"index": "".join(idx), "body": "".join(body), "count": str(n)}
+    bar = f'''<nav class="ch-bar" aria-label="Briefing position" data-ui>
+  <div class="ch-bar-in">
+    <p class="ch-bar-where"><span class="ch-bar-part">Index</span><span class="ch-bar-n"><b>00</b>/{total:02d}</span><span class="ch-bar-t">What this covers</span></p>
+    <button class="ch-bar-btn ch-bar-all" type="button" aria-pressed="false"><span class="o">Expand all</span><span class="c">Collapse all</span></button>
+    <button class="ch-bar-btn ch-bar-idx" type="button" aria-haspopup="dialog" aria-controls="ch-sheet" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h8"/></svg>Index</button>
+  </div>
+  <i class="ch-bar-line" aria-hidden="true"><i></i></i>
+</nav>
+<dialog class="ch-sheet" id="ch-sheet" aria-labelledby="ch-sheet-t" data-ui data-lenis-prevent>
+  <div class="ch-sheet-head"><p class="ch-sheet-t" id="ch-sheet-t">Briefing index <span>{total} sections · {len(data["parts"])} parts</span></p><button class="ch-sheet-x" type="button" aria-label="Close index"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg></button></div>
+  <ol class="ch-sheet-parts">{"".join(sheet)}</ol>
+  <a class="ch-sheet-top" href="#covers">Back to the key-points index</a>
+</dialog>'''
+    return {"index": "".join(idx), "body": "".join(body), "count": str(n), "bar": bar}
 
 
 def build():
@@ -275,7 +320,7 @@ def build():
         body = body.replace("{{series_offer}}", series_offer()).replace("{{series_price}}", SERIES_PRICE)
         if "{{coach_index}}" in body:
             c = coach_sections()
-            body = body.replace("{{coach_index}}", c["index"]).replace("{{coach_body}}", c["body"]).replace("{{coach_count}}", c["count"])
+            body = body.replace("{{coach_index}}", c["index"]).replace("{{coach_body}}", c["body"]).replace("{{coach_count}}", c["count"]).replace("{{coach_bar}}", c["bar"])
         if "_cards}}" in body:
             catalog = json.loads((OUT / "assets/data/academy-products.json").read_text())
             body = (body.replace("{{academy_cards}}", academy_cards(catalog))
@@ -302,6 +347,28 @@ def build():
     shell.write_index()
     shell.seo.write_site_files([(p.name, "home" if p.name == "index.html" else p.stem) for p in pages])
     shell.apply_product()
+    cache_bust()
+
+
+def cache_bust():
+    """Tag every unversioned local CSS/JS link with a short hash of the file,
+    so returning visitors never get new pages with old styles."""
+    import hashlib
+    pat = re.compile(r'((?:href|src)="assets/(?:css|js)/[\w.-]+\.(?:css|js))"')
+    memo = {}
+
+    def ver(m):
+        rel = m.group(1).split('"', 1)[1]
+        if rel not in memo:
+            f = OUT / rel
+            memo[rel] = hashlib.sha1(f.read_bytes()).hexdigest()[:8] if f.exists() else None
+        return f'{m.group(1)}?v={memo[rel]}"' if memo[rel] else m.group(0)
+
+    for f in OUT.glob("*.html"):
+        html = f.read_text()
+        new = pat.sub(ver, html)
+        if new != html:
+            f.write_text(new)
 
 
 if __name__ == "__main__":

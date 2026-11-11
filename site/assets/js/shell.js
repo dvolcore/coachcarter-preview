@@ -46,6 +46,15 @@
   spy.sort((x, y) => (x.el.compareDocumentPosition(y.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
   const lnLinks = $(".ln-links");
   const nextup = $(".nextup");
+  // phones: the sub-nav scrolls sideways — bring the current page's link into view on load
+  const lnCenter = () => {
+    const a = lnLinks && $('a[aria-current="page"]', lnLinks);
+    if (!a || lnLinks.scrollWidth <= lnLinks.clientWidth) return;
+    const off = a.getBoundingClientRect().left - lnLinks.getBoundingClientRect().left + lnLinks.scrollLeft;
+    lnLinks.scrollLeft = Math.max(0, off - (lnLinks.clientWidth - a.offsetWidth) / 2);
+  };
+  lnCenter();
+  document.fonts && document.fonts.ready.then(lnCenter); // web fonts change link widths
   let railCur = null, spyCur = null, toneAt = 0, ticking = false;
 
   const lum = (el) => {

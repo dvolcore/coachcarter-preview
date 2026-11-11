@@ -99,7 +99,7 @@ F["real_carter"] = [
     {"slug": "real-carter-1", "yt": "n8beCoP9lc8", "file": "real-carter-1.mp4", "poster": "assets/film/p/real-carter-1.jpg", "aspect": dims("real-carter-1"),
      "scene": "The Real Coach Carter · Part 1", "kicker": "DVD featurette · Part 1", "duration": mmss(dur("real-carter-1")),
      "hook": "Ken Carter, his players and his son Damien on camera: the Richmond gym with no nets, the contracts, and why he took the job."},
-    {"slug": "real-carter-2", "yt": "yzvd3xf6CTE", "file": "real-carter-2.mp4", "poster": "assets/film/p/real-carter-2.jpg", "aspect": dims("real-carter-2"),
+    {"slug": "real-carter-2", "yt": "yzvd3xf6CTE", "file": "real-carter-2.mp4", "poster": "assets/film/p/real-carter-2.jpg?v=2", "aspect": dims("real-carter-2"),
      "scene": "The Real Coach Carter · Part 2", "kicker": "DVD featurette · Part 2", "duration": mmss(dur("real-carter-2")),
      "hook": "The 1999 lockout as the people who lived it remember it — and what became of the team."},
 ]
