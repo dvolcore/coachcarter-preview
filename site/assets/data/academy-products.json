@@ -1300,48 +1300,57 @@
       "status": "Coming soon",
       "group": "accessories",
       "price": "$168 proposed",
-      "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-exterior.webp",
-      "image_width": 591,
-      "image_height": 887,
-      "alt": "KC Signature Backpack in carbon with Richmond maroon lining and gold Academy details",
-      "image_caption": "Product study · Concept mockup",
+      "image": "assets/img/academy/campaign/gallery/signature-backpack-exterior.webp",
+      "image_width": 747,
+      "image_height": 1024,
+      "alt": "Carbon KC Signature Backpack with an asymmetric gold zipper and circular KC patch",
+      "image_caption": "Exterior · AI product rendering",
       "view_label": "Exterior",
       "views": [
         {
+          "id": "back",
+          "image": "assets/img/academy/campaign/gallery/signature-backpack-back.webp",
+          "width": 1000,
+          "height": 1250,
+          "label": "Back and straps",
+          "alt": "Back of the KC Signature Backpack showing the padded shoulder straps and side profile",
+          "caption": "Back and straps · AI product rendering"
+        },
+        {
           "id": "open",
-          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-open.webp",
-          "width": 620,
-          "height": 887,
+          "image": "assets/img/academy/campaign/gallery/signature-backpack-interior.webp",
+          "width": 784,
+          "height": 1024,
           "label": "Open interior",
-          "alt": "Open KC Signature Backpack showing Richmond maroon interior organization and gold Academy details",
-          "caption": "Open interior · Concept mockup"
+          "alt": "Open KC Signature Backpack with Richmond maroon lining and an interior sleeve",
+          "caption": "Open interior · AI product rendering"
         },
         {
           "id": "worn",
-          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack-worn.webp",
-          "width": 574,
-          "height": 887,
+          "image": "assets/img/academy/campaign/gallery/signature-backpack-campus.webp",
+          "width": 1000,
+          "height": 1250,
           "label": "Worn on campus",
-          "alt": "Student wearing the KC Signature Backpack on campus with the Academy court collection",
+          "alt": "Student in the Bone Oxford and maroon pleated skirt wearing the curved-zip KC Signature Backpack on campus",
           "caption": "Worn on campus · AI styling study"
         },
         {
           "id": "overview",
-          "image": "assets/img/academy/roadmap/fit/kc-signature-backpack.webp",
-          "width": 1774,
-          "height": 887,
-          "label": "All angles",
-          "alt": "Exterior, open interior and worn views of the KC Signature Backpack",
-          "caption": "Backpack overview · Concept mockup"
+          "image": "assets/img/academy/campaign/gallery/signature-backpack-design.webp",
+          "width": 1536,
+          "height": 1024,
+          "label": "Design reference",
+          "alt": "Two views of the KC Signature Backpack showing the curved gold zipper and open maroon interior",
+          "caption": "Approved design reference · AI product rendering"
         }
       ],
       "specs": [
-        "Structured carbon shell with Richmond maroon interior and restrained antique-gold hardware.",
-        "Separate laptop sleeve, court-day compartment and small essentials pocket are shown in the open view.",
-        "Concept mockup only; dimensions, materials and production hardware remain to be sampled."
+        "Structured carbon shell with a curved, asymmetric zipper in antique gold and a circular KC patch.",
+        "The curved opening reveals a Richmond maroon interior with a sleeve and a zip pocket.",
+        "Final dimensions, materials and hardware will be confirmed after sampling."
       ],
       "campaign": "store.html#look-06-locker-room",
-      "pairing": "Open the interior view to compare the laptop sleeve, the court-day compartment and the pocket for small essentials."
+      "pairing": "Compare the exterior, padded straps and open maroon interior in the product gallery."
     },
     {
       "id": "kc-headband",
