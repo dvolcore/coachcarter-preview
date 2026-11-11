@@ -30,6 +30,17 @@
         "contract-lining-sport-coat",
         "first-whistle-oxford",
         "academy-double-pleat-trouser"
+      ],
+      "lifestyle_views": [
+        {
+          "id": "class-debate",
+          "label": "Class debate",
+          "image": "assets/img/academy/campaign/gallery/first-whistle-tailoring-set-class-debate.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the First Whistle Tailoring Set in a classroom debate",
+          "caption": "Class debate · AI styling study"
+        }
       ]
     },
     {
@@ -56,7 +67,18 @@
       "status": "Coming soon",
       "group": "last-bell",
       "flat_width": 700,
-      "flat_height": 520
+      "flat_height": 520,
+      "lifestyle_views": [
+        {
+          "id": "design-studio",
+          "label": "Design studio",
+          "image": "assets/img/academy/campaign/gallery/contract-lining-sport-coat-design-studio.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student opening the sport coat to show its court-map lining",
+          "caption": "Design studio · AI styling study"
+        }
+      ]
     },
     {
       "id": "front-row-letterman",
@@ -116,7 +138,18 @@
         "height": 887,
         "alt": "Original Front Row Letterman design showing the front, fully opened jacket with both Richmond lining panels, and the full back side by side"
       },
-      "pairing": "For a campus look, layer it over an ivory knit with a charcoal pleated skirt. For an evening look, try it over burgundy satin or wide-leg black trousers."
+      "pairing": "For a campus look, layer it over an ivory knit with a charcoal pleated skirt. For an evening look, try it over burgundy satin or wide-leg black trousers.",
+      "lifestyle_views": [
+        {
+          "id": "music-room",
+          "label": "Music room",
+          "image": "assets/img/academy/campaign/gallery/front-row-letterman-music-room.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the Front Row Letterman in the music room",
+          "caption": "Music room · AI styling study"
+        }
+      ]
     },
     {
       "id": "court-tee",
@@ -134,7 +167,29 @@
       ],
       "artwork": "academy-studio/artwork/court-tee-signature.svg",
       "artwork_label": "Signature basketball print · one ink",
-      "flat": "academy-studio/flats/court-tee.svg"
+      "flat": "academy-studio/flats/court-tee.svg",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/court-tee-back.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Back of the Court Tee with its antique-gold basketball graphic",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "gym-entrance",
+          "label": "Outside the gym",
+          "image": "assets/img/academy/campaign/gallery/court-tee-gym-entrance.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the black Court Tee outside the school gym",
+          "caption": "Outside the gym · AI styling study"
+        }
+      ]
     },
     {
       "id": "last-bell-school-uniform",
@@ -211,6 +266,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/academy-rib-knit-polo-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Bone Rib-Knit Polo",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Lunchroom",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-rib-knit-polo-campus.webp",
@@ -269,6 +333,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/academy-longline-vest-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Maroon Longline Cardigan Vest",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Outdoors",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/academy-longline-vest-campus.webp",
@@ -326,6 +399,15 @@
       ],
       "campaign": "store.html#uniform-pieces",
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/academy-canvas-chore-jacket-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Canvas Chore Jacket",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "portrait",
           "label": "Studio portrait",
@@ -400,7 +482,18 @@
         "Two front pleats add room through the hip and keep a clean drape over court shoes."
       ],
       "campaign": "store.html#look-01-school-uniform",
-      "flat": "academy-studio/flats/first-whistle-trouser.svg"
+      "flat": "academy-studio/flats/first-whistle-trouser.svg",
+      "lifestyle_views": [
+        {
+          "id": "library",
+          "label": "Library walk",
+          "image": "assets/img/academy/campaign/gallery/academy-double-pleat-trouser-library.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the Academy double-pleat trousers in the library",
+          "caption": "Library walk · AI styling study"
+        }
+      ]
     },
     {
       "id": "first-whistle-oxford",
@@ -420,6 +513,15 @@
       "flat": "academy-studio/flats/first-whistle-oxford.svg",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/oxford-studio-back.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Back of the Bone Oxford shirt showing the shoulder yoke and curved hem",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Between classes",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/first-whistle-oxford-campus.webp",
@@ -430,6 +532,33 @@
         }
       ],
       "lifestyle_views": [
+        {
+          "id": "library",
+          "label": "Library study",
+          "image": "assets/img/academy/campaign/gallery/oxford-library.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student in the Bone Oxford shirt working from a notebook in the school library",
+          "caption": "Library study · AI styling study"
+        },
+        {
+          "id": "campus-stair",
+          "label": "Campus stairwell",
+          "image": "assets/img/academy/campaign/gallery/oxford-campus-back.webp",
+          "width": 1199,
+          "height": 1312,
+          "alt": "Rear view of the Bone Oxford shirt worn on the campus stairs",
+          "caption": "Campus stairwell · AI styling study"
+        },
+        {
+          "id": "science-lab",
+          "label": "Science lab",
+          "image": "assets/img/academy/campaign/gallery/oxford-science-lab.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student in the Bone Oxford shirt taking notes at a science lab table",
+          "caption": "Science lab · AI styling study"
+        },
         {
           "id": "signature-hall",
           "label": "Between classes",
@@ -484,7 +613,29 @@
         "Point collar, snap front and elastic cuffs.",
         "The bone insert sweeps diagonally from shoulder to hip, with an ink panel below."
       ],
-      "campaign": "store.html#warm-ups"
+      "campaign": "store.html#warm-ups",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/arc-snap-jacket-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Arc Snap Jacket",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "arts-hall",
+          "label": "Arts hallway",
+          "image": "assets/img/academy/campaign/gallery/arc-snap-jacket-arts-hall.webp",
+          "width": 1086,
+          "height": 1448,
+          "alt": "Student wearing the maroon Arc Snap Jacket beside a school art display",
+          "caption": "Arts hallway · AI styling study"
+        }
+      ]
     },
     {
       "id": "official-game-jerseys",
@@ -506,7 +657,29 @@
             "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
           ],
           "price": "$98 proposed",
-          "name": "Maroon with Cream Game Jersey"
+          "name": "Maroon with Cream Game Jersey",
+          "lifestyle_views": [
+            {
+              "id": "rebound",
+              "label": "After the rebound",
+              "image": "assets/img/academy/campaign/gallery/maroon-cream-game-rebound.webp",
+              "width": 1535,
+              "height": 1025,
+              "alt": "Player securing the ball in the maroon game jersey with cream patterned side panels",
+              "caption": "After the rebound · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Numbered back example",
+              "image": "assets/img/academy/campaign/gallery/official-game-jerseys-maroon-cream-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "Maroon with Cream Game Jersey uniform from the back",
+              "caption": "Numbered back example · AI garment rendering"
+            }
+          ]
         },
         {
           "style": "cream-maroon",
@@ -522,7 +695,29 @@
             "A woven KC repeat runs down both sides, with a round KC crest on the wearer’s right shoulder."
           ],
           "price": "$98 proposed",
-          "name": "Cream with Maroon Game Jersey"
+          "name": "Cream with Maroon Game Jersey",
+          "lifestyle_views": [
+            {
+              "id": "baseline-drive",
+              "label": "Baseline drive",
+              "image": "assets/img/academy/campaign/gallery/cream-maroon-game-baseline.webp",
+              "width": 1536,
+              "height": 1024,
+              "alt": "Player driving the baseline in the cream game jersey with maroon patterned side panels",
+              "caption": "Baseline drive · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Numbered back example",
+              "image": "assets/img/academy/campaign/gallery/official-game-jerseys-cream-maroon-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "Cream with Maroon Game Jersey uniform from the back",
+              "caption": "Numbered back example · AI garment rendering"
+            }
+          ]
         },
         {
           "style": "dark-knight",
@@ -540,7 +735,29 @@
           "pieces": [
             "warm-up-zip-jacket"
           ],
-          "name": "Dark Knight Game Jersey"
+          "name": "Dark Knight Game Jersey",
+          "lifestyle_views": [
+            {
+              "id": "inbound",
+              "label": "Baseline inbound",
+              "image": "assets/img/academy/campaign/gallery/black-cream-game-inbound.webp",
+              "width": 1536,
+              "height": 1024,
+              "alt": "Player preparing to inbound in the black game jersey with cream patterned side panels",
+              "caption": "Baseline inbound · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Numbered back example",
+              "image": "assets/img/academy/campaign/gallery/official-game-jerseys-dark-knight-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "Dark Knight Game Jersey uniform from the back",
+              "caption": "Numbered back example · AI garment rendering"
+            }
+          ]
         }
       ],
       "pieces": [
@@ -569,7 +786,29 @@
             "Black mesh and matching binding frame tonal KC side panels.",
             "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
           ],
-          "name": "All-Black Practice Jersey"
+          "name": "All-Black Practice Jersey",
+          "lifestyle_views": [
+            {
+              "id": "defensive-drill",
+              "label": "Defensive footwork",
+              "image": "assets/img/academy/campaign/gallery/all-black-practice-defense.webp",
+              "width": 1536,
+              "height": 864,
+              "alt": "Student athlete practicing a defensive slide in the tonal black uniform",
+              "caption": "Defensive footwork · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Back",
+              "image": "assets/img/academy/campaign/gallery/official-practice-jerseys-all-black-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "All-Black Practice Jersey uniform from the back",
+              "caption": "Back · AI garment rendering"
+            }
+          ]
         },
         {
           "style": "all-cream",
@@ -584,7 +823,29 @@
             "Cream mesh, matching cream binding and a muted gold KC repeat down the sides.",
             "Gold Coach Carter Academy lettering and a round KC crest on the wearer’s right shoulder."
           ],
-          "name": "All-Cream Practice Jersey"
+          "name": "All-Cream Practice Jersey",
+          "lifestyle_views": [
+            {
+              "id": "passing-drill",
+              "label": "Passing drill",
+              "image": "assets/img/academy/campaign/gallery/all-cream-practice-pass.webp",
+              "width": 1536,
+              "height": 1024,
+              "alt": "Student athlete passing in the tonal cream practice uniform",
+              "caption": "Passing drill · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Back",
+              "image": "assets/img/academy/campaign/gallery/official-practice-jerseys-all-cream-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "All-Cream Practice Jersey uniform from the back",
+              "caption": "Back · AI garment rendering"
+            }
+          ]
         },
         {
           "style": "all-maroon",
@@ -602,6 +863,28 @@
           ],
           "pieces": [
             "all-maroon-game-short"
+          ],
+          "lifestyle_views": [
+            {
+              "id": "shooting-drill",
+              "label": "Shooting drill",
+              "image": "assets/img/academy/campaign/gallery/all-maroon-practice-shooting.webp",
+              "width": 1536,
+              "height": 1024,
+              "alt": "Student athlete taking a jump shot in the tonal maroon practice uniform",
+              "caption": "Shooting drill · AI styling study"
+            }
+          ],
+          "views": [
+            {
+              "id": "back",
+              "label": "Back",
+              "image": "assets/img/academy/campaign/gallery/official-practice-jerseys-all-maroon-back.webp",
+              "width": 627,
+              "height": 627,
+              "alt": "All-Maroon Practice Jersey uniform from the back",
+              "caption": "Back · AI garment rendering"
+            }
           ]
         }
       ],
@@ -633,7 +916,29 @@
       "flat_height": 620,
       "flat_alt": "Matching reversible shorts design board showing both colorways",
       "campaign": "store.html#shorts",
-      "pairing": "Wear the bone face with the Court Tee for a lighter outfit or reverse to maroon. The KC insets pick up the pattern on the Warm-Up Zip Jacket."
+      "pairing": "Wear the bone face with the Court Tee for a lighter outfit or reverse to maroon. The KC insets pick up the pattern on the Warm-Up Zip Jacket.",
+      "views": [
+        {
+          "id": "back",
+          "label": "Reverse sides",
+          "image": "assets/img/academy/campaign/gallery/kc-reversible-short-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Bone and maroon sides of the reversible court shorts",
+          "caption": "Reverse sides · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "open-court",
+          "label": "Open court",
+          "image": "assets/img/academy/campaign/gallery/kc-reversible-short-open-court.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student athlete dribbling in the reversible court shorts",
+          "caption": "Open court · AI styling study"
+        }
+      ]
     },
     {
       "id": "all-maroon-game-short",
@@ -651,7 +956,29 @@
       "status": "Coming soon",
       "group": "court-gear",
       "campaign": "store.html#shorts",
-      "pairing": "Keep the practice kit tonal with the All-Maroon Practice Jersey. The woven KC strips align visually along the sides of both pieces."
+      "pairing": "Keep the practice kit tonal with the All-Maroon Practice Jersey. The woven KC strips align visually along the sides of both pieces.",
+      "lifestyle_views": [
+        {
+          "id": "shooting-drill",
+          "label": "Shooting drill",
+          "image": "assets/img/academy/campaign/gallery/all-maroon-practice-shooting.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student athlete taking a jump shot in the tonal maroon practice uniform",
+          "caption": "Shooting drill · AI styling study"
+        }
+      ],
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/all-maroon-game-short-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the All-Maroon Practice Short",
+          "caption": "Back · AI garment rendering"
+        }
+      ]
     },
     {
       "id": "warm-up-zip-jacket",
@@ -697,7 +1024,18 @@
       ],
       "campaign": "store.html#warm-ups",
       "default_view": "warm-up-line",
-      "pairing": "Pair the maroon shell with the carbon Tearaway Pant. Both use antique-gold trim, so the layers match without being the same color."
+      "pairing": "Pair the maroon shell with the carbon Tearaway Pant. Both use antique-gold trim, so the layers match without being the same color.",
+      "lifestyle_views": [
+        {
+          "id": "pregame",
+          "label": "Before warm-ups",
+          "image": "assets/img/academy/campaign/gallery/warm-up-zip-jacket-pregame.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the warm-up zip jacket at the gym entrance",
+          "caption": "Before warm-ups · AI styling study"
+        }
+      ]
     },
     {
       "id": "warm-up-tearaway-pant",
@@ -716,6 +1054,15 @@
       "group": "warm-ups",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/warm-up-tearaway-pant-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Warm-Up Tearaway Pants",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "warm-up-line",
           "image": "assets/img/academy/campaign/warm-up-line.webp",
           "alt": "Players in Richmond maroon warm-up jackets and carbon tearaway pants pass a basketball in front of crowded gym bleachers",
@@ -728,7 +1075,18 @@
       "pieces": [
         "warm-up-zip-jacket"
       ],
-      "campaign": "store.html#warm-ups"
+      "campaign": "store.html#warm-ups",
+      "lifestyle_views": [
+        {
+          "id": "side-snaps",
+          "label": "Courtside snaps",
+          "image": "assets/img/academy/campaign/gallery/warm-up-tearaway-pant-side-snaps.webp",
+          "width": 1024,
+          "height": 1536,
+          "alt": "Student athlete adjusting the side snaps on the tearaway pants",
+          "caption": "Courtside snaps · AI styling study"
+        }
+      ]
     },
     {
       "id": "academy-hoodie",
@@ -750,7 +1108,29 @@
       ],
       "status": "Coming soon",
       "group": "court-gear",
-      "price": "$118 proposed"
+      "price": "$118 proposed",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/academy-hoodie-back.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Back of the black Academy Hoodie",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "school-steps",
+          "label": "School steps",
+          "image": "assets/img/academy/campaign/gallery/academy-hoodie-school-steps.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing the Academy Hoodie on the school steps",
+          "caption": "School steps · AI styling study"
+        }
+      ]
     },
     {
       "id": "signature-court-ball",
@@ -771,7 +1151,18 @@
       "flat": "assets/img/academy/roadmap/signature-court-ball.svg",
       "flat_width": 900,
       "flat_height": 780,
-      "flat_alt": "Signature Court Ball design board in carbon, bone and gold"
+      "flat_alt": "Signature Court Ball design board in carbon, bone and gold",
+      "lifestyle_views": [
+        {
+          "id": "bench",
+          "label": "On the bench",
+          "image": "assets/img/academy/campaign/gallery/signature-court-ball-bench.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Player holding the signature basketball on the gym bench",
+          "caption": "On the bench · AI styling study"
+        }
+      ]
     },
     {
       "id": "arc-05",
@@ -791,7 +1182,29 @@
       "flat": "academy-studio/flats/arc-05.svg",
       "flat_width": 700,
       "flat_height": 520,
-      "flat_alt": "Front and back design board for the maroon Arc 05"
+      "flat_alt": "Front and back design board for the maroon Arc 05",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/arc-05-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Arc 05",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "track",
+          "label": "Track session",
+          "image": "assets/img/academy/campaign/gallery/arc-05-track.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student wearing maroon Arc shorts on the school track",
+          "caption": "Track session · AI styling study"
+        }
+      ]
     },
     {
       "id": "next-up-short",
@@ -814,7 +1227,29 @@
       "flat": "academy-studio/flats/next-up-short.svg",
       "flat_width": 700,
       "flat_height": 520,
-      "flat_alt": "Front and back design board for the carbon Next Up Short"
+      "flat_alt": "Front and back design board for the carbon Next Up Short",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/next-up-short-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Next Up Short",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "outdoor-pass",
+          "label": "Outdoor passing drill",
+          "image": "assets/img/academy/campaign/gallery/next-up-short-outdoor-pass.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student athlete making a pass in the Next Up shorts",
+          "caption": "Outdoor passing drill · AI styling study"
+        }
+      ]
     },
     {
       "id": "first-team",
@@ -834,7 +1269,29 @@
       "flat": "academy-studio/flats/first-team.svg",
       "flat_width": 700,
       "flat_height": 520,
-      "flat_alt": "Design board for the First Team tee and pull-on shorts"
+      "flat_alt": "Design board for the First Team tee and pull-on shorts",
+      "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/first-team-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the First Team Set",
+          "caption": "Back · AI garment rendering"
+        }
+      ],
+      "lifestyle_views": [
+        {
+          "id": "youth-clinic",
+          "label": "Youth clinic",
+          "image": "assets/img/academy/campaign/gallery/first-team-youth-clinic.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student athlete in maroon and cream First Team shorts at a basketball clinic",
+          "caption": "Youth clinic · AI styling study"
+        }
+      ]
     },
     {
       "id": "kc-signature-backpack",
@@ -893,28 +1350,67 @@
       "status": "Coming soon",
       "group": "accessories",
       "price": "$28 proposed",
-      "image": "assets/img/academy/roadmap/fit/kc-dark-knights-details.webp",
-      "image_width": 1774,
-      "image_height": 887,
-      "alt": "Dark Knights headband with a centered KC crest, shown beside the matching shooting sleeve",
-      "image_caption": "Dark Knights concept detail · AI styling study · Dedicated product image in development",
-      "view_label": "Concept detail",
+      "image": "assets/img/academy/campaign/gallery/carbon-headband.webp",
+      "image_width": 1254,
+      "image_height": 1254,
+      "alt": "Carbon KC Court headband photographed on warm stone",
+      "image_caption": "Carbon · AI product rendering",
+      "view_label": "Carbon",
       "views": [
         {
-          "id": "combat-details",
-          "image": "assets/img/academy/roadmap/fit/kc-combat-color-details.webp",
-          "width": 1774,
-          "height": 887,
-          "label": "Color details",
-          "alt": "Academy combat color details showing the carbon, maroon, bone and gold accessory palette",
-          "caption": "Supporting color detail · AI styling study"
+          "id": "maroon",
+          "label": "Maroon",
+          "image": "assets/img/academy/campaign/gallery/maroon-headband.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Maroon KC Court headband photographed on warm stone",
+          "caption": "Maroon · AI product rendering"
+        },
+        {
+          "id": "bone",
+          "label": "Bone",
+          "image": "assets/img/academy/campaign/gallery/bone-headband.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Bone KC Court headband photographed on warm stone",
+          "caption": "Bone · AI product rendering"
+        },
+        {
+          "id": "colors",
+          "label": "All three colors",
+          "image": "assets/img/academy/campaign/gallery/headband-color-study.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Carbon, Maroon and Bone KC Court headband colorways photographed together",
+          "caption": "All three colors · AI product rendering"
+        },
+        {
+          "id": "patch",
+          "label": "Patch stitching",
+          "image": "assets/img/academy/campaign/gallery/maroon-headband-patch-macro.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Close view of the embroidered KC patch and maroon rib knit",
+          "caption": "Patch stitching · AI design study"
         }
       ],
       "specs": [
-        "Structured performance band with a restrained KC mark and the Academy woven repeat.",
-        "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
+        "A dense rib-knit body with folded edges and a soft interior.",
+        "The design pairs a woven KC patch with antique-gold embroidery and hand-stitched attachment.",
+        "Shown in Carbon, Maroon and Bone. Materials and construction are subject to sampling."
       ],
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#signature-collection",
+      "lifestyle_views": [
+        {
+          "id": "courtside",
+          "label": "Bone courtside",
+          "image": "assets/img/academy/campaign/gallery/bone-headband-courtside-new.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Student athlete wearing the Bone headband and its round KC patch courtside",
+          "caption": "Bone courtside · AI styling study"
+        }
+      ]
     },
     {
       "id": "kc-arm-sleeve",
@@ -923,28 +1419,57 @@
       "status": "Coming soon",
       "group": "accessories",
       "price": "$32 proposed",
-      "image": "assets/img/academy/roadmap/fit/kc-dark-knights-details.webp",
-      "image_width": 1774,
-      "image_height": 887,
-      "alt": "Dark Knights shooting sleeve with a woven elbow inset, shown beside the matching headband",
-      "image_caption": "Dark Knights concept detail · AI styling study · Dedicated product image in development",
-      "view_label": "Concept detail",
+      "image": "assets/img/academy/campaign/gallery/carbon-arm-sleeve.webp",
+      "image_width": 1254,
+      "image_height": 1254,
+      "alt": "Carbon KC Court arm sleeve photographed on warm stone",
+      "image_caption": "Carbon · AI product rendering",
+      "view_label": "Carbon",
       "views": [
         {
-          "id": "combat-details",
-          "image": "assets/img/academy/roadmap/fit/kc-combat-color-details.webp",
-          "width": 1774,
-          "height": 887,
-          "label": "Color details",
-          "alt": "Academy combat color details showing the carbon, maroon, bone and gold performance palette",
-          "caption": "Supporting color detail · AI styling study"
+          "id": "maroon",
+          "label": "Maroon",
+          "image": "assets/img/academy/campaign/gallery/maroon-arm-sleeve.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Maroon KC Court arm sleeve photographed on warm stone",
+          "caption": "Maroon · AI product rendering"
+        },
+        {
+          "id": "bone",
+          "label": "Bone",
+          "image": "assets/img/academy/campaign/gallery/bone-arm-sleeve.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Bone KC Court arm sleeve photographed on warm stone",
+          "caption": "Bone · AI product rendering"
+        },
+        {
+          "id": "colors",
+          "label": "All three colors",
+          "image": "assets/img/academy/campaign/gallery/sleeve-color-study.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Carbon, Maroon and Bone KC Court arm sleeve colorways photographed together",
+          "caption": "All three colors · AI product rendering"
         }
       ],
       "specs": [
         "Compression sleeve target with tonal KC micro-repeat and a small gold crest detail.",
         "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
       ],
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#signature-collection",
+      "lifestyle_views": [
+        {
+          "id": "on-court",
+          "label": "Maroon on court",
+          "image": "assets/img/academy/campaign/gallery/maroon-sleeve-in-use.webp",
+          "width": 1024,
+          "height": 1536,
+          "alt": "Student athlete holding a basketball in the maroon arm sleeve, with the stitched KC elbow panel visible",
+          "caption": "Maroon on court · AI styling study"
+        }
+      ]
     },
     {
       "id": "kc-court-socks",
@@ -983,7 +1508,18 @@
         "Crew-height performance sock target with ribbed structure, maroon striping and a restrained KC mark.",
         "Dedicated hero crop is in development; supporting detail images are concept references, not production proof."
       ],
-      "campaign": "store.html#signature-collection"
+      "campaign": "store.html#signature-collection",
+      "lifestyle_views": [
+        {
+          "id": "courtside",
+          "label": "Lacing up",
+          "image": "assets/img/academy/campaign/gallery/kc-court-socks-courtside.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Maroon KC Court Socks worn courtside",
+          "caption": "Lacing up · AI styling study"
+        }
+      ]
     },
     {
       "id": "richmond-maroon-sport-coat",
@@ -1003,6 +1539,15 @@
       "group": "last-bell",
       "campaign": "store.html#uniform-pieces",
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/richmond-maroon-sport-coat-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Relaxed Richmond Maroon Sport Coat",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "portrait",
           "label": "Studio portrait",
@@ -1107,6 +1652,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/bone-sport-coat-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Bone Sport Coat",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "portrait",
           "label": "Studio portrait",
           "image": "assets/img/academy/last-bell/uniform-pieces/studio/bone-sport-coat-portrait.webp",
@@ -1191,6 +1745,15 @@
       "group": "last-bell",
       "campaign": "store.html#uniform-pieces",
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/charcoal-sport-coat-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Charcoal Sport Coat",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "portrait",
           "label": "Studio portrait",
@@ -1295,6 +1858,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/maroon-knit-polo-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Maroon Rib-Knit Polo",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Outdoors",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/maroon-knit-polo-campus.webp",
@@ -1305,6 +1877,15 @@
         }
       ],
       "lifestyle_views": [
+        {
+          "id": "seminar",
+          "label": "In seminar",
+          "image": "assets/img/academy/campaign/gallery/maroon-knit-polo-seminar.webp",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Student wearing the maroon knit polo at a classroom table",
+          "caption": "In seminar · AI styling study"
+        },
         {
           "id": "signature-court",
           "label": "Courtyard",
@@ -1352,6 +1933,15 @@
       "group": "last-bell",
       "campaign": "store.html#uniform-pieces",
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/maroon-v-neck-sweater-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Maroon V-Neck Sweater Vest",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "campus",
           "label": "School library",
@@ -1411,6 +2001,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/maroon-button-front-vest-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Maroon Tailored Waistcoat",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Between classes",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/maroon-button-front-vest-campus.webp",
@@ -1469,6 +2068,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/charcoal-pleated-skirt-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Charcoal Pleated Skirt",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Outdoors",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-pleated-skirt-campus.webp",
@@ -1479,6 +2087,15 @@
         }
       ],
       "lifestyle_views": [
+        {
+          "id": "art-studio",
+          "label": "Art studio",
+          "image": "assets/img/academy/campaign/gallery/charcoal-pleated-skirt-arts-studio.webp",
+          "width": 1024,
+          "height": 1536,
+          "alt": "Student in the charcoal pleated skirt carrying a sketchbook in the art studio",
+          "caption": "Art studio · AI styling study"
+        },
         {
           "id": "signature-court",
           "label": "Courtyard",
@@ -1527,6 +2144,15 @@
       "group": "last-bell",
       "campaign": "store.html#uniform-pieces",
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/khaki-double-pleat-trouser-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Khaki Wide-Leg Pleated Trouser",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "campus",
           "label": "Outdoors",
@@ -1577,6 +2203,15 @@
       "campaign": "store.html#uniform-pieces",
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/charcoal-double-pleat-trouser-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Charcoal Wide-Leg Pleated Trouser",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Outdoors",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-double-pleat-trouser-campus.webp",
@@ -1624,6 +2259,15 @@
       ],
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/fitted-richmond-maroon-sport-coat-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Fitted Richmond Maroon Sport Coat",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "portrait",
           "label": "Studio portrait",
           "image": "assets/img/academy/last-bell/uniform-pieces/studio/fitted-richmond-maroon-sport-coat-portrait.webp",
@@ -1661,6 +2305,15 @@
         }
       ],
       "lifestyle_views": [
+        {
+          "id": "courtyard",
+          "label": "Across the courtyard",
+          "image": "assets/img/academy/campaign/gallery/fitted-maroon-coat-courtyard.webp",
+          "width": 1199,
+          "height": 1312,
+          "alt": "Student wearing the fitted maroon sport coat over a bone Oxford in the brick courtyard",
+          "caption": "Across the courtyard · AI styling study"
+        },
         {
           "id": "signature-hall",
           "label": "Between classes",
@@ -1716,6 +2369,15 @@
       ],
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/charcoal-tailored-pleat-trouser-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Charcoal Tailored Pleated Trouser",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Hallway",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/charcoal-tailored-pleat-trouser-campus.webp",
@@ -1754,6 +2416,15 @@
         "Front pleats and a tapered leg distinguish this cut from the wide-leg khaki trouser."
       ],
       "views": [
+        {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/khaki-tailored-pleat-trouser-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Khaki Tailored Pleated Trouser",
+          "caption": "Back · AI garment rendering"
+        },
         {
           "id": "campus",
           "label": "School steps",
@@ -1811,6 +2482,15 @@
       ],
       "views": [
         {
+          "id": "back",
+          "label": "Back",
+          "image": "assets/img/academy/campaign/gallery/ivory-ribbed-crew-socks-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Back of the Bone Ribbed Crew Socks",
+          "caption": "Back · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "School steps",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/ivory-ribbed-crew-socks-campus.webp",
@@ -1857,6 +2537,15 @@
         "A classic penny strap, rounded toe and low stacked heel finish the loafer."
       ],
       "views": [
+        {
+          "id": "back",
+          "label": "Heel view",
+          "image": "assets/img/academy/campaign/gallery/black-penny-loafers-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Rear of the black penny loafer showing the heel and outsole",
+          "caption": "Heel view · AI garment rendering"
+        },
         {
           "id": "campus",
           "label": "Outdoors",
@@ -1914,6 +2603,15 @@
       ],
       "views": [
         {
+          "id": "back",
+          "label": "Heel view",
+          "image": "assets/img/academy/campaign/gallery/ivory-low-top-sneakers-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Rear of the ivory low-top sneaker showing the heel and outsole",
+          "caption": "Heel view · AI garment rendering"
+        },
+        {
           "id": "campus",
           "label": "Hallway",
           "image": "assets/img/academy/last-bell/uniform-pieces/campus/ivory-low-top-sneakers-campus.webp",
@@ -1960,6 +2658,15 @@
         "A slim instep strap, small buckle and low block heel finish the Mary Jane."
       ],
       "views": [
+        {
+          "id": "back",
+          "label": "Heel view",
+          "image": "assets/img/academy/campaign/gallery/oxblood-mary-jane-heels-back.webp",
+          "width": 627,
+          "height": 627,
+          "alt": "Rear of the oxblood Mary Jane showing the heel",
+          "caption": "Heel view · AI garment rendering"
+        },
         {
           "id": "campus",
           "label": "School steps",
