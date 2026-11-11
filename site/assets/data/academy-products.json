@@ -1294,6 +1294,26 @@
       ]
     },
     {
+      "id": "kc-signature-cap",
+      "name": "K|C Signature Cap",
+      "kind": "Structured cap · Black / Gold",
+      "status": "Coming soon",
+      "group": "accessories",
+      "price": "Price to be confirmed",
+      "image": "assets/img/academy/roadmap/fit/kc-signature-cap-black.webp",
+      "image_width": 900,
+      "image_height": 1125,
+      "alt": "Black six-panel cap with a gold embroidered K|C monogram on the front, shown on a dark stone block",
+      "image_caption": "Product study · Concept mockup",
+      "view_label": "Front",
+      "specs": [
+        "Structured six-panel black cap with a gold embroidered K|C monogram and a matching gold divider.",
+        "Curved brim with tonal stitching, embroidered eyelets and a covered top button.",
+        "Concept mockup only; fabric, closure and sizing remain to be sampled."
+      ],
+      "campaign": "store.html#accessories"
+    },
+    {
       "id": "kc-signature-backpack",
       "name": "KC Signature Backpack",
       "kind": "Campus carry · Carbon / Richmond Maroon / Gold",
