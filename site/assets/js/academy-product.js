@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=13");
+    const response = await fetch("assets/data/academy-products.json?v=15");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
@@ -85,6 +85,7 @@ async function showProduct() {
         const preview = new Image(view.width, view.height);
         preview.src = view.image;
         preview.alt = "";
+        preview.loading = "lazy";
         const label = document.createElement("span");
         label.textContent = view.label;
         button.append(preview, label);
@@ -118,6 +119,7 @@ async function showProduct() {
         const preview = new Image(edition.image_width, edition.image_height);
         preview.src = edition.image;
         preview.alt = "";
+        preview.loading = "lazy";
         const label = document.createElement("span");
         label.textContent = edition.label;
         link.append(preview, label);
@@ -210,27 +212,33 @@ async function showProduct() {
     if (product.id === "front-row-letterman") {
       document.querySelector("#front-row-composite").hidden = false;
     }
-    const lifestyleId = style ? jerseyEditorial :
-      product.lifestyle_views?.length ? "school-uniform-editorial" : {
+    const hasLifestyle = Boolean(product.lifestyle_views?.length);
+    const feature = {
       "front-row-letterman": "front-row-lifestyle",
       "warm-up-zip-jacket": "warm-up-editorial",
-        "warm-up-tearaway-pant": "warm-up-editorial",
+      "warm-up-tearaway-pant": "warm-up-editorial",
       "all-maroon-game-short": "practice-jersey-editorial",
     }[product.id];
+    const productEditorial = product.group === "last-bell" ? "school-uniform-editorial" : "court-gear-editorial";
+    const lifestyleId = style ? jerseyEditorial : feature || (hasLifestyle && productEditorial);
     const lifestyle = lifestyleId && document.getElementById(lifestyleId);
     if (lifestyle) {
       lifestyle.hidden = false;
       const lifestyleLink = document.querySelector("#product-lifestyle-link");
       lifestyleLink.href = "#" + lifestyle.id;
-      if (lifestyle.id === "school-uniform-editorial") lifestyleLink.textContent = "See the uniform on campus ↓";
-      else if (lifestyle.id === "game-jersey-editorial") lifestyleLink.textContent = "See the game lineup ↓";
-      else if (lifestyle.id === "practice-jersey-editorial") lifestyleLink.textContent = "See the practice lineup on court ↓";
-      else if (lifestyle.id === "warm-up-editorial") lifestyleLink.textContent = "See the game-night editorial ↓";
+      const lifestyleLabels = {
+        "school-uniform-editorial": "See the uniform on campus ↓",
+        "court-gear-editorial": "See it styled ↓",
+        "game-jersey-editorial": "See the game lineup ↓",
+        "practice-jersey-editorial": "See the practice lineup on court ↓",
+        "warm-up-editorial": "See the game-night editorial ↓",
+      };
+      if (lifestyleLabels[lifestyleId]) lifestyleLink.textContent = lifestyleLabels[lifestyleId];
       lifestyleLink.hidden = false;
-      if (lifestyleId === "school-uniform-editorial") {
-        const grid = document.getElementById("school-uniform-views");
-        const template = document.getElementById("school-uniform-view");
-        for (const view of product.lifestyle_views) {
+      if (hasLifestyle) {
+        const grid = lifestyle.querySelector(".school-uniform-grid, .warm-up-grid, .front-row-lifestyle-grid");
+        const template = document.getElementById("product-lifestyle-card");
+        const cards = product.lifestyle_views.map((view) => {
           const card = template.content.firstElementChild.cloneNode(true);
           const image = card.querySelector("img");
           card.href = view.image;
@@ -239,9 +247,10 @@ async function showProduct() {
           image.alt = view.alt;
           image.width = view.width;
           image.height = view.height;
-          card.querySelector("figcaption").textContent = view.label;
-          grid.append(card);
-        }
+          card.querySelector("figcaption").textContent = view.caption || view.label;
+          return card;
+        });
+        grid.prepend(...cards);
       }
 
       const lightbox = document.querySelector("#product-lifestyle-lightbox");
