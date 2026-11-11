@@ -1,7 +1,7 @@
 async function showProduct() {
   const status = document.querySelector("#product-error");
   try {
-    const response = await fetch("assets/data/academy-products.json?v=15");
+    const response = await fetch("assets/data/academy-products.json?v=16");
     if (!response.ok) throw new Error("Catalog unavailable");
     const { products } = await response.json();
     const query = new URLSearchParams(location.search);
