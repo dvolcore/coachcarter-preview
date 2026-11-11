@@ -10,9 +10,9 @@ from html import escape
 DIR = "assets/img/private/"
 PRIVATE = [  # file, w, h, title, line, ask
     ("courtside-prince-jackson", 1800, 1241, "Courtside with Samuel L. Jackson and Prince", "Front row · AI-enhanced from the original", "date, arena, photo credit"),
-    ("with-usher", 1500, 1006, "With Usher", "From his own album", "year, occasion"),
+    ("with-usher", 1800, 1209, "With Usher", "From his own album · AI-enhanced", "year, occasion"),
     ("drphil-jackson", 1800, 1182, "With Samuel L. Jackson and Dr. Phil", "On the Dr. Phil set", ""),
-    ("all-stars-24", 1350, 1800, "No. 24", "Contra Costa All Stars", "year"),
+    ("all-stars-24", 1500, 2000, "No. 24", "Contra Costa All Stars · AI-enhanced", "year"),
     ("drphil-set", 1800, 1158, "On Dr. Phil", "On air with Samuel L. Jackson", ""),
     ("coach-portrait", 1350, 1800, "Coach Ken Carter", "Portrait", "year, place"),
     ("oilers-team", 1800, 1213, "The Oilers", "Richmond High", "year, names"),
@@ -21,14 +21,14 @@ PRIVATE = [  # file, w, h, title, line, ask
     ("huddle", 1800, 1244, "In the huddle", "From his own album", "team, year"),
     ("by-the-trailer", 1092, 1800, "By the trailers", "From his own album", "who, where"),
     ("portrait-pair", 1800, 1260, "In good company", "From his own album", "who, occasion"),
-    ("courtside-prince-jackson-2", 1500, 1114, "Courtside, second frame", "Same night", ""),
+    ("courtside-prince-jackson-2", 1800, 1338, "Courtside, second frame", "Same night · AI-enhanced", ""),
     ("on-location", 1800, 1423, "On location", "From his own album", "who, where"),
     ("team-jackets", 1800, 1258, "The team", "From his own album", "team, year"),
     ("handshake", 1350, 1800, "Good to see you", "From his own album", "who, when"),
     ("five-men", 1600, 1199, "Five across", "From his own album", "who"),
     ("on-set", 1100, 1817, "On set", "Richmond colors", "who, photo credit"),
     ("three-men", 1600, 1120, "Three across", "From his own album", "who, occasion"),
-    ("in-the-gym", 1100, 1677, "Still in the gym", "Today", ""),
+    ("in-the-gym", 1317, 2000, "Still in the gym", "Today · AI-enhanced", ""),
 ]
 
 
