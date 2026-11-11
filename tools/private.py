@@ -9,7 +9,7 @@ from html import escape
 
 DIR = "assets/img/private/"
 PRIVATE = [  # file, w, h, title, line, ask
-    ("courtside-prince-jackson", 1500, 1035, "Courtside with Samuel L. Jackson and Prince", "Front row", "date, arena, photo credit"),
+    ("courtside-prince-jackson", 1800, 1241, "Courtside with Samuel L. Jackson and Prince", "Front row · AI-enhanced from the original", "date, arena, photo credit"),
     ("with-usher", 1500, 1006, "With Usher", "From his own album", "year, occasion"),
     ("drphil-jackson", 1800, 1182, "With Samuel L. Jackson and Dr. Phil", "On the Dr. Phil set", ""),
     ("all-stars-24", 1350, 1800, "No. 24", "Contra Costa All Stars", "year"),

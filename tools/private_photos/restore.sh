@@ -4,7 +4,8 @@ set -e
 S="$1"; O="$2"; mkdir -p "$O"; cd "$S/raw"
 FIN="-strip -interlace Plane -quality 86"
 SCR="-colorspace Lab -channel 1,2 -gaussian-blur 0x7 +channel -colorspace sRGB -gaussian-blur 0x0.9"
-magick IMG_2272.jpg -filter Lanczos -resize 1500x -unsharp 0x1.4+0.7+0.02 -contrast-stretch 0.3%x0.3% $FIN "$O/courtside-prince-jackson.jpg"
+# courtside-prince-jackson.jpg is the AI-upscaled version Ralph chose on 2026-11-10 (tracking/private_collection/upscale_test); do not regenerate it here.
+: # magick IMG_2272.jpg -filter Lanczos -resize 1500x -unsharp 0x1.4+0.7+0.02 -contrast-stretch 0.3%x0.3% $FIN "$O/courtside-prince-jackson.jpg"
 magick IMG_2266.jpg -filter Lanczos -resize 1500x -unsharp 0x1.4+0.7+0.02 -contrast-stretch 0.3%x0.3% $FIN "$O/courtside-prince-jackson-2.jpg"
 magick IMG_9294.jpg -crop 1085x728+10+10 +repage $SCR -filter Lanczos -resize 1500x -unsharp 0x1.2+0.6+0.02 -contrast-stretch 0.4%x0.6% -modulate 100,92 $FIN "$O/with-usher.jpg"
 magick Ken-Sam-Phil.jpg -unsharp 0x0.8+0.4+0.02 $FIN "$O/drphil-jackson.jpg"
