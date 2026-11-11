@@ -300,6 +300,7 @@ def build():
         (OUT / p.name).write_text(html)
         print("built", p.name, len(html))
     shell.write_index()
+    shell.seo.write_site_files([(p.name, "home" if p.name == "index.html" else p.stem) for p in pages])
     shell.apply_product()
 
 

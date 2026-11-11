@@ -20,6 +20,7 @@ from pathlib import Path
 import motion  # code-authored motion plates (store department title cards)
 import motion_pages  # more scenes + the plate that opens each inner page
 import private  # Coach's private photo collection (Archive)
+import seo  # canonical + social tags, structured data, FAQ hub, sitemap
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "site"
@@ -47,6 +48,7 @@ WORLDS = [
             ("record", "record.html", "The Record", "Television, stages, honors. The proof, with sources.", "assets/img/own/torch_raised.jpg"),
             ("archive", "archive.html", "The Archive", "His photographs, the 2005 film scene by scene, the original contract.", "assets/img/own/old_team.jpg"),
             ("impact", "impact.html", "The Foundation", "The work in the neighborhood, and the relaunch.", "assets/video/classroom.jpg"),
+            ("faq", "faq.html", "Facts & FAQ", "Is it a true story? The contract, the film, the numbers. Sourced.", "assets/img/private/all-stars-24-900.jpg"),
         ],
     },
     {
@@ -536,6 +538,9 @@ def apply(html, meta, name, series_price="$19.99"):
             raise SystemExit(f"{name}: no place for the private collection")
         html = html[:m.start()] + private.collection() + html[m.start():]
 
+    if "{{faq}}" in html:
+        html = html.replace("{{faq}}", seo.faq_html(), 1)
+
     if "{{hub}}" in html:
         html = html.replace("{{hub}}", hub(), 1)
 
@@ -583,6 +588,8 @@ def apply(html, meta, name, series_price="$19.99"):
     # 7. assets
     html = html.replace("</head>", f'<link rel="stylesheet" href="assets/css/shell.css?v={V}">\n{HEAD_BOOT}</head>', 1)
     html = html.replace("</body>", f'<script defer src="assets/js/shell.js?v={V}"></script>\n</body>', 1)
+    share = re.search(r'<meta property="og:image" content="([^"]+)"', html)
+    html = seo.apply(html, meta, name, nav, PAGES[nav][1][2] if nav in PAGES else "Home", world_of(nav), share.group(1) if share else seo.IMG)
     if "data-plate" in html:
         html = html.replace("</head>", f'<link rel="stylesheet" href="assets/css/motion.css?v={V}">\n</head>', 1)
         html = html.replace("</body>", f'<script defer src="assets/js/motion.js?v={V}"></script>\n</body>', 1)
