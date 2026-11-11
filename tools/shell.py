@@ -19,6 +19,7 @@ from pathlib import Path
 
 import motion  # code-authored motion plates (store department title cards)
 import motion_pages  # more scenes + the plate that opens each inner page
+import private  # Coach's private photo collection (Archive)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "site"
@@ -529,6 +530,12 @@ def apply(html, meta, name, series_price="$19.99"):
         m = re.search(r'</section>', html[html.index('class="store-campaign"'):])
         at = html.index('class="store-campaign"') + m.end()
         html = html[:at] + "\n" + store_directory() + html[at:]
+    if nav == "archive":   # the private collection opens the archive, ahead of the public record
+        m = re.search(r'<section\b[^>]*\bid="headliners-sec"', html)
+        if not m:
+            raise SystemExit(f"{name}: no place for the private collection")
+        html = html[:m.start()] + private.collection() + html[m.start():]
+
     if "{{hub}}" in html:
         html = html.replace("{{hub}}", hub(), 1)
 

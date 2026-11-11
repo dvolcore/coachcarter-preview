@@ -157,7 +157,7 @@ def plate(key, scene, no, lines, blurb, links, label, kicker=None, pid=None):
   <div class="plate-fx" aria-hidden="true"></div>
   <div class="plate-copy">
     <p class="plate-k"><span>{escape(kicker)}</span></p>
-    <h2 class="plate-t"><span class="sr">{escape(label)}</span><span aria-hidden="true">{words}</span></h2>
+    <h2 class="plate-t"><span class="sr">{escape(" ".join(lines))}</span><span aria-hidden="true">{words}</span></h2>
     <p class="plate-d">{escape(blurb)}</p>
     <nav class="plate-links" aria-label="{escape(label)} sections">{chips}</nav>
   </div>

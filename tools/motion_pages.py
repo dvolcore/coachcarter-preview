@@ -28,7 +28,7 @@ LOCK = '''<svg viewBox="0 0 640 400" class="sc sc-lock">
 def _onair():
     bars = "".join(f'<rect class="wv" style="--i:{i}" x="{150 + i * 25}" y="{150 - h // 2}" width="11" height="{h}" rx="2"/>'
                    for i, h in enumerate([34, 62, 88, 50, 104, 72, 40, 96, 58, 84, 46, 70, 30, 54]))
-    names = ["NPR", "CNN", "TODAY", "GOOD MORNING AMERICA", "DR. PHIL"]
+    names = ["NPR", "CNN", "TODAY", "DR. PHIL", "THE VIEW"]
     outs = "".join(f'<text class="outlet outlet-{i + 1}" x="132" y="272">{n}</text>' for i, n in enumerate(names))
     return f'''<svg viewBox="0 0 640 400" class="sc sc-onair">
   <rect class="d" style="--i:0;--t:1.6s" pathLength="1" x="90" y="46" width="460" height="278" rx="10"/>
@@ -66,7 +66,7 @@ def _weeks():
     return f'''<svg viewBox="0 0 640 400" class="sc sc-weeks">
   {"".join(cols)}
   <path class="base d" style="--i:8;--t:1.6s" pathLength="1" d="M60 344 H580"/>
-  <text class="tl f" style="--i:10" x="60" y="374">SESSIONS COMPLETE</text>
+  <text class="tl f" style="--i:10" x="60" y="374">WEEKS COMPLETE</text>
   <text class="tn f" style="--i:10" x="580" y="382"><tspan data-tally="6">6</tspan><tspan class="of"> / 6</tspan></text>
 </svg>'''
 
@@ -121,7 +121,7 @@ OWN = "assets/img/own/"
 CAMP = "assets/img/academy/campaign/"
 motion.SCENES.update({
     "lock": LOCK, "onair": _onair(), "stage": _stage(), "weeks": _weeks(), "wall": _wall(), "chart": CHART, "cards-15": _grid15(),
-    "strip-archive": motion._strip([OWN + f for f in ("torch_raised.jpg", "old_team.jpg", "team_trophy.jpg", "torch_relay.jpg", "as_player.jpg", "team.jpg")]),
+    "strip-archive": motion._strip(["assets/img/private/" + f for f in ("all-stars-24-900.jpg", "drphil-jackson-900.jpg", "courtside-prince-jackson-900.jpg", "with-usher-900.jpg", "oilers-team-900.jpg", "huddle-900.jpg")]),
     "strip-lookbook": motion._strip([CAMP + f for f in ("front-row-opening-night.webp", "front-row-campus-duo.webp", "back-of-jacket.webp",
                                                          "front-row-library-pleats.webp", "after-hours-stage.webp", "front-row-outdoor-court.webp")]),
     "leader-series": motion.LEADER.replace("FREE PREVIEW · 0:60", "CLASS IS IN SESSION").replace("REEL 01", "A STUDIO405 PRODUCTION"),
@@ -139,16 +139,16 @@ PAGE_PLATES = {
     "record": ("onair", "The Man · The Record", ["On the", "Record"], "National television, full rooms and honors. Every claim linked to where it ran.",
                [("On air", "#the-country-tuned-in"), ("In the room", "#room"), ("On film", "#the-moments-on-film"), ("Coast to coast", "#coast-to-coast"),
                 ("Honors", "#honored-for-the-work")], SEC % "the-country-tuned-in"),
-    "archive": ("strip-archive", "The Man · The Archive", ["The", "Archive"], "His own photographs, the 2005 film scene by scene, and the document behind the lockout.",
-                [("Headliners", "#headliners-sec"), ("Scrapbook", "#scrapbook"), ("The 2005 film", "#the-2005-film"), ("The contract", "#original-contract"),
-                 ("Films", "#films"), ("Photographs", "#photos")], SEC % "headliners-sec"),
+    "archive": ("strip-archive", "The Man · The Archive", ["The", "Archive"], "His private collection, the 2005 film scene by scene, and the document behind the lockout.",
+                [("Private collection", "#private-collection"), ("Headliners", "#headliners-sec"), ("Scrapbook", "#scrapbook"), ("The 2005 film", "#the-2005-film"), ("The contract", "#original-contract"),
+                 ("Films", "#films"), ("Photographs", "#photos")], SEC % "private-collection"),
     "impact": ("cards-15", "The Man · The Foundation", ["Fifteen", "of Fifteen"], "The fifteen who fell short of the contract all went on to higher education. The game was the hook.",
                [("Our goal", "#our-goal-is-to-change-the-neighborhood"), ("Where the work happens", "#where-the-work-happens"),
-                ("The relaunch", "#be-first-in-for-the-relaunch")], SEC % "our-goal-is-to-change-the-neighborhood"),
+                ("The relaunch", "#be-first-in-for-the-relaunch"), ("The story and its source", "story.html#from-richmond-to-the-world")], SEC % "our-goal-is-to-change-the-neighborhood"),
     "keynotes": ("stage", "Work with Coach · Keynotes", ["On", "Stage"], "Five signature talks, each built around your room. Then check a date.",
                  [("The reel", "#see-the-room-change"), ("Five talks", "#five-talks-one-standard"), ("Rooms he has worked", "#in-the-room-for-the-best"),
                   ("Formats", "#built-for-your-event"), ("What hosts say", "#what-hosts-say"), ("Book", "#book")], SEC % "see-the-room-change"),
-    "teams": ("weeks", "Work with Coach · Teams & Schools", ["Six", "Weeks"], "One contract, six sessions. Every player, parent and coach signs something.",
+    "teams": ("weeks", "Work with Coach · Teams & Schools", ["Six", "Weeks"], "One contract, six weeks. Every player, parent and coach signs something.",
               [("The program", "#program"), ("The commitment", "#commitment"), ("Week by week", "#weeks"), ("Price", "#price"), ("Run the play", "#run-the-play"),
                ("Inquire", "#inquire")], SEC % "i-m-a"),
     "partners": ("wall", "Work with Coach · Partners", ["Your Brand,", "His Standard"], "Partnership positions, a live package builder and clear rules for using the name.",
