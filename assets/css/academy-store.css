@@ -503,3 +503,127 @@
 .store-catalog-note { max-width: 64ch; margin: 0 0 14px; font-size: .9rem; line-height: 1.55; color: var(--academy-muted); }
 .game-jersey-banner + .store-catalog-note { margin-top: 12px; }
 .store-catalog-note + .store-catalog-note { margin-top: -6px; }
+
+/* ==========================================================================
+   Polish pass (2026-11-11): catalog frames, card hover, equal rows,
+   edition posters, focus rings on light store sections.
+   ========================================================================== */
+
+/* 1 · One 4:5 frame for every catalog product (most assets are 4:5).
+   Studio flats sit on #f5efea, so the frame takes that colour and the
+   top/bottom space reads as backdrop, not as a letterbox. */
+:is(.uniform-group, .court-gear-products) .academy-product-link > img {
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f5efea;
+}
+/* Outliers: frame background continues each photo's own edge colours. */
+.academy-product-link > img[src*="front-row-front"] {
+  /* The right sleeve touches the source edge, so anchor right and extend the backdrop left. */
+  object-position: 100% 50%;
+  background: linear-gradient(#897469 0%, #a28b7e 25%, #9c877d 50%, #957e71 75%, #927c6f 100%);
+}
+.academy-product-link > img[src*="warm-up-tearaway-pant"] {
+  background: linear-gradient(#ecd8c8, #f0dcc9 25%, #efdbca 50%, #f0ddcc 75%, #f6e4d4) left / 50% 100% no-repeat,
+              linear-gradient(#f0dac6, #f1ddc9 25%, #f1e0ce 50%, #f4e0ce 75%, #f6e5d3) right / 50% 100% no-repeat;
+}
+.academy-product-link > img[src*="academy-court-tee"] { background: #f3ebe2; }
+.academy-product-link > img[src*="signature-backpack-exterior"] {
+  background: linear-gradient(#c09a85, #d0a994 25%, #d7b09c 50%, #d9b09e 75%, #dbb5a2) left / 50% 100% no-repeat,
+              linear-gradient(#c99f8b, #d8ae9a 25%, #dbb3a0 50%, #dbb39f 75%, #dcb5a3) right / 50% 100% no-repeat;
+}
+.academy-product-link > img[src*="kc-reversible-short"] {
+  background: linear-gradient(90deg, #ebded5, #ede1d7 25%, #ebdfd6 50%, #eee2d8 75%, #ecdfd6) top / 100% 50% no-repeat,
+              linear-gradient(90deg, #eee1da, #f0e4da 25%, #eee2d8 50%, #f0e4dc 75%, #eee2d8) bottom / 100% 50% no-repeat;
+}
+.academy-product-link > img[src*="warm-up-zip-jacket-front"] {
+  background: linear-gradient(90deg, #e9ded9, #ebe1db 25%, #f1e7e0 50%, #ece2dc 75%, #e7dcd6) top / 100% 50% no-repeat,
+              linear-gradient(90deg, #e9ded9, #ece2dc 25%, #eee4de 50%, #ece2da 75%, #e9dfd8) bottom / 100% 50% no-repeat;
+}
+.academy-product-link > img[src*="game-short-all-maroon"] {
+  background: linear-gradient(90deg, #f2e7db, #f4e8dc 25%, #f5e9df 50%, #f5e9df 75%, #f3e8dc) top / 100% 50% no-repeat,
+              linear-gradient(90deg, #f8eee6, #f4eae2 25%, #f5ebe3 50%, #f6ebe3 75%, #f7ede4) bottom / 100% 50% no-repeat;
+}
+.academy-product-link > img[src*="carbon-headband"] {
+  background: linear-gradient(90deg, #e1c1a3, #e1c0a0 25%, #e1c0a3 50%, #e0be9e 75%, #dfbd9d) top / 100% 50% no-repeat,
+              linear-gradient(90deg, #e1c4a7, #e3c4a7 25%, #e1c4a7 50%, #e2c2a4 75%, #e2c3a5) bottom / 100% 50% no-repeat;
+}
+.academy-product-link > img[src*="carbon-arm-sleeve"] {
+  background: linear-gradient(90deg, #d9ba97, #dfbd9b 25%, #e1c09f 50%, #dab898 75%, #d4b08f) top / 100% 50% no-repeat,
+              linear-gradient(90deg, #dbba9a, #debc9e 25%, #dbbb9d 50%, #dcbc9c 75%, #d6b595) bottom / 100% 50% no-repeat;
+}
+/* Lifestyle photos fill the frame instead of floating as a strip
+   (the full image is still on the product page). */
+.academy-product-link > img[src*="academy-canvas-chore-jacket"] { object-fit: cover; object-position: 50% 40%; }
+.academy-product-link > img[src*="arc-snap-jacket"] { object-fit: cover; object-position: 50% 45%; }
+.academy-product-link > img[src*="kc-combat-lineup"] { object-fit: cover; object-position: 50% 100%; }
+
+/* 2 · Equal-height cards: the rule moves from the meta block to the card
+   itself, so it lines up across a row even when a card carries piece links. */
+.academy-product-card { display: flex; flex-direction: column; border-bottom: 1px solid var(--academy-rule); transition: border-color .2s ease-out; }
+.academy-product-link { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+.academy-product-card .academy-product-meta { flex: 1; border-bottom: 0; }
+.academy-product-card .academy-piece-links { margin: 0; padding: 0 0 15px; }
+:is(.uniform-group, .court-gear-products) .academy-product-meta > div:last-child { margin-top: auto; }
+
+/* Hover: a quiet zoom that stays inside the frame. The scale grows from the
+   bottom edge and the link clips the sides and top, so nothing spills. */
+.academy-product-card img { transition: transform .24s cubic-bezier(.23, 1, .32, 1); transform-origin: 50% 100%; }
+.academy-product-link:hover img { transform: none; }
+.academy-product-arrow { transition-duration: .2s; transition-timing-function: ease-out; }
+@media (hover: hover) and (pointer: fine) {
+  .academy-product-link:hover > img { transform: scale(1.03); }
+  .academy-product-card:has(> .academy-product-link:hover) { border-bottom-color: var(--academy-maroon); }
+}
+.academy-product-card:has(> .academy-product-link:focus-visible) { border-bottom-color: var(--academy-maroon); }
+@media (prefers-reduced-motion: reduce) {
+  .academy-product-card img, .academy-product-arrow { transition: none; }
+  .academy-product-link:hover > img { transform: none; }
+}
+
+@media (max-width: 779px) {
+  .academy-product-meta > div:last-child { margin-top: auto; }
+}
+
+/* 4 · Books & collectibles: image-less editions become poster panels. */
+.edition-card:not(:has(.edition-art)) {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(260px, 30vw, 380px);
+  background:
+    radial-gradient(circle at 100% 100%, transparent 0 31%, rgb(239 213 168 / .13) 31% calc(31% + 1px), transparent calc(31% + 1px)),
+    radial-gradient(circle at 100% 100%, transparent 0 12%, rgb(239 213 168 / .13) 12% calc(12% + 1px), transparent calc(12% + 1px)),
+    linear-gradient(160deg, #5f2237, var(--academy-maroon) 55%, #3e1523);
+  border: 0;
+  border-top: 2px solid #c9a464;
+  color: var(--academy-paper);
+}
+.edition-card:not(:has(.edition-art)) .store-label { color: #efd5a8; }
+.edition-card:not(:has(.edition-art)) h3 {
+  margin-top: auto;
+  color: var(--academy-paper);
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -.02em;
+  max-width: 14ch;
+}
+.edition-card:not(:has(.edition-art)) .edition-description { color: rgb(248 245 240 / .8); max-width: 36ch; }
+.edition-card:not(:has(.edition-art)) .edition-links { margin-top: 0; }
+.edition-card:not(:has(.edition-art)) .store-text-link { color: #efd5a8; }
+.edition-card:not(:has(.edition-art)) .store-text-link:focus-visible { outline-color: #efd5a8; }
+/* A poster left alone on the last row spans the row as a banner. */
+@media (min-width: 981px) {
+  .edition-card:not(:has(.edition-art)):last-child:nth-child(3n + 1) { grid-column: 1 / -1; min-height: 240px; }
+}
+@media (min-width: 761px) and (max-width: 980px) {
+  .edition-card:not(:has(.edition-art)):last-child:nth-child(2n + 1) { grid-column: 1 / -1; min-height: 240px; }
+}
+
+/* 6 · Focus ring on light store sections: the global gold ring is ~1.4:1 on paper. */
+.page-store :is(.store-nav, .store-lookbook, .store-campaign, .store-depts, .academy-collection, .store-lineup,
+  .store-editions, .store-preorders, .store-whistle, .store-last-bell, .store-catalog-section) :focus-visible {
+  outline: 2px solid var(--academy-maroon);
+  outline-offset: 3px;
+}
+.page-store .last-bell-arrival :focus-visible,
+.page-store .edition-card:not(:has(.edition-art)) :focus-visible { outline-color: #efd5a8; }
