@@ -370,3 +370,40 @@ html:not(.js) .dept { opacity: 1; transform: none; }
   .hub-panel, .dept, .m-world, .nu-title span { clip-path: none !important; opacity: 1 !important; transform: none !important; transition: none !important; }
   .mega, .mega-link, .mega-intro > * { animation: none !important; transition: opacity .1s, visibility 0s !important; clip-path: none !important; }
 }
+
+/* ==========================================================================
+   COACH'S PRIVATE COLLECTION (tools/private.py) + photo lightbox
+   ========================================================================== */
+.pc { position: relative; background: #08090B; padding: clamp(56px, 8vw, 120px) 0 clamp(48px, 6vw, 90px); }
+.pc-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 32px; margin-bottom: clamp(28px, 4vw, 56px); }
+.pc-head .lede { max-width: 40ch; }
+.pc-top { display: grid; grid-template-columns: minmax(0, 2.05fr) minmax(0, 1fr); gap: clamp(12px, 1.4vw, 22px); align-items: start; }
+.pc-side { display: grid; gap: clamp(12px, 1.4vw, 22px); }
+.pc figure { margin: 0; }
+.pc figure a { position: relative; display: block; overflow: hidden; border-radius: 5px; background: #16181D; cursor: zoom-in; box-shadow: 0 0 0 1px rgba(212, 175, 106, .2), 0 24px 50px -30px #000; }
+.pc figure a::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(245, 240, 232, .08); pointer-events: none; transition: box-shadow .3s; }
+.pc figure a:hover::after, .pc figure a:focus-visible::after { box-shadow: inset 0 0 0 2px var(--gold-hi); }
+.pc figure img { display: block; width: 100%; height: auto; transition: transform 1.2s var(--ease); }
+.pc figure a:hover img { transform: scale(1.035); }
+.pc figcaption { margin-top: 11px; }
+.pc figcaption b { display: block; font: 600 18px/1.15 var(--f-head); letter-spacing: .02em; text-transform: uppercase; }
+.pc figcaption span { display: block; margin-top: 4px; font: 500 11.5px/1.4 var(--f-head); letter-spacing: .18em; text-transform: uppercase; color: var(--slate); }
+.pc figcaption small { margin-top: 5px; font-size: 12px; color: var(--gold); }
+.pc-lead figcaption b { font-size: clamp(22px, 2.3vw, 36px); }
+.pc-wall { columns: 4; column-gap: clamp(12px, 1.4vw, 22px); margin-top: clamp(26px, 3vw, 44px); }
+.pc-wall .pc-print { break-inside: avoid; margin: 0 0 clamp(20px, 2.2vw, 32px); }
+.pc .credit { margin-top: 8px; }
+@media (max-width: 1100px) { .pc-wall { columns: 3; } }
+@media (max-width: 760px) { .pc-head, .pc-top { grid-template-columns: 1fr; } .pc-side { grid-template-columns: 1fr 1fr; } .pc-wall { columns: 2; } .pc figcaption b { font-size: 15px; } }
+
+dialog.lb { border: 0; padding: 0; margin: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; background: transparent; color: var(--chalk); color-scheme: dark; overflow: hidden; }
+dialog.lb[open] { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: clamp(6px, 2vw, 28px); padding: clamp(10px, 3vw, 40px); }
+dialog.lb::backdrop { background: rgba(4, 5, 7, .93); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+dialog.lb figure { margin: 0; display: grid; justify-items: center; gap: 14px; min-width: 0; }
+dialog.lb img { max-width: 100%; max-height: calc(100dvh - 150px); width: auto; height: auto; border-radius: 4px; box-shadow: 0 0 0 1px rgba(212, 175, 106, .3), 0 40px 90px #000; animation: lb-in .35s var(--ease); }
+@keyframes lb-in { from { opacity: 0; transform: scale(.97); } }
+dialog.lb figcaption { font: 600 13px/1.4 var(--f-head); letter-spacing: .2em; text-transform: uppercase; color: var(--gold-hi); text-align: center; white-space: pre-wrap; }
+dialog.lb .icon-btn { background: rgba(16, 18, 22, .7); color: var(--chalk); font-size: 18px; border-color: var(--line-strong); }
+dialog.lb .lb-x { position: absolute; top: clamp(10px, 2vw, 24px); right: clamp(10px, 2vw, 24px); }
+@media (max-width: 620px) { dialog.lb[open] { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr auto; } dialog.lb figure { grid-column: 1 / -1; grid-row: 1; } dialog.lb .lb-prev { justify-self: end; } dialog.lb .lb-next { justify-self: start; } }
+@media (prefers-reduced-motion: reduce) { dialog.lb img { animation: none; } .pc figure img { transition: none; } }

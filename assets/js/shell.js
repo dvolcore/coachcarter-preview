@@ -107,7 +107,52 @@
   } else seen.forEach((el) => el.classList.add("in"));
 
   /* ---------------- store catalog: cards rise in as they enter ---------------- */
-  const cards = $$(".academy-product-card, .edition-card, .store-catalog-section > header, .uniform-group > h3");
+  /* ---------------- photo lightbox: any <a data-lb href="full image" data-cap="caption"> ---------------- */
+  const shots = $$("a[data-lb]");
+  if (shots.length && window.HTMLDialogElement) {
+    let dlg = null, pic = null, cap = null, at = 0, opener = null;
+    const warm = (i) => { const n = new Image(); n.src = shots[(i + shots.length) % shots.length].href; };
+    const show = (i) => {
+      at = (i + shots.length) % shots.length;
+      const a = shots[at], thumb = $("img", a), want = at;
+      // caption and alt change together with the picture, never ahead of it
+      const done = () => { if (want !== at) return; pic.alt = thumb ? thumb.alt : ""; cap.textContent = `${a.dataset.cap || ""}   ${at + 1} / ${shots.length}`; warm(at + 1); warm(at - 1); };
+      pic.onload = done; pic.onerror = done;
+      pic.src = a.href;
+      if (pic.complete && pic.naturalWidth) done();
+    };
+    const build = () => {
+      dlg = document.createElement("dialog");
+      dlg.className = "lb"; dlg.setAttribute("aria-label", "Photograph");
+      dlg.innerHTML = '<button class="icon-btn lb-x" type="button" aria-label="Close">✕</button><button class="icon-btn lb-prev" type="button" aria-label="Previous photograph">←</button><figure><img alt=""><figcaption></figcaption></figure><button class="icon-btn lb-next" type="button" aria-label="Next photograph">→</button>';
+      document.body.appendChild(dlg);
+      pic = $("img", dlg); cap = $("figcaption", dlg);
+      $(".lb-x", dlg).addEventListener("click", () => dlg.close());
+      $(".lb-prev", dlg).addEventListener("click", () => show(at - 1));
+      $(".lb-next", dlg).addEventListener("click", () => show(at + 1));
+      dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") show(at + 1); else if (e.key === "ArrowLeft") show(at - 1); });
+      dlg.addEventListener("wheel", (e) => { e.preventDefault(); e.stopPropagation(); }, { passive: false });
+      dlg.addEventListener("close", () => {
+        document.documentElement.style.overflow = "";   // the page was frozen while the photograph was open
+        if (!opener) return;
+        opener.focus({ preventScroll: true });
+        const r = opener.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > innerHeight) opener.scrollIntoView({ block: "center" });
+      });
+    };
+    shots.forEach((a, i) => a.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      dlg || build();
+      opener = a;
+      show(i);
+      document.documentElement.style.overflow = "hidden";   // keys and touch cannot scroll the page behind
+      dlg.showModal();
+    }));
+  }
+
+  const cards = $$(".academy-product-card, .edition-card, .store-catalog-section > header, .uniform-group > h3, .pc-lead, .pc-print");
   if (cards.length && "IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const cio = new IntersectionObserver((ents) => {
       let n = 0;

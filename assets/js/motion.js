@@ -8,10 +8,19 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // film-strip photographs load when the plate is near, not with the page
-  const loadImages = (plate) => plate.querySelectorAll("image[data-href]").forEach((img) => {
-    img.setAttribute("href", img.dataset.href);
-    img.removeAttribute("data-href");
-  });
+  // one after another, so six photographs never compete with the page's own images in a burst
+  const loadImages = (plate) => {
+    const queue = Array.from(plate.querySelectorAll("image[data-href]"));
+    const next = () => {
+      const img = queue.shift();
+      if (!img) return;
+      const src = img.dataset.href, pre = new Image();
+      img.removeAttribute("data-href");
+      pre.onload = pre.onerror = () => { img.setAttribute("href", src); next(); };
+      pre.src = src;
+    };
+    next();
+  };
   const tally = (plate) => plate.querySelectorAll("[data-tally]").forEach((el) => {
     const to = +el.dataset.tally, t0 = performance.now() + 1300, dur = 2300;
     el.textContent = "0";
