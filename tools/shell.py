@@ -155,6 +155,7 @@ ICON = {
     "arr": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>',
     "search": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>',
     "menu": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>',
+    "bag": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>',
     "x": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
     "lock": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" class="lk"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
 }
@@ -231,6 +232,7 @@ def header(active):
     <div class="nav-actions">
       <button class="icon-btn pal-btn" type="button" data-palette aria-label="Search the platform" title="Search  ( / )">{ICON["search"]}</button>
       <a class="btn btn-gold btn-sm btn-book" href="keynotes.html#book" data-magnetic>Book Coach Carter</a>
+      <a class="icon-btn store-btn" href="store.html" aria-label="Store">{ICON["bag"]}</a>
       <button class="icon-btn menu-btn" data-menu aria-label="Menu" aria-expanded="false">{ICON["menu"]}</button>
     </div>
   </div>
@@ -241,6 +243,10 @@ def header(active):
   <div class="m-head">
     <a class="m-logo" href="index.html" aria-label="Coach Carter — home"><img src="assets/brand/monogram_gold.svg" alt="" width="30" height="30"><img src="assets/brand/wordmark_gold.svg" alt="" height="26" style="height:26px;width:auto"></a>
     <button class="icon-btn close" data-menu aria-label="Close menu">{ICON["x"]}</button>
+  </div>
+  <div class="m-quick">
+    <a class="btn btn-gold" href="store.html">{ICON["bag"]}<span>Store</span></a>
+    <a class="btn btn-ghost" href="keynotes.html#book">Book Coach</a>
   </div>
   <div class="m-scroll">
     <a class="m-home" href="index.html">Home</a>

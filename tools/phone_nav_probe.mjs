@@ -1,0 +1,22 @@
+// Probes how a phone visitor reaches a page. node tools/phone_nav_probe.mjs [base] [page] [outPrefix]
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const { chromium, devices } = require("/opt/homebrew/lib/node_modules/playwright");
+const base = process.argv[2] || "http://localhost:8431/";
+const page = process.argv[3] || "keynotes.html";
+const out = process.argv[4] || "tracking/phone_nav/probe";
+const b = await chromium.launch({ executablePath: process.env.CHROME_PATH });
+const c = await b.newContext({ ...devices["iPhone 14"] }); const p = await c.newPage();
+await p.goto(base + page, { waitUntil: "load" }); await p.waitForTimeout(2500);
+const vis = () => p.evaluate(() => [...document.querySelectorAll("a[href]")].filter((a) => /store/i.test(a.getAttribute("href")) || /store|shop/i.test(a.textContent)).map((a) => { const r = a.getBoundingClientRect(); const cs = getComputedStyle(a); const inView = r.width > 0 && r.height > 0 && r.top < innerHeight && r.bottom > 0 && r.left < innerWidth && r.right > 0 && cs.visibility !== "hidden" && +cs.opacity > 0.1; const hit = inView && document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2); return { t: a.textContent.trim().slice(0, 30), h: a.getAttribute("href"), inView, tappable: !!(hit && (hit === a || a.contains(hit) || hit.contains(a))), y: Math.round(r.top) }; }));
+console.log("CLOSED first screen:", JSON.stringify((await vis()).filter((x) => x.inView)));
+const btns = await p.evaluate(() => [...document.querySelectorAll("header button, nav button, .nav button")].map((e) => ({ cls: e.className, label: e.getAttribute("aria-label"), w: Math.round(e.getBoundingClientRect().width) })));
+console.log("buttons:", JSON.stringify(btns));
+await p.screenshot({ path: out + "_closed.png" });
+const burger = p.locator("header button:visible, nav button:visible").last();
+await burger.click(); await p.waitForTimeout(1200);
+await p.screenshot({ path: out + "_open.png" });
+const o = await vis(); console.log("OPEN in view:", JSON.stringify(o.filter((x) => x.inView)));
+console.log("OPEN all store links:", o.length, JSON.stringify(o.slice(0, 12)));
+console.log("menu scroll:", JSON.stringify(await p.evaluate(() => [...document.querySelectorAll("*")].filter((e) => { const s = getComputedStyle(e); return s.position === "fixed" && e.getBoundingClientRect().height > 300; }).map((e) => ({ cls: String(e.className).slice(0, 40), h: Math.round(e.getBoundingClientRect().height), sh: e.scrollHeight, ov: getComputedStyle(e).overflowY })))));
+await b.close();

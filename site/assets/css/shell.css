@@ -121,6 +121,12 @@ main [id] { scroll-margin-top: calc(var(--nav-h) + var(--ln-h) + 14px) !importan
 .menu2 .m-head { flex: none; display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 var(--gutter); background: var(--ink); border-bottom: 1px solid var(--line); position: relative; z-index: 2; }
 .menu2 .m-logo { display: flex; align-items: center; gap: 10px; }
 .menu2 .m-head .close { position: static; }
+/* phone: the store is one tap from every page (header bag) and pinned at the top of the menu */
+.store-btn { display: none; color: var(--gold-hi); border-color: rgba(187, 149, 88, .5); }
+@media (max-width: 1080px) { .store-btn { display: grid; } }
+.menu2 .m-quick { flex: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px var(--gutter); border-bottom: 1px solid var(--line); background: var(--ink); position: relative; z-index: 2; }
+.menu2 .m-quick .btn { justify-content: center; min-height: 50px; padding-inline: 10px; white-space: nowrap; }
+.menu2 .m-quick .btn svg { width: 18px; height: 18px; }
 .menu2 .m-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 18px var(--gutter) 44px; }
 .menu2 .m-home { display: inline-block; font: 600 13px/1 var(--f-head); letter-spacing: .28em; text-transform: uppercase; color: var(--gold); padding: 10px 0 22px; }
 .m-world { display: grid; grid-template-columns: 38px 1fr; column-gap: 6px; padding: 18px 0 20px; border-top: 1px solid var(--line); opacity: 0; transform: translateY(18px); }
