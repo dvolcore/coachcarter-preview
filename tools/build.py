@@ -135,6 +135,7 @@ def head(meta):
 <link rel="stylesheet" href="assets/css/gap2.css">
 <link rel="stylesheet" href="assets/css/gap3.css">
 <link rel="stylesheet" href="assets/css/gap4.css">
+<link rel="stylesheet" href="assets/css/planes.css">
 </head>
 <body class="page-{meta.get('nav', 'home')}">
 <div class="curtain" aria-hidden="true"><img src="assets/brand/crest_gold.svg" alt=""></div>
